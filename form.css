@@ -1,0 +1,25 @@
+
+input {
+    width: 100%;
+    padding: 19px 30px;
+    color: var(--color-primary);
+    background-color: transparent;
+    border-radius: 100px;
+    border: none;
+}
+
+
+    
+/* Medium devices (tablets, less than 992px) */
+@media screen and (max-width: 991px) {
+ 
+    
+}
+            
+    
+        
+/* Small devices (landscape phones, less than 768px) */
+@media screen and (max-width: 767px) {   
+
+
+}

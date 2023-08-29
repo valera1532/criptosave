@@ -1,0 +1,31 @@
+<svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b_135_2501)">
+<rect width="59" height="59" rx="29.5" fill="url(#paint0_linear_135_2501)"/>
+<path d="M34.5002 18.8C37.0502 21.35 37.0502 25.4 34.5002 27.8C31.9502 30.2 27.9002 30.35 25.5002 27.8C23.1002 25.25 22.9502 21.2 25.5002 18.8C28.0502 16.4 31.9502 16.4 34.5002 18.8" stroke="#FFD600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M34.5002 18.8C37.0502 21.35 37.0502 25.4 34.5002 27.8C31.9502 30.2 27.9002 30.35 25.5002 27.8C23.1002 25.25 22.9502 21.2 25.5002 18.8C28.0502 16.4 31.9502 16.4 34.5002 18.8" stroke="#FFD600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 41C18 37.25 21 34.25 24.75 34.25H28.65" stroke="#FFD600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 41C18 37.25 21 34.25 24.75 34.25H28.65" stroke="#FFD600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38.25 41.75V34.25" stroke="#FFD600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38.25 41.75V34.25" stroke="#FFD600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M34.5 38H42" stroke="#FFD600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M34.5 38H42" stroke="#FFD600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="0.5" y="0.5" width="58" height="58" rx="29" stroke="url(#paint1_linear_135_2501)"/>
+</g>
+<defs>
+<filter id="filter0_b_135_2501" x="-34" y="-34" width="127" height="127" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="17"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_135_2501"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_135_2501" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_135_2501" x1="0" y1="0" x2="64.0661" y2="6.14018" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2B2B2B" stop-opacity="0.2"/>
+<stop offset="0.515625" stop-color="#3C3C3C" stop-opacity="0.4"/>
+<stop offset="1" stop-opacity="0.2"/>
+</linearGradient>
+<linearGradient id="paint1_linear_135_2501" x1="0" y1="0" x2="64.0661" y2="6.14018" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFD600" stop-opacity="0.6"/>
+<stop offset="1" stop-color="#FFD600" stop-opacity="0.2"/>
+</linearGradient>
+</defs>
+</svg>

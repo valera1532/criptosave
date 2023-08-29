@@ -1,0 +1,225 @@
+/*------------- Main Menu ---------------*/
+
+.main-navigation ul.top-menu {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+.main-navigation ul.top-menu li {
+	list-style: none;
+	position: relative;
+	display: inline-block;
+}
+
+.main-navigation ul.top-menu li a {
+	display: block;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 100%; /* 20px */
+	letter-spacing: -0.2px;
+	padding: 20px 40px;
+}
+
+.main-navigation ul.top-menu > li.current-menu-item a,
+.main-navigation ul.top-menu li.current-menu-ancestor > a {
+	position: relative;
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(25px);
+}
+
+.main-navigation ul.top-menu > li.menu-coming-soon {
+	position: relative;
+}
+.main-navigation ul.top-menu > li.menu-coming-soon span {
+	position: absolute;
+	top: -5px;
+	right: 20px;
+	padding: 4px 10px;
+	border: 1px solid rgba(255, 213, 0, 0.5);
+	border-radius: 5px;
+	background-color: rgba(255, 213, 0, 0.2);
+	backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 100%;
+}
+
+/*------------------ END Main Menu ------------------*/
+
+/* Mobilr Menu */
+
+/*---------- Menu Start -----------*/
+
+.overlay-m {
+	position: fixed;
+	box-sizing: border-box;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	padding: 30px;
+	padding-left: 40px;
+
+	text-align: left;
+
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(25px);
+	-webkit-backdrop-filter: blur(25px);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	visibility: hidden;
+	opacity: 0;
+	/* transform: translateY(-50%); */
+	transform: scale(1.1);
+	z-index: 9;
+	transition: all 0.2s;
+}
+
+.menu_is_visible {
+	display: flex !important;
+	visibility: visible;
+	opacity: 1;
+	transform: scale(1);
+	transition: all 0.4s;
+}
+.submenu-is-visible {
+	display: block !important;
+}
+
+.menu_ico {
+	width: 25px;
+	height: 16px;
+	margin-left: 15px;
+	margin-right: -15px;
+	background-image: url(menu_ico.svg);
+	background-position: 0 0;
+
+	cursor: pointer;
+	z-index: 11;
+
+	transition: all 0.3s 10ms ease;
+}
+.menu-close {
+	position: absolute;
+	top: 30px;
+	left: 42px;
+	width: 22px;
+	height: 22px;
+	background-image: url(images/ico-menu-close.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.menu-wrapper {
+	position: relative;
+	margin-top: 60px;
+	padding-left: 30px;
+	border-left: 1px solid var(--color-white);
+}
+.menu-wrapper:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -10px;
+	width: 20px;
+	height: 1px;
+	background-color: var(--color-white);
+}
+.menu-wrapper:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: -10px;
+	width: 20px;
+	height: 1px;
+	background-color: var(--color-white);
+}
+.menu-scroller {
+	height: 80vh;
+	overflow-y: scroll;
+}
+
+.mobile-navigation ul.top-menu {
+	margin: 0;
+	padding: 0;
+	display: inline;
+
+	text-transform: uppercase;
+}
+.mobile-navigation ul.top-menu li {
+	list-style: none;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.mobile-navigation ul.top-menu li a {
+	font-size: 26px;
+	font-weight: 700;
+	text-decoration: none;
+	color: var(--color-white);
+	background-color: transparent;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: 0.35s;
+}
+
+.mobile-navigation ul.top-menu li ul {
+	display: none;
+	margin: 0;
+	padding: 0;
+	margin-top: 10px;
+}
+.mobile-navigation ul.top-menu li {
+	list-style: none;
+	position: relative;
+	display: flex;
+
+	margin: 10px 0;
+}
+
+.mobile-navigation ul.top-menu li ul li a {
+	display: flex;
+	align-items: center;
+	padding: 3px 0;
+	font-size: 15px;
+	font-weight: 300;
+	color: var(--color-white);
+}
+
+.mobile-menu-creative-text {
+	position: absolute;
+	bottom: 100px;
+	right: -25px;
+	transform: rotate(-90deg);
+}
+/*---------- Menu End -----------*/
+
+/* Medium devices (tablets, less than 992px) */
+@media screen and (max-width: 991px) {
+	.mobile-menu-creative-text {
+		bottom: 150px;
+		right: -25px;
+	}
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 320px) {
+	.mobile-menu-creative-text {
+		display: none;
+	}
+}
+.main-navbar__link {
+	max-height: 33px !important;
+}

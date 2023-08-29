@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site</title>
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://">
+    <meta property="og:title" content="CryptoSafe - Краудфандинг Экосистема нового поколения">
+    <meta property="og:description" content="Доступные инвестиции для всех Вместе с CryptoSafe желанное становится реальным">
+    <meta property="og:image" content="bg_og.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="ui.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="countdown.css">
+    <link rel="stylesheet" href="media.css">
+  </head>
+  
+  <body>
+
+    <section class="countdown-page">
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-7 col-lg-7">
+              <img class="img-fluid" src="images/logo-cryptosafe-white.svg" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-7 mt-3">
+              <h1 class="countdown-title">Запуск экосистемы <br> CryptoSafe</h1>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-7 mt-4 mt-lg-3">
+
+              <!-- Timer Start -->
+              <div class="countdown">
+                <div class="countdown-container days">
+                  <canvas id="days-canvas" width="200" height="200"></canvas>
+              
+                  <div class="label">
+                    <span id="days-value"></span>
+                    <span id="days-text"></span>
+                  </div>
+                </div>
+                <div class="countdown-container hours">
+                  <canvas id="hours-canvas" width="200" height="200"></canvas>
+              
+                  <div class="label">
+                    <span id="hours-value"></span>
+                    <span>часов</span>
+                  </div>
+                </div>
+                <div class="countdown-container minutes">
+                  <canvas id="minutes-canvas" width="200" height="200"></canvas>
+                  <div class="label">
+                    <span id="minutes-value"></span>
+                    <span>минут</span>
+                  </div>
+                </div>
+                <div class="countdown-container seconds">
+                  <canvas id="seconds-canvas" width="200" height="200"></canvas>
+                  <div class="label">
+                    <span id="seconds-value"></span>
+                    <span>секунд</span>
+                  </div>
+                </div>
+              </div>
+
+               <!-- Timer End -->
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-7">
+              <form id="emailForm" action="">
+                <div class="row justify-content-between">
+                  <div class="col">
+                    <div class="gradient-line"></div>
+                    <input class="translucent" type="email" id="usermail" name="usermail" placeholder="Введите ваш e-mail...">
+                    <div class="gradient-line"></div>
+                  </div>
+                  <div class="col-lg-auto mt-4 mt-lg-0">
+                    <button id="sendemail" type="button" class="btn btn-secondary btn-styled-wave btn-with-ico" >
+                      Оповестить меня<img src="images/ico-notification.svg" alt="">
+                    </button>
+				  </div>
+                  
+                </div>
+                
+              </form>
+            </div>
+          </div>
+
+
+        </div>
+
+    </section>
+    
+    <!-- Modal complete-->
+<div class="modal fade" id="complete" tabindex="-1" aria-labelledby="complete" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="border-bottom:0px!important;">
+        <h6 class="text-dark text-center mt-1">Подписка успешно активирована.</h6>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+</div>
+	<!--Modal complete END-->
+	<!-- Modal error-->
+<div class="modal fade" id="error" tabindex="-1" aria-labelledby="error" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="border-bottom:0px!important;">
+        <h6 class="text-dark text-center mt-1">Что-то пошло не так, попробуйте еще раз.</h6>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+</div>
+	<!--Modal error END-->
+
+
+    <!--JS SEND e-mail to php-->
+	<script>
+    document.getElementById("sendemail").addEventListener("click", function() {
+        // Получаем значение e-mail из input
+        var userEmail = document.getElementById("usermail").value;
+
+        // Проверяем, является ли e-mail пустым
+        if (!userEmail.trim()) {
+            var modal = new bootstrap.Modal(document.getElementById("error"));
+            modal.show();
+            return; // Выходим из функции, если e-mail пустой
+        }
+
+        // Копируем e-mail в буфер обмена
+        navigator.clipboard.writeText(userEmail)
+            .then(function() {
+                console.log("E-mail скопирован: " + userEmail);
+            })
+            .catch(function(err) {
+                console.error("Не удалось скопировать e-mail: ", err);
+            });
+
+        // Отправляем e-mail на сервер с помощью AJAX (предполагая, что у вас уже есть PHP скрипт для обработки отправки)
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "send_email.php", true);
+        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                console.log("E-mail отправлен успешно.");
+				var modal = new bootstrap.Modal(document.getElementById("complete"));
+                modal.show();
+            } else {
+                console.error("Ошибка при отправке e-mail.");
+                var modal = new bootstrap.Modal(document.getElementById("error"));
+                modal.show();
+            }
+        };
+        xhr.send("email=" + encodeURIComponent(userEmail));
+    });
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script   src="https://code.jquery.com/jquery-3.5.0.min.js"   integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="   crossorigin="anonymous"></script>
+
+    <script src="js/timer.js"></script>
+ 
+
+
+
+  </body>
+</html>
