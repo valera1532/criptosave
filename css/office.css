@@ -931,6 +931,7 @@
     border: none;
 }
 .statistic__table-left {
+    text-align: left;
     position: relative;
     display: flex;
     min-width: 330px;
@@ -1408,4 +1409,98 @@
 }
 .bonus__mouth-item:last-child {
     border: none;
+}
+.deposit__right-year-profit {
+    margin: 0;
+    margin-top: 10px;
+}
+.deposit__right-sum {
+    margin: 0;
+    margin-top: 10px;
+}
+.deposit__right-card img {
+    left: -10px;
+}
+.deposit {
+    display: flex;
+    flex: 1 1 auto;
+}
+.bonus {
+    max-width: 644px;
+}
+.bonus__graf-info {
+    width: 100%;
+    margin: 20px auto;
+}
+.bonus__graf-left {
+    width: 100%;
+}
+.bonus__graf-fone {
+    left: -45px;
+}
+@media (max-width: 1500px) {
+    .main-block {
+        padding: 20px;
+    }
+    .bonus__graf-left {
+        margin-left: 0;
+    }
+    .bonus {
+        width: 100%;
+        max-width: inherit;
+    }
+    .bonus__graf-fone {
+        left: 50%;
+        transform: translateX(-100%);
+    }
+}
+@media (max-width: 910px) {
+    .deposit__right-card img {
+        left: 50px;
+    }
+}
+@media (max-width: 520px) {
+    .bonus__graf-fone {
+        left: 50%;
+        transform: translateX(-55%);
+    }
+    .bonus__graf-info {
+        margin-top: 90px;
+    }
+    .deposit__right-card:last-child {
+        width: 100%;
+        margin-left: 0;
+    }
+    .deposit__right-card img {
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .deposit__right-cards {
+        margin-left: 0;
+    }
+    .deposit__right-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.deposit {
+    max-width: 869px;
+}
+@media (max-width: 1400px) {
+    .deposit {
+        max-width: inherit;
+    }
+}
+.review__top {
+    justify-content: center;
+}
+.low__row {
+    justify-content: center;
+}
+.statistic__table-left {
+    text-align: left;
 }

@@ -1,0 +1,612 @@
+.hero-bg-img:after {
+    display: none;
+}
+.about {
+}
+.container {
+}
+.about__top {
+}
+.about__title {
+}
+.about__subtitle {
+}
+.about__img {
+}
+.about__block {
+    display: flex;
+}
+.founder__block {
+    display: flex;
+    position: relative;
+    z-index: 3;
+}
+
+.fact {
+    position: relative;
+    top: -276px;
+    z-index: 4;
+}
+.founder {
+    margin-top: 100px;
+}
+.founder__info {
+    margin-left: 100px;
+    margin-top: 200px;
+}
+.founder__title {
+    color: var(--Gradient, #ffd600);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Gilroy;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 72px */
+    margin-bottom: 40px;
+}
+.founder__subtitle {
+    color: var(--white, #fff);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Gilroy;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 160%; /* 57.6px */
+    margin-bottom: 10px;
+}
+.founder__note {
+    color: #ffffff50;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 38.4px */
+}
+.founder__img img {
+}
+.registration {
+    width: 100%;
+    height: 1227px;
+    position: relative;
+}
+.registration__fone {
+    z-index: -1;
+    top: -270px;
+    position: absolute;
+}
+.registration__fone img {
+    width: 100vw;
+}
+
+.registration__flag img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%);
+    right: 0;
+    z-index: 3;
+}
+.container {
+}
+.registration__block {
+    position: relative;
+    z-index: 5;
+    margin-top: 214px;
+    max-width: 808px;
+}
+.registration__title {
+    color: var(--white, #fff);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Gilroy;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 115.2px */
+}
+.registration__info {
+    margin-top: 38px;
+    color: var(--white, #fff);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Gilroy;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 41.6px */
+}
+.registration__info span {
+    color: var(--Yeelow, var(--white, #ffd600));
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Gilroy;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+.decor__circle {
+    position: absolute;
+    left: -500px;
+    top: 0;
+    border-radius: 1868px;
+    background: #0638a6;
+    filter: blur(407px);
+    width: 1867px;
+    height: 1868px;
+    flex-shrink: 0;
+    z-index: 1;
+}
+.eco__img {
+    width: 100vw;
+}
+section {
+    margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+    .fact__img img {
+        width: 100%;
+    }
+    .registration__flag img {
+        width: 500px;
+    }
+    .founder__img img {
+        height: 80%;
+    }
+    .founder__info {
+        margin-left: -75px;
+        margin-top: 75px;
+    }
+    .fact {
+        top: -382px;
+    }
+    .registration {
+        position: relative;
+        top: -200px;
+    }
+    .registration {
+        height: 1025px;
+    }
+}
+.roud {
+    position: relative;
+    top: -62px;
+    margin-bottom: 38px;
+}
+.roud img {
+    width: 100vw;
+}
+.contact {
+    width: 100%;
+}
+.contact__block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.contact__left {
+    padding-top: 137px;
+}
+.contact__title {
+    color: var(--white, #fff);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Gilroy;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 72px */
+}
+.contact__subtitle {
+    max-width: 733px;
+    color: var(--white, #ffffff50);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Gilroy;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 51.2px */
+}
+.contact__right {
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(95px);
+}
+.contact {
+    padding: 50px 0;
+}
+.contact__right-content {
+    display: flex;
+    flex-direction: column;
+}
+.contact__office {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.contact__office-left {
+    color: var(--Gradient, #ffd600);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Gilroy;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 32px */
+    gap: 10px;
+}
+.contact__office-right {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 437px;
+}
+.contact__office-title {
+    color: var(--white, #fff);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 20px */
+}
+.contact__right {
+    width: 852px;
+}
+.contact__point {
+    display: flex;
+
+    align-items: center;
+    gap: 5px;
+}
+.contact__point.column {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.contact__point-title {
+    color: var(--white, #ffffff50);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 20px */
+}
+.contact__point-subtitle {
+    color: var(--white, #fff);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 32px */
+}
+.contact__main {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact__social {
+}
+.contact {
+    position: relative;
+}
+.contact__fone {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.contact__fone img {
+    width: 100%;
+    height: 100%;
+}
+.contact__office {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ffffff50;
+}
+.contact__social {
+    display: flex;
+    gap: 10px;
+}
+.contact__social a img {
+    width: 50px;
+}
+.contact__map {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.contact__map img {
+    width: 100%;
+}
+.circle-decor {
+    position: absolute;
+    border-radius: 1868px;
+    background: #0638a6;
+    filter: blur(407px);
+    width: 1867px;
+    height: 1868px;
+    flex-shrink: 0;
+}
+.contact__block {
+    position: relative;
+    z-index: 2;
+}
+.mobile {
+    display: none;
+}
+.desctop {
+    display: block;
+}
+@media (max-width: 900px) {
+    .desctop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .contact__block {
+        flex-direction: column;
+    }
+    .contact__right {
+        width: 100%;
+    }
+    .contact__main {
+        flex-direction: column;
+    }
+    .contact__office {
+        flex-direction: column;
+    }
+    .contact__office-left {
+        margin-bottom: 20px;
+    }
+    .contact__title {
+        color: var(--white, #fff);
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: Gilroy;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 32px */
+    }
+    .contact__subtitle {
+        font-family: Gilroy;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%; /* 25.6px */
+        margin-bottom: 58px;
+        margin-top: 30px;
+    }
+    .contact__left {
+        padding-top: 0;
+    }
+    .contact__point {
+        flex-wrap: wrap;
+    }
+    .contact__social {
+        flex-wrap: wrap;
+    }
+    .contact__point-title {
+        font-size: 18px;
+    }
+    .contact__point-subtitle {
+        font-size: 18px;
+    }
+    .circle-decor {
+        width: 100%;
+        height: 100%;
+    }
+    .contact__map img {
+        width: 100%;
+        height: 588px;
+    }
+}
+.footer {
+    z-index: 3;
+}
+.about {
+    position: relative;
+    z-index: 2;
+}
+.about__block {
+    position: relative;
+}
+.about__subtitle {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    color: var(--Gradient, #ffd600);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Gilroy;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 64px */
+    max-width: 519px;
+}
+@media (max-width: 768px) {
+    .about__subtitle {
+        top: 70px;
+        color: var(--Gradient, #ffd600);
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: Gilroy;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%; /* 38.4px */
+    }
+    .fact__img {
+        width: 100vw;
+    }
+    .fact__img img {
+        width: 100%;
+    }
+    .founder__info {
+        display: none;
+    }
+    .founder__block {
+        position: relative;
+        width: 100%;
+    }
+    .founder__img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+    .registration__title {
+        max-width: 280px;
+        color: var(--white, #fff);
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: Gilroy;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%; /* 51.2px */
+    }
+    .registration__info {
+        color: var(--white, #fff);
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: Gilroy;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%; /* 25.6px */
+    }
+    .registration__info span {
+        font-size: 16px;
+    }
+    .founder__img img {
+        width: 100%;
+        height: 100%;
+    }
+    .fact {
+        top: -243px;
+    }
+    .registration__flag img {
+        width: 180px;
+    }
+    .registration {
+        height: 100%;
+    }
+    .registration__block {
+        margin-top: 0px;
+    }
+    .registration__fone {
+        overflow: hidden;
+    }
+    .decor__circle {
+        max-width: 100%;
+    }
+    .eco__title {
+        color: var(--white, #fff);
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: Gilroy;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%; /* 51.2px */
+        margin-bottom: 30px;
+    }
+    .eco__logo {
+        padding: 81px 75px;
+        height: 100%;
+        border-radius: 359px;
+        background: linear-gradient(180deg, #020c6a 0%, #02108e 100%);
+        box-shadow: 0px 40px 80px 0px rgba(0, 3, 25, 0.24), 0px 12.44444px 12.44444px 0px #021193 inset,
+            0px -12.44444px 12.44444px 0px #020c65 inset;
+        margin: 0 auto;
+    }
+    .eco__logo img {
+        width: 210px;
+    }
+    .eco {
+        top: -160px;
+    }
+    .eco__title {
+        padding-top: 115px;
+    }
+}
+@media (max-width: 525px) {
+    .registration__flag img {
+        transform: translateY(-180%);
+    }
+    .about {
+        margin-top: 40px;
+    }
+    .fact {
+        top: -173px;
+    }
+    .registration__flag img {
+        width: 160px;
+    }
+    .registration {
+        top: -160px;
+    }
+    .registration__fone {
+        height: 100%;
+        top: 0;
+    }
+    .registration__fone img {
+        height: 100%;
+    }
+    .roud {
+        top: 30px;
+    }
+}
+section {
+    max-width: 100vw;
+}
+.eco__cards {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.eco__card {
+    padding: 55px 15px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(7, 53, 159, 0.61) 0%, rgba(10, 49, 140, 0.1) 100%);
+    backdrop-filter: blur(70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.eco__card-title {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--Gradient, #ffd600);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Gilroy;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 32px */
+    margin-bottom: 15px;
+}
+.eco__card-info {
+    text-align: center;
+}
+.eco {
+    width: 100%;
+    position: relative;
+}
+.eco__fone {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+.eco__logo {
+    display: flex;
+    justify-content: center;
+}
