@@ -106,26 +106,33 @@ const ctx = document.getElementById('myChart');
 
 
 let reportsTabs = document.querySelectorAll('.reports__head-tab')
+let reportsTable = document.querySelectorAll('.reports__table')
 for (let i = 0; i < reportsTabs.length; i++) {
     reportsTabs[0].addEventListener('click', function () {
         for (let j = 0; j < reportsTabs.length; j++) {
             reportsTabs[j].classList.remove('active');
+            reportsTable[j].classList.remove('active');
         }
+        reportsTable[0].classList.add('active');
         reportsTabs[0].classList.add('active');
     },
     ),
         reportsTabs[1].addEventListener('click', function () {
         for (let j = 0; j < reportsTabs.length; j++) {
             reportsTabs[j].classList.remove('active');
+            reportsTable[j].classList.remove('active');
         }
-        reportsTabs[1].classList.add('active');
+            reportsTabs[1].classList.add('active');
+             reportsTable[1].classList.add('active');
     },
     ),
         reportsTabs[2].addEventListener('click', function () {
         for (let j = 0; j < reportsTabs.length; j++) {
             reportsTabs[j].classList.remove('active');
+            reportsTable[j].classList.remove('active');
         }
-        reportsTabs[2].classList.add('active');
+            reportsTabs[2].classList.add('active');
+            reportsTable[2].classList.add('active');
     },
     )
 }

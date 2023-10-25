@@ -467,6 +467,36 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="BuyModal" tabindex="-2" aria-labelledby="exampleModalBuy">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body position-absolute">
+                    <div class=" d-flex justify-content-center align-items-center  w-100 h-100">
+                        <div class="modal__buy">
+                            <div class="modal__buy-header">
+                                <div class="modal__buy-title">Пополнить бонусный счёт</div>
+                                <button class="modal__buy-close btn-close close" data-bs-dismiss="modal"><img
+                                        src="images/ico-menu-close.svg" alt=""></button>
+                            </div>
+                            <div class="modal__buy-block">
+                                <div class="modal__buy-inp">
+                                    <div class="modal__buy-inp-title">Сумма для получения</div>
+                                    <div class="modal__buy-inp-main">
+                                        <input placeholder="Введите сумму для получения" type="text">
+                                    </div>
+                                </div>
+                                <div class="modal__buy-btn">
+                                    Отправить
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="wrapper">
         <header class="header" id="header">
@@ -1141,6 +1171,7 @@
                                         </div>
                                     </div>
                                     <div class="check-box__btns">
+
                                         <div class="check-box__btn btn-buy">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -1243,60 +1274,27 @@
                                         </div>
                                     </div>
                                     <div class="check-box__btns">
-                                        <div class="check-box__btn btn-buy">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 12V21" stroke="white" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M14 14L12 12L10 14" stroke="white" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    d="M16 17H18C19.657 17 21 15.657 21 14V6C21 4.343 19.657 3 18 3H6C4.343 3 3 4.343 3 6V14C3 15.657 4.343 17 6 17H8"
-                                                    stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path d="M3 8H21" stroke="white" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                            Пополнить
-                                        </div>
-                                        <div class="check-box__btn btn-sale">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 21V12" stroke="white" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M10 19L12 21L14 19" stroke="white" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M3 8H21" stroke="white" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    d="M8 16H6C4.343 16 3 14.657 3 13V6C3 4.343 4.343 3 6 3H18C19.657 3 21 4.343 21 6V13C21 14.657 19.657 16 18 16H16"
-                                                    stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                            Вывести
-                                        </div>
-                                        <div class="check-box__btn btn-history">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M17 16.125V18H15" stroke="white" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M6 9.5H14" stroke="white" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M6 6.17969H14" stroke="white" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M6.05078 13H10.0008" stroke="white" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    d="M16.5 22.125C18.985 22.125 21 20.11 21 17.625C21 15.14 18.985 13.125 16.5 13.125C14.014 13.125 12 15.14 12 17.625C12 20.11 14.014 22.125 16.5 22.125"
-                                                    stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M12.016 18H5C3.895 18 3 17.105 3 16V4C3 2.895 3.895 2 5 2H15C16.105 2 17 2.895 17 4V13.152"
-                                                    stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                            История
-                                        </div>
+                                        <button data-bs-toggle="modal" data-bs-target="#BuyModal"
+                                            style="background-color: transparent;">
+                                            <div class="check-box__btn-buy">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12 12V21" stroke="white" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M14 14L12 12L10 14" stroke="white" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path
+                                                        d="M16 17H18C19.657 17 21 15.657 21 14V6C21 4.343 19.657 3 18 3H6C4.343 3 3 4.343 3 6V14C3 15.657 4.343 17 6 17H8"
+                                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M3 8H21" stroke="white" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                Пополнить
+                                            </div>
+                                        </button>
+
+
                                     </div>
                                 </div>
                             </div>
@@ -1526,9 +1524,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a href="" class="check-body__btn">
-                                    История операций<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+                                <button class="check-body__btn">История операций<svg width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17 16.125V18H15" stroke="white" stroke-width="1.5"
                                             stroke-linecap="round" stroke-linejoin="round" />
                                         <path d="M6 9.5H14" stroke="white" stroke-width="1.5" stroke-linecap="round"
@@ -1546,8 +1543,8 @@
                                             stroke="white" stroke-width="1.5" stroke-linecap="round"
                                             stroke-linejoin="round" />
                                     </svg>
+                                </button>
 
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -1556,6 +1553,12 @@
             <div class="popup">
                 <div class="popup__title">
                     Пополнение счета
+                </div>
+                <div class="popup__title none">
+                    Вывод средств
+                </div>
+                <div class="popup__title none">
+                    История
                 </div>
                 <div class="popup__close">
                     <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1952,7 +1955,8 @@
                         </div>
 
                     </div>
-                    <div class="popup__content popup-buy yes ">
+                    <!-- Это попапы для успепшной и не успешной отправки -->
+                    <div class="popup__content popup-buy yes active">
                         <svg class="yes-svg" width="109" height="109" viewBox="0 0 109 109" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <circle cx="54.4994" cy="54.4994" r="36.3333" fill="#00BB40" fill-opacity="0.3"
@@ -2002,6 +2006,9 @@
                     </div>
                 </div>
             </div>
+            <style>
+
+            </style>
             <div class="shadow">
 
             </div>

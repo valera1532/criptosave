@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" no-cache>
 
 <head>
   <meta charset="utf-8">
@@ -26,11 +26,10 @@
   <link rel="stylesheet" href="media.css">
   <link rel="stylesheet" href="css/article.css">
   <link rel="stylesheet" href="css/article.scss">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
 <body>
-
 
   <header>
     <div class="container mt-4 home-header translucent radius-20">
@@ -57,6 +56,47 @@
               <li class="menu-coming-soon">
                 <a href="category.html">Контакты</a>
                 <span>Скоро</span>
+              </li>
+              <li class="menu-coming">
+                <div class="main-navbar__lang">
+                  <span>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_1101_5831)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M-5.81836 -0.363281H37.818V32.364H-5.81836V-0.363281Z" fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M-5.81836 10.5449H37.818V32.3631H-5.81836V10.5449Z" fill="#0039A6" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M-5.81836 21.4551H37.818V32.3642H-5.81836V21.4551Z" fill="#D52B1E" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1101_5831">
+                          <rect width="43.6364" height="32.7273" fill="white"
+                            transform="translate(-5.81836 -0.363281)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    Русский язык
+                  </span>
+
+                  <svg class="lang__close" width="11" height="6" viewBox="0 0 11 6" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.7699 0.21967C10.463 -0.0732233 9.96554 -0.0732234 9.6587 0.21967L5.5 4.18934L1.3413 0.21967C1.03446 -0.0732238 0.536971 -0.0732238 0.230131 0.219669C-0.0767098 0.512563 -0.0767098 0.987436 0.230131 1.28033L4.94442 5.78033C5.25126 6.07322 5.74874 6.07322 6.05558 5.78033L10.7699 1.28033C11.0767 0.987437 11.0767 0.512563 10.7699 0.21967Z"
+                      fill="white" />
+                  </svg>
+                  <div class="main-navbar__lang-pop">
+                    <div class="main-navbar__lang-item">
+                      <img src="img/main/ru.png" alt="">
+                      <span>English</span>
+                    </div>
+                    <div class="main-navbar__lang-item">
+                      <img src="img/main/ru.png" alt="">
+                      <span>English</span>
+                    </div>
+
+                  </div>
+                </div>
               </li>
             </ul>
           </nav>
@@ -88,6 +128,47 @@
                   <li><a href="#">О компании</a></li>
                   <li><a href="#">Медиацентр</a></li>
                   <li><a href="#">Контакты</a></li>
+                  <li class="menu-coming">
+                    <div class="main-navbar__lang">
+                      <span>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1101_5831)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M-5.81836 -0.363281H37.818V32.364H-5.81836V-0.363281Z" fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M-5.81836 10.5449H37.818V32.3631H-5.81836V10.5449Z" fill="#0039A6" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M-5.81836 21.4551H37.818V32.3642H-5.81836V21.4551Z" fill="#D52B1E" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1101_5831">
+                              <rect width="43.6364" height="32.7273" fill="white"
+                                transform="translate(-5.81836 -0.363281)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                        Русский язык
+                      </span>
+
+                      <svg class="lang__close" width="11" height="6" viewBox="0 0 11 6" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.7699 0.21967C10.463 -0.0732233 9.96554 -0.0732234 9.6587 0.21967L5.5 4.18934L1.3413 0.21967C1.03446 -0.0732238 0.536971 -0.0732238 0.230131 0.219669C-0.0767098 0.512563 -0.0767098 0.987436 0.230131 1.28033L4.94442 5.78033C5.25126 6.07322 5.74874 6.07322 6.05558 5.78033L10.7699 1.28033C11.0767 0.987437 11.0767 0.512563 10.7699 0.21967Z"
+                          fill="white" />
+                      </svg>
+                      <div class="main-navbar__lang-pop">
+                        <div class="main-navbar__lang-item">
+                          <img src="img/main/ru.png" alt="">
+                          <span>English</span>
+                        </div>
+                        <div class="main-navbar__lang-item">
+                          <img src="img/main/ru.png" alt="">
+                          <span>English</span>
+                        </div>
+
+                      </div>
+                    </div>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -450,7 +531,9 @@
 
   <div class="spacer"></div>
 
-  <section class="calculator-bg">
+
+
+  <!-- <section class="calculator-bg">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-5">
@@ -577,10 +660,862 @@
     </div>
 
     <div class="gradient-line"></div>
+  </section> -->
+  <section class="team">
+    <div class="container">
+      <div class="team__block">
+        <div class="team__top">
+          <div class="team__title">
+            <span class="team__title-yellow">Команда</span>
+            <span>CryptoSafe</span>
+          </div>
+          <div class="team__info">
+            <div class="team__name">Борхес Артонио Фейтоза</div>
+            <div class="team__founder">Основатель и Генеральный Директор CryptoSafe Inc.</div>
+            <div class="team__note">Более 18 лет опыта работы на финансовых рынках. Экс-топ менеджер Goldman Sachs одной
+              из топ-3 консалтинговых компаний в
+              мире. Профессиональный портфельный менеджер консалтинговых компаний. Держатель лицензии Series 24 FINRA US
+            </div>
+          </div>
+          <div class="team__socials">
+            <div class="team__social">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3034_41053)">
+                  <path
+                    d="M29.6378 0H2.36222C1.73572 0 1.13488 0.248877 0.691879 0.691879C0.248877 1.13488 0 1.73572 0 2.36222V29.6378C0 30.2643 0.248877 30.8651 0.691879 31.3081C1.13488 31.7511 1.73572 32 2.36222 32H29.6378C30.2643 32 30.8651 31.7511 31.3081 31.3081C31.7511 30.8651 32 30.2643 32 29.6378V2.36222C32 1.73572 31.7511 1.13488 31.3081 0.691879C30.8651 0.248877 30.2643 0 29.6378 0ZM9.53778 27.26H4.72667V11.9778H9.53778V27.26ZM7.12889 9.86C6.58315 9.85693 6.05055 9.69226 5.59831 9.38678C5.14607 9.08131 4.79445 8.64871 4.58784 8.14359C4.38122 7.63846 4.32886 7.08346 4.43738 6.54861C4.54589 6.01376 4.8104 5.52304 5.19754 5.13838C5.58468 4.75372 6.07709 4.49236 6.61262 4.38728C7.14816 4.28221 7.70282 4.33812 8.2066 4.54798C8.71039 4.75784 9.14072 5.11222 9.44329 5.56642C9.74585 6.02061 9.9071 6.55426 9.90667 7.1C9.91182 7.46538 9.84335 7.82805 9.70535 8.16641C9.56735 8.50476 9.36264 8.81187 9.10343 9.06942C8.84421 9.32698 8.5358 9.52971 8.19657 9.66553C7.85733 9.80136 7.49423 9.86749 7.12889 9.86ZM27.2711 27.2733H22.4622V18.9244C22.4622 16.4622 21.4156 15.7022 20.0644 15.7022C18.6378 15.7022 17.2378 16.7778 17.2378 18.9867V27.2733H12.4267V11.9889H17.0533V14.1067H17.1156C17.58 13.1667 19.2067 11.56 21.6889 11.56C24.3733 11.56 27.2733 13.1533 27.2733 17.82L27.2711 27.2733Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_3034_41053">
+                    <rect width="32" height="32" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>Linkedin</span>
+            </div>
+          </div>
+        </div>
+        <div class="team__swiper">
+          <div class="swiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide team__slide ">
+                <img class="team__swiper-fone" src="/images/team__fone.png" alt="">
+                <img class="team__swiper-people" src="/images/team__people.png" alt="">
+              </div>
+              <div class="swiper-slide team__slide ">
+                <img class="team__swiper-fone" src="/images/team__fone.png" alt="">
+                <img class="team__swiper-people" src="/images/team__people.png" alt="">
+              </div>
+              <div class="swiper-slide team__slide ">
+                <img class="team__swiper-fone" src="/images/team__fone.png" alt="">
+                <img class="team__swiper-people" src="/images/team__people.png" alt="">
+              </div>
+
+              <div class="swiper-slide team__slide ">
+                <img class="team__swiper-fone" src="/images/team__fone.png" alt="">
+                <img class="team__swiper-people" src="/images/team__people.png" alt="">
+              </div>
+              <div class="swiper-slide team__slide ">
+                <img class="team__swiper-fone" src="/images/team__fone.png" alt="">
+                <img class="team__swiper-people" src="/images/team__people.png" alt="">
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev team__social-arrow">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_b_3034_41087)">
+                  <circle cx="30" cy="30" r="30" fill="white" fill-opacity="0.1" />
+                  <circle cx="30" cy="30" r="29.5" stroke="url(#paint0_linear_3034_41087)" />
+                </g>
+                <g opacity="1">
+                  <path d="M17.5443 29.4993L41.4609 29.4993" stroke="white" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M26.0859 20.9583L17.5443 29.5" stroke="white" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M26.0859 38.041L17.5443 29.4993" stroke="white" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <filter id="filter0_b_3034_41087" x="-50" y="-50" width="160" height="160"
+                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="25" />
+                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_3034_41087" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_3034_41087" result="shape" />
+                  </filter>
+                  <linearGradient id="paint0_linear_3034_41087" x1="42.0698" y1="-235.932" x2="-28.0857" y2="-230.255"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" stop-opacity="0" />
+                    <stop offset="0.473958" stop-color="white" stop-opacity="0.5" />
+                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="swiper-button-next team__social-arrow">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_b_3034_41095)">
+                  <circle cx="30" cy="30" r="30" fill="white" fill-opacity="0.1" />
+                  <circle cx="30" cy="30" r="29.5" stroke="url(#paint0_linear_3034_41095)" />
+                </g>
+                <path d="M41.4557 29.4993L17.5391 29.4993" stroke="white" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M32.9141 20.9583L41.4557 29.5" stroke="white" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M32.9141 38.041L41.4557 29.4993" stroke="white" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <defs>
+                  <filter id="filter0_b_3034_41095" x="-50" y="-50" width="160" height="160"
+                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="25" />
+                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_3034_41095" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_3034_41095" result="shape" />
+                  </filter>
+                  <linearGradient id="paint0_linear_3034_41095" x1="42.0698" y1="-235.932" x2="-28.0857" y2="-230.255"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" stop-opacity="0" />
+                    <stop offset="0.473958" stop-color="white" stop-opacity="0.5" />
+                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="spacer"></div>
+  <section class="roudmap">
+
+    <div class="container">
+      <div class="roudmap__block">
+        <div class="roudmap__title">CryptoSafe Роудмап</div>
+        <div class="roudmap__main">
+          <div class="roudmap__head">
+            <div class="roudmap__head-point ">
+              <div class="roudmap__head-title">2023</div>
+              <ul>
+                <li>Q3</li>
+                <li>Q4</li>
+              </ul>
+            </div>
+            <div class="roudmap__head-point active">
+              <div class="roudmap__head-title">2024</div>
+              <ul>
+                <li>Q1</li>
+                <li>Q2</li>
+                <li>Q3</li>
+                <li>Q4</li>
+              </ul>
+            </div>
+            <div class="roudmap__head-point">
+              <div class="roudmap__head-title">2023</div>
+              <ul>
+                <li>Q1</li>
+                <li>Q2</li>
+                <li>Q3</li>
+                <li>Q4</li>
+              </ul>
+            </div>
+          </div>
+          <div class="roudmap__head-mobile">
+            <div class="swiper5">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide roudmap__head-point-mobile ">
+                  <div class="roudmap__head-point">
+                    <div class="roudmap__head-title">2023</div>
+                    <ul>
+                      <li>Q3</li>
+                      <li>Q4</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide roudmap__head-point-mobile">
+                  <div class="roudmap__head-point">
+                    <div class="roudmap__head-title">2024</div>
+                    <ul>
+                      <li>Q1</li>
+                      <li>Q2</li>
+                      <li>Q3</li>
+                      <li>Q4</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide roudmap__head-point-mobile">
+                  <div class="roudmap__head-point">
+                    <div class="roudmap__head-title">2025</div>
+                    <ul>
+                      <li>Q1</li>
+                      <li>Q2</li>
+                      <li>Q3</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev roudmap__head-arrow">
+
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_b_3086_46872)">
+                    <circle cx="20" cy="20" r="20" transform="rotate(-180 20 20)" fill="white" fill-opacity="0.2" />
+                    <circle cx="20" cy="20" r="19.5" transform="rotate(-180 20 20)"
+                      stroke="url(#paint0_linear_3086_46872)" />
+                  </g>
+                  <path d="M21 16L17 20L21 24" stroke="#FFD600" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <defs>
+                    <filter id="filter0_b_3086_46872" x="-50" y="-50" width="140" height="140"
+                      filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feGaussianBlur in="BackgroundImageFix" stdDeviation="25" />
+                      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_3086_46872" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_3086_46872"
+                        result="shape" />
+                    </filter>
+                    <linearGradient id="paint0_linear_3086_46872" x1="28.0465" y1="-157.288" x2="-18.7238" y2="-153.503"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="white" stop-opacity="0" />
+                      <stop offset="0.473958" stop-color="white" stop-opacity="0.5" />
+                      <stop offset="1" stop-color="white" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="swiper-button-next roudmap__head-arrow">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_b_3086_46871)">
+                    <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.2" />
+                    <circle cx="20" cy="20" r="19.5" stroke="url(#paint0_linear_3086_46871)" />
+                  </g>
+                  <path d="M19 24L23 20L19 16" stroke="#FFD600" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <defs>
+                    <filter id="filter0_b_3086_46871" x="-50" y="-50" width="140" height="140"
+                      filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feGaussianBlur in="BackgroundImageFix" stdDeviation="25" />
+                      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_3086_46871" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_3086_46871"
+                        result="shape" />
+                    </filter>
+                    <linearGradient id="paint0_linear_3086_46871" x1="28.0465" y1="-157.288" x2="-18.7238" y2="-153.503"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="white" stop-opacity="0" />
+                      <stop offset="0.473958" stop-color="white" stop-opacity="0.5" />
+                      <stop offset="1" stop-color="white" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="roudmap__swiper">
+            <div class="roudmap__content">
+              <div class="swiper4">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide roudmap__swiper-slide">
+                    <div class="roudmap__q">
+                      <ul>
+                        <li>
+                          <div class="roudmap__q-title">Q1</div>
+                          <div class="roudmap__q-line"></div>
+                          <div class="roudmap__q-main">
+                            <ul>
+                              <li>Торжественное открытие компании в Дубай</li>
+                              <li>Релиз v1.0 CryptoSafe HEX - гибридная биржа нового поколения</li>
+                              <li>Выпуск CryptoSafe Academy App</li>
+                              <li>Закрытое бета-тестирование CS Vision</li>
+                              <li>100.000 пользователей в CryptoSafe Academy</li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="roudmap__q-title">Q2</div>
+                          <div class="roudmap__q-line"></div>
+                          <div class="roudmap__q-main">
+                            <ul>
+                              <li>Релиз v1.0 CS Vision</li>
+                              <li>Закрытое бета-тестирование CS Pay</li>
+                              <li>Выпуск CryptoSafe App v2.0 - еще больше уникальных возможностей</li>
+                              <li>Начало распределения акций CryptoSafe Inc. среди топ лидеров компании</li>
+                              <li>Закрытое бета-тестирование CSchain</li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="roudmap__q-title">Q3</div>
+                          <div class="roudmap__q-line"></div>
+                          <div class="roudmap__q-main">
+                            <ul>
+                              <li>Масштабная PR - кампания, роуд-шоу кампании на 10+ крипто-ивентах</li>
+                              <li>Выпуск SAFE токена, цифровая валюта экосистемы CryptoSafe (*)</li>
+                              <li>Релиз v1.0 CS Pay</li>
+                              <li>Подключение 500+ веб-мастеров к тестирвоанию офферов CryptoSafe в рамках CS Leads
+                              </li>
+                              <li>Достижение 1.000.000 пользователей в CryptoSafe App</li>
+
+                            </ul>
+                            <div class="roudmap__q-main-note">
+                              (*)Даты выпуска токена SAFE могут варьироваться в зависимости от рыночной коньюктуры
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="roudmap__q-title">Q4</div>
+                          <div class="roudmap__q-line"></div>
+                          <div class="roudmap__q-main">
+                            <ul>
+                              <li>Подключение более 100 контрагентов в рамках CS Pay.</li>
+                              <li>Открытие дочерних компаний и получение европейских лицензий для CS Pay.</li>
+                              <li>Листинг токена SAFE на биржах Tier-1.</li>
+                              <li>Проведение крупного мероприятия во Вьетнаме.</li>
+                              <li>Открытие офиса в Гонконге в рамках стратегии CS Bull Market.</li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide roudmap__swiper-slide">
+                    <div class="roudmap__q">
+                      <ul>
+                        <li>
+                          <div class="roudmap__q-title">Q1</div>
+                          <div class="roudmap__q-line"></div>
+                          <div class="roudmap__q-main">
+                            <ul>
+                              <li>Торжественное открытие компании в Дубай</li>
+                              <li>Релиз v1.0 CryptoSafe HEX - гибридная биржа нового поколения</li>
+                              <li>Выпуск CryptoSafe Academy App</li>
+                              <li>Закрытое бета-тестирование CS Vision</li>
+                              <li>100.000 пользователей в CryptoSafe Academy</li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="roudmap__q-title">Q2</div>
+                          <div class="roudmap__q-line"></div>
+                          <div class="roudmap__q-main">
+                            <ul>
+                              <li>Релиз v1.0 CS Vision</li>
+                              <li>Закрытое бета-тестирование CS Pay</li>
+                              <li>Выпуск CryptoSafe App v2.0 - еще больше уникальных возможностей</li>
+                              <li>Начало распределения акций CryptoSafe Inc. среди топ лидеров компании</li>
+                              <li>Закрытое бета-тестирование CSchain</li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="roudmap__q-title">Q3</div>
+                          <div class="roudmap__q-line"></div>
+                          <div class="roudmap__q-main">
+                            <ul>
+                              <li>Масштабная PR - кампания, роуд-шоу кампании на 10+ крипто-ивентах</li>
+                              <li>Выпуск SAFE токена, цифровая валюта экосистемы CryptoSafe (*)</li>
+                              <li>Релиз v1.0 CS Pay</li>
+                              <li>Подключение 500+ веб-мастеров к тестирвоанию офферов CryptoSafe в рамках CS Leads
+                              </li>
+                              <li>Достижение 1.000.000 пользователей в CryptoSafe App</li>
+
+                            </ul>
+                            <div class="roudmap__q-main-note">
+                              (*)Даты выпуска токена SAFE могут варьироваться в зависимости от рыночной коньюктуры
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="roudmap__q-title">Q4</div>
+                          <div class="roudmap__q-line"></div>
+                          <div class="roudmap__q-main">
+                            <ul>
+                              <li>Подключение более 100 контрагентов в рамках CS Pay.</li>
+                              <li>Открытие дочерних компаний и получение европейских лицензий для CS Pay.</li>
+                              <li>Листинг токена SAFE на биржах Tier-1.</li>
+                              <li>Проведение крупного мероприятия во Вьетнаме.</li>
+                              <li>Открытие офиса в Гонконге в рамках стратегии CS Bull Market.</li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide roudmap__swiper-slide">
+                    <div class="roudmap__q">
+                      <ul>
+                        <li>
+                          <div class="roudmap__q-title">Q1</div>
+                          <div class="roudmap__q-line"></div>
+                          <div class="roudmap__q-main">
+                            <ul>
+                              <li>Торжественное открытие компании в Дубай</li>
+                              <li>Релиз v1.0 CryptoSafe HEX - гибридная биржа нового поколения</li>
+                              <li>Выпуск CryptoSafe Academy App</li>
+                              <li>Закрытое бета-тестирование CS Vision</li>
+                              <li>100.000 пользователей в CryptoSafe Academy</li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="roudmap__q-title">Q2</div>
+                          <div class="roudmap__q-line"></div>
+                          <div class="roudmap__q-main">
+                            <ul>
+                              <li>Релиз v1.0 CS Vision</li>
+                              <li>Закрытое бета-тестирование CS Pay</li>
+                              <li>Выпуск CryptoSafe App v2.0 - еще больше уникальных возможностей</li>
+                              <li>Начало распределения акций CryptoSafe Inc. среди топ лидеров компании</li>
+                              <li>Закрытое бета-тестирование CSchain</li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="roudmap__q-title">Q3</div>
+                          <div class="roudmap__q-line"></div>
+                          <div class="roudmap__q-main">
+                            <ul>
+                              <li>Масштабная PR - кампания, роуд-шоу кампании на 10+ крипто-ивентах</li>
+                              <li>Выпуск SAFE токена, цифровая валюта экосистемы CryptoSafe (*)</li>
+                              <li>Релиз v1.0 CS Pay</li>
+                              <li>Подключение 500+ веб-мастеров к тестирвоанию офферов CryptoSafe в рамках CS Leads
+                              </li>
+                              <li>Достижение 1.000.000 пользователей в CryptoSafe App</li>
+
+                            </ul>
+                            <div class="roudmap__q-main-note">
+                              (*)Даты выпуска токена SAFE могут варьироваться в зависимости от рыночной коньюктуры
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="roudmap__q-title">Q4</div>
+                          <div class="roudmap__q-line"></div>
+                          <div class="roudmap__q-main">
+                            <ul>
+                              <li>Подключение более 100 контрагентов в рамках CS Pay.</li>
+                              <li>Открытие дочерних компаний и получение европейских лицензий для CS Pay.</li>
+                              <li>Листинг токена SAFE на биржах Tier-1.</li>
+                              <li>Проведение крупного мероприятия во Вьетнаме.</li>
+                              <li>Открытие офиса в Гонконге в рамках стратегии CS Bull Market.</li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination">
+                </div>
+              </div>
+            </div>
+            <div class="roudmap__content-mobile">
+              <div class="swiper6 swiper__roudmap-mobile swiper__roudmap-mobile-active">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="roudmap__q">
+                      <ul>
+                        <li>
+                          <div class="roudmap__q-title">Q1</div>
+                          <div class="roudmap__q-line"></div>
+                          <div class="roudmap__q-main">
+                            <ul>
+                              <li>Торжественное открытие компании в Дубай</li>
+                              <li>Релиз v1.0 CryptoSafe HEX - гибридная биржа нового поколения</li>
+                              <li>Выпуск CryptoSafe Academy App</li>
+                              <li>Закрытое бета-тестирование CS Vision</li>
+                              <li>100.000 пользователей в CryptoSafe Academy</li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="roudmap__q">
+                      <ul>
+                        <li>
+                          <div class="roudmap__q-title">Q2</div>
+                          <div class="roudmap__q-line"></div>
+                          <div class="roudmap__q-main">
+                            <ul>
+                              <li>Релиз v1.0 CS Vision</li>
+                              <li>Закрытое бета-тестирование CS Pay</li>
+                              <li>Выпуск CryptoSafe App v2.0 - еще больше уникальных возможностей</li>
+                              <li>Начало распределения акций CryptoSafe Inc. среди топ лидеров компании</li>
+                              <li>Закрытое бета-тестирование CSchain</li>
+                            </ul>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-pagination roudmap__content-mobile-paginations"></div>
+              </div>
+              <div class="swiper7 swiper__roudmap-mobile">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="roudmap__q">
+                      <ul>
+                        <li>
+                          <div class="roudmap__q-title">Q1</div>
+                          <div class="roudmap__q-line"></div>
+                          <div class="roudmap__q-main">
+                            <ul>
+                              <li>Торжественное открытие компании в Дубай</li>
+                              <li>Релиз v1.0 CryptoSafe HEX - гибридная биржа нового поколения</li>
+                              <li>Выпуск CryptoSafe Academy App</li>
+                              <li>Закрытое бета-тестирование CS Vision</li>
+                              <li>100.000 пользователей в CryptoSafe Academy</li>
+                            </ul>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="roudmap__q">
+                      <ul>
+                        <li>
+                          <div class="roudmap__q-title">Q2</div>
+                          <div class="roudmap__q-line"></div>
+                          <div class="roudmap__q-main">
+                            <ul>
+                              <li>Релиз v1.0 CS Vision</li>
+                              <li>Закрытое бета-тестирование CS Pay</li>
+                              <li>Выпуск CryptoSafe App v2.0 - еще больше уникальных возможностей</li>
+                              <li>Начало распределения акций CryptoSafe Inc. среди топ лидеров компании</li>
+                              <li>Закрытое бета-тестирование CSchain</li>
+                            </ul>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="roudmap__q">
+                      <ul>
+                        <li>
+                          <div class="roudmap__q-title">Q3</div>
+                          <div class="roudmap__q-line"></div>
+                          <div class="roudmap__q-main">
+                            <ul>
+                              <li>Масштабная PR - кампания, роуд-шоу кампании на 10+ крипто-ивентах</li>
+                              <li>Выпуск SAFE токена, цифровая валюта экосистемы CryptoSafe (*)</li>
+                              <li>Релиз v1.0 CS Pay</li>
+                              <li>Подключение 500+ веб-мастеров к тестирвоанию офферов CryptoSafe в рамках CS Leads</li>
+                              <li>Достижение 1.000.000 пользователей в CryptoSafe App</li>
+
+                            </ul>
+                            <div class="roudmap__q-main-note">
+                              (*)Даты выпуска токена SAFE могут варьироваться в зависимости от рыночной коньюктуры
+                            </div>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="roudmap__q">
+                      <ul>
+                        <li>
+                          <div class="roudmap__q-title">Q4</div>
+                          <div class="roudmap__q-line"></div>
+                          <div class="roudmap__q-main">
+                            <ul>
+                              <li>Подключение более 100 контрагентов в рамках CS Pay.</li>
+                              <li>Открытие дочерних компаний и получение европейских лицензий для CS Pay.</li>
+                              <li>Листинг токена SAFE на биржах Tier-1.</li>
+                              <li>Проведение крупного мероприятия во Вьетнаме.</li>
+                              <li>Открытие офиса в Гонконге в рамках стратегии CS Bull Market.</li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="swiper-pagination roudmap__content-mobile-paginations"></div>
+              </div>
+              <div class="swiper8 swiper__roudmap-mobile">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="roudmap__q">
+                      <ul>
+                        <li>
+                          <div class="roudmap__q-title">Q1</div>
+                          <div class="roudmap__q-line"></div>
+                          <div class="roudmap__q-main">
+                            <ul>
+                              <li>Торжественное открытие компании в Дубай</li>
+                              <li>Релиз v1.0 CryptoSafe HEX - гибридная биржа нового поколения</li>
+                              <li>Выпуск CryptoSafe Academy App</li>
+                              <li>Закрытое бета-тестирование CS Vision</li>
+                              <li>100.000 пользователей в CryptoSafe Academy</li>
+                            </ul>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="roudmap__q">
+                      <ul>
+                        <li>
+                          <div class="roudmap__q-title">Q2</div>
+                          <div class="roudmap__q-line"></div>
+                          <div class="roudmap__q-main">
+                            <ul>
+                              <li>Релиз v1.0 CS Vision</li>
+                              <li>Закрытое бета-тестирование CS Pay</li>
+                              <li>Выпуск CryptoSafe App v2.0 - еще больше уникальных возможностей</li>
+                              <li>Начало распределения акций CryptoSafe Inc. среди топ лидеров компании</li>
+                              <li>Закрытое бета-тестирование CSchain</li>
+                            </ul>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="roudmap__q">
+                      <ul>
+                        <li>
+                          <div class="roudmap__q-title">Q3</div>
+                          <div class="roudmap__q-line"></div>
+                          <div class="roudmap__q-main">
+                            <ul>
+                              <li>Масштабная PR - кампания, роуд-шоу кампании на 10+ крипто-ивентах</li>
+                              <li>Выпуск SAFE токена, цифровая валюта экосистемы CryptoSafe (*)</li>
+                              <li>Релиз v1.0 CS Pay</li>
+                              <li>Подключение 500+ веб-мастеров к тестирвоанию офферов CryptoSafe в рамках CS Leads</li>
+                              <li>Достижение 1.000.000 пользователей в CryptoSafe App</li>
+
+                            </ul>
+                            <div class="roudmap__q-main-note">
+                              (*)Даты выпуска токена SAFE могут варьироваться в зависимости от рыночной коньюктуры
+                            </div>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="swiper-pagination roudmap__content-mobile-paginations"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <div class="spacer"></div>
+  <section class="media">
+    <div class="container">
+      <div class="media__block">
+        <img class="media__block-img" src="/images/new__blocks/media__fone.png" alt="">
+        <div class="media__main">
+          <div class="media__title">Медиацентр</div>
+          <div class="media__info">Lorem ipsum dolor sit amet consectetur. Orci est adipiscing tempor gravida ut sed.
+            Sed venenatis diam arcu turpis vitae
+            amet. Duis ac bibendum sed nunc eros nisl viverra. Lacus justo tristique amet aliquam tristique at orci
+            neque. Pulvinar
+            justo id blandit eu adipiscing sed tincidunt mauris. Duis non nisl pulvinar.</div>
+          <div class="media__button">
+            <button class="mt-5 btn btn-secondary btn-styled-wave btn-with-ico">Узнать больше <img
+                src="images/ico-button-arrow-r-colored.svg" alt=""></button>
+          </div>
+
+        </div>
+        <div class="media__cards">
+          <div class="news__card ">
+            <div class="news__fone">
+              <img src="img/main/fone__card1.png" alt="">
+            </div>
+            <div class="news__card-left">
+              <div class="news__card-main">
+                <div class="news__card-date">дата публикации 01.08.2023</div>
+                <div class="news__card-title">CryptoSafe Токен</div>
+                <div class="news__card-text">Наступает новая эра безопасности:
+                  Запуск
+                  крипто-токена CryptoSafe обещает защитить миллионы инвесторов от
+                  киберугроз и
+                  обеспечить надежную защиту активов на блокчейне. Готовьтесь к
+                  революции
+                  в мире криптовалют!</div>
+                <div class="news__card-detail"><a href="">Подробнее</a><svg width="32" height="32" viewBox="0 0 32 32"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M16 28V28C9.372 28 4 22.628 4 16V16C4 9.372 9.372 4 16 4V4C22.628 4 28 9.372 28 16V16C28 22.628 22.628 28 16 28Z"
+                      stroke="#FFD600" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M16 28V28C9.372 28 4 22.628 4 16V16C4 9.372 9.372 4 16 4V4C22.628 4 28 9.372 28 16V16C28 22.628 22.628 28 16 28Z"
+                      stroke="#FFD600" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M21.3307 15.9987H10.6641" stroke="#FFD600" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M21.3307 15.9987H10.6641" stroke="#FFD600" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M17.3359 12L21.3359 16L17.3359 20" stroke="#FFD600" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M17.3359 12L21.3359 16L17.3359 20" stroke="#FFD600" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="news__card ">
+            <div class="news__fone">
+              <img src="img/main/phones.png" alt="">
+            </div>
+            <div class="news__card-left">
+              <div class="news__card-main">
+
+                <div class="news__card-date">дата публикации 01.08.2023</div>
+                <div class="news__card-title">CryptoSafe App</div>
+                <div class="news__card-text">Сделайте свои криптовалютные операции
+                  надежными и безопасными с приложением CryptoSafe! Защитите свои
+                  активы с помощью
+                  передовых технологий кибербезопасности и погрузитесь в мир
+                  безопасных инвестиций прямо с вашего мобильного устройства.
+                </div>
+                <div class="news__card-detail"><a href="">Подробнее</a><svg width="32" height="32" viewBox="0 0 32 32"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M16 28V28C9.372 28 4 22.628 4 16V16C4 9.372 9.372 4 16 4V4C22.628 4 28 9.372 28 16V16C28 22.628 22.628 28 16 28Z"
+                      stroke="#FFD600" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M16 28V28C9.372 28 4 22.628 4 16V16C4 9.372 9.372 4 16 4V4C22.628 4 28 9.372 28 16V16C28 22.628 22.628 28 16 28Z"
+                      stroke="#FFD600" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M21.3307 15.9987H10.6641" stroke="#FFD600" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M21.3307 15.9987H10.6641" stroke="#FFD600" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M17.3359 12L21.3359 16L17.3359 20" stroke="#FFD600" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M17.3359 12L21.3359 16L17.3359 20" stroke="#FFD600" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="media__swiper">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide ">
+                <div class="media__slide">
+                  <div class="news__card ">
+                    <div class="news__fone">
+                      <img src="img/main/fone__card1.png" alt="">
+                    </div>
+                    <div class="news__card-left">
+                      <div class="news__card-main">
+                        <div class="news__card-date">дата публикации 01.08.2023</div>
+                        <div class="news__card-title">CryptoSafe Токен</div>
+                        <div class="news__card-text">Наступает новая эра безопасности:
+                          Запуск
+                          крипто-токена CryptoSafe обещает защитить миллионы инвесторов от
+                          киберугроз и
+                          обеспечить надежную защиту активов на блокчейне. Готовьтесь к
+                          революции
+                          в мире криптовалют!</div>
+                        <div class="news__card-detail"><a href="">Подробнее</a><svg width="32" height="32"
+                            viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M16 28V28C9.372 28 4 22.628 4 16V16C4 9.372 9.372 4 16 4V4C22.628 4 28 9.372 28 16V16C28 22.628 22.628 28 16 28Z"
+                              stroke="#FFD600" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M16 28V28C9.372 28 4 22.628 4 16V16C4 9.372 9.372 4 16 4V4C22.628 4 28 9.372 28 16V16C28 22.628 22.628 28 16 28Z"
+                              stroke="#FFD600" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M21.3307 15.9987H10.6641" stroke="#FFD600" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M21.3307 15.9987H10.6641" stroke="#FFD600" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M17.3359 12L21.3359 16L17.3359 20" stroke="#FFD600" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M17.3359 12L21.3359 16L17.3359 20" stroke="#FFD600" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="swiper-slide">
+                <div class="media__slide">
+                  <div class="news__card ">
+                    <div class="news__fone">
+                      <img src="img/main/phones.png" alt="">
+                    </div>
+                    <div class="news__card-left">
+                      <div class="news__card-main">
+
+                        <div class="news__card-date">дата публикации 01.08.2023</div>
+                        <div class="news__card-title">CryptoSafe App</div>
+                        <div class="news__card-text">Сделайте свои криптовалютные операции
+                          надежными и безопасными с приложением CryptoSafe! Защитите свои
+                          активы с помощью
+                          передовых технологий кибербезопасности и погрузитесь в мир
+                          безопасных инвестиций прямо с вашего мобильного устройства.
+                        </div>
+                        <div class="news__card-detail"><a href="">Подробнее</a><svg width="32" height="32"
+                            viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M16 28V28C9.372 28 4 22.628 4 16V16C4 9.372 9.372 4 16 4V4C22.628 4 28 9.372 28 16V16C28 22.628 22.628 28 16 28Z"
+                              stroke="#FFD600" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M16 28V28C9.372 28 4 22.628 4 16V16C4 9.372 9.372 4 16 4V4C22.628 4 28 9.372 28 16V16C28 22.628 22.628 28 16 28Z"
+                              stroke="#FFD600" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M21.3307 15.9987H10.6641" stroke="#FFD600" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M21.3307 15.9987H10.6641" stroke="#FFD600" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M17.3359 12L21.3359 16L17.3359 20" stroke="#FFD600" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M17.3359 12L21.3359 16L17.3359 20" stroke="#FFD600" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <div class="spacer"></div>
-
   <section>
 
     <div class="container">
@@ -764,6 +1699,7 @@
     </div>
   </section>
 
+
   <div class="spacer"></div>
 
 
@@ -806,8 +1742,22 @@
     <div class="spacer"></div>
   </footer>
 
+  <script>
+    let lang = document.querySelectorAll('.main-navbar__lang');
+    let langClose = document.querySelectorAll('.lang__close');
+    let langPop = document.querySelectorAll('.main-navbar__lang-pop');
 
+    for (let i = 0; i < lang.length; i++) {
+      lang[i].addEventListener('click', function () {
+        lang[i].classList.toggle('active');
+        langClose[i].classList.toggle('active');
+        langPop[i].classList.toggle('active');
+      })
 
+    }
+
+  </script>
+  <script src="js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
@@ -815,9 +1765,199 @@
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"
     integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 
+
   <!------------- Menu ------------>
   <script src="js/menu.js"></script>
   <!------------- Menu  ------------>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+
+  </script>
+
+  <script>
+    // const roudMapTitle = document.querySelectorAll('.roudmap__head-point');
+    // const swiper4 = new Swiper('.swiper4', {
+    //   initialSlide: 1,
+    //   slidesPerView: 1,
+    //   spaceBetween: 20,
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //   },
+    // });
+
+    // let activeSlideIndex = swiper4.activeIndex;
+
+    // function updateRoudMapTitles() {
+    //   roudMapTitle.forEach((point, index) => {
+    //     if (index === activeSlideIndex) {
+    //       point.classList.add("active");
+    //     } else {
+    //       point.classList.remove("active");
+    //     }
+    //   });
+    // }
+
+    // roudMapTitle.forEach((point, index) => {
+    //   point.addEventListener('click', () => {
+    //     activeSlideIndex = index;
+    //     updateRoudMapTitles();
+
+    //     swiper4.slideTo(index, 500, false);
+    //   });
+    // });
+
+    // swiper4.on('slideChange', function () {
+    //   activeSlideIndex = swiper4.activeIndex;
+    //   updateRoudMapTitles();
+    // });
+  </script>
+  <script>
+    const swiper5 = new Swiper('.swiper5', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    const swiper6 = new Swiper('.swiper6', {
+      initialSlide: 1,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+    });
+    const swiper7 = new Swiper('.swiper7', {
+      initialSlide: 1,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+    const swiper8 = new Swiper('.swiper8', {
+      initialSlide: 1,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+    function setupRoudMapHeadSlider() {
+      const roudMapHead = document.querySelectorAll('.roudmap__head-point-mobile');
+      const roudMapSwiper = document.querySelectorAll('.swiper__roudmap-mobile');
+
+      function updateRoudMapTitles() {
+        for (let index = 0; index < roudMapHead.length; index++) {
+          const point = roudMapHead[index];
+          if (point.classList.contains("swiper-slide-active")) {
+            roudMapSwiper[index].classList.add("swiper__roudmap-mobile-active");
+          } else {
+            roudMapSwiper[index].classList.remove("swiper__roudmap-mobile-active");
+          }
+        }
+      }
+
+      swiper5.on('slideChangeTransitionEnd', function () {
+        updateRoudMapTitles();
+      });
+
+      updateRoudMapTitles();
+    }
+
+    function setupRoudMapTitleSlider() {
+      const roudMapTitle = document.querySelectorAll('.roudmap__head-point');
+      const swiper4 = new Swiper('.swiper4', {
+        initialSlide: 1,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+
+      let activeSlideIndex = swiper4.activeIndex;
+
+      function updateRoudMapTitles() {
+        roudMapTitle.forEach((point, index) => {
+          if (index === activeSlideIndex) {
+            point.classList.add("active");
+          } else {
+            point.classList.remove("active");
+          }
+        });
+      }
+
+      roudMapTitle.forEach((point, index) => {
+        point.addEventListener('click', () => {
+          activeSlideIndex = index;
+          updateRoudMapTitles();
+          swiper4.slideTo(index, 500, false);
+        });
+      });
+
+      swiper4.on('slideChange', function () {
+        activeSlideIndex = swiper4.activeIndex;
+        updateRoudMapTitles();
+      });
+    }
+
+    setupRoudMapHeadSlider();
+    setupRoudMapTitleSlider();
+
+  </script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 1.7,
+      spaceBetween: 20,
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+
+  </script>
+  <script>
+    const swiper1 = new Swiper('.swiper1', {
+      // loop: true,
+      slidesPerView: 5,
+
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      breakpoints: {
+
+        1440: {
+          slidesPerView: 5,
+          spaceBetween: 30,
+
+          centeredSlides: true,
+        },
+
+        300: {
+          slidesPerView: "auto",
+          centeredSlides: true,
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+      },
+    });
+
+
+  </script>
 
 
 </body>

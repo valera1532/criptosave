@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site</title>
+
+  <link rel="apple-touch-icon" href="/img/main/logo-head.svg">
+  <link rel="icon" type="img/svg" href="/img/main/logo-head.svg">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://">
+  <meta property="og:title" content="CryptoSafe - Краудфандинг Экосистема нового поколения">
+  <meta property="og:description"
+    content="Доступные инвестиции для всех Вместе с CryptoSafe желанное становится реальным">
+  <meta property="og:image" content="bg_og.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="ui.css">
+  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="css/article.css">
+  <link rel="stylesheet" href="css/article.scss">
+  <link rel="stylesheet" href="about.css">
+
+</head>
+
+<body>
+
+
+  <header>
+    <div class="container mt-4 home-header translucent radius-20">
+      <div class="row justify-content-between align-items-center">
+
+        <div class="col-auto d-xxl-none ps-3">
+          <a id="menu-btn" href="#"><img src="images/menu.svg" alt="" /></a>
+        </div>
+        <div class="col-4 col-xl-3">
+          <a href=""><img class="img-fluid" src="images/logo-cryptosafe-white.svg" alt=""> </a>
+        </div>
+        <div class="col-auto ms-auto me-auto d-none d-xxl-block">
+          <nav id="main-navigation" class="main-navigation mobile-menu-hiden">
+            <ul class="top-menu">
+              <li class=""><a href="#">Home</a></li>
+              <li class="menu-coming-soon current-menu-item ">
+                <a href="#">About</a>
+
+              </li>
+              <li class="menu-coming-soon">
+                <a href="#">Media hub </a>
+                <span>Soon</span>
+              </li>
+              <li class="menu-coming-soon">
+                <a href="category.html">Contact</a>
+
+              </li>
+              <li class="menu-coming">
+                <div class="main-navbar__lang">
+                  <span>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_1101_5831)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M-5.81836 -0.363281H37.818V32.364H-5.81836V-0.363281Z" fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M-5.81836 10.5449H37.818V32.3631H-5.81836V10.5449Z" fill="#0039A6" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M-5.81836 21.4551H37.818V32.3642H-5.81836V21.4551Z" fill="#D52B1E" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1101_5831">
+                          <rect width="43.6364" height="32.7273" fill="white"
+                            transform="translate(-5.81836 -0.363281)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    English
+                  </span>
+
+                  <svg class="lang__close" width="11" height="6" viewBox="0 0 11 6" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.7699 0.21967C10.463 -0.0732233 9.96554 -0.0732234 9.6587 0.21967L5.5 4.18934L1.3413 0.21967C1.03446 -0.0732238 0.536971 -0.0732238 0.230131 0.219669C-0.0767098 0.512563 -0.0767098 0.987436 0.230131 1.28033L4.94442 5.78033C5.25126 6.07322 5.74874 6.07322 6.05558 5.78033L10.7699 1.28033C11.0767 0.987437 11.0767 0.512563 10.7699 0.21967Z"
+                      fill="white" />
+                  </svg>
+                  <div class="main-navbar__lang-pop">
+                    <div class="main-navbar__lang-item">
+                      <img src="img/main/ru.png" alt="">
+                      <span>English</span>
+                    </div>
+                    <div class="main-navbar__lang-item">
+                      <img src="img/main/ru.png" alt="">
+                      <span>English</span>
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <button class="btn btn-secondary btn-styled-wave"><span class="d-flex mx-3 px-5"></span> Enter</button>
+        </div>
+        <div class="col-auto d-lg-none">
+          <a href=""><img src="images/ico-user-login.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Mobile Menu -->
+    <div class="d-block d-xxl-none">
+      <div id="overlay-m" class="overlay-m">
+        <div class="container">
+          <div class="row justify-content-center">
+
+            <div class="col-12 col-md-9">
+              <a id="menu-close" class="menu-close" href=""></a>
+            </div>
+
+            <div class="col-12 col-md-9 mt-5">
+              <nav class="mobile-navigation">
+                <ul class="top-menu">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Media hub</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li class="menu-coming">
+                    <div class="main-navbar__lang">
+                      <span>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1101_5831)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M-5.81836 -0.363281H37.818V32.364H-5.81836V-0.363281Z" fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M-5.81836 10.5449H37.818V32.3631H-5.81836V10.5449Z" fill="#0039A6" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M-5.81836 21.4551H37.818V32.3642H-5.81836V21.4551Z" fill="#D52B1E" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1101_5831">
+                              <rect width="43.6364" height="32.7273" fill="white"
+                                transform="translate(-5.81836 -0.363281)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                        Русский язык
+                      </span>
+
+                      <svg class="lang__close" width="11" height="6" viewBox="0 0 11 6" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.7699 0.21967C10.463 -0.0732233 9.96554 -0.0732234 9.6587 0.21967L5.5 4.18934L1.3413 0.21967C1.03446 -0.0732238 0.536971 -0.0732238 0.230131 0.219669C-0.0767098 0.512563 -0.0767098 0.987436 0.230131 1.28033L4.94442 5.78033C5.25126 6.07322 5.74874 6.07322 6.05558 5.78033L10.7699 1.28033C11.0767 0.987437 11.0767 0.512563 10.7699 0.21967Z"
+                          fill="white" />
+                      </svg>
+                      <div class="main-navbar__lang-pop">
+                        <div class="main-navbar__lang-item">
+                          <img src="img/main/ru.png" alt="">
+                          <span>English</span>
+                        </div>
+                        <div class="main-navbar__lang-item">
+                          <img src="img/main/ru.png" alt="">
+                          <span>English</span>
+                        </div>
+
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="col-12 col-md-9 mt-5">
+              <button class="btn btn-secondary btn-styled-wave"><span class="d-flex mx-3 px-5"></span> Enter</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="mobile-menu-creative-text">
+          <img src="images/logo-cryptosafe-white.svg" width="170" alt="">
+        </div>
+
+      </div>
+    </div>
+    <!-- Mobile Menu End -->
+
+
+  </header>
+  <section class="contact">
+    <div class="contact__fone">
+      <img class="desctop" src="/img/main/contact__fone.png" alt="">
+      <img class="mobile" src="/img/main/contact__fone-mob.png" alt="">
+    </div>
+    <div class="container">
+      <div class="contact__block">
+        <div class="contact__left">
+          <div class="contact__title">Contacts</div>
+          <div class="contact__subtitle">Contact CryptoSafe: Contact Information and Location Map for Easy and
+            Convenient Contact Us.</div>
+        </div>
+        <div class="contact__right">
+          <div class="contact__right-content">
+            <div class="contact__office">
+              <div class="contact__office-left">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16 19C16.5523 19 17 18.5523 17 18C17 17.4477 16.5523 17 16 17C15.4477 17 15 17.4477 15 18C15 18.5523 15.4477 19 16 19Z"
+                    fill="#FFD600" />
+                  <path
+                    d="M29 15.33L19 18.19C19 18.9857 18.6839 19.7487 18.1213 20.3113C17.5587 20.8739 16.7956 21.19 16 21.19C15.2044 21.19 14.4413 20.8739 13.8787 20.3113C13.3161 19.7487 13 18.9857 13 18.19L3 15.33L1 14.75V26C1 26.7956 1.31607 27.5587 1.87868 28.1213C2.44129 28.6839 3.20435 29 4 29H28C28.7956 29 29.5587 28.6839 30.1213 28.1213C30.6839 27.5587 31 26.7956 31 26V14.75L29 15.33Z"
+                    fill="#FFD600" />
+                  <path
+                    d="M28 7H22V6C22 5.20435 21.6839 4.44129 21.1213 3.87868C20.5587 3.31607 19.7956 3 19 3H13C12.2044 3 11.4413 3.31607 10.8787 3.87868C10.3161 4.44129 10 5.20435 10 6V7H4C3.20435 7 2.44129 7.31607 1.87868 7.87868C1.31607 8.44129 1 9.20435 1 10V12.67L3 13.25L13.56 16.25C13.8376 15.8619 14.2038 15.5456 14.6282 15.3274C15.0525 15.1092 15.5228 14.9954 16 14.9954C16.4772 14.9954 16.9475 15.1092 17.3718 15.3274C17.7962 15.5456 18.1624 15.8619 18.44 16.25L29 13.25L31 12.67V10C31 9.20435 30.6839 8.44129 30.1213 7.87868C29.5587 7.31607 28.7956 7 28 7ZM12 6C12 5.73478 12.1054 5.48043 12.2929 5.29289C12.4804 5.10536 12.7348 5 13 5H19C19.2652 5 19.5196 5.10536 19.7071 5.29289C19.8946 5.48043 20 5.73478 20 6V7H12V6Z"
+                    fill="#FFD600" />
+                </svg>
+                <span>Office</span>
+              </div>
+              <div class="contact__office-right">
+                <div class="contact__office-title">CRYPTOSAFE GROUP LTD</div>
+                <div class="contact__point column">
+                  <div class="contact__point-title">Legal address:</div>
+                  <div class="contact__point-subtitle">86-88 Eaton Place, London, England, SW1X 8LN</div>
+                </div>
+                <div class="contact__point">
+                  <div class="contact__point-title">Company Number:</div>
+                  <span class="contact__point-subtitle">15066469</span>
+                </div>
+
+              </div>
+            </div>
+            <div class="contact__main">
+              <div class="contact__office-left">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2364_80197)">
+                    <path
+                      d="M2.52632 5.64258H29.4737C30.6865 5.64587 31.7273 6.50672 31.9579 7.69718L16 16.5899L0.0421053 7.69718C0.272697 6.50672 1.31349 5.64587 2.52632 5.64258ZM29.4737 26.409H2.52632C1.13289 26.4048 0.00394737 25.2761 0 23.8827V9.60047L15.5875 18.2909C15.7138 18.3603 15.8556 18.3982 16 18.4005C16.1451 18.4021 16.2875 18.3643 16.4125 18.2909L32 9.60047V23.8827C31.999 25.2774 30.8684 26.4077 29.4737 26.409Z"
+                      fill="#FFD600" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2364_80197">
+                      <rect width="32" height="32" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+                <span>Contacts</span>
+              </div>
+              <div class="contact__office-right">
+                <div class="contact__point">
+                  <div class="contact__point-title">Support:</div>
+                  <div class="contact__point-subtitle">support@cryptosafe.ai</div>
+                </div>
+                <div class="contact__point">
+                  <div class="contact__point-title">Co-operation:</div>
+                  <span class="contact__point-subtitle">business@cryptosafe.ai</span>
+                </div>
+                <div class="contact__social">
+                  <a href=""><img src="/images/ico-social-facebook.svg" alt=""></a>
+                  <a href=""><img src="/images/ico-social-instagram.svg" alt=""></a>
+                  <a href=""><img src="/images/ico-social-linkedin.svg" alt=""></a>
+                  <a href=""><img src="/images/ico-social-telegram.svg" alt=""></a>
+                  <a href=""><img src="/images/ico-social-twitter.svg" alt=""></a>
+                  <a href=""><img src="/images/ico-social-youtube.svg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <div class="circle-decor">
+
+  </div>
+  <section class="contact__map">
+    <img class="desctop" src="/img/main/contact__map.png" alt="">
+    <img class="mobile" src="/img/main/contact__map-mob.png" alt="">
+  </section>
+
+
+
+
+
+
+
+  <footer class="footer">
+    <div class="spacer"></div>
+
+    <div class="footer-content">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h2 class="h4 color-secondary">Become part of our community</h2>
+            <h3 class="h6">CryptoSafe on social networks.
+              <br>
+              Subscribe to stay up to date with the latest news
+            </h3>
+          </div>
+          <div class="col-12 mt-4 mb-5 text-center">
+            <a href=""><img class="m-2" src="images/ico-social-facebook.svg" alt=""></a>
+            <a href=""><img class="m-2" src="images/ico-social-instagram.svg" alt=""></a>
+            <a href=""><img class="m-2" src="images/ico-social-telegram.svg" alt=""></a>
+            <a href=""><img class="m-2" src="images/ico-social-linkedin.svg" alt=""></a>
+            <a href=""><img class="m-2" src="images/ico-social-youtube.svg" alt=""></a>
+            <a href=""><img class="m-2" src="images/ico-social-twitter.svg" alt=""></a>
+          </div>
+          <div class="col-12 col-lg-6 d-lg-flex justify-content-between text-center">
+            <a href="">contact-us@cryptosafe.io</a>
+            <p>© 2023 CryptoSafe Inc. All rights reserved</p>
+          </div>
+          <div class="col-12 text-center mt-4">
+            <p>The activities of CryptoSafe are conducted within the obtained permits and are in full compliance with
+              the obtained certificates.</p>
+          </div>
+          <div class="col-12 text-center mt-2">
+            <img class="img-fluid" src="images/footer-logos.png" width="430" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+  </footer>
+
+  <script>
+    let lang = document.querySelectorAll('.main-navbar__lang');
+    let langClose = document.querySelectorAll('.lang__close');
+    let langPop = document.querySelectorAll('.main-navbar__lang-pop');
+
+    for (let i = 0; i < lang.length; i++) {
+      lang[i].addEventListener('click', function () {
+        lang[i].classList.toggle('active');
+        langClose[i].classList.toggle('active');
+        langPop[i].classList.toggle('active');
+      })
+
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+  <!------------- Menu ------------>
+  <script src="js/menu.js"></script>
+  <!------------- Menu  ------------>
+
+
+</body>
+
+</html>
