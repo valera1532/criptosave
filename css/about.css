@@ -1341,8 +1341,15 @@ body {
 }
 
 .reg__crown {
+    margin-left: -210px;
     background: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0.00) 6.45%), linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.00) 12.25%), url(<path-to-image>), lightgray 50% / cover no-repeat;
     mix-blend-mode: lighten;
+}
+
+@media (max-width:767px) {
+    .reg__crown {
+        margin: 0 auto;
+    }
 }
 
 .reg__main {
@@ -2218,11 +2225,22 @@ body {
 
 #acab {
     /* position: fixed; */
-    transition: transform 0.1s;
+    position: relative;
+    transition: transform 0.05s;
     cursor: none;
+    z-index: 2222222222;
+}
+
+#muteButton {
+    position: relative;
+    transition: transform 0.05s;
+    cursor: none;
+    z-index: 2222222222;
 }
 
 .video {
+    position: relative !important;
+    z-index: 999999;
     cursor: none !important;
 }
 
@@ -2261,7 +2279,7 @@ body {
 }
 
 .what {
-    margin-top: 240px;
+    padding-top: 240px;
 }
 
 
@@ -2275,7 +2293,7 @@ body {
 
 @media (max-width: 1600px) {
     .what {
-        margin-top: 40px;
+        padding-top: 40px;
     }
 
     .about__robot {
@@ -2534,7 +2552,7 @@ body {
     }
 
     .what {
-        margin-top: 0px;
+        padding-top: 0;
     }
 
     .hero-content__pb {
@@ -2681,7 +2699,17 @@ body {
 .video video {
     position: relative;
     width: 100vw;
-    z-index: -1;
+    z-index: 11111;
+}
+
+#muteButton {
+    z-index: 11111111;
+}
+
+.video source {
+    position: relative;
+    width: 100vw;
+    z-index: 11111;
 }
 
 .video__pulse1 {
@@ -2796,19 +2824,22 @@ body {
     }
 }
 
+
 .video {
     overflow: hidden;
-
-}
-
-.video {
-
+    position: absolute;
+    z-index: 11111;
 
     mix-blend-mode: lighten;
     margin-top: 50px;
 }
 
+.bgvideo {
 
+    z-index: 11111;
+    width: 100%;
+    height: 100%;
+}
 
 @media (max-width:767px) {
     .video video {
@@ -2819,7 +2850,6 @@ body {
 
     .bgvideo {
 
-        z-index: -1;
         width: 100%;
         height: 100%;
     }
@@ -3003,4 +3033,138 @@ a {
 
 .footer-content a:hover {
     color: #FFD600;
+}
+
+/* CSS анимации для кругов */
+/* CSS анимации для кругов */
+@keyframes circleAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+
+    }
+}
+
+/* Применение зацикленной анимации к кругам */
+.circle-1 {
+    animation: circleAnimation 2s ease-in-out 0s infinite;
+}
+
+.circle-2 {
+    animation: circleAnimation 2s ease-in-out 0.4s infinite;
+}
+
+.circle-3 {
+    animation: circleAnimation 2s ease-in-out 0.8s infinite;
+}
+
+.circle-4 {
+    animation: circleAnimation 2s ease-in-out 1.2s infinite;
+}
+
+.circle-5 {
+    animation: circleAnimation 2s ease-in-out 1.6s infinite;
+}
+
+.circle-6 {
+    animation: circleAnimation 2s ease-in-out 2s infinite;
+}
+
+.what__title {
+    text-transform: uppercase;
+}
+
+.why__title {
+    text-transform: uppercase;
+}
+
+.why__subtitle {
+    text-transform: uppercase;
+}
+
+.section-title {
+    text-transform: uppercase;
+}
+
+.team__title {
+    text-transform: uppercase;
+}
+
+.media__title {
+    text-transform: uppercase;
+}
+
+.section-subtitle {
+    text-transform: uppercase;
+}
+
+.roudmap__title {
+    text-transform: uppercase;
+}
+
+.video:hover #magicMouseCursor {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.video:hover #magicPointer {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+/* .opas {
+    opacity: 1;
+}
+
+.opas{
+    opacity: 1;
+} */
+
+.opas {
+    display: none !important;
+}
+
+.token__button a {
+    max-width: 440px;
+}
+
+.what__main {
+    position: relative;
+    padding-left: 50px;
+}
+
+.what__main::before {
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    border-radius: 5px;
+    background: var(--Yeelow, linear-gradient(0deg, #FFD600 0%, #FFD600 100%), #FFD600);
+    content: "";
+    top: 0;
+    left: 0;
+}
+
+.what__main::after {
+    position: absolute;
+    height: 100%;
+    width: 7px;
+    border-radius: 50px;
+    background: var(--Yeelow, linear-gradient(0deg, #FFD600 0%, #FFD600 100%), #FFD600);
+    filter: blur(3px);
+    content: "";
+    top: 0;
+    left: 0;
+    filter: blur(3px);
+}
+
+.scale {
+    height: 15px !important;
+    width: 15px !important;
 }
