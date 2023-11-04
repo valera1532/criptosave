@@ -27,10 +27,40 @@
   <link rel="stylesheet" href="css/article.css">
   <link rel="stylesheet" href="css/article.scss">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/about.css">
 </head>
 
 <body>
 
+  <style>
+    /* #acab1 {
+      position: fixed;
+      z-index: 222222;
+      transition: transform 0.23s;
+      pointer-events: none;
+    } */
+
+    /* body {
+      cursor: none !important;
+    } */
+
+    .media__slide {
+      width: 494px !important;
+
+    }
+
+    .news__card-left {
+      max-width: inherit;
+    }
+
+    .news__card-text {
+      max-width: 50%;
+    }
+
+    .media__block {
+      align-items: inherit;
+    }
+  </style>
   <header>
     <div class="container mt-4 home-header translucent radius-20">
       <div class="row justify-content-between align-items-center">
@@ -38,7 +68,7 @@
         <div class="col-auto d-xxl-none ps-3">
           <a id="menu-btn" href="#"><img src="images/menu.svg" alt="" /></a>
         </div>
-        <div class="col-4 col-xl-3">
+        <div class="col-4 col-xl-3 header__logo">
           <a href=""><img class="img-fluid" src="images/logo-cryptosafe-white.svg" alt=""> </a>
         </div>
         <div class="col-auto ms-auto me-auto d-none d-xxl-block">
@@ -102,7 +132,8 @@
           </nav>
         </div>
         <div class="col-auto d-none d-lg-block">
-          <button class="btn btn-secondary btn-styled-wave"><span class="d-flex mx-3 px-5"></span> Войти</button>
+          <button class="btn btn-secondary btn-styled-wave header__btn"><span class="d-flex mx-3 px-5"></span>
+            Войти</button>
         </div>
         <div class="col-auto d-lg-none">
           <a href=""><img src="images/ico-user-login.svg" alt=""></a>
@@ -173,8 +204,9 @@
               </nav>
             </div>
 
-            <div class="col-12 col-md-9 mt-5">
+            <div class="col-12 col-md-9 mt-5 ">
               <button class="btn btn-secondary btn-styled-wave"><span class="d-flex mx-3 px-5"></span> Войти</button>
+
             </div>
 
           </div>
@@ -192,19 +224,75 @@
   </header>
 
   <section class="hero circle-blur-hero hero-bg-img">
-
+    <div class="hero__fone">
+      <img src="/img/about/first__fone.png" alt="">
+    </div>
+    <!-- <div class="hero__video">
+      <video autoplay muted loop class="bgvideo " id="">
+        <source src="/video/first.mp4" type="video/mp4">
+        </source>
+      </video>
+    </div> -->
+    <img src="" alt="">
     <div class="container hero-content px-4">
       <div class="row">
-        <div class="col-md-9">
+        <div class="hero__block">
           <h2 class="hero-title">Краудфандинг Экосистема нового поколения</h2>
           <h3 class="mt-4 hero-subtitle">
             Доступные инвестиции для всех <br>
             Вместе с CryptoSafe желанное становится реальным
           </h3>
-          <button class="mt-5 btn btn-secondary btn-styled-wave btn-with-ico">Начать инвестировать <img
-              src="images/ico-button-arrow-r-colored.svg" alt=""></button>
+          <div class="hero__btns">
+            <button class="hero__btn-start">
+              <svg width="38" height="17" viewBox="0 0 38 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.8" d="M37 1L29 8.5L37 16" stroke="#222222" />
+                <path opacity="0.6" d="M24 3L18 8.5L24 14" stroke="#222222" />
+                <path opacity="0.4" d="M13 5L9 8.5L13 12" stroke="#222222" />
+                <path opacity="0.2" d="M4 5.5L1 8.5L4 11.5" stroke="#222222" />
+              </svg>
 
-          <div class="row mt-5 pt-3">
+              <span>Начать инвестировать</span>
+              <div class="arrow__next">
+                <svg width="38" height="17" viewBox="0 0 38 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.8" d="M1 16L9 8.5L0.999999 1" stroke="#222222" />
+                  <path opacity="0.6" d="M14 14L20 8.5L14 3" stroke="#222222" />
+                  <path opacity="0.4" d="M25 12L29 8.5L25 5" stroke="#222222" />
+                  <path opacity="0.2" d="M34 11.5L37 8.5L34 5.5" stroke="#222222" />
+                </svg>
+              </div>
+
+
+
+            </button>
+            <!-- <button class="mt-5 btn btn-secondary btn-styled-wave btn-with-ico">Начать инвестировать <img
+                src="images/ico-button-arrow-r-colored.svg" alt=""></button> -->
+            <!-- <button class="hero__btn mt-5 btn btn-secondary  btn-with-ico">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21 12V12C21 16.971 16.971 21 12 21V21C7.029 21 3 16.971 3 12V12C3 7.029 7.029 3 12 3V3C16.971 3 21 7.029 21 12Z"
+                  stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M10.941 9.058L14.823 11.354C15.314 11.644 15.314 12.355 14.823 12.645L10.941 14.941C10.441 15.237 9.809 14.876 9.809 14.295V9.704C9.809 9.123 10.441 8.762 10.941 9.058V9.058Z"
+                  stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span>Как начать?</span>
+            </button> -->
+          </div>
+          <svg class="hero__scroll" width="53" height="73" viewBox="0 0 53 73" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle opacity="0.2" cx="26.5" cy="1" r="1" fill="white" />
+            <circle opacity="0.4" cx="26.5" cy="7.5" r="1.5" fill="white" />
+            <circle opacity="0.6" cx="26.5" cy="15" r="2" fill="white" />
+            <circle opacity="0.7" cx="26.5" cy="23.5" r="2.5" fill="white" />
+            <circle opacity="0.8" cx="26.5" cy="33" r="3" fill="white" />
+            <circle opacity="0.9" cx="26.5" cy="43.5" r="3.5" fill="white" />
+            <path
+              d="M4.85365 66.182C3.93898 66.182 3.15498 65.972 2.50165 65.552C1.85765 65.1227 1.40498 64.53 1.14365 63.774L2.26365 63.13C2.63698 64.3153 3.50965 64.908 4.88165 64.908C5.54432 64.908 6.05298 64.7727 6.40765 64.502C6.77165 64.2313 6.95365 63.8627 6.95365 63.396C6.95365 62.9387 6.77632 62.5887 6.42165 62.346C6.10432 62.1313 5.51165 61.884 4.64365 61.604L3.70565 61.296C3.50032 61.212 3.22965 61.0907 2.89365 60.932C2.56698 60.764 2.32898 60.596 2.17965 60.428C1.76898 59.98 1.56365 59.434 1.56365 58.79C1.56365 57.9313 1.86232 57.2593 2.45965 56.774C3.05698 56.27 3.78498 56.018 4.64365 56.018C5.40898 56.018 6.08098 56.2093 6.65965 56.592C7.23832 56.9747 7.67232 57.4973 7.96165 58.16L6.86965 58.79C6.44965 57.782 5.70765 57.278 4.64365 57.278C4.11165 57.278 3.68232 57.4087 3.35565 57.67C3.02898 57.9313 2.86565 58.286 2.86565 58.734C2.86565 59.1633 3.01965 59.49 3.32765 59.714C3.64498 59.9473 4.17698 60.1807 4.92365 60.414L5.49765 60.596C5.81498 60.7173 5.98765 60.7827 6.01565 60.792C6.31432 60.904 6.64098 61.058 6.99565 61.254C7.24765 61.394 7.49965 61.6087 7.75165 61.898C8.07832 62.2247 8.24165 62.7147 8.24165 63.368C8.24165 64.2267 7.92898 64.9127 7.30365 65.426C6.66898 65.93 5.85232 66.182 4.85365 66.182ZM14.321 66.182C12.8277 66.182 11.6004 65.692 10.639 64.712C9.67771 63.7413 9.19704 62.5373 9.19704 61.1C9.19704 59.6627 9.67771 58.4587 10.639 57.488C11.6004 56.508 12.8277 56.018 14.321 56.018C15.2077 56.018 16.029 56.2327 16.785 56.662C17.541 57.0913 18.129 57.67 18.549 58.398L17.415 59.056C17.135 58.5147 16.715 58.0853 16.155 57.768C15.6044 57.4413 14.993 57.278 14.321 57.278C13.1824 57.278 12.2584 57.642 11.549 58.37C10.8397 59.0887 10.485 59.9987 10.485 61.1C10.485 62.192 10.8397 63.0973 11.549 63.816C12.2584 64.544 13.1824 64.908 14.321 64.908C14.993 64.908 15.6044 64.7493 16.155 64.432C16.715 64.1053 17.135 63.676 17.415 63.144L18.549 63.788C18.1384 64.516 17.555 65.0993 16.799 65.538C16.0524 65.9673 15.2264 66.182 14.321 66.182ZM27.2756 66H25.8336L23.6356 62.248H21.3256V66H20.0236V56.2H23.9436C24.7836 56.2 25.5023 56.4987 26.0996 57.096C26.697 57.684 26.9956 58.398 26.9956 59.238C26.9956 59.8727 26.8043 60.4513 26.4216 60.974C26.0296 61.506 25.5443 61.8747 24.9656 62.08L27.2756 66ZM23.9436 57.418H21.3256V61.072H23.9436C24.429 61.072 24.8396 60.8947 25.1756 60.54C25.521 60.1853 25.6936 59.7513 25.6936 59.238C25.6936 58.7247 25.521 58.2953 25.1756 57.95C24.8396 57.5953 24.429 57.418 23.9436 57.418ZM28.0232 61.1C28.0232 59.6813 28.5132 58.482 29.4932 57.502C30.4732 56.5127 31.6725 56.018 33.0912 56.018C34.5099 56.018 35.7092 56.5127 36.6892 57.502C37.6785 58.482 38.1732 59.6813 38.1732 61.1C38.1732 62.5093 37.6785 63.7087 36.6892 64.698C35.7092 65.6873 34.5099 66.182 33.0912 66.182C31.6725 66.182 30.4732 65.6873 29.4932 64.698C28.5132 63.6993 28.0232 62.5 28.0232 61.1ZM36.8712 61.1C36.8712 60.0173 36.5072 59.112 35.7792 58.384C35.0699 57.6467 34.1739 57.278 33.0912 57.278C32.0179 57.278 31.1172 57.6467 30.3892 58.384C29.6705 59.1213 29.3112 60.0267 29.3112 61.1C29.3112 62.164 29.6705 63.0693 30.3892 63.816C31.1172 64.544 32.0179 64.908 33.0912 64.908C34.1739 64.908 35.0699 64.544 35.7792 63.816C36.5072 63.0693 36.8712 62.164 36.8712 61.1ZM41.0405 56.2V64.768H45.2685V66H39.7385V56.2H41.0405ZM47.8764 56.2V64.768H52.1044V66H46.5744V56.2H47.8764Z"
+              fill="white" />
+          </svg>
+
+
+          <!-- <div class="row mt-5 pt-3">
             <div class="col m-2 translucent radius-20 hero-facts">
               <p class="hero-facts__title">Инвесторов и партнеров</b>
               <p class="hero-facts__val ">2,000+</p>
@@ -217,7 +305,7 @@
               <p class="hero-facts__title">Средний доход партнера</p>
               <p class="hero-facts__val ">$10,200</p>
             </div>
-          </div>
+          </div> -->
         </div>
 
       </div>
@@ -225,11 +313,250 @@
 
   </section>
 
-  <div class="spacer"></div>
+
 
   <div class="circle-blur-r"></div>
+  <div class="what">
+    <div class="what__fone">
+      <img src="./img/main/robot.png" alt="">
+    </div>
+    <div class="container">
+      <div class="what__block">
+        <div class="what__main">
+          <div class="what__title">Что такое CryptoSafe?</div>
 
-  <section>
+          <div class="what__info">
+            Cryptosafe - это инновационная краудфандинговая экосистема, объединяющая инвесторов, предпринимателей и
+            трейдеров в мире
+            криптовалют и блокчейн. <br> <br>
+            Продукты экосистемы предоставляют уникальные возможности для инвестирования в перспективные проекты,
+            следования за
+            сделками успешных трейдеров, участия в развитии блокчейн-сетей и многое другое.
+          </div>
+        </div>
+        <div class="what__cards">
+          <div class="what__card">
+            <div class="what__card-title">
+              <img src="/img/main/what__icon1.png" alt="">
+              <span>Станьте Инвестором</span>
+            </div>
+            <div class="what__card-info">
+              Создайте депозит и наслаждайтесь доходом от 20% до 25% в месяц!
+            </div>
+          </div>
+          <div class="what__card">
+            <div class="what__card-title">
+              <img src="/img/main/what__icon2.svg" alt="">
+              <span>Зарабатывайте Пассивный Доход</span>
+            </div>
+            <div class="what__card-info">
+              Алгоритмы CS Optimum работают на вас круглосуточно
+            </div>
+          </div>
+          <div class="what__card">
+            <div class="what__card-title">
+              <img src="/img/main/what__icon3.svg" alt="">
+              <span>Наслаждайтесь Экосистемой</span>
+            </div>
+            <div class="what__card-info">
+              Лучшие блокчейн продукты - созданные командой
+              мирового уровня
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div id="acab">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Anarchist_black_cat.svg/150px-Anarchist_black_cat.svg.png">
+    </img>
+  </div> -->
+
+
+
+  <section class="video">
+    <div id="acab" class="video__pulse">
+      <div class="pulse video__pulse1 mini digital__card-ripple ripple__bundle11">
+        <div>
+          <button id="muteButton">включить звук</button>
+        </div>
+
+      </div>
+    </div>
+    <div class="video__text">
+      <div class="video__title">Устали от сложности инвестиций в криптовалюты?</div>
+      <div class="video__subtitle">Зарабатывайте до 25% ежемесячно с помощью CryptoSafe, всего в несколько кликов!</div>
+    </div>
+    <video autoplay muted loop class="bgvideo" id="bgvideo">
+      <source src="/video/video__p.mp4" type="video/mp4">
+      </source>
+    </video>
+  </section>
+
+  <div class="spacer"></div>
+  <section class="eco">
+    <div class="eco__block">
+      <div class="container">
+        <div class="eco__content">
+          <div class="eco__title">
+            Экосистема продуктов CryptoSafe
+          </div>
+          <div class="eco__cards">
+            <div class="eco__card">
+              <div class="eco__card-head">
+                <img src="./img/main/eco-icon1.svg" alt="">
+                <div class="eco__card-title">CS Optimum</div>
+              </div>
+              <div class="eco__card-info">
+                Инвестиционный продукт генерирующий доходность от 20% до 25% в месяц, обеспеченный деятельностью
+                компании на рынке
+                криптовалют.
+              </div>
+            </div>
+            <div class="eco__card">
+              <div class="eco__card-head">
+                <img src="./img/main/eco-icon2.svg" alt="">
+                <div class="eco__card-title">CryptoSafe App</div>
+              </div>
+              <div class="eco__card-info">
+                краудфандинг приложения обьеденяющее
+                в себе возможности инвестировать в самые перспективные проекты, повторять за сделками опытных трейдеров,
+                подключиться к
+                поставщикам нод, и многое другое!
+              </div>
+            </div>
+            <div class="eco__card">
+              <div class="eco__card-head">
+                <img src="./img/main/eco__card3.svg" alt="">
+                <div class="eco__card-title">CryptoSafe HEX</div>
+              </div>
+              <div class="eco__card-info">
+                гибридная криптовалютная биржа предоставляющая возможность пользователям торговать централизировано,
+                децентрализировано,
+                спот парами, фьючерсными
+                конрактами, и многим другим!
+              </div>
+            </div>
+            <div class="eco__card">
+              <div class="eco__card-head">
+                <img src="./img/main/eco__card4.svg" alt="">
+                <div class="eco__card-title">CS Pay</div>
+              </div>
+              <div class="eco__card-info">
+                криптовалютный процессинг позволяющий легко принимать оплату за любые продукты и сервисы с помощью
+                криптовалют.
+              </div>
+            </div>
+            <div class="eco__card">
+              <div class="eco__card-head">
+                <img src="./img/main/eco__card5.svg" alt="">
+                <div class="eco__card-title">CS Vision</div>
+              </div>
+              <div class="eco__card-info">
+                аналитическая платформа предоставляющая передовую, уникальную аналитическую базу для принятия решений о
+                инвестициях.
+              </div>
+            </div>
+            <div class="eco__card">
+              <div class="eco__card-head">
+                <img src="./img/main/eco__card6.svg" alt="">
+                <div class="eco__card-title">CS Leads</div>
+              </div>
+              <div class="eco__card-info">
+                CPA сеть нового-поколения для привлечение трафика в криптовалютных проектов полностью построенная на
+                смарт контрактах
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="eco__swiper">
+          <div class="swiper9">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide eco__swiper-slide">
+                <div class="eco__card">
+                  <div class="eco__card-head">
+                    <img src="./img/main/eco-icon1.svg" alt="">
+                    <div class="eco__card-title">CS Optimum</div>
+                  </div>
+                  <div class="eco__card-info">
+                    Инвестиционный продукт генерирующий доходность от 20% до 25% в месяц, обеспеченный деятельностью
+                    компании на рынке
+                    криптовалют.
+                  </div>
+                </div>
+                <div class="eco__card">
+                  <div class="eco__card-head">
+                    <img src="./img/main/eco-icon2.svg" alt="">
+                    <div class="eco__card-title">CryptoSafe App</div>
+                  </div>
+                  <div class="eco__card-info">
+                    краудфандинг приложения обьеденяющее
+                    в себе возможности инвестировать в самые перспективные проекты, повторять за сделками опытных
+                    трейдеров,
+                    подключиться к
+                    поставщикам нод, и многое другое!
+                  </div>
+                </div>
+                <div class="eco__card">
+                  <div class="eco__card-head">
+                    <img src="./img/main/eco__card3.svg" alt="">
+                    <div class="eco__card-title">CryptoSafe HEX</div>
+                  </div>
+                  <div class="eco__card-info">
+                    гибридная криптовалютная биржа предоставляющая возможность пользователям торговать централизировано,
+                    децентрализировано,
+                    спот парами, фьючерсными
+                    конрактами, и многим другим!
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide eco__swiper-slide">
+                <div class="eco__card">
+                  <div class="eco__card-head">
+                    <img src="./img/main/eco__card4.svg" alt="">
+                    <div class="eco__card-title">CS Pay</div>
+                  </div>
+                  <div class="eco__card-info">
+                    криптовалютный процессинг позволяющий легко принимать оплату за любые продукты и сервисы с помощью
+                    криптовалют.
+                  </div>
+                </div>
+                <div class="eco__card">
+                  <div class="eco__card-head">
+                    <img src="./img/main/eco__card5.svg" alt="">
+                    <div class="eco__card-title">CS Vision</div>
+                  </div>
+                  <div class="eco__card-info">
+                    аналитическая платформа предоставляющая передовую, уникальную аналитическую базу для принятия
+                    решений о
+                    инвестициях.
+                  </div>
+                </div>
+                <div class="eco__card">
+                  <div class="eco__card-head">
+                    <img src="./img/main/eco__card6.svg" alt="">
+                    <div class="eco__card-title">CS Leads</div>
+                  </div>
+                  <div class="eco__card-info">
+                    CPA сеть нового-поколения для привлечение трафика в криптовалютных проектов полностью построенная на
+                    смарт контрактах
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="swiper-pagination eco__swiper-pag"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <div class="spacer"></div>
+  <!-- <section>
     <div class="container">
       <div class="row">
         <div class="col-lg-5">
@@ -280,11 +607,10 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <div class="spacer"></div>
 
-  <section id="idea">
+  <!-- <section id="idea">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -328,27 +654,85 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <div class="spacer"></div>
+
 
   <div class="circle-blur-l"></div>
 
   <section id="why">
     <div class="container">
+
       <div class="row justify-content-between align-items-end">
         <div class="col">
-          <h3 class="section-subtitle">Почему партнеры выбирают</h3>
-          <h2 class="section-title mb-4">CryptoSafe</h2>
+          <h3 class="section-subtitle why__title">Почему партнеры выбирают</h3>
+          <h2 class="section-title mb-4 why__subtitle">CryptoSafe</h2>
         </div>
-        <div class="col-auto mb-5">
-          <button class="mt-5 btn btn-secondary btn-styled-wave btn-with-ico">Скачать презентацию<img
+        <div class="col-auto mb-5 why__btn">
+          <button class="mt-5 btn btn-secondary btn-styled-wave btn-with-ico why__btn-main">Скачать презентацию<img
               src="images/ico-button-arrow-r-colored.svg" alt=""></button>
         </div>
+        <div class="why__mobile">
+          <div class="why__swiper">
+            <div class="swiper10">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide why__slide ">
+                  <div class="why-item why-1">
+                    <div class="why-item__header">
+                      <img class="img-fluid" src="images/why-1.svg" alt="">
+                      <h5 class="why-item__title">Отсутсвие Заморозки</h5>
+                    </div>
+                    <p>Вы можете разорвать депозит в любой момент, наслаждайтесь свободой своего капитала.</p>
+                  </div>
+                  <div class="why-item why-item-bg why-2" style="background-image: url(images/why-2.jpg);"> </div>
+                  <div class="why-item why-3">
+                    <div class="why-item__header">
+                      <img src="images/why-3.svg" alt="">
+                      <h5 class="why-item__title">Круглосуточная Поддержка</h5>
+                    </div>
+                    <p>Команда поддержки CryptoSafe доступна 24/7 и мгновенно ответит на любой вопрос</p>
+                  </div>
+                  <div class="why-item why-item-bg why-4" style="background-image: url(images/why-4.jpg);"> </div>
+                </div>
+                <div class="swiper-slide why__slide">
+                  <div class="why-item why-5">
+                    <div class="why-item__header">
+                      <img src="images/why-5.svg" alt="">
+                      <h5 class="why-item__title">Доходность выше рынка</h5>
+                    </div>
+                    <p>Наши партнеры ежемесячно зарабатывают от 20% до 25% на вложенный капитал.</p>
+                  </div>
+                  <div class="why-item why-item-bg why-6"
+                    style="background-image: url(images/why-6.jpg); background-position: top;">
+                  </div>
+                  <div class="why-item why-7">
+                    <div class="why-item__header">
+                      <img src="images/why-7.svg" alt="">
+                      <h5 class="why-item__title">Безопасность</h5>
+                    </div>
+                    <p>CryptoSafe зарегистрирована в Великобритании, уставной капитал компании составляет 1миллион
+                      долларов
+                      США.</p>
+                  </div>
+                  <div class="why-item why-8">
+                    <div class="why-item__header">
+                      <img src="images/why-8.svg" alt="">
+                      <h5 class="why-item__title">Прозрачность</h5>
+                    </div>
+                    <p>Наблюдайте как работает ваш капитал в реальном времени из вашего личного кабинета.</p>
+                  </div>
 
+                </div>
+
+              </div>
+
+              <div class="swiper-pagination eco__swiper-pag"></div>
+            </div>
+          </div>
+        </div>
         <div class="col-12">
 
-          <div class="why">
+          <div class="why why__desctop">
             <div class="why-item why-1">
               <div class="why-item__header">
                 <img class="img-fluid" src="images/why-1.svg" alt="">
@@ -356,7 +740,7 @@
               </div>
               <p>Вы можете разорвать депозит в любой момент, наслаждайтесь свободой своего капитала.</p>
             </div>
-            <div class="why-item why-item-bg why-2" style="background-image: url(images/why-2.jpg);"> 2</div>
+            <div class="why-item why-item-bg why-2" style="background-image: url(images/why-2.jpg);"> </div>
             <div class="why-item why-3">
               <div class="why-item__header">
                 <img src="images/why-3.svg" alt="">
@@ -364,7 +748,7 @@
               </div>
               <p>Команда поддержки CryptoSafe доступна 24/7 и мгновенно ответит на любой вопрос</p>
             </div>
-            <div class="why-item why-item-bg why-4" style="background-image: url(images/why-4.jpg);"> 4</div>
+            <div class="why-item why-item-bg why-4" style="background-image: url(images/why-4.jpg);"> </div>
             <div class="why-item why-5">
               <div class="why-item__header">
                 <img src="images/why-5.svg" alt="">
@@ -373,7 +757,7 @@
               <p>Наши партнеры ежемесячно зарабатывают от 20% до 25% на вложенный капитал.</p>
             </div>
             <div class="why-item why-item-bg why-6"
-              style="background-image: url(images/why-6.jpg); background-position: top;"> 6</div>
+              style="background-image: url(images/why-6.jpg); background-position: top;"> </div>
             <div class="why-item why-7">
               <div class="why-item__header">
                 <img src="images/why-7.svg" alt="">
@@ -401,7 +785,7 @@
 
   <!-- <div class="circle-blur-l"></div> -->
 
-  <section class="position-relative overflow-hidden">
+  <!-- <section class="position-relative overflow-hidden">
     <div class="gradient-line"></div>
     <div class="container">
       <div class="row">
@@ -436,14 +820,20 @@
       <img src="images//Model-Space-Black.png" alt="">
     </div>
     <div class="gradient-line"></div>
-  </section>
+  </section> -->
 
   <div class="spacer"></div>
 
   <section>
-    <div class="container">
+    <div class="video__app">
+      <video autoplay muted loop class="bgvideo " id="">
+        <source src="/video/video__app.MP4" type="video/mp4">
+        </source>
+      </video>
+    </div>
+    <div class="container block__app">
       <div class="row align-items-center">
-        <div class="col-lg-6 pe-lg-5">
+        <div class="col-lg-6 pe-lg-5 full__image">
           <img class="img-fluid img-scale-up img-scale-direction-r-t" src="images/app-screens.png" alt="">
         </div>
         <div class="col-12 col-lg-6">
@@ -485,8 +875,8 @@
                 игроков рынка</p>
             </div>
           </div>
-          <div class="col-12 mt-5">
-            <a class="d-inline-block my-2 me-3" href="#"><img src="images/button-app-store.svg" alt=""></a>
+          <div class="col-12 mt-5 mobile__center">
+            <a class="d-inline-block my-2 me-3 margin-0" href="#"><img src="images/button-app-store.svg" alt=""></a>
             <a class="d-inline-block my-2" href="#"><img src="images/button-google-store.svg" alt=""></a>
             <div class="ms-3">
 
@@ -510,7 +900,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-7">
-          <h2 class="mt-5 section-title">CS Optimal</h2>
+          <h2 class="mt-5 section-title">CS Optimum</h2>
           <h3 class="mt-5 h4">Инвестиционный продукт <br>
             с доходностью <span class="color-secondary">до 25% в месяц</span>
           </h3>
@@ -669,12 +1059,50 @@
             <span class="team__title-yellow">Команда</span>
             <span>CryptoSafe</span>
           </div>
-          <div class="team__info">
+          <div class="team__info active">
             <div class="team__name">Борхес Артонио Фейтоза</div>
             <div class="team__founder">Основатель и Генеральный Директор CryptoSafe Inc.</div>
             <div class="team__note">Более 18 лет опыта работы на финансовых рынках. Экс-топ менеджер Goldman Sachs одной
               из топ-3 консалтинговых компаний в
               мире. Профессиональный портфельный менеджер консалтинговых компаний. Держатель лицензии Series 24 FINRA US
+            </div>
+          </div>
+          <div class="team__info">
+            <div class="team__name">Оскар</div>
+            <div class="team__founder">Главный коммерческий директор</div>
+            <div class="team__note">с впечатляющим стажем работы в сфере управления бизнесом более 15 лет. Его обширные
+              навыки подкреплены успешным
+              завершением более чем 20 стратегических сделок, что существенно способствовало успеху организаций, с
+              которыми он
+              сотрудничал.
+            </div>
+          </div>
+          <div class="team__info">
+            <div class="team__name">Султан</div>
+            <div class="team__founder">эксперт в областях финансов, криптовалют, блокчейна и управления человеческими
+              ресурсами</div>
+            <div class="team__note">
+              Его опыт работы в международных компаниях, таких как Perohouse, Billionaire Homes и LATOKEN, а также
+              управление
+              многочисленными инвестиционными проектами, приносит ценный опыт в нашу команду.
+            </div>
+          </div>
+          <div class="team__info">
+            <div class="team__name">Турпал</div>
+            <div class="team__founder">Профессионал с опытом работы в международных компаниях</div>
+            <div class="team__note">Он работал в областях искусственного интеллекта, машинного обучения и обработки
+              больших данных, что дало ему знания в
+              области будущих технологий. Его навыки включают в себя установление партнерских отношений и сотрудничество
+              между
+              компаниями, специализирующимися на технологиях, таких как Web3 и искусственный интеллект!
+            </div>
+          </div>
+          <div class="team__info">
+
+            <div class="team__name">Карим</div>
+            <div class="team__founder">управлял инвестиционными и консалтинговыми проектами.</div>
+            <div class="team__note">Cтроил многочисленные структуры стоимостью многие тысячи.
+              Благодаря обширному опыту в сетевом маркетинге, он имеет шестизначный годовой пассивный доход.
             </div>
           </div>
           <div class="team__socials">
@@ -695,6 +1123,28 @@
             </div>
           </div>
         </div>
+        <div class="team__cards">
+          <div class="team__card active">
+            <img class="team__swiper-fone" src="/images/team__fone.png" alt="">
+            <img class="team__swiper-people" src="/images/team__people.png" alt="">
+          </div>
+          <div class="team__card">
+            <img class="team__swiper-fone" src="/images/team__fone.png" alt="">
+            <img class="team__swiper-people" src="/img/about/founder1.png" alt="">
+          </div>
+          <div class="team__card">
+            <img class="team__swiper-fone" src="/images/team__fone.png" alt="">
+            <img class="team__swiper-people" src="/img/about/founder2.png" alt="">
+          </div>
+          <div class="team__card">
+            <img class="team__swiper-fone" src="/images/team__fone.png" alt="">
+            <img class="team__swiper-people" src="/img/about/founder3.png" alt="">
+          </div>
+          <div class="team__card">
+            <img class="team__swiper-fone" src="/images/team__fone.png" alt="">
+            <img class="team__swiper-people" src="/img/about/founder4.png" alt="">
+          </div>
+        </div>
         <div class="team__swiper">
           <div class="swiper1">
             <div class="swiper-wrapper">
@@ -704,20 +1154,20 @@
               </div>
               <div class="swiper-slide team__slide ">
                 <img class="team__swiper-fone" src="/images/team__fone.png" alt="">
-                <img class="team__swiper-people" src="/images/team__people.png" alt="">
+                <img class="team__swiper-people" src="/img/about/founder1.png" alt="">
               </div>
               <div class="swiper-slide team__slide ">
                 <img class="team__swiper-fone" src="/images/team__fone.png" alt="">
-                <img class="team__swiper-people" src="/images/team__people.png" alt="">
+                <img class="team__swiper-people" src="/img/about/founder2.png" alt="">
               </div>
 
               <div class="swiper-slide team__slide ">
                 <img class="team__swiper-fone" src="/images/team__fone.png" alt="">
-                <img class="team__swiper-people" src="/images/team__people.png" alt="">
+                <img class="team__swiper-people" src="/img/about/founder3.png" alt="">
               </div>
               <div class="swiper-slide team__slide ">
                 <img class="team__swiper-fone" src="/images/team__fone.png" alt="">
-                <img class="team__swiper-people" src="/images/team__people.png" alt="">
+                <img class="team__swiper-people" src="/img/about/founder4.png" alt="">
               </div>
 
             </div>
@@ -1521,9 +1971,9 @@
     <div class="container">
 
       <div class="row mb-4">
-        <div class="col-10">
+        <div class="col-10 questions__section">
           <h3 class="section-subtitle">Часто задаваемые вопросы</h3>
-          <h2 class="section-title">CryptoSafe Help Center</h2>
+          <h2 class="section-title help__centr">CryptoSafe Help Center</h2>
         </div>
         <div class="col-2 pt-4 d-none d-xl-block">
           <img class="img-fluid" src="images/help-img.png" alt="">
@@ -1742,6 +2192,10 @@
     <div class="spacer"></div>
   </footer>
 
+  <script src="/js/magicmouse.js">
+
+  </script>
+
   <script>
     let lang = document.querySelectorAll('.main-navbar__lang');
     let langClose = document.querySelectorAll('.lang__close');
@@ -1770,46 +2224,31 @@
   <script src="js/menu.js"></script>
   <!------------- Menu  ------------>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script>
 
   </script>
-
-  <script>
-    // const roudMapTitle = document.querySelectorAll('.roudmap__head-point');
-    // const swiper4 = new Swiper('.swiper4', {
-    //   initialSlide: 1,
-    //   slidesPerView: 1,
-    //   spaceBetween: 20,
-    //   pagination: {
-    //     el: '.swiper-pagination',
-    //   },
-    // });
-
-    // let activeSlideIndex = swiper4.activeIndex;
-
-    // function updateRoudMapTitles() {
-    //   roudMapTitle.forEach((point, index) => {
-    //     if (index === activeSlideIndex) {
-    //       point.classList.add("active");
-    //     } else {
-    //       point.classList.remove("active");
-    //     }
-    //   });
-    // }
-
-    // roudMapTitle.forEach((point, index) => {
-    //   point.addEventListener('click', () => {
-    //     activeSlideIndex = index;
-    //     updateRoudMapTitles();
-
-    //     swiper4.slideTo(index, 500, false);
-    //   });
-    // });
-
-    // swiper4.on('slideChange', function () {
-    //   activeSlideIndex = swiper4.activeIndex;
-    //   updateRoudMapTitles();
-    // });
+  <script src="/swipers.js"></script>
+  <script src="/video.js"></script>
+  <script>const swiper = new Swiper('.swiper', {
+      slidesPerView: 1.7,
+      spaceBetween: 20,
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });</script>
+  <script>const swiper9 = new Swiper('.swiper9', {
+      slidesPerView: 1,
+      spaceBetween: 120,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+    const swiper10 = new Swiper('.swiper10', {
+      slidesPerView: 1,
+      spaceBetween: 120,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
   </script>
   <script>
     const swiper5 = new Swiper('.swiper5', {
@@ -1910,56 +2349,6 @@
     setupRoudMapTitleSlider();
 
   </script>
-  <script>
-    const swiper = new Swiper('.swiper', {
-      slidesPerView: 1.7,
-      spaceBetween: 20,
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
-    });
-
-  </script>
-  <script>
-    const swiper1 = new Swiper('.swiper1', {
-      // loop: true,
-      slidesPerView: 5,
-
-      spaceBetween: 30,
-      pagination: {
-        el: '.swiper-pagination',
-      },
-
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
-      breakpoints: {
-
-        1440: {
-          slidesPerView: 5,
-          spaceBetween: 30,
-
-          centeredSlides: true,
-        },
-
-        300: {
-          slidesPerView: "auto",
-          centeredSlides: true,
-          slidesPerView: 1,
-          spaceBetween: 30,
-        },
-      },
-    });
-
-
-  </script>
-
-
 </body>
 
 </html>

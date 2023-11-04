@@ -65,6 +65,7 @@
     border: 1px solid rgba(255, 255, 255, 0.00);
     background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -301,6 +302,7 @@
     border: 1px solid rgba(255, 255, 255, 0);
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(95px);
+    -webkit-backdrop-filter: blur(95px);
 }
 
 .contact {
@@ -595,6 +597,7 @@ section {
     border-radius: 20px;
     background: linear-gradient(180deg, rgba(7, 53, 159, 0.61) 0%, rgba(10, 49, 140, 0.1) 100%);
     backdrop-filter: blur(70px);
+    -webkit-backdrop-filter: blur(70px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1001,6 +1004,7 @@ section {
     border: 1px solid rgba(255, 214, 0, 0.60);
     background: rgba(0, 0, 0, 0.60);
     backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(25px);
     padding: 30px;
     padding-bottom: 20px;
     max-width: 625px;
@@ -1042,6 +1046,7 @@ section {
     border: 1px solid rgba(255, 214, 0, 0.60);
     background: rgba(0, 0, 0, 0.60);
     backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
 }
 
 @media (max-width:1600px) {
@@ -1094,4 +1099,37 @@ section {
     font-weight: 600;
     line-height: 160%;
     /* 22.4px */
+}
+
+.media__block {
+    align-items: inherit;
+}
+
+.hero {
+
+    mix-blend-mode: lighten;
+}
+
+.hero-bg-img:after {
+    background: none;
+}
+
+
+
+.media__block-img {
+    overflow: hidden;
+}
+
+.media__swiper::before {
+    overflow: hidden;
+}
+
+
+.hero video {
+    top: -150px;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    object-fit: cover;
+
 }
