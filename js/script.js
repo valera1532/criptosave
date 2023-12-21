@@ -83,3 +83,10 @@ historyBtn.addEventListener("click", (function () {
 
 
 
+const body = document.querySelector("body");
+body.addEventListener('click', function () {
+
+    magicPointer.classList.add('scale');
+
+    setTimeout(() => magicPointer.classList.remove('scale'), 200);
+})

@@ -22,10 +22,18 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="rangs.css">
     <link rel="stylesheet" href="deposits.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
     <title>TenderHouse</title>
 </head>
 
 <body class="theme">
+    <style>
+        @media (max-width:1024px) {
+            .main-block {
+                max-width: 100%;
+            }
+        }
+    </style>
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
         style="width: 580px;">
@@ -473,7 +481,189 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="tableModalInfo" tabindex="-3" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body position-absolute">
+                    <div class="modal_chat-bot d-flex justify-content-center align-items-center  w-100 h-100">
+                        <div class="bg w-100 h-100 position-absolute"></div>
+                        <div class="popap popup__info  popap__black position-relative mw-100">
+                            <div class="popup__main">
+                                <div class="popup__head popup__head-info">
+                                    <span>Информация о Пользователе</span>
+                                    <button class="btn-close btn-close__info close" data-bs-dismiss="modal"><img
+                                            src="images/ico-menu-close.svg" alt=""></button>
+                                </div>
+                                <div class="popup__line"></div>
+                                <div class="popup__info-content">
+                                    <div class="popup__info-user">
+                                        <div class="popup__info-user-left">
+                                            <div class="popup__info-user-ava">
+                                                <div class="popup__info-user-image">
+                                                    <img src="./img/command/avaModal.png" alt="">
+                                                </div>
+                                                <div class="popup__info-user-rang">
+                                                    <img src="./img/command/rang18.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="popup__info-user-data">
+                                                <div class="popup__info-data-name">Чилаев Виктор</div>
+                                                <div class="popup__info-data-bottom">
+                                                    <div class="popup__info-data-line"><span>Никнейм:</span>
+                                                        <p>daniiluser00967</p>
+                                                    </div>
+                                                    <div class="popup__info-data-line"><span>Почта:</span>
+                                                        <p>chilaev.victor@gmail.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="popup__info-user-right">
+                                            <div class="popup__info-user-rangs">
+                                                <p>Текущий ранг:</p>
+                                                <span>17 ранг</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popup__info-user-social">
+                                        <ul class="social-nav-list wrap d-flex align-items-center px-0">
+                                            <li class="social-nav-item">
+                                                <span class="transparent">
+                                                    Контакты:
+                                                </span>
+                                            </li>
+                                            <li class="social-nav-item">
+                                                <a href="">
+                                                    <img src="./img/command/email.png" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="social-nav-item">
+                                                <a href="">
+                                                    <img src="./img/command/phone.png" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="social-nav-item">
+                                                <a href="">
+                                                    <img src="./img/command/facebook.png" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="social-nav-item">
+                                                <a href="">
+                                                    <img src="./img/command/tg.png" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="social-nav-item">
+                                                <a href="">
+                                                    <img src="./img/command/wt.png" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="social-nav-item">
+                                                <a href="">
+                                                    <img src="./img/command/in.png" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="social-nav-item">
+                                                <a href="">
+                                                    <img src="./img/command/inst.png" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="social-nav-item">
+                                                <a href="">
+                                                    <img src="./img/command/twitter.png" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="popup__line"></div>
+                                <div class="popup__info-cards">
+                                    <div class="popup__info-card">
+                                        <div class="popup__info-card-left">
+                                            <img src="./img/command/wallet.png" alt="">
+                                        </div>
+                                        <div class="popup__info-card-right">
+                                            <div class="info-card__title">Личные Инвестиции</div>
+                                            <div class="info-card__subtitle">
+                                                <span>5000</span>
+                                                <p>usdt</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popup__info-card">
+                                        <div class="popup__info-card-left">
+                                            <img src="./img/command/wallet.png" alt="">
+                                        </div>
+                                        <div class="popup__info-card-right">
+                                            <div class="info-card__title">Оборот Структуры</div>
+                                            <div class="info-card__subtitle">
+                                                <span>5.000$</span>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popup__info-cards-two">
+                                    <div class="popup__info-card">
+                                        <div class="popup__info-card-left">
+                                            <img src="./img/command/wallet.png" alt="">
+                                        </div>
+                                        <div class="popup__info-card-right">
+                                            <div class="info-card__title">Всего партнеров</div>
+                                            <div class="info-card__subtitle">
+                                                <span>26</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popup__info-card">
+                                        <div class="popup__info-card-left">
+                                            <img src="./img/command/wallet.png" alt="">
+                                        </div>
+                                        <div class="popup__info-card-right">
+                                            <div class="info-card__title">Лично Приглашенных</div>
+                                            <div class="info-card__subtitle">
+                                                <span>26</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popup__line"></div>
+                                <div class="popup__info-cards-invitee">
+                                    <div class="popup__invitee-title">Пригласитель</div>
+                                    <div class="popup__invitee-main">
+                                        <div class="popup__invitee-left">
+                                            <div class="popup__invitee-ava">
+                                                <div class="popup__invitee-img">
+                                                    <img src="./img/command/avaModal.png" alt="">
+                                                </div>
+                                                <div class="popup__invitee-rang">
+                                                    <img src="./img/command/rang18.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="popup__invitee-inf">
+                                                <div class="popup__invitee-name">Токмаков Даниил</div>
+                                                <div class="popup__invitee-rangs">
+                                                    <span>Ранг:</span>
+                                                    <p>21</p>
+                                                </div>
+                                            </div>
 
+                                        </div>
+                                        <div class="popup__invitee-right">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#gridModal">
+                                                <i class="bi bi-info-circle grid-card-info"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="tableModal" tabindex="-2" aria-labelledby="exampleModalLabel">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -484,7 +674,7 @@
                             <div class="popup__main">
                                 <div class="popup__head">
                                     <span>Поиск пользователя</span>
-                                    <button class="btn-close close" data-bs-dismiss="modal"><img
+                                    <button class="btn-close btn-close__info close" data-bs-dismiss="modal"><img
                                             src="images/ico-menu-close.svg" alt=""></button>
                                 </div>
                                 <div class="popup__subhead">
@@ -2413,6 +2603,19 @@
                             </svg>
                             Отчеты
                         </a>
+                        <a href="/promo.html" class="main-navbar__link">
+                            <svg width="32" height="24" viewBox="0 0 32 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 2.35557C1 2.13465 1.17909 1.95557 1.4 1.95557H16H30.6C30.8209 1.95557 31 2.13465 31 2.35557V12V21.6444C31 21.8654 30.8209 22.0444 30.6 22.0444H16H1.4C1.17909 22.0444 1 21.8654 1 21.6444V12V2.35557Z"
+                                    stroke="#FFD600" stroke-width="2" />
+                                <path
+                                    d="M7.7172 13.8424C7.7172 13.8424 11.2104 15.7101 15.2961 14.2673C21.2828 12.153 23.3387 8.6149 23.3387 8.6149M23.3387 8.6149L17.4014 8.03703M23.3387 8.6149L23.8576 14.9752"
+                                    stroke="#FFD600" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+
+                            Промо
+                        </a>
                         <a href="/profile.html" class="main-navbar__link">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -2577,72 +2780,338 @@
                     </div>
                     <!-- CODE HERE -->
                     <div class="container-fluid">
-                        <div class="row">
-                            <div class="col">
-                                <h2 class="main-heading">
-                                    Линейная структура
-                                </h2>
+                        <div class="structure__top">
+                            <div class="structure__top-left">
+                                <div class="structure__top-team">
+                                    <div class="structure__top-team-head">
+                                        <div class="structure__top-team-title">Моя команда</div>
+                                        <span>
+                                            <form>
+
+                                                <div class="__select" data-state="">
+                                                    <div class="__select__title" data-default="Option 0">Партнеры 1
+                                                        линии</div>
+                                                    <div class="__select__content">
+                                                        <input id="singleSelect0" class="__select__input" type="radio"
+                                                            name="singleSelect" checked />
+                                                        <label for="singleSelect0" class="__select__label">Партнеры 1
+                                                            линии</label>
+                                                        <input id="singleSelect1" class="__select__input" type="radio"
+                                                            name="singleSelect" />
+                                                        <label for="singleSelect1" class="__select__label">Партнеры 2
+                                                            линии</label>
+                                                        <input id="singleSelect2" class="__select__input" type="radio"
+                                                            name="singleSelect" />
+                                                        <label for="singleSelect2" class="__select__label">Партнеры 3
+                                                            линии</label>
+                                                        <input id="singleSelect3" class="__select__input" type="radio"
+                                                            name="singleSelect" />
+                                                        <label for="singleSelect3" class="__select__label">Партнеры 4
+                                                            линии</label>
+                                                        <input id="singleSelect4" class="__select__input" type="radio"
+                                                            name="singleSelect" />
+                                                        <label for="singleSelect4" class="__select__label">Партнеры 5
+                                                            линии</label>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </span>
+                                        <script>
+                                            const selectSingle = document.querySelector('.__select');
+                                            const selectSingle_title = selectSingle.querySelector('.__select__title');
+                                            const selectSingle_labels = selectSingle.querySelectorAll('.__select__label');
+
+                                            // Toggle menu
+                                            selectSingle_title.addEventListener('click', () => {
+                                                if ('active' === selectSingle.getAttribute('data-state')) {
+                                                    selectSingle.setAttribute('data-state', '');
+                                                } else {
+                                                    selectSingle.setAttribute('data-state', 'active');
+                                                }
+                                            });
+
+                                            // Close when click to option
+                                            for (let i = 0; i < selectSingle_labels.length; i++) {
+                                                selectSingle_labels[i].addEventListener('click', (evt) => {
+                                                    selectSingle_title.textContent = evt.target.textContent;
+                                                    selectSingle.setAttribute('data-state', '');
+                                                });
+                                            }
+
+
+                                        </script>
+                                    </div>
+                                    <div class="structure__top-team-slider">
+                                        <div class="swiper-container">
+                                            <div class="swiper">
+
+                                                <div class="swiper-wrapper">
+
+                                                    <div class="swiper-slide swiper-slide-person">
+                                                        <a href="./profile.html">
+                                                            <div class="swiper__slide-title">Jane <br> Cooper</div>
+                                                            <div class="swiper__slide-img">
+                                                                <div class="swiper__slide-ava"><img
+                                                                        src="./img/command/comand__person.png" alt="">
+                                                                </div>
+                                                                <div class="swiper__slide-rang"><img
+                                                                        src="./img/command/rang18.png" alt=""></div>
+                                                            </div>
+                                                        </a>
+
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-person">
+                                                        <a href="./profile.html">
+                                                            <div class="swiper__slide-title">Jane <br> Cooper</div>
+                                                            <div class="swiper__slide-img">
+                                                                <div class="swiper__slide-ava"><img
+                                                                        src="./img/command/comand__person.png" alt="">
+                                                                </div>
+                                                                <div class="swiper__slide-rang"><img
+                                                                        src="./img/command/rang18.png" alt=""></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="swiper-slide swiper-slide-person">
+                                                        <a href="./profile.html">
+                                                            <div class="swiper__slide-title">Jane <br> Cooper</div>
+                                                            <div class="swiper__slide-img">
+                                                                <div class="swiper__slide-ava"><img
+                                                                        src="./img/command/comand__person.png" alt="">
+                                                                </div>
+                                                                <div class="swiper__slide-rang"><img
+                                                                        src="./img/command/rang18.png" alt=""></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-person">
+                                                        <a href="./profile.html">
+                                                            <div class="swiper__slide-title">Jane <br> Cooper</div>
+                                                            <div class="swiper__slide-img">
+                                                                <div class="swiper__slide-ava"><img
+                                                                        src="./img/command/comand__person.png" alt="">
+                                                                </div>
+                                                                <div class="swiper__slide-rang"><img
+                                                                        src="./img/command/rang18.png" alt=""></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-person">
+                                                        <a href="./profile.html">
+                                                            <div class="swiper__slide-title">Jane <br> Cooper</div>
+                                                            <div class="swiper__slide-img">
+                                                                <div class="swiper__slide-ava"><img
+                                                                        src="./img/command/comand__person.png" alt="">
+                                                                </div>
+                                                                <div class="swiper__slide-rang"><img
+                                                                        src="./img/command/rang18.png" alt=""></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-person">
+                                                        <a href="./profile.html">
+                                                            <div class="swiper__slide-title">Jane <br> Cooper</div>
+                                                            <div class="swiper__slide-img">
+                                                                <div class="swiper__slide-ava"><img
+                                                                        src="./img/command/comand__person.png" alt="">
+                                                                </div>
+                                                                <div class="swiper__slide-rang"><img
+                                                                        src="./img/command/rang18.png" alt=""></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-person">
+                                                        <a href="./profile.html">
+                                                            <div class="swiper__slide-title">Jane <br> Cooper</div>
+                                                            <div class="swiper__slide-img">
+                                                                <div class="swiper__slide-ava"><img
+                                                                        src="./img/command/comand__person.png" alt="">
+                                                                </div>
+                                                                <div class="swiper__slide-rang"><img
+                                                                        src="./img/command/rang18.png" alt=""></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+
+
+                                                    <div class="swiper-slide swiper-slide-person">
+                                                        <a href="./profile.html">
+                                                            <div class="swiper__slide-title">Jane <br> Cooper</div>
+                                                            <div class="swiper__slide-img">
+                                                                <div class="swiper__slide-ava"><img
+                                                                        src="./img/command/comand__person.png" alt="">
+                                                                </div>
+                                                                <div class="swiper__slide-rang"><img
+                                                                        src="./img/command/rang18.png" alt=""></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                                <div class="swiper-pagination"></div>
+                                                <div class="swiper-btns">
+                                                    <div class="swiper-button-prev"><svg width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect x="24" y="24" width="24" height="24" rx="12"
+                                                                transform="rotate(-180 24 24)" fill="#FFD600" />
+                                                            <rect x="24" y="24" width="24" height="24" rx="12"
+                                                                transform="rotate(-180 24 24)" fill="#FFD600" />
+                                                            <path d="M7.89766 12.0001L16.0977 12.0001" stroke="#323232"
+                                                                stroke-width="1.02857" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <path d="M10.8281 9.07143L7.89955 12" stroke="#323232"
+                                                                stroke-width="1.02857" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <path d="M10.8281 14.9277L7.89955 11.9992" stroke="#323232"
+                                                                stroke-width="1.02857" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                        </svg>
+
+                                                    </div>
+                                                    <div class="swiper-button-next">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="24" height="24" rx="12" fill="#FFD600" />
+                                                            <rect width="24" height="24" rx="12" fill="#FFD600" />
+                                                            <path d="M16.1023 11.9999H7.90234" stroke="#323232"
+                                                                stroke-width="1.02857" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <path d="M13.1719 14.9286L16.1004 12" stroke="#323232"
+                                                                stroke-width="1.02857" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <path d="M13.1719 9.07227L16.1004 12.0008" stroke="#323232"
+                                                                stroke-width="1.02857" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                        </svg>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-3">
-                                <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                            data-bs-target="#pills-home" type="button" role="tab"
-                                            aria-controls="pills-home" aria-selected="true"
-                                            style="font-size: 20px; font-weight: 700;">Список
-                                            <svg class="ml-10" width="29" height="29" viewBox="0 0 29 29" fill="none"
+                            <div class="structure__top-right">
+                                <div class="structure__top-ref-title">Реферальная ссылка</div>
+                                <div class="structure__top-ref-subtitle">Ваша личная реферальная ссылка поделитесь ей с
+                                    вашим партнером</div>
+                                <div class="structure__top-ref-link">http://cryptosafe.group//733 </div>
+                                <div class="structure__top-ref-button" onclick="copyText()">Скопировать</div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="structure__header">
+                                <div class="col">
+                                    <h2 class="main-heading">
+                                        Структура
+                                    </h2>
+                                </div>
+                                <div class="structure__header-main">
+
+                                    <div class="col-md-auto mobile-header-col-pr d-flex align-items-center">
+                                        <img src="img/main/table-2.svg" alt="">
+                                        <div class="table-about d-flex" style="flex-direction: column;">
+                                            <span class="table-col-heading">
+                                                Лично приглашенные
+                                            </span>
+                                            <span class="table-col-vaule">
+                                                3
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-auto mobile-header-col-pr d-flex align-items-center">
+                                        <img src="img/main/table-3.svg" alt="">
+                                        <div class="table-about d-flex" style="flex-direction: column;">
+                                            <span class="table-col-heading">
+                                                Всего в структуре
+                                            </span>
+                                            <span class="table-col-vaule">
+                                                3
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="structure__instrument structure__instrument-search ">
+                                        <button type="button" data-bs-toggle="modal" data-bs-target="#tableModal">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <g fill="">
+                                                <path
+                                                    d="M20.9521 9.11695C24.22 12.3849 24.22 17.6832 20.9521 20.9511C17.6841 24.219 12.3858 24.219 9.11792 20.9511C5.85002 17.6832 5.85002 12.3849 9.11792 9.11695C12.3858 5.84904 17.6841 5.84904 20.9521 9.11695"
+                                                    stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M25.333 25.3339L20.9463 20.9473" stroke="white"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+
+
+
+                                    </div>
+                                    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-home" type="button" role="tab"
+                                                aria-controls="pills-home" aria-selected="true"
+                                                style="font-size: 20px; font-weight: 700;">Список
+                                                <svg class="ml-10" width="29" height="29" viewBox="0 0 29 29"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g fill="">
+                                                        <circle cx="14.5" cy="14.5" r="14.5" fill="#ffffff70" />
+                                                        <path d="M14.25 14H21.75" stroke="#323232"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path
+                                                            d="M10.8103 12.9393C11.3961 13.5251 11.3961 14.4746 10.8103 15.0603C10.2246 15.6461 9.27506 15.6461 8.68931 15.0603C8.10356 14.4746 8.10356 13.5251 8.68931 12.9393C9.27506 12.3536 10.2246 12.3536 10.8103 12.9393"
+                                                            stroke="#323232" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M14.25 8.75H21.75" stroke="#323232"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M8.26465 8.381L9.5044 9.497L11.9996 7.25"
+                                                            stroke="#323232" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M14.25 19.25H21.75" stroke="#323232"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path
+                                                            d="M10.8103 18.1893C11.3961 18.7751 11.3961 19.7246 10.8103 20.3103C10.2246 20.8961 9.27506 20.8961 8.68931 20.3103C8.10356 19.7246 8.10356 18.7751 8.68931 18.1893C9.27506 17.6036 10.2246 17.6036 10.8103 18.1893"
+                                                            stroke="#323232" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-profile" type="button" role="tab"
+                                                aria-controls="pills-profile" aria-selected="false"
+                                                style="font-size: 20px; font-weight: 700;">Таблица
+                                                <svg class="ml-10" width="29" height="29" viewBox="0 0 29 29"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g ">
+                                                        <circle cx=" 14.5" cy="14.5" r="14.5" fill="#ffffff70" />
                                                     <circle cx="14.5" cy="14.5" r="14.5" fill="#ffffff70" />
-                                                    <path d="M14.25 14H21.75" stroke="#323232" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path
-                                                        d="M10.8103 12.9393C11.3961 13.5251 11.3961 14.4746 10.8103 15.0603C10.2246 15.6461 9.27506 15.6461 8.68931 15.0603C8.10356 14.4746 8.10356 13.5251 8.68931 12.9393C9.27506 12.3536 10.2246 12.3536 10.8103 12.9393"
+                                                    <path d="M15.75 16.25L17.2506 17.7506L18.7512 16.25"
                                                         stroke="#323232" stroke-linecap="round"
                                                         stroke-linejoin="round" />
-                                                    <path d="M14.25 8.75H21.75" stroke="#323232" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path d="M8.26465 8.381L9.5044 9.497L11.9996 7.25" stroke="#323232"
+                                                    <path d="M17.2511 13.25V17.7519" stroke="#323232"
                                                         stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M14.25 19.25H21.75" stroke="#323232" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path
-                                                        d="M10.8103 18.1893C11.3961 18.7751 11.3961 19.7246 10.8103 20.3103C10.2246 20.8961 9.27506 20.8961 8.68931 20.3103C8.10356 19.7246 8.10356 18.7751 8.68931 18.1893C9.27506 17.6036 10.2246 17.6036 10.8103 18.1893"
+                                                    <path d="M14.2493 14.7506L12.7487 13.25L11.248 14.7506"
                                                         stroke="#323232" stroke-linecap="round"
                                                         stroke-linejoin="round" />
-                                                </g>
-                                            </svg>
-
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                            data-bs-target="#pills-profile" type="button" role="tab"
-                                            aria-controls="pills-profile" aria-selected="false"
-                                            style="font-size: 20px; font-weight: 700;">Таблица
-                                            <svg class="ml-10" width="29" height="29" viewBox="0 0 29 29" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g ">
-                                                    <circle cx=" 14.5" cy="14.5" r="14.5" fill="#ffffff70" />
-                                                <circle cx="14.5" cy="14.5" r="14.5" fill="#ffffff70" />
-                                                <path d="M15.75 16.25L17.2506 17.7506L18.7512 16.25" stroke="#323232"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M17.2511 13.25V17.7519" stroke="#323232" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path d="M14.2493 14.7506L12.7487 13.25L11.248 14.7506" stroke="#323232"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M12.7492 17.7519V13.25" stroke="#323232" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path d="M21.7527 10.2482H8.24707" stroke="#323232"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <rect x="8.24707" y="7.24609" width="13.5056" height="13.5056" rx="2"
-                                                    stroke="#323232" stroke-linecap="round" stroke-linejoin="round" />
-                                                </g>
-                                            </svg>
-
-                                        </button>
-                                    </li>
-                                </ul>
+                                                    <path d="M12.7492 17.7519V13.25" stroke="#323232"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M21.7527 10.2482H8.24707" stroke="#323232"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <rect x="8.24707" y="7.24609" width="13.5056" height="13.5056"
+                                                        rx="2" stroke="#323232" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    </g>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
 
                             <div class="col-md-12 table-col ">
@@ -2650,7 +3119,7 @@
                                 <div class="tab-content" id="pills-tabContent">
                                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                                         aria-labelledby="pills-home-tab" tabindex="0">
-                                        <div class="row align-items-center" style="padding: 30px 0px;">
+                                        <!-- <div class="row align-items-center" style="padding: 30px 0px;">
                                             <div class="col-md-4 mobile-header-col-pr d-flex mobile__colum gap20">
                                                 <img src="img/main/unranked.svg" alt="" class="rank-img">
                                                 <div class="rank-text">
@@ -2708,77 +3177,235 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
 
-                                        <div class="row tb-header-row" style="background: #0035B5; padding: 22px 0px;">
-                                            <div class="col tb-col px-0" style="margin-right: 40px;">
+                                        <div class="row tb-header-row table__r"
+                                            style="background: #0035B5; padding: 22px 30px;">
+                                            <div class="col tb-col px-0 tb-col-7">
                                                 <span class="table-structure-heading">
-                                                    Логин
+                                                    Линия
                                                 </span>
                                             </div>
-                                            <div class="col tb-col">
+                                            <div class="col tb-col tb-col-7">
+                                                <span class="table-structure-heading">
+                                                    Никнейм
+                                                </span>
+                                            </div>
+                                            <div class="col tb-col tb-col-7">
                                                 <span class="table-structure-heading">
                                                     Контакты
                                                 </span>
                                             </div>
-                                            <div class="col tb-col">
-                                                <span class="table-structure-heading">
-                                                    Локация
-                                                </span>
-                                            </div>
-                                            <div class="col tb-col">
+                                            <div class="col tb-col tb-col-7">
                                                 <span class="table-structure-heading">
                                                     Ранг
                                                 </span>
                                             </div>
-                                            <div class="col tb-col">
+                                            <div class="col tb-col tb-col-7">
                                                 <span class="table-structure-heading">
-                                                    Уровень
+                                                    Личные Депозиты
                                                 </span>
                                             </div>
-                                            <div class="col tb-col">
+                                            <div class="col tb-col tb-col-7">
                                                 <span class="table-structure-heading">
                                                     Партнеры
                                                 </span>
                                             </div>
-                                            <div class="col-md-2 tb-col">
+                                            <div class="col-md-2 tb-col tb-col-7">
                                                 <span class="table-structure-heading">
-                                                    Инвестиционный план
+                                                    Оборот Структуры
                                                 </span>
                                             </div>
-                                            <div class="col tb-col">
+                                            <div class="col tb-col tb-col-7">
                                                 <span class="table-structure-heading">
-                                                    Личный депозит
+
                                                 </span>
                                             </div>
-                                            <div class="col tb-col px-0">
-                                                <span class="table-structure-heading">
-                                                    Доход
-                                                </span>
-                                            </div>
+
                                         </div>
-                                        <div class="row tb-row align-items-center" style="background: #0030A4;">
-                                            <div class="col-md-12 mobile-tb-col">
-                                                <div class="mobile-tb-card">
-                                                    <div class="mobile-card-container">
-                                                        <div class="mobile-card-col">
-                                                            <span class="mobile-card-username">
+                                        <div class="rows__levels">
+
+                                            <div class="rows__level one">
+                                                <div class="row tb-row align-items-center one-lvl">
+                                                    <div class="col-md-12 mobile-tb-col ">
+                                                        <div class="mobile-tb-card">
+                                                            <div class="mobile-card-container">
+                                                                <div class="mobile-card-col">
+                                                                    <span class="mobile-card-username">
+                                                                        @aleksaryakian
+                                                                    </span>
+                                                                    <div class="mobile-card-rank">
+                                                                        <img src="img/main/unranked.svg"
+                                                                            style="width: 24px;" alt="">
+                                                                        <span class="mobile-rank-text">
+                                                                            Без ранга
+                                                                        </span>
+                                                                    </div>
+
+                                                                    <div class="mobile-card-contacts">
+                                                                        <a href="https://google.com"
+                                                                            class="contacts-icon">
+                                                                            <img src="img/main/tgicon.svg" alt="">
+                                                                        </a>
+                                                                        <a href="https://google.com"
+                                                                            class="contacts-icon">
+                                                                            <img src="img/main/waicon.svg" alt="">
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mobile-card-col" style="margin-left: 20px;">
+
+                                                                    <div class="mobile-card-userinfo">
+                                                                        <span class="transparent">
+                                                                            Локация:
+                                                                        </span>
+                                                                        -
+                                                                    </div>
+                                                                    <div class="mobile-card-userinfo">
+                                                                        <span class="transparent">
+                                                                            Партнеры:
+                                                                        </span>
+                                                                        3
+                                                                    </div>
+                                                                    <div class="mobile-card-userinfo">
+                                                                        <span class="transparent">
+                                                                            Личный депозит:
+                                                                        </span>
+                                                                        100 USDT
+                                                                    </div>
+                                                                    <div class="mobile-card-userinfo">
+                                                                        <span class="transparent">
+                                                                            Оборот Структуры
+                                                                        </span>
+                                                                        5.000$
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md col-sm-12 table__line tb-col-7 ">
+                                                        <p class="tabs__minus show"></p>
+
+                                                        <span>1</span>
+                                                    </div>
+                                                    <div class="col-md col-sm-12 tb-col-7">
+
+                                                        <a href="https://google.com" class="login-link">
+                                                            @aleksaryakian
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-md col-sm-12 tb-col-7">
+                                                        <a href="https://google.com" class="contacts-icon">
+                                                            <img src="img/main/tgicon.svg" alt="">
+                                                        </a>
+                                                        <a href="https://google.com" class="contacts-icon">
+                                                            <img src="img/main/waicon.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div style="transform: translateX(-15px);"
+                                                        class="col-md col-sm-12 rank__row tb-col-7">
+                                                        <img src="img/main/unranked.svg" alt="">
+
+                                                    </div>
+                                                    <div style="transform: translateX(-30px);"
+                                                        class="col-md col-sm-12 tb-col-7">
+                                                        <span class="location-vaule">
+                                                            200$
+                                                        </span>
+                                                    </div>
+                                                    <div style="transform: translateX(-30px);"
+                                                        class="col-md col-sm-12 tb-col-7">
+                                                        <span class="location-vaule">
+                                                            3
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-md col-sm-12 tb-col-7">
+                                                        <span class="tb-rank-text">
+                                                            5.000$
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-md col-sm-12 tb-col-7">
+                                                        <span class="tb-rank-text more__detailed">
+                                                            <button type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#tableModalInfo">
+                                                                Подробнее
+                                                            </button>
+                                                        </span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="rows__level two">
+                                                    <div class="row tb-row align-items-center one-lvl">
+                                                        <div class="col-md-12 mobile-tb-col ">
+                                                        </div>
+                                                        <div class="col-md col-sm-12 table__line tb-col-7 ">
+                                                            <p class="tabs__minus show"></p>
+
+                                                            <span>2</span>
+                                                        </div>
+                                                        <div class="col-md col-sm-12 tb-col-7">
+
+                                                            <a href="https://google.com" class="login-link">
                                                                 @aleksaryakian
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md col-sm-12 tb-col-7">
+                                                            <a href="https://google.com" class="contacts-icon">
+                                                                <img src="img/main/tgicon.svg" alt="">
+                                                            </a>
+                                                            <a href="https://google.com" class="contacts-icon">
+                                                                <img src="img/main/waicon.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div style="transform: translateX(-15px);"
+                                                            class="col-md col-sm-12 rank__row tb-col-7">
+                                                            <img src="img/main/unranked.svg" alt="">
+
+                                                        </div>
+                                                        <div style="transform: translateX(-30px);"
+                                                            class="col-md col-sm-12 tb-col-7">
+                                                            <span class="location-vaule">
+                                                                200$
                                                             </span>
-                                                            <div class="mobile-card-rank">
-                                                                <img src="img/main/unranked.svg" style="width: 24px;"
-                                                                    alt="">
-                                                                <span class="mobile-rank-text">
-                                                                    Без ранга
-                                                                </span>
+                                                        </div>
+                                                        <div style="transform: translateX(-30px);"
+                                                            class="col-md col-sm-12 tb-col-7">
+                                                            <span class="location-vaule">
+                                                                3
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-md col-sm-12 tb-col-7">
+                                                            <span class="tb-rank-text">
+                                                                5.000$
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-md col-sm-12 tb-col-7">
+                                                            <span class="tb-rank-text more__detailed">
+                                                                <button type="button" data-bs-toggle="modal"
+                                                                    data-bs-target="#tableModalInfo">
+                                                                    Подробнее
+                                                                </button>
+                                                            </span>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="rows__level three">
+                                                        <div class="row tb-row align-items-center one-lvl">
+                                                            <div class="col-md-12 mobile-tb-col ">
                                                             </div>
-                                                            <div class="mobile-card-location">
-                                                                <span class="transparent">
-                                                                    Локация:
-                                                                </span>
-                                                                -
+                                                            <div class="col-md col-sm-12 table__line tb-col-7 ">
+                                                                <p class="tabs__minus show"></p>
+
+                                                                <span>3</span>
                                                             </div>
-                                                            <div class="mobile-card-contacts">
+                                                            <div class="col-md col-sm-12 tb-col-7">
+
+                                                                <a href="https://google.com" class="login-link">
+                                                                    @aleksaryakian
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-md col-sm-12 tb-col-7">
                                                                 <a href="https://google.com" class="contacts-icon">
                                                                     <img src="img/main/tgicon.svg" alt="">
                                                                 </a>
@@ -2786,262 +3413,162 @@
                                                                     <img src="img/main/waicon.svg" alt="">
                                                                 </a>
                                                             </div>
-                                                        </div>
-                                                        <div class="mobile-card-col" style="margin-left: 20px;">
-                                                            <div class="mobile-card-userinfo">
-                                                                <span class="transparent">
-                                                                    Уровень:
-                                                                </span>
-                                                                0
+                                                            <div style="transform: translateX(-15px);"
+                                                                class="col-md col-sm-12 rank__row tb-col-7">
+                                                                <img src="img/main/unranked.svg" alt="">
+
                                                             </div>
-                                                            <div class="mobile-card-userinfo">
-                                                                <span class="transparent">
-                                                                    Локация:
+                                                            <div style="transform: translateX(-30px);"
+                                                                class="col-md col-sm-12 tb-col-7">
+                                                                <span class="location-vaule">
+                                                                    200$
                                                                 </span>
-                                                                -
                                                             </div>
-                                                            <div class="mobile-card-userinfo">
-                                                                <span class="transparent">
-                                                                    Партнеры:
+                                                            <div style="transform: translateX(-30px);"
+                                                                class="col-md col-sm-12 tb-col-7">
+                                                                <span class="location-vaule">
+                                                                    3
                                                                 </span>
-                                                                3
                                                             </div>
-                                                            <div class="mobile-card-userinfo">
-                                                                <span class="transparent">
-                                                                    Личный депозит:
+                                                            <div class="col-md col-sm-12 tb-col-7">
+                                                                <span class="tb-rank-text">
+                                                                    5.000$
                                                                 </span>
-                                                                100 USDT
                                                             </div>
-                                                            <div class="mobile-card-userinfo">
-                                                                <span class="transparent">
-                                                                    Инвестиционный план:
+                                                            <div class="col-md col-sm-12 tb-col-7">
+                                                                <span class="tb-rank-text more__detailed">
+                                                                    <button type="button" data-bs-toggle="modal"
+                                                                        data-bs-target="#tableModalInfo">
+                                                                        Подробнее
+                                                                    </button>
                                                                 </span>
-                                                                1-й период
                                                             </div>
-                                                            <div class="mobile-card-userinfo">
-                                                                <span class="transparent">
-                                                                    Доход:
-                                                                </span>
-                                                                20.00% / мес
-                                                            </div>
+
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="rows__level two">
+                                                    <div class="row tb-row align-items-center one-lvl">
+                                                        <div class="col-md-12 mobile-tb-col ">
+                                                        </div>
+                                                        <div class="col-md col-sm-12 table__line tb-col-7 ">
+                                                            <p class="tabs__minus show"></p>
+
+                                                            <span>2</span>
+                                                        </div>
+                                                        <div class="col-md col-sm-12 tb-col-7">
+
+                                                            <a href="https://google.com" class="login-link">
+                                                                @aleksaryakian
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md col-sm-12 tb-col-7">
+                                                            <a href="https://google.com" class="contacts-icon">
+                                                                <img src="img/main/tgicon.svg" alt="">
+                                                            </a>
+                                                            <a href="https://google.com" class="contacts-icon">
+                                                                <img src="img/main/waicon.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div style="transform: translateX(-15px);"
+                                                            class="col-md col-sm-12 rank__row tb-col-7">
+                                                            <img src="img/main/unranked.svg" alt="">
+
+                                                        </div>
+                                                        <div style="transform: translateX(-30px);"
+                                                            class="col-md col-sm-12 tb-col-7">
+                                                            <span class="location-vaule">
+                                                                200$
+                                                            </span>
+                                                        </div>
+                                                        <div style="transform: translateX(-30px);"
+                                                            class="col-md col-sm-12 tb-col-7">
+                                                            <span class="location-vaule">
+                                                                3
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-md col-sm-12 tb-col-7">
+                                                            <span class="tb-rank-text">
+                                                                5.000$
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-md col-sm-12 tb-col-7">
+                                                            <span class="tb-rank-text more__detailed">
+                                                                <button type="button" data-bs-toggle="modal"
+                                                                    data-bs-target="#tableModalInfo">
+                                                                    Подробнее
+                                                                </button>
+                                                            </span>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="rows__level three">
+                                                        <div class="row tb-row align-items-center one-lvl">
+                                                            <div class="col-md-12 mobile-tb-col ">
+                                                            </div>
+                                                            <div class="col-md col-sm-12 table__line tb-col-7 ">
+                                                                <p class="tabs__minus show"></p>
+
+                                                                <span>3</span>
+                                                            </div>
+                                                            <div class="col-md col-sm-12 tb-col-7">
+
+                                                                <a href="https://google.com" class="login-link">
+                                                                    @aleksaryakian
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-md col-sm-12 tb-col-7">
+                                                                <a href="https://google.com" class="contacts-icon">
+                                                                    <img src="img/main/tgicon.svg" alt="">
+                                                                </a>
+                                                                <a href="https://google.com" class="contacts-icon">
+                                                                    <img src="img/main/waicon.svg" alt="">
+                                                                </a>
+                                                            </div>
+                                                            <div style="transform: translateX(-15px);"
+                                                                class="col-md col-sm-12 rank__row tb-col-7">
+                                                                <img src="img/main/unranked.svg" alt="">
+
+                                                            </div>
+                                                            <div style="transform: translateX(-30px);"
+                                                                class="col-md col-sm-12 tb-col-7">
+                                                                <span class="location-vaule">
+                                                                    200$
+                                                                </span>
+                                                            </div>
+                                                            <div style="transform: translateX(-30px);"
+                                                                class="col-md col-sm-12 tb-col-7">
+                                                                <span class="location-vaule">
+                                                                    3
+                                                                </span>
+                                                            </div>
+                                                            <div class="col-md col-sm-12 tb-col-7">
+                                                                <span class="tb-rank-text">
+                                                                    5.000$
+                                                                </span>
+                                                            </div>
+                                                            <div class="col-md col-sm-12 tb-col-7">
+                                                                <span class="tb-rank-text more__detailed">
+                                                                    <button type="button" data-bs-toggle="modal"
+                                                                        data-bs-target="#tableModalInfo">
+                                                                        Подробнее
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                             </div>
-                                            <div class="col-md col-sm-12">
-                                                <img src="img/main/person-icon.svg" alt="">
-                                                <a href="https://google.com" class="login-link">
-                                                    @aleksaryakian
-                                                </a>
-                                            </div>
-                                            <div class="col-md col-sm-12" style="padding-left: 25px;">
-                                                <a href="https://google.com" class="contacts-icon">
-                                                    <img src="img/main/tgicon.svg" alt="">
-                                                </a>
-                                                <a href="https://google.com" class="contacts-icon">
-                                                    <img src="img/main/waicon.svg" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="col-md col-sm-12">
-                                                <span class="location-vaule">
-                                                    -
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12 rank__row">
-                                                <img src="img/main/unranked.svg" style="width: 24px;" alt="">
-                                                <span class="tb-rank-text">
-                                                    Без ранга
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12">
-                                                <span class="tb-rank-text" style="padding-left: 28px;">
-                                                    0
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12">
-                                                <span class="tb-rank-text" style="padding-left: 24px;">
-                                                    3
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12">
-                                                <span class="tb-rank-text" style="padding-left: 33px;">
-                                                    1-й период
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12 d-flex justify-content-center">
-                                                <span class="tb-rank-text" style="padding-left: 85px;">
-                                                    0 USDT
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12">
-                                                <span class="tb-rank-text" style="padding-left: 69px;">
-                                                    100 USDT
-                                                </span>
-                                            </div>
+
+
                                         </div>
-                                        <div class="row tb-row align-items-center" style="background: #0030A4;">
-                                            <div class="col-md col-sm-12">
-                                                <img src="img/main/person-icon.svg" alt="">
-                                                <a href="https://google.com" class="login-link">
-                                                    @aleksaryakian
-                                                </a>
-                                            </div>
-                                            <div class="col-md col-sm-12" style="padding-left: 25px;">
-                                                <a href="https://google.com" class="contacts-icon">
-                                                    <img src="img/main/tgicon.svg" alt="">
-                                                </a>
-                                                <a href="https://google.com" class="contacts-icon">
-                                                    <img src="img/main/waicon.svg" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="col-md col-sm-12">
-                                                <span class="location-vaule">
-                                                    -
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12 rank__row">
-                                                <img src="img/main/unranked.svg" style="width: 24px;" alt="">
-                                                <span class="tb-rank-text">
-                                                    Без ранга
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12">
-                                                <span class="tb-rank-text" style="padding-left: 28px;">
-                                                    0
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12">
-                                                <span class="tb-rank-text" style="padding-left: 24px;">
-                                                    3
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12">
-                                                <span class="tb-rank-text" style="padding-left: 33px;">
-                                                    1-й период
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12 d-flex justify-content-center">
-                                                <span class="tb-rank-text" style="padding-left: 85px;">
-                                                    0 USDT
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12">
-                                                <span class="tb-rank-text" style="padding-left: 69px;">
-                                                    <div>20.00% <span>/ в мес.</span></div>
-                                                    <div>20 USDT <span>/ в мес.</span></div>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="row tb-row align-items-center" style="background: #0030A4;">
-                                            <div class="col-md col-sm-12">
-                                                <img src="img/main/person-icon.svg" alt="">
-                                                <a href="https://google.com" class="login-link">
-                                                    @aleksaryakian
-                                                </a>
-                                            </div>
-                                            <div class="col-md col-sm-12" style="padding-left: 25px;">
-                                                <a href="https://google.com" class="contacts-icon">
-                                                    <img src="img/main/tgicon.svg" alt="">
-                                                </a>
-                                                <a href="https://google.com" class="contacts-icon">
-                                                    <img src="img/main/waicon.svg" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="col-md col-sm-12">
-                                                <span class="location-vaule">
-                                                    -
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12 rank__row">
-                                                <img src="img/main/unranked.svg" style="width: 24px;" alt="">
-                                                <span class="tb-rank-text">
-                                                    Без ранга
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12">
-                                                <span class="tb-rank-text" style="padding-left: 28px;">
-                                                    0
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12">
-                                                <span class="tb-rank-text" style="padding-left: 24px;">
-                                                    3
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12">
-                                                <span class="tb-rank-text" style="padding-left: 33px;">
-                                                    1-й период
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12 d-flex justify-content-center">
-                                                <span class="tb-rank-text" style="padding-left: 85px;">
-                                                    0 USDT
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12">
-                                                <span class="tb-rank-text" style="padding-left: 69px;">
-                                                    <div>20.00% <span>/ в мес.</span></div>
-                                                    <div>20 USDT <span>/ в мес.</span></div>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="row tb-row align-items-center" style="background: #0030A4;">
-                                            <div class="col-md col-sm-12">
-                                                <img src="img/main/person-icon.svg" alt="">
-                                                <a href="https://google.com" class="login-link">
-                                                    @aleksaryakian
-                                                </a>
-                                            </div>
-                                            <div class="col-md col-sm-12" style="padding-left: 25px;">
-                                                <a href="https://google.com" class="contacts-icon">
-                                                    <img src="img/main/tgicon.svg" alt="">
-                                                </a>
-                                                <a href="https://google.com" class="contacts-icon">
-                                                    <img src="img/main/waicon.svg" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="col-md col-sm-12">
-                                                <span class="location-vaule">
-                                                    -
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12 rank__row">
-                                                <img src="img/main/unranked.svg" style="width: 24px;" alt="">
-                                                <span class="tb-rank-text">
-                                                    Без ранга
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12">
-                                                <span class="tb-rank-text" style="padding-left: 28px;">
-                                                    0
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12">
-                                                <span class="tb-rank-text" style="padding-left: 24px;">
-                                                    3
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12">
-                                                <span class="tb-rank-text" style="padding-left: 33px;">
-                                                    1-й период
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12 d-flex justify-content-center">
-                                                <span class="tb-rank-text" style="padding-left: 85px;">
-                                                    0 USDT
-                                                </span>
-                                            </div>
-                                            <div class="col-md col-sm-12">
-                                                <span class="tb-rank-text" style="padding-left: 69px;">
-                                                    <div>20.00% <span>/ в мес.</span></div>
-                                                    <div>20 USDT <span>/ в мес.</span></div>
-                                                </span>
-                                            </div>
-                                        </div>
+
                                     </div>
                                     <div class="tab-pane fade" id="pills-profile" role="tabpanel"
                                         aria-labelledby="pills-profile-tab" tabindex="0">
-                                        <div class="row tb-row align-items-center " style="padding: 30px;">
+                                        <!-- <div class="row tb-row align-items-center " style="padding: 30px;">
                                             <div class="col-md-4 d-flex">
                                                 <div class="mobile__colum gap20">
                                                     <img src="img/main/unranked.svg" alt="" class="rank-img">
@@ -3099,12 +3626,12 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="container-fluid px-0">
 
                                             <div class="structure__table">
                                                 <div class="structure__instruments">
-                                                    <div class="structure__instrument">
+                                                    <div class="structure__instrument  ">
                                                         <button type="button" data-bs-toggle="modal"
                                                             data-bs-target="#tableModal">
                                                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -3174,6 +3701,9 @@
                                                         </svg>
                                                     </div>
                                                 </div>
+                                                <!-- <div class="structure__table">
+
+                                                </div> -->
                                                 <div class="row"
                                                     style="background: #0030A4; justify-content: center; padding: 102px 0px;">
                                                     <div class="col-md-12 grid-card__mobile"
@@ -3386,12 +3916,118 @@
             }
         }
     </style>
+    <script>
+        document.querySelector('.main-block__close').addEventListener('click', () => {
+            document.querySelector('.swiper-container').classList.toggle('active')
 
+        })
+    </script>
+    <script>
+        let minus = document.querySelectorAll('.tabs__minus');
+        let rowsLevel = document.querySelector('.rows__levels');
+
+        const structureChilds = (parent) => {
+            const childs = parent.querySelectorAll(':scope > .rows__level');
+            console.log(childs);
+
+            for (let i = 0; i < childs.length; i++) {
+                childs[i].addEventListener('click', function (event) {
+                    event.stopPropagation();
+                    childs[i].classList.toggle('active')
+
+                });
+
+                if (childs[i].children.length) {
+                    structureChilds(childs[i]);
+                }
+            }
+        }
+
+        structureChilds(rowsLevel);
+
+
+        for (let i = 0; i < minus.length; i++) {
+            minus[i].addEventListener('click', function () {
+                minus[i].classList.toggle('show');
+                minus[i].classList.toggle('none__active');
+            });
+        }
+    </script>
+    <script>
+        function copyText() {
+
+            var textToCopy = "http://cryptosafe.group//7334269346...kinjhd";
+
+            var textArea = document.createElement("textarea");
+            textArea.value = textToCopy;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+
+
+            document.body.removeChild(textArea);
+
+            var button = document.querySelector(".structure__top-ref-button");
+            button.innerHTML = "Скопировано";
+
+            button.style.backgroundColor = "#0000000";
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+
+        var swiper = new Swiper(".swiper", {
+            direction: 'horizontal',
+            spaceBetween: 30,
+            initialSlide: 1, // Устанавливаем второй слайд как выбранный по умолчанию
+            // centeredSlides: true,
+            loop: true,
+            slidesPerView: "auto",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            breakpoints: {
+                1751: {
+                    slidesPerView: 7.5,
+
+                },
+                1650: {
+                    slidesPerView: 6.5,
+
+                },
+                1450: {
+                    slidesPerView: 4.8,
+
+                },
+                1200: {
+                    slidesPerView: 3.5,
+
+                },
+                600: {
+                    slidesPerView: 6.20,
+
+                },
+                500: {
+                    slidesPerView: 3,
+
+                },
+                300: {
+                    slidesPerView: 3,
+
+                },
+            },
+        });
+    </script>
 
 </body>
 
