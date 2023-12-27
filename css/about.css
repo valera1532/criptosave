@@ -1840,7 +1840,7 @@ body {
     }
 
     .what__mt {
-        margin-top: 100px;
+        margin-top: 250px;
     }
 
     .first__fone img {
@@ -2799,7 +2799,7 @@ body {
     }
 
     .what__mt {
-        margin-top: 150px;
+        margin-top: 420px;
     }
 
     .section-subtitle {
@@ -3699,9 +3699,7 @@ footer a:hover {
 
 
 @media (max-width:1610px) {
-    .main-navbar__lang {
-        margin-top: 220px;
-    }
+
 
     .main-navigation ul.top-menu li a {
         padding: 20px;

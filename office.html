@@ -1586,7 +1586,7 @@
 
                         </div>
                         <div class="low__row">
-                            <div class="bonus col-5">
+                            <div class="bonus ">
                                 <div class="bonus__top">
                                     <div class="bonus__title">
                                         Полученые бонусы
@@ -1982,7 +1982,7 @@
     <script>
         const swiper = new Swiper('.swiper', {
 
-            slidesPerView: 5,
+            slidesPerView: 7,
 
             spaceBetween: 30,
             pagination: {
@@ -1996,17 +1996,18 @@
 
 
             breakpoints: {
-
-                1440: {
+                1800: {
                     slidesPerView: 7,
                     spaceBetween: 12,
-
-
+                },
+                1440: {
+                    slidesPerView: 5,
+                    spaceBetween: 12,
                 },
 
                 300: {
 
-                    effect: 'coverflow',
+
                     slidesPerView: "auto",
                     centeredSlides: true,
                     slidesPerView: 2.2,

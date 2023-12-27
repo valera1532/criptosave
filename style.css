@@ -128,6 +128,7 @@ article a {
 }
 
 .home-header {
+
   padding: 24px 28px;
   position: absolute;
   z-index: 1;
@@ -804,6 +805,8 @@ header {
   .main-navbar__lang {
     width: 100%;
   }
+
+
 }
 
 .menu-coming {
