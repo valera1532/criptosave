@@ -533,8 +533,7 @@
                                                     stroke="white" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                             <span>
-                                                Комиссия за досрочный вывод в любой момент 30% от
-                                                депозита
+                                                Прибыль не облагается комиссией и всегда доступна к выводу.
                                             </span>
                                         </div>
                                     </div>
@@ -556,7 +555,7 @@
                                                     </linearGradient>
                                                 </defs>
                                             </svg></div>
-                                        <div class="conclusion__point-title">Вывести тело депозита</div>
+                                        <div class="conclusion__point-title">Вывести Депозит</div>
                                         <div class="conclusion__point-sums">
                                             <div class="conclusion__point-sum">
                                                 <p>Сумма:</p>
@@ -637,8 +636,7 @@
                                                     stroke="white" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                             <span>
-                                                Комиссия за досрочный вывод в любой момент 30% от
-                                                депозита
+                                                При реинвестировании ваш депозит увеличивается на выбранную вами сумму
                                             </span>
                                         </div>
                                     </div>
@@ -693,6 +691,30 @@
                                         <button>Вывести депозит и перейти на страницу Счета</button>
                                     </div>
                                 </div>
+                                <div class="conclusion__successfully active">
+                                    <svg width="109" height="109" viewBox="0 0 109 109" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="54.4974" cy="54.4994" r="36.3333" fill="#00BB40" fill-opacity="0.3"
+                                            stroke="url(#paint0_linear_4816_27181)" stroke-width="2" />
+                                        <path
+                                            d="M39 56.625L47.8918 65.8873C47.9508 65.9488 48.0492 65.9488 48.1082 65.8873L72 41"
+                                            stroke="#00FF57" stroke-width="5" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_4816_27181" x1="32.998" y1="18"
+                                                x2="54.4974" y2="90.8327" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#00BB40" stop-opacity="0.7" />
+                                                <stop offset="1" stop-color="#00BB40" stop-opacity="0.09" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+
+                                    <div class="conclusion__successfully-text">
+                                        Вы успешно реинвестировали <span>$2000.</span>
+                                    </div>
+
+                                    <button class="conclusion__successfully-btn " data-bs-dismiss="modal">
+                                        Вернуться к моим счетам</button>
+                                </div>
 
                                 <script>
                                     let conclusionPoint = document.querySelectorAll('.сonclusion__point')
@@ -710,6 +732,79 @@
 
                                     }
                                 </script>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="reinvestModal" tabindex="-3" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body position-absolute">
+                    <div class="modal__chat-bot d-flex justify-content-center align-items-center  w-100 h-100">
+                        <div class="bg w-100 h-100 position-absolute"></div>
+                        <div class="popap popap768 position-relative mw-100">
+
+                            <div class="сonclusion">
+                                <button class="btn-close close сonclusion__button" data-bs-dismiss="modal">
+                                    <img src="images/ico-menu-close.svg" alt=""></button>
+                                <div class="сonclusion__title">
+                                    Реинвестировать прибыль
+                                </div>
+                                <div class="сonclusion__line"></div>
+
+                                <div class="bring__confirm active">
+                                    <div class="сonclusion__subtitle">Вывести депозит</div>
+                                    <div class="bring__available">Доступно к Реинвестированию:</div>
+                                    <div class="bring__sum">
+                                        $1,500
+                                    </div>
+                                    <div class="bring__note">Обращаем ваше внимание что средства <br>
+                                        будут переведены на ваш Основной Счет в кабинет CryptoSafe</div>
+                                    <div class="bring__inp-title"></div>
+                                    <div class="bring__inp">
+
+                                        <input type="text">
+                                        <div class="bring__inp-max">MAX</div>
+                                    </div>
+                                    <div class="conclusion__note"><svg width="16" height="16" viewBox="0 0 16 16"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.99609 4.66355H14.0011" stroke="white" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M6.37811 7.33152H4.66406" stroke="white" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M5.99776 11.3333H3.99693C2.8918 11.3333 1.99609 10.4376 1.99609 9.33248V3.99693C1.99609 2.8918 2.8918 1.99609 3.99693 1.99609H12.0003C13.1054 1.99609 14.0011 2.8918 14.0011 3.99693V6.6647"
+                                                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.94059 14.2777L9.05489 13.392C8.80479 13.1419 8.66406 12.8024 8.66406 12.4489V10.8863C8.66406 10.5328 8.80479 10.1933 9.05489 9.94321L9.94059 9.05751C10.1907 8.80674 10.5302 8.66602 10.8837 8.66602H12.4463C12.7998 8.66602 13.1393 8.80674 13.3894 9.05685L14.2757 9.94321C14.5258 10.1933 14.6666 10.5321 14.6666 10.8863V12.4483C14.6666 12.8017 14.5258 13.1412 14.2757 13.3913L13.3894 14.2777C13.1399 14.5278 12.8005 14.6685 12.4463 14.6685H10.8837C10.5302 14.6685 10.1907 14.5278 9.94059 14.2777Z"
+                                                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M11.6655 11.5487V10.3789" stroke="white" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M11.6652 12.8379C11.6332 12.8379 11.6072 12.864 11.6078 12.896C11.6078 12.928 11.6338 12.954 11.6658 12.954C11.6979 12.954 11.7232 12.928 11.7232 12.896C11.7232 12.864 11.6972 12.8379 11.6652 12.8379"
+                                                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span>
+                                            Прибыль по депозитам в напрелении CS Optimum не облагается комиссией
+                                        </span>
+                                    </div>
+                                    <div class="bring__button bring__button-close">
+                                        <button class="" data-bs-dismiss="modal">
+                                            Реинвестировать Средства</button>
+                                    </div>
+                                    <script>
+                                        document.querySelector('.bring__button-close').addEventListener('click', () => {
+                                            document.querySelector('.reinvest-starting').classList.add('active')
+                                            document.querySelector('.reinvest-finish').classList.add('active')
+                                        })
+                                    </script>
+                                </div>
+
+
                             </div>
 
                         </div>
@@ -1539,7 +1634,7 @@
                                         <button data-bs-toggle="modal" data-bs-target="#сonclusionModal"
                                             class="mt-5 сonclusion__modal header__tg deposit-outline-btn mt-5"
                                             style="background-color: transparent;">
-                                            Вывести средства
+                                            Вывести Средства
                                         </button>
 
 
@@ -1570,29 +1665,35 @@
                                                 38.500 $
                                             </span>
                                         </div>
-                                        <button class="deposit-outline-btn mt-5">
-                                            <svg width="59" height="59" viewBox="0 0 59 59" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g filter="url(#filter0_f_4717_23229)">
+                                        <div class="reinvest-button reinvest-starting deposit-outline-btn mt-5">
+                                            <button data-bs-toggle="modal" data-bs-target="#reinvestModal"
+                                                class="deposit-outline-btn reinvest-start ">
+                                                <svg width="59" height="59" viewBox="0 0 59 59" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_f_4717_23229)">
+                                                        <rect x="7" y="7" width="45" height="45" rx="22.5"
+                                                            fill="white" />
+                                                    </g>
                                                     <rect x="7" y="7" width="45" height="45" rx="22.5" fill="white" />
-                                                </g>
-                                                <rect x="7" y="7" width="45" height="45" rx="22.5" fill="white" />
-                                                <defs>
-                                                    <filter id="filter0_f_4717_23229" x="0" y="0" width="59" height="59"
-                                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                        <feBlend mode="normal" in="SourceGraphic"
-                                                            in2="BackgroundImageFix" result="shape" />
-                                                        <feGaussianBlur stdDeviation="3.5"
-                                                            result="effect1_foregroundBlur_4717_23229" />
-                                                    </filter>
-                                                </defs>
-                                            </svg>
+                                                    <defs>
+                                                        <filter id="filter0_f_4717_23229" x="0" y="0" width="59"
+                                                            height="59" filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="BackgroundImageFix" result="shape" />
+                                                            <feGaussianBlur stdDeviation="3.5"
+                                                                result="effect1_foregroundBlur_4717_23229" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
 
-                                            <span>
-                                                Реинвестировать <br>
-                                                прибыль
-                                            </span>
+                                                <span>
+                                                    Реинвестировать <br>
+                                                    прибыль
+                                                </span>
+
+                                            </button>
                                             <svg class="svg-28" width="28" height="28" viewBox="0 0 28 28" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -1604,17 +1705,19 @@
                                                 <path d="M14.0068 9.33333L13.9964 9.33333" stroke="white"
                                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
-                                        </button>
-                                        <!-- <button class="deposit-outline-btn deposit-outline__suc position-relative mt-5">
-                                            <svg class="svg__absolute" width="253" height="59" viewBox="0 0 253 59"
+                                        </div>
+
+                                        <button
+                                            class="deposit-outline-btn reinvest-finish deposit-outline__suc position-relative mt-5">
+                                            <svg class="svg__absolute" width="273" height="59" viewBox="0 0 273 59"
                                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <g filter="url(#filter0_f_4604_52975)">
-                                                    <rect x="7" y="7" width="238.689" height="45" rx="22.5"
+                                                    <rect x="17" y="7" width="238.689" height="45" rx="22.5"
                                                         fill="white" />
                                                 </g>
-                                                <rect x="7" y="7" width="240" height="45" rx="22.5" fill="white" />
+                                                <rect x="17" y="7" width="273" height="45" rx="22.5" fill="white" />
                                                 <defs>
-                                                    <filter id="filter0_f_4604_52975" x="0" y="0" width="252.688"
+                                                    <filter id="filter0_f_4604_52975" x="0" y="0" width="273"
                                                         height="59" filterUnits="userSpaceOnUse"
                                                         color-interpolation-filters="sRGB">
                                                         <feFlood flood-opacity="0" result="BackgroundImageFix" />
@@ -1652,8 +1755,8 @@
                                             </svg>
 
 
-                                        </button> -->
-                                        <div class="deposit-outline-note">
+                                        </button>
+                                        <div class="deposit-outline-note ">
                                             Депозит в направление CS Optimum состоит из двух счетов:<span>
                                                 «Депозит» и
                                                 «Прибыль по Депозиту»
@@ -2128,15 +2231,15 @@
     </div>
     <script>
 
-        document.querySelector('.svg-28').addEventListener('click', (event) => {
+        document.querySelector('.svg-28').addEventListener('mouseover', (event) => {
             event.stopPropagation();
-            document.querySelector('.deposit-outline-note').classList.toggle('active');
+            document.querySelector('.deposit-outline-note').classList.add('active');
             setTimeout(() => {
                 document.querySelector('.deposit-outline-note').classList.remove('active')
-            }, 7000);
+            }, 12000);
         });
 
-        document.addEventListener('click', (event) => {
+        document.addEventListener('mouseover', (event) => {
             const block = document.querySelector('.deposit-outline-note');
 
             if (!block.contains(event.target)) {
