@@ -9020,3 +9020,44 @@ p {
   overflow: unset !important;
   max-width: calc(100% - 333px) !important;
 }
+
+.translate-30 {
+  transform: translateX(-30px);
+}
+
+.translate-15 {
+  transform: translateX(-15px);
+}
+
+.ml__20 {
+  margin-left: 20px;
+}
+
+.table__structure {
+  max-height: 1000px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.table__structure {
+  /* плашка-бегунок и фон */
+  scrollbar-color: #999 #333;
+}
+
+.table__structure::-webkit-scrollbar {
+  width: 10px;
+
+  height: 10px;
+
+}
+
+.table__structure::-webkit-scrollbar-thumb {
+  /* плашка-бегунок */
+  background: #00000000;
+  border: 1px solid #ae9408;
+  border-radius: 10px;
+}
+
+.table-col {
+  padding: 0 !important;
+}
