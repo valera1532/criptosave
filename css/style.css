@@ -9018,7 +9018,7 @@ p {
 
 .main-block {
   overflow: unset !important;
-  max-width: calc(100% - 333px) !important;
+
 }
 
 .translate-30 {
@@ -9060,4 +9060,153 @@ p {
 
 .table-col {
   padding: 0 !important;
+}
+
+.table-striped {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table thead th {
+  padding: 10px 15px;
+  color: #ffffff50;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 16px */
+  background: #0035B5 !important;
+}
+
+.table tbody td {
+  color: #FFF;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  /* 16px */
+  background: #001853;
+  padding: 10px 15px;
+}
+
+.table tbody tr[data-level="1"] td {
+  background: #001853;
+  border: none;
+}
+
+.table tbody tr[data-level="2"] td {
+  border-bottom: 1px solid #335098;
+
+  background: #001D65;
+}
+
+.table tbody tr[data-level="3"] td {
+  border-bottom: 1px solid #335098;
+
+  background: #002D9E;
+}
+
+.table tbody tr[data-level="4"] td {
+  border-bottom: 1px solid #335098;
+
+  background: #0037BF;
+}
+
+.table tbody tr[data-level="5"] td {
+  border-bottom: 1px solid #335098;
+
+  background: #0037BF;
+}
+
+.child-row {
+  display: none;
+}
+
+/* .parent-row .level-cell.open>.child-row {
+  display: table-row !important;
+} */
+.table__rang {
+  height: 42px;
+  width: 42px;
+}
+
+.number__table {
+  display: inline;
+  color: #FFD600;
+  font-family: Gilroy-Bold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 16px */
+  text-align: center;
+  padding: 7px 13px 6px 13px;
+  border: 1px solid rgba(255, 214, 0, 0.60);
+  background: linear-gradient(95deg, rgba(43, 43, 43, 0.20) 0%, rgba(60, 60, 60, 0.40) 51.56%, rgba(0, 0, 0, 0.20) 100%);
+  backdrop-filter: blur(17px);
+
+  border-radius: 100px;
+}
+
+.round-level {
+  color: #FFF;
+  padding-left: 3px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 20px */
+}
+
+@media (max-width:767px) {
+  .structure__table-main {
+    overflow-x: auto;
+    padding: 0;
+  }
+
+  .level-cell {
+    min-width: 100px !important;
+  }
+}
+
+
+
+.crypto__opening-banner {
+  width: 100%;
+}
+
+
+@media (max-width:1600px) {
+  .crypto__purpose-block:last-child {
+    max-width: 400px;
+  }
+
+  .crypto__opening-cards {
+    flex-wrap: wrap;
+  }
+}
+
+.btn-decor1 {
+  transition: .4s;
+}
+
+.btn-decor2 {
+  transition: .4s;
+
+}
+
+.crypto__purpose-button:hover .btn-decor1 {
+  transform: scale(1.1);
+}
+
+.crypto__purpose-button:hover .btn-decor2 {
+  transform: scale(1.1);
+}
+
+@media (max-width:1024px) {
+  .crypto__purpose-block:last-child {
+    max-width: inherit;
+  }
 }
