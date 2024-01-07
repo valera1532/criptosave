@@ -477,7 +477,39 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="videoModal" tabindex="-2" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body position-absolute">
+                    <div class="modal_chat-bot d-flex justify-content-center align-items-center  w-100 h-100">
+                        <div class="bg w-100 h-100 position-absolute"></div>
+                        <div class="popap  position-relative mw-100">
 
+
+
+                            <div class="popap__data w-100 mw-100">
+                                <button class="btn-close close" data-bs-dismiss="modal"><img
+                                        src="images/ico-menu-close.svg" alt=""></button>
+                                <div class="popup__video">
+                                    <video autoplay="autoplay" muted controls>
+
+
+                                        <source src="./video/office.mp4" type="video/mp4" />
+
+
+                                    </video>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="wrapper">
         <header class="header" id="header">
             <div class="_container">
@@ -1320,9 +1352,10 @@
                                                 <li>Приключенческое сафари</li>
                                             </ul>
                                         </div>
-                                        <div class="crypto__purpose-button"><svg class="btn-decor1" width="189"
-                                                height="61" viewBox="0 0 189 61" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                        <div class="crypto__purpose-button" data-bs-toggle="modal"
+                                            data-bs-target="#videoModal">
+                                            <svg class="btn-decor1" width="189" height="61" viewBox="0 0 189 61"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <rect opacity="0.8" x="10.4849" y="0.5" width="177.481" height="60"
                                                     rx="30" stroke="url(#paint0_linear_4570_23238)" />
                                                 <rect opacity="0.4" x="5.49268" y="0.5" width="177.481" height="60"
@@ -1396,9 +1429,6 @@
                     </div>
                 </div>
             </div>
-
-
-
     </div>
 
     <div class="shadow">
