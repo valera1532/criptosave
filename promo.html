@@ -482,25 +482,19 @@
             <div class="modal-content">
                 <div class="modal-body position-absolute">
                     <div class="modal_chat-bot d-flex justify-content-center align-items-center  w-100 h-100">
-                        <div class="bg w-100 h-100 position-absolute"></div>
+
                         <div class="popap  position-relative mw-100">
 
 
 
                             <div class="popap__data w-100 mw-100">
-                                <button class="btn-close close" data-bs-dismiss="modal"><img
+                                <button class="btn-close close close__video" data-bs-dismiss="modal"><img
                                         src="images/ico-menu-close.svg" alt=""></button>
                                 <div class="popup__video">
-                                    <video autoplay="autoplay" muted controls>
-
-
+                                    <video class="video__crypto" muted autoplay="autoplay" controls>
                                         <source src="./video/office.mp4" type="video/mp4" />
-
-
                                     </video>
                                 </div>
-
-
                             </div>
 
 
@@ -1452,7 +1446,21 @@
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const closeButton = document.querySelector('.close__video');
+            const video = document.querySelector('.video__crypto');
 
+            if (closeButton && video) {
+
+                closeButton.addEventListener('click', () => {
+
+                    video.muted = true;
+                });
+            }
+        });
+
+    </script>
 
 </body>
 

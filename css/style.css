@@ -8425,7 +8425,7 @@ p {
     padding: 12px;
     color: #FFF;
     text-align: center;
-    font-size: 10px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
@@ -8553,7 +8553,7 @@ p {
   color: #FFF;
   text-align: center !important;
 
-  font-size: 10px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
@@ -8566,9 +8566,12 @@ p {
   border-radius: 5px;
   border: 0.5px solid var(--podlozka, rgba(255, 255, 255, 0.73));
   background: linear-gradient(112deg, rgba(0, 0, 0, 0.29) 0.71%, rgba(0, 0, 0, 0.00) 109.83%);
-
   /* back1 */
   backdrop-filter: blur(3.3499999046325684px);
+}
+
+.purpose__cards .swiper {
+  max-height: 115px;
 }
 
 @media (max-width: 1800px) {
@@ -9283,4 +9286,22 @@ p {
   .popup__video {
     margin-top: 80px;
   }
+}
+
+.deposit__right-sum {
+  max-width: 200px;
+}
+
+.deposit__right-year-profit {
+  max-width: 200px;
+}
+
+.deposit__right-card img {
+  left: inherit !important;
+}
+
+.popup__video {
+
+  border-radius: 20px;
+  overflow: hidden;
 }

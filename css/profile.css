@@ -283,6 +283,19 @@
     padding-top: 20px;
 }
 
+@media (max-width:1900px) {
+    .profile__colums {
+        flex-direction: column;
+    }
+
+    .profile__protect-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .profile__protect-inps {
     display: flex;
     gap: 21px;
