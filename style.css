@@ -801,15 +801,24 @@ header {
 
 .main-navbar__lang {}
 
-@media (max-width: 767px) {
-  .main-navbar__lang {
-    width: 100%;
-  }
 
-
-}
 
 .menu-coming {
   position: relative;
   top: 5px;
+}
+.team__swiper-fone{
+  top: 40px !important;
+ 
+}
+
+@media (max-width: 767px) {
+  .main-navbar__lang {
+    width: 100%;
+  }
+  .team__swiper-fone{
+    top: 0px !important;
+   
+  }
+
 }

@@ -477,6 +477,15 @@
                         <div class="popap popap768 position-relative mw-100">
 
                             <div class="сonclusion">
+                                <button class="сonclusion-back">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.2324 12.5552H5.23242" stroke="#ffffff80" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12.2324 19.5552L5.23242 12.5552L12.2324 5.55524" stroke="#ffffff80"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
                                 <button class="btn-close close сonclusion__button" data-bs-dismiss="modal">
                                     <img src="images/ico-menu-close.svg" alt=""></button>
                                 <div class="сonclusion__title">
@@ -715,9 +724,16 @@
 
                                 <script>
                                     let conclusionPoint = document.querySelectorAll('.сonclusion__point')
+                                    let consolutionBack = document.querySelector('.сonclusion-back')
                                     document.querySelector('.conclusion__button-confirm').addEventListener('click', () => {
+                                        consolutionBack.classList.add('active')
                                         document.querySelector('.bring__confirm').classList.add('active')
                                         document.querySelector('.сonclusion__main').classList.add('active')
+                                    })
+                                    consolutionBack.addEventListener('click', () => {
+                                        consolutionBack.classList.remove('active')
+                                        document.querySelector('.bring__confirm').classList.remove('active')
+                                        document.querySelector('.сonclusion__main').classList.remove('active')
                                     })
                                     for (let j = 0; j < conclusionPoint.length; j++) {
                                         conclusionPoint[j].addEventListener('click', () => {
@@ -737,6 +753,7 @@
             </div>
         </div>
     </div>
+
     <div class="modal fade" id="reinvestModal" tabindex="-3" aria-labelledby="exampleModalLabel">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -1972,20 +1989,26 @@
                                                 class="deposit-outline-btn reinvest-start ">
                                                 <svg width="59" height="59" viewBox="0 0 59 59" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <g filter="url(#filter0_f_4717_23229)">
+                                                    <g filter="url(#filter0_f_7108_26117)">
                                                         <rect x="7" y="7" width="45" height="45" rx="22.5"
                                                             fill="white" />
                                                     </g>
                                                     <rect x="7" y="7" width="45" height="45" rx="22.5" fill="white" />
+                                                    <path class="reinvest-start__status"
+                                                        d="M32.9749 15.7048L41.4275 19.243C41.7993 19.3987 42.0413 19.7624 42.0413 20.1655V33.8701C42.0413 35.8313 41.0829 37.6687 39.4744 38.7909L30.0719 45.3508C29.7281 45.5906 29.2713 45.5906 28.9275 45.3508L19.5249 38.7909C17.9165 37.6687 16.958 35.8313 16.958 33.8701V20.1655C16.958 19.7624 17.2 19.3987 17.5719 19.243L26.0244 15.7048C28.2478 14.774 30.7516 14.774 32.9749 15.7048Z"
+                                                        fill="#00FF57" />
+                                                    <path
+                                                        d="M25.0205 30.875L28.499 34.2726C28.5573 34.3296 28.6504 34.3296 28.7087 34.2726L35.7705 27.375"
+                                                        stroke="black" stroke-width="2" />
                                                     <defs>
-                                                        <filter id="filter0_f_4717_23229" x="0" y="0" width="59"
+                                                        <filter id="filter0_f_7108_26117" x="0" y="0" width="59"
                                                             height="59" filterUnits="userSpaceOnUse"
                                                             color-interpolation-filters="sRGB">
                                                             <feFlood flood-opacity="0" result="BackgroundImageFix" />
                                                             <feBlend mode="normal" in="SourceGraphic"
                                                                 in2="BackgroundImageFix" result="shape" />
                                                             <feGaussianBlur stdDeviation="3.5"
-                                                                result="effect1_foregroundBlur_4717_23229" />
+                                                                result="effect1_foregroundBlur_7108_26117" />
                                                         </filter>
                                                     </defs>
                                                 </svg>
