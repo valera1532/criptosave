@@ -10636,11 +10636,11 @@ p {
   line-height: 1.1;
 }
 
-.presentations__card {
+.materials__card {
   display: none;
 }
 
-.presentations__card.active {
+.materials__card.active {
   display: block;
 }
 
