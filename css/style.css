@@ -11267,6 +11267,6 @@ p {
     grid-template-columns: repeat(1, 100%);
   }
   .congratulation {
-    min-width: none;
+    min-width: 100%;
   }
 }
