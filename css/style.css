@@ -11155,3 +11155,15 @@ p {
 .deposite {
   margin-top: 20px;
 }
+@media (max-width: 767px) {
+  .cs_multi-banner strong {
+    font-size: 20px;
+  }
+  .cs_multi-banner-info {
+    font-size: 16px;
+  }
+  .cs__multi-banner-main ul {
+    gap: 10px 20px;
+    grid-template-columns: repeat(1, 100%);
+  }
+}
