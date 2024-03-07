@@ -11266,6 +11266,9 @@ p {
     gap: 10px 20px;
     grid-template-columns: repeat(1, 100%);
   }
+  .congratulation__form-main{
+    flex-direction: column;
+  }
   .congratulation {
     min-width: 100%;
   }
