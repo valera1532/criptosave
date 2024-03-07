@@ -11155,6 +11155,106 @@ p {
 .deposite {
   margin-top: 20px;
 }
+
+
+.congratulation {
+  min-width: 664px;
+  padding: 133px 30px 20px 30px;
+  position: relative;
+}
+.congratulation::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  mix-blend-mode: plus-lighter;
+  backdrop-filter: blur(140px);
+  -webkit-backdrop-filter: blur(140px);
+  background: linear-gradient(180deg, #07359f 0%, #0a318c 100%);
+  border-radius: 20px;
+}
+.congratulation__backround {
+  object-fit: cover;
+  mix-blend-mode: plus-lighter;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.congratulation__title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  color: white;
+}
+.congratulation__subtitle {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 160%;
+  text-align: center;
+  color: white;
+  & span {
+    text-transform: uppercase;
+    color: var(--yeelow);
+  }
+}
+.congratulation__info {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  text-align: center;
+  color: white;
+}
+.congratulation__form form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 0;
+  font-weight: 400;
+  border-radius: 100px;
+  padding: 16px 25px;
+  width: 205px;
+  height: 60px;
+  font-size: 16px;
+  line-height: 140%;
+  color: #222;
+  background: var(--yeelow);
+}
+.congratulation__form-main {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.congratulation__form-main input {
+  width: 100%;
+  border-radius: 15px;
+  padding: 10px 20px;
+  background: #ffffff20;
+  border: 1px solid #ffffff80;
+}
+.congratulation__form-title {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 193%;
+  color: white;
+}
+.congratulation__block{position: relative;
+  z-index: 4;
+}
+.congratulation__form-point{
+  width: 100%;
+}
 @media (max-width: 767px) {
   .cs_multi-banner strong {
     font-size: 20px;
@@ -11165,5 +11265,8 @@ p {
   .cs__multi-banner-main ul {
     gap: 10px 20px;
     grid-template-columns: repeat(1, 100%);
+  }
+  .congratulation {
+    min-width: none;
   }
 }
