@@ -11255,6 +11255,12 @@ p {
 .congratulation__form-point{
   width: 100%;
 }
+.mobile-reverse{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
 @media (max-width: 767px) {
   .cs_multi-banner strong {
     font-size: 20px;
@@ -11271,6 +11277,10 @@ p {
   }
   .congratulation {
     min-width: 100%;
+  }
+  .mobile-reverse{
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 .deposite__sum {
