@@ -11273,3 +11273,39 @@ p {
     min-width: 100%;
   }
 }
+.deposite__sum {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+}
+.deposit-vaule {
+  font-size: 50px;
+}
+.deposite__sum-total{
+  gap: 5px;
+  align-items: baseline;
+  display: flex;
+}
+.deposit-valut {
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+color: #959595;
+}
+.deposit-usdt {font-weight: 400;
+  display: flex;
+font-size:14px;
+line-height: 100%;
+color: #959595;
+}
+
+.spacer{
+  margin-top: 30px;
+}
+.deposit-vaule-flex{font-size:14px;
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
