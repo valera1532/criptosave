@@ -11261,27 +11261,9 @@ p {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 767px) {
-  .cs_multi-banner strong {
-    font-size: 20px;
-  }
-  .cs_multi-banner-info {
-    font-size: 16px;
-  }
-  .cs__multi-banner-main ul {
-    gap: 10px 20px;
-    grid-template-columns: repeat(1, 100%);
-  }
-  .congratulation__form-main{
-    flex-direction: column;
-  }
-  .congratulation {
-    min-width: 100%;
-  }
-  .mobile-reverse{
-    display: flex;
-    flex-direction: column-reverse;
-  }
+
+.сonclusion__mobile{
+  display: none;
 }
 .deposite__sum {
   align-items: baseline;
@@ -11318,4 +11300,49 @@ color: #959595;
   display: flex;
   gap: 10px;
   align-items: baseline;
+}
+.сonclusion__desctop{
+  display: block;
+}
+@media (max-width: 767px) {
+  .cs_multi-banner strong {
+    font-size: 20px;
+  }
+  .yearly-deposit{
+    margin-top: 20px !important;
+  }
+  .deposit-percentage{
+    margin-bottom: 10px !important;
+  }
+  .cs_multi-banner-info {
+    font-size: 16px;
+  }
+  .cs__multi-banner-main ul {
+    gap: 10px 20px;
+    grid-template-columns: repeat(1, 100%);
+  }
+  .congratulation__form-main{
+    flex-direction: column;
+  }
+  .congratulation {
+    min-width: 100%;
+  }
+  .mobile-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .deposit-vaule-description {
+  margin-top: 20px;
+  
+}
+.сonclusion__mobile{
+  margin-top: 25px !important;
+  display: block;
+}
+.сonclusion__desctop{
+  display: none;
+}
+.deposit-outline-btn{
+  margin: 20px auto;
+}
 }
