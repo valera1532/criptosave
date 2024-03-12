@@ -29,6 +29,9 @@ document.querySelector(".main-block__close").addEventListener("click", (function
 })), document.querySelector(".main-navbar__close").addEventListener("click", (function () {
     document.querySelector(".main-navbar").classList.remove("open"), document.querySelector("body").classList.remove("lock")
 }));
+
+
+
 let titlePop = document.querySelectorAll(".popup__title");
 let btnsPopup = document.querySelectorAll(".check-box__btn");
 let scorePop = document.querySelectorAll(".popup__content");
@@ -38,12 +41,15 @@ for (let e = 0; e < btnsPopup.length; e++) btnsPopup[e].addEventListener("click"
 
     for (let e = 0; e < tabsBlock.length; e++) tabsBlock[e].classList.remove("active");
     for (let e = 0; e < tabsBtns.length; e++) tabsBtns[e].classList.remove("active");
-    for (let e = 0; e < titlePop.length; e++) {
+    for (let e = 0; e < titlePop.length; e++)
         titlePop[e].classList.add("none")
-    }
+
     titlePop[e].classList.remove("none"),
-        tabsBtns[e].classList.add("active"), tabsBlock[e].classList.add("active")
+        tabsBtns[e].classList.add("active"),
+        tabsBlock[e].classList.add("active")
 }));
+
+
 document.querySelector(".popup__close").addEventListener("click", (function () {
     document.querySelector(".popup").classList.remove("active"), document.querySelector(".shadow").classList.remove("active")
 })), document.querySelector(".shadow").addEventListener("click", (function () {
@@ -76,6 +82,23 @@ historyBtn.addEventListener("click", (function () {
     tabsBlock[2].classList.add("active");
     titlePop[2].classList.remove("none");
 }));
+let multiBtn = document.querySelectorAll(".multi__btn");
+for (let j = 0; j < multiBtn.length; j++) {
+
+    multiBtn[j].addEventListener("click", (function () {
+        document.querySelector(".popup").classList.add("active"),
+            document.querySelector(".shadow").classList.add("active")
+        for (let i = 0; i < tabsBtns.length; i++) {
+            titlePop[i].classList.add("none"),
+                tabsBtns[i].classList.remove("active"),
+                tabsBlock[i].classList.remove("active")
+        };
+        tabsBtns[j].classList.add("active");
+        tabsBlock[j].classList.add("active");
+        titlePop[j].classList.remove("none");
+    }));
+}
+
 
 
 

@@ -11221,3 +11221,324 @@ p {
         gap: 20px;
     }
 }
+
+.multi__score {
+    margin-bottom: 20px;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 53, 159, 0.61)), to(rgba(10, 49, 140, 0.1)));
+    background: linear-gradient(180deg, rgba(7, 53, 159, 0.61) 0%, rgba(10, 49, 140, 0.1) 100%);
+    -webkit-backdrop-filter: blur(70px);
+    backdrop-filter: blur(70px);
+}
+
+.multi__score-top {
+    display: flex;
+    gap: 20px;
+}
+
+.multi__score-balance {}
+
+.multi__balance-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1;
+    color: var(--white);
+    display: flex;
+    align-items: baseline;
+}
+
+.multi__balance-title ul {
+    padding-left: 15px;
+
+    display: flex;
+    gap: 5px;
+}
+
+.multi__balance-coin {
+    position: relative;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1;
+    color: #ffffff50;
+}
+
+.multi__balance-coin.active {
+    color: #ffffff;
+}
+
+.multi__balance-coin.active::before {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    background: var(--yeelow);
+    border-radius: 19px;
+    width: 26px;
+    height: 2px;
+}
+
+
+.multi__balance-body {
+    margin-top: 20px;
+}
+
+.multi__balance-subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    color: #ffffff50;
+}
+
+.multi__balance-main {
+    font-family: "Gilroy-Bold";
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+
+    & img {
+        width: 40px;
+        height: 40px;
+    }
+
+    & span {
+        font-weight: 400;
+        font-size: 55px;
+        line-height: 1;
+        color: var(--white);
+    }
+}
+
+.multi__score-income {
+    width: 65%;
+    position: relative;
+    display: flex;
+}
+
+.multi__income-points {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.multi__income-point {}
+
+.multi__income-title {
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff50;
+    margin-bottom: 10px;
+}
+
+.multi__income-main {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.multi__income-main img {
+    height: 26px;
+    width: 26px;
+}
+
+.multi__income-main span {
+    font-weight: 400;
+    font-size: 32px;
+    font-family: "Gilroy-Bold";
+}
+
+.multi__income-token {
+    top: -25px;
+    right: -2px;
+    position: absolute;
+}
+
+.multi__score-bootom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+
+.multi__your-coins ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.multi__your-coins li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.multi__your-coins li img {
+    width: 26px;
+    height: 26px;
+}
+
+.multi__your-coins li span {
+    font-weight: 400;
+    font-size: 28px;
+    font-family: "Gilroy-Bold";
+}
+
+.multi__your-coins li p {}
+
+.multi__line-g {
+    margin-top: 10px;
+    height: 1.5px;
+    border-radius: 15px;
+    background: #ffffff40;
+}
+
+.multi__btns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.multi__score-bootom-title {
+    color: #ffffff50;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.multi__btn {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(35px);
+    backdrop-filter: blur(35px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 20px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+    cursor: pointer;
+}
+
+@media (max-width: 1320px) {
+    .multi__score {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .multi__score-top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .multi__score-top svg {
+        display: none;
+    }
+
+    .multi__score-income {
+        width: 100%;
+    }
+
+    .multi__score-bootom {
+        margin-top: 25px;
+        flex-direction: column;
+    }
+
+    .multi__score-bootom svg {
+        display: none;
+    }
+
+    .multi__g-line {
+        display: none;
+    }
+
+    .multi__your-coins li span {
+        font-size: 23px;
+    }
+
+    .multi__your-coins ul {
+        padding-left: 0;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .multi__balance-title {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .multi__balance-title ul {
+        padding-left: 0;
+        gap: 20px;
+    }
+
+    .multi__score-bootom-title {
+        margin-bottom: 20px;
+    }
+
+    .multi__balance-body {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .multi__income-title {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .multi__income-token {
+        top: 15px;
+        right: -52px;
+    }
+
+    .multi__btns {
+        padding-top: 20px;
+        border-top: 1px solid #ffffff20;
+        flex-direction: row;
+    }
+
+    .multi__score-income {
+        padding-top: 20px;
+        padding-bottom: 15px;
+        border-top: 1px solid #ffffff20;
+    }
+
+    .multi__your-coins {
+        padding-top: 10px;
+        border-top: 1px solid #ffffff20;
+    }
+
+    .multi__score-bootom {
+        gap: 0px;
+    }
+
+    .multi__income-token img {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .multi__income-token {
+        top: 15px;
+        right: -71px;
+    }
+}
