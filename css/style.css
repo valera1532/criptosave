@@ -11101,8 +11101,12 @@ p {
 
 
 .popup-buy__flex {
-    display: flex;
+    display: none;
     gap: 20px;
+}
+
+.popup-buy__flex.active {
+    display: flex;
 }
 
 .popup__content.active.popup-buy {
@@ -11282,6 +11286,7 @@ p {
 
 
 .multi__balance-body {
+    display: none;
     margin-top: 20px;
 }
 
@@ -11319,7 +11324,7 @@ p {
 }
 
 .multi__income-points {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 15px;
 }
@@ -11640,4 +11645,41 @@ p {
         align-items: center;
         justify-content: center;
     }
+}
+
+.deposit__multi-wallet {
+    padding: 10px 0 !important;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.deposit__multi-wallet img {
+
+    width: 20px;
+    height: 20px;
+}
+
+.conclusion__size-main-left input::placeholder {
+    color: white;
+}
+
+.conclusion__size-points {
+    margin-bottom: 20px;
+}
+
+.multi__income-points.active {
+    display: flex;
+}
+
+.multi__balance-body.active {
+    display: block;
+}
+
+.multi__conclusion-modal {
+    display: none;
+}
+
+.multi__conclusion-modal.active {
+    display: block;
 }

@@ -82,6 +82,8 @@ historyBtn.addEventListener("click", (function () {
     tabsBlock[2].classList.add("active");
     titlePop[2].classList.remove("none");
 }));
+
+
 let multiBtn = document.querySelectorAll(".multi__btn");
 for (let j = 0; j < multiBtn.length; j++) {
 
@@ -98,12 +100,6 @@ for (let j = 0; j < multiBtn.length; j++) {
         titlePop[j].classList.remove("none");
     }));
 }
-
-
-
-
-
-
 
 
 const body = document.querySelector("body");
