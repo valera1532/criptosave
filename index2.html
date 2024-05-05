@@ -11,11 +11,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="">
     <link rel="mask-icon" href="">
     <link rel="mask-icon" href="">
-    <link rel="manifest" href="/manifest.json">
+    <!--    <link rel="manifest" href="/manifest.json">-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/article.css">
-    <link rel="stylesheet" href="css/article.scss">
     <title>TenderHouse</title>
 </head>
 
@@ -1541,7 +1540,7 @@
                                         </svg>
                                         <div class="check-box__btns multi__btns">
 
-                                            <div class=" btn-buy multi__btn">
+                                            <div class="multi__btn">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M12 12V21" stroke="white" stroke-width="1.5"
@@ -1557,7 +1556,7 @@
                                                 </svg>
                                                 Пополнить
                                             </div>
-                                            <div class=" btn-sale multi__btn">
+                                            <div class="multi__btn">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M12 21V12" stroke="white" stroke-width="1.5"
@@ -1573,7 +1572,7 @@
                                                 </svg>
                                                 Вывести
                                             </div>
-                                            <div class=" btn-history multi__btn">
+                                            <div class="multi__btn">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M17 16.125V18H15" stroke="white" stroke-width="1.5"
@@ -1868,13 +1867,13 @@
                 </div>
             </div>
             <div class="popup">
-                <div class="popup__title">
+                <div class="popup__title active">
                     Пополнение счета
                 </div>
-                <div class="popup__title none">
+                <div class="popup__title">
                     Вывод средств
                 </div>
-                <div class="popup__title none">
+                <div class="popup__title">
                     История
                 </div>
                 <div class="popup__close">
@@ -2429,243 +2428,7 @@
                         </div>
                         <div class="popup-sale__block">
                             <div class="popup-sale__title">
-                                Отправить USDT (TRC20)
-                            </div>
-                            <div class="popup-sale__name">
-                                Адрес получение
-                            </div>
-                            <div class="popup-sale__input">
-                                <input type="text" placeholder="Введите адрес для получения...">
-                                <div class="popup-sale__paste">
-                                    Вставить
-                                </div>
-                                <div class="popup-sale__qr">
-                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M8.26172 8.26172H13.3337V13.3337H8.26172V8.26172Z" stroke="white"
-                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M8.16016 18.8262H13.3335V23.9995H8.16016V18.8262Z" stroke="white"
-                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M18.6667 21.3327V18.666" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M23.7331 23.7331H21.0664" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M23.8398 13.1738H18.6665V8.00049H23.8398V13.1738Z" stroke="white"
-                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path
-                                            d="M28.6673 10.638V6.00065C28.6673 4.52732 27.4739 3.33398 26.0006 3.33398H21.3633"
-                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M21.7324 18.6667H23.7324" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path
-                                            d="M10.638 3.33398H6.00065C4.52732 3.33398 3.33398 4.52732 3.33398 6.00065V10.638"
-                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M3.33398 21.3633V26.0006C3.33398 27.4739 4.52732 28.6673 6.00065 28.6673H10.638"
-                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M21.3633 28.6673H26.0006C27.4739 28.6673 28.6673 27.4739 28.6673 26.0006V21.3633"
-                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="popup-sale__name">
-                                Сумма получение
-                            </div>
-                            <div class="popup-sale__input">
-                                <input type="text" placeholder="Введите сумму для получения...">
-                                <div class="popup-sale__max">
-                                    Max
-                                </div>
-                            </div>
-                        </div>
-                        <div class="popup-sale__block">
-                            <div class="popup-sale__title">
-                                Отправить USDT (TRC20)
-                            </div>
-                            <div class="popup-sale__name">
-                                Адрес получение
-                            </div>
-                            <div class="popup-sale__input">
-                                <input type="text" placeholder="Введите адрес для получения...">
-                                <div class="popup-sale__paste">
-                                    Вставить
-                                </div>
-                                <div class="popup-sale__qr">
-                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M8.26172 8.26172H13.3337V13.3337H8.26172V8.26172Z" stroke="white"
-                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M8.16016 18.8262H13.3335V23.9995H8.16016V18.8262Z" stroke="white"
-                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M18.6667 21.3327V18.666" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M23.7331 23.7331H21.0664" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M23.8398 13.1738H18.6665V8.00049H23.8398V13.1738Z" stroke="white"
-                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path
-                                            d="M28.6673 10.638V6.00065C28.6673 4.52732 27.4739 3.33398 26.0006 3.33398H21.3633"
-                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M21.7324 18.6667H23.7324" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path
-                                            d="M10.638 3.33398H6.00065C4.52732 3.33398 3.33398 4.52732 3.33398 6.00065V10.638"
-                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M3.33398 21.3633V26.0006C3.33398 27.4739 4.52732 28.6673 6.00065 28.6673H10.638"
-                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M21.3633 28.6673H26.0006C27.4739 28.6673 28.6673 27.4739 28.6673 26.0006V21.3633"
-                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="popup-sale__name">
-                                Сумма получение
-                            </div>
-                            <div class="popup-sale__input">
-                                <input type="text" placeholder="Введите сумму для получения...">
-                                <div class="popup-sale__max">
-                                    Max
-                                </div>
-                            </div>
-                        </div>
-                        <div class="popup-sale__block">
-                            <div class="popup-sale__title">
-                                Отправить USDT (TRC20)
-                            </div>
-                            <div class="popup-sale__name">
-                                Адрес получение
-                            </div>
-                            <div class="popup-sale__input">
-                                <input type="text" placeholder="Введите адрес для получения...">
-                                <div class="popup-sale__paste">
-                                    Вставить
-                                </div>
-                                <div class="popup-sale__qr">
-                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M8.26172 8.26172H13.3337V13.3337H8.26172V8.26172Z" stroke="white"
-                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M8.16016 18.8262H13.3335V23.9995H8.16016V18.8262Z" stroke="white"
-                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M18.6667 21.3327V18.666" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M23.7331 23.7331H21.0664" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M23.8398 13.1738H18.6665V8.00049H23.8398V13.1738Z" stroke="white"
-                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path
-                                            d="M28.6673 10.638V6.00065C28.6673 4.52732 27.4739 3.33398 26.0006 3.33398H21.3633"
-                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M21.7324 18.6667H23.7324" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path
-                                            d="M10.638 3.33398H6.00065C4.52732 3.33398 3.33398 4.52732 3.33398 6.00065V10.638"
-                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M3.33398 21.3633V26.0006C3.33398 27.4739 4.52732 28.6673 6.00065 28.6673H10.638"
-                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M21.3633 28.6673H26.0006C27.4739 28.6673 28.6673 27.4739 28.6673 26.0006V21.3633"
-                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="popup-sale__name">
-                                Сумма получение
-                            </div>
-                            <div class="popup-sale__input">
-                                <input type="text" placeholder="Введите сумму для получения...">
-                                <div class="popup-sale__max">
-                                    Max
-                                </div>
-                            </div>
-                        </div>
-                        <div class="popup-sale__block">
-                            <div class="popup-sale__title">
-                                Отправить USDT (TRC20)
-                            </div>
-                            <div class="popup-sale__name">
-                                Адрес получение
-                            </div>
-                            <div class="popup-sale__input">
-                                <input type="text" placeholder="Введите адрес для получения...">
-                                <div class="popup-sale__paste">
-                                    Вставить
-                                </div>
-                                <div class="popup-sale__qr">
-                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M8.26172 8.26172H13.3337V13.3337H8.26172V8.26172Z" stroke="white"
-                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M8.16016 18.8262H13.3335V23.9995H8.16016V18.8262Z" stroke="white"
-                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M18.6667 21.3327V18.666" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M23.7331 23.7331H21.0664" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M23.8398 13.1738H18.6665V8.00049H23.8398V13.1738Z" stroke="white"
-                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path
-                                            d="M28.6673 10.638V6.00065C28.6673 4.52732 27.4739 3.33398 26.0006 3.33398H21.3633"
-                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M21.7324 18.6667H23.7324" stroke="white" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path
-                                            d="M10.638 3.33398H6.00065C4.52732 3.33398 3.33398 4.52732 3.33398 6.00065V10.638"
-                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M3.33398 21.3633V26.0006C3.33398 27.4739 4.52732 28.6673 6.00065 28.6673H10.638"
-                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M21.3633 28.6673H26.0006C27.4739 28.6673 28.6673 27.4739 28.6673 26.0006V21.3633"
-                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="popup-sale__name">
-                                Сумма получение
-                            </div>
-                            <div class="popup-sale__input">
-                                <input type="text" placeholder="Введите сумму для получения...">
-                                <div class="popup-sale__max">
-                                    Max
-                                </div>
-                            </div>
-                        </div>
-                        <div class="popup-sale__block">
-                            <div class="popup-sale__title">
-                                Отправить USDT (TRC20)
+                                Отправить <span>BTC</span>
                             </div>
                             <div class="popup-sale__name">
                                 Адрес получение
@@ -2970,12 +2733,935 @@
                     </div>
                 </div>
             </div>
+
+            <div class="popup2">
+                <div class="popup__title2 active">
+                    Пополнение счета
+                </div>
+                <div class="popup__title2 ">
+                    Вывод средств
+                </div>
+                <div class="popup__title2 ">
+                    История
+                </div>
+                <div class="popup__close2">
+                    <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_b_829_64314)">
+                            <rect width="59" height="59" rx="15" fill="white" fill-opacity="0.2"></rect>
+                            <rect x="0.5" y="0.5" width="58" height="58" rx="14.5"
+                                stroke="url(#paint0_linear_829_64314)"></rect>
+                        </g>
+                        <g clip-path="url(#clip0_829_64314)">
+                            <path
+                                d="M38.4009 20.6123C37.8809 20.0923 37.0409 20.0923 36.5209 20.6123L30.0009 27.119L23.4809 20.599C22.9609 20.079 22.1209 20.079 21.6009 20.599C21.0809 21.119 21.0809 21.959 21.6009 22.479L28.1209 28.999L21.6009 35.519C21.0809 36.039 21.0809 36.879 21.6009 37.399C22.1209 37.919 22.9609 37.919 23.4809 37.399L30.0009 30.879L36.5209 37.399C37.0409 37.919 37.8809 37.919 38.4009 37.399C38.9209 36.879 38.9209 36.039 38.4009 35.519L31.8809 28.999L38.4009 22.479C38.9076 21.9723 38.9076 21.119 38.4009 20.6123Z"
+                                fill="white"></path>
+                        </g>
+                        <defs>
+                            <filter id="filter0_b_829_64314" x="-24" y="-24" width="107" height="107"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="12"></feGaussianBlur>
+                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_829_64314">
+                                </feComposite>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_829_64314"
+                                    result="shape"></feBlend>
+                            </filter>
+                            <linearGradient id="paint0_linear_829_64314" x1="52.2623" y1="-13.7667" x2="-6.18815"
+                                y2="-7.3531" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" stop-opacity="0"></stop>
+                                <stop offset="0.473958" stop-color="white" stop-opacity="0.5"></stop>
+                                <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                            </linearGradient>
+                            <clipPath id="clip0_829_64314">
+                                <rect width="32" height="32" fill="white" transform="translate(14 13)"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="popup__btns">
+                    <div class="popup__btn2 active">
+                        Пополнение
+                    </div>
+                    <div class="popup__btn2">
+                        Вывод
+                    </div>
+                    <div class="popup__btn2">
+                        История
+                    </div>
+                </div>
+                <div class="popup__contents">
+                    <div class="popup__content2 popup-buy active">
+                        <div class="select__monets">
+                            <div class="select__monet2-1 active">BTC</div>
+                            <div class="select__monet2-1">ETH</div>
+                            <div class="select__monet2-1">BNB</div>
+                            <div class="select__monet2-1">SOL</div>
+                            <div class="select__monet2-1">TON</div>
+                        </div>
+                        <div class="popup-buy__flex2 active">
+                            <div class="popup-buy__qrcode">
+                                <div class="popup-buy__img">
+                                    <img src="img/main/qr.png" alt="">
+                                </div>
+                                <div class="popup-buy__text">1MNuxv25c8kaWFypLGrzyqy
+                                    FicFwn6fPHU</div>
+                            </div>
+                            <div class="">
+                                <div class="popup-buy__warning2">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 13C11.45 13 11 12.55 11 12V8C11 7.45 11.45 7 12 7C12.55 7 13 7.45 13 8V12C13 12.55 12.55 13 12 13ZM13 17H11V15H13V17Z"
+                                            fill="#FFD600" />
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 13C11.45 13 11 12.55 11 12V8C11 7.45 11.45 7 12 7C12.55 7 13 7.45 13 8V12C13 12.55 12.55 13 12 13ZM13 17H11V15H13V17Z"
+                                            fill="#FFD600" />
+                                    </svg>
+                                    <p>
+                                        На этот адрес можно отправить только
+                                        <span>BTC</span>
+                                    </p>
+                                </div>
+                                <div class="popup-buy__content">
+                                    <div class="popup-buy__body">
+                                        <div class="popup-buy__name2">
+                                            Адресс пополнения <span>BTC</span>
+                                        </div>
+                                        <div class="popup-buy__value">
+                                            1MNuxv25c8kaWFypLGrzyqyFicFwn6fPHU
+                                        </div>
+                                    </div>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.5">
+                                            <path d="M6.75 8.25H3V4.5" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.4668 19.9238C8.3668 20.4448 9.3638 20.8138 10.4258 20.9998"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M3.48242 15.1738C3.84842 16.1778 4.37842 17.1008 5.05242 17.9038"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M13.5742 20.9998C14.6362 20.8138 15.6322 20.4448 16.5332 19.9238"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M18.9473 17.9038C19.6213 17.1008 20.1513 16.1778 20.5173 15.1738"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M21.0002 12C21.0002 7.029 16.9712 3 12.0002 3C8.37017 3 5.24917 5.154 3.82617 8.25"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="popup-buy__btns">
+                                    <div class="popup-buy__btn copy">
+                                        Копировать
+                                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle opacity="0.5" cx="16.5" cy="16" r="16" fill="#AE9408" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M19.25 22.75H11C10.586 22.75 10.25 22.414 10.25 22V13.75C10.25 13.336 10.586 13 11 13H19.25C19.664 13 20 13.336 20 13.75V22C20 22.414 19.664 22.75 19.25 22.75Z"
+                                                stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M23.75 10.75V10C23.75 9.586 23.414 9.25 23 9.25H22.25"
+                                                stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M23.75 18.25V19C23.75 19.414 23.414 19.75 23 19.75H22.25"
+                                                stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M13.25 10.75V10C13.25 9.586 13.586 9.25 14 9.25H14.75"
+                                                stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M17.75 9.25H19.25" stroke="#323232" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M23.75 15.25V13.75V13.75V13.75V15.25Z" stroke="#323232"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="popup-buy__btn share">
+                                        Поделится
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+                                            <path
+                                                d="M18.9732 11.5268C20.0089 10.4911 21.6874 10.4911 22.7232 11.5268V11.5268C23.7589 12.5626 23.7589 14.2411 22.7232 15.2768L18.3139 19.6861C17.2782 20.7218 15.5997 20.7218 14.5639 19.6861V19.6861C13.5282 18.6503 13.5282 16.9718 14.5639 15.9361L15.2232 15.2768"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M13.0268 21.2232C11.9911 22.2589 10.3126 22.2589 9.27681 21.2232V21.2232C8.24106 20.1874 8.24106 18.5089 9.27681 17.4732L13.6861 13.0639C14.7218 12.0282 16.4003 12.0282 17.4361 13.0639V13.0639C18.4718 14.0997 18.4718 15.7782 17.4361 16.8139L16.7498 17.5002"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-buy__flex2">
+                            <div class="popup-buy__qrcode">
+                                <div class="popup-buy__img">
+                                    <img src="img/main/qr.png" alt="">
+                                </div>
+                                <div class="popup-buy__text">1MNuxv25c8kaWFypLGrzyqy
+                                    FicFwn6fPHU</div>
+                            </div>
+                            <div class="">
+                                <div class="popup-buy__warning">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 13C11.45 13 11 12.55 11 12V8C11 7.45 11.45 7 12 7C12.55 7 13 7.45 13 8V12C13 12.55 12.55 13 12 13ZM13 17H11V15H13V17Z"
+                                            fill="#FFD600" />
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 13C11.45 13 11 12.55 11 12V8C11 7.45 11.45 7 12 7C12.55 7 13 7.45 13 8V12C13 12.55 12.55 13 12 13ZM13 17H11V15H13V17Z"
+                                            fill="#FFD600" />
+                                    </svg>
+                                    На этот адрес можно отправить только ETH
+                                </div>
+                                <div class="popup-buy__content">
+                                    <div class="popup-buy__body">
+                                        <div class="popup-buy__name">Адресс пополнения ETH
+                                        </div>
+                                        <div class="popup-buy__value">
+                                            1MNuxv25c8kaWFypLGrzyqyFicFwn6fPHU
+                                        </div>
+                                    </div>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.5">
+                                            <path d="M6.75 8.25H3V4.5" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.4668 19.9238C8.3668 20.4448 9.3638 20.8138 10.4258 20.9998"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M3.48242 15.1738C3.84842 16.1778 4.37842 17.1008 5.05242 17.9038"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M13.5742 20.9998C14.6362 20.8138 15.6322 20.4448 16.5332 19.9238"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M18.9473 17.9038C19.6213 17.1008 20.1513 16.1778 20.5173 15.1738"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M21.0002 12C21.0002 7.029 16.9712 3 12.0002 3C8.37017 3 5.24917 5.154 3.82617 8.25"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="popup-buy__btns">
+                                    <div class="popup-buy__btn copy">
+                                        Копировать
+                                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle opacity="0.5" cx="16.5" cy="16" r="16" fill="#AE9408" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M19.25 22.75H11C10.586 22.75 10.25 22.414 10.25 22V13.75C10.25 13.336 10.586 13 11 13H19.25C19.664 13 20 13.336 20 13.75V22C20 22.414 19.664 22.75 19.25 22.75Z"
+                                                stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M23.75 10.75V10C23.75 9.586 23.414 9.25 23 9.25H22.25"
+                                                stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M23.75 18.25V19C23.75 19.414 23.414 19.75 23 19.75H22.25"
+                                                stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M13.25 10.75V10C13.25 9.586 13.586 9.25 14 9.25H14.75"
+                                                stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M17.75 9.25H19.25" stroke="#323232" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M23.75 15.25V13.75V13.75V13.75V15.25Z" stroke="#323232"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="popup-buy__btn share">
+                                        Поделится
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+                                            <path
+                                                d="M18.9732 11.5268C20.0089 10.4911 21.6874 10.4911 22.7232 11.5268V11.5268C23.7589 12.5626 23.7589 14.2411 22.7232 15.2768L18.3139 19.6861C17.2782 20.7218 15.5997 20.7218 14.5639 19.6861V19.6861C13.5282 18.6503 13.5282 16.9718 14.5639 15.9361L15.2232 15.2768"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M13.0268 21.2232C11.9911 22.2589 10.3126 22.2589 9.27681 21.2232V21.2232C8.24106 20.1874 8.24106 18.5089 9.27681 17.4732L13.6861 13.0639C14.7218 12.0282 16.4003 12.0282 17.4361 13.0639V13.0639C18.4718 14.0997 18.4718 15.7782 17.4361 16.8139L16.7498 17.5002"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-buy__flex2">
+                            <div class="popup-buy__qrcode">
+                                <div class="popup-buy__img">
+                                    <img src="img/main/qr.png" alt="">
+                                </div>
+                                <div class="popup-buy__text">1MNuxv25c8kaWFypLGrzyqy
+                                    FicFwn6fPHU</div>
+                            </div>
+                            <div class="">
+                                <div class="popup-buy__warning">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 13C11.45 13 11 12.55 11 12V8C11 7.45 11.45 7 12 7C12.55 7 13 7.45 13 8V12C13 12.55 12.55 13 12 13ZM13 17H11V15H13V17Z"
+                                            fill="#FFD600" />
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 13C11.45 13 11 12.55 11 12V8C11 7.45 11.45 7 12 7C12.55 7 13 7.45 13 8V12C13 12.55 12.55 13 12 13ZM13 17H11V15H13V17Z"
+                                            fill="#FFD600" />
+                                    </svg>
+                                    На этот адрес можно отправить только BNB
+                                </div>
+                                <div class="popup-buy__content">
+                                    <div class="popup-buy__body">
+                                        <div class="popup-buy__name">Адресс пополнения BNB
+                                        </div>
+                                        <div class="popup-buy__value">
+                                            1MNuxv25c8kaWFypLGrzyqyFicFwn6fPHU
+                                        </div>
+                                    </div>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.5">
+                                            <path d="M6.75 8.25H3V4.5" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.4668 19.9238C8.3668 20.4448 9.3638 20.8138 10.4258 20.9998"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M3.48242 15.1738C3.84842 16.1778 4.37842 17.1008 5.05242 17.9038"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M13.5742 20.9998C14.6362 20.8138 15.6322 20.4448 16.5332 19.9238"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M18.9473 17.9038C19.6213 17.1008 20.1513 16.1778 20.5173 15.1738"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M21.0002 12C21.0002 7.029 16.9712 3 12.0002 3C8.37017 3 5.24917 5.154 3.82617 8.25"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="popup-buy__btns">
+                                    <div class="popup-buy__btn copy">
+                                        Копировать
+                                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle opacity="0.5" cx="16.5" cy="16" r="16" fill="#AE9408" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M19.25 22.75H11C10.586 22.75 10.25 22.414 10.25 22V13.75C10.25 13.336 10.586 13 11 13H19.25C19.664 13 20 13.336 20 13.75V22C20 22.414 19.664 22.75 19.25 22.75Z"
+                                                stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M23.75 10.75V10C23.75 9.586 23.414 9.25 23 9.25H22.25"
+                                                stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M23.75 18.25V19C23.75 19.414 23.414 19.75 23 19.75H22.25"
+                                                stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M13.25 10.75V10C13.25 9.586 13.586 9.25 14 9.25H14.75"
+                                                stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M17.75 9.25H19.25" stroke="#323232" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M23.75 15.25V13.75V13.75V13.75V15.25Z" stroke="#323232"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="popup-buy__btn share">
+                                        Поделится
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+                                            <path
+                                                d="M18.9732 11.5268C20.0089 10.4911 21.6874 10.4911 22.7232 11.5268V11.5268C23.7589 12.5626 23.7589 14.2411 22.7232 15.2768L18.3139 19.6861C17.2782 20.7218 15.5997 20.7218 14.5639 19.6861V19.6861C13.5282 18.6503 13.5282 16.9718 14.5639 15.9361L15.2232 15.2768"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M13.0268 21.2232C11.9911 22.2589 10.3126 22.2589 9.27681 21.2232V21.2232C8.24106 20.1874 8.24106 18.5089 9.27681 17.4732L13.6861 13.0639C14.7218 12.0282 16.4003 12.0282 17.4361 13.0639V13.0639C18.4718 14.0997 18.4718 15.7782 17.4361 16.8139L16.7498 17.5002"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-buy__flex2">
+                            <div class="popup-buy__qrcode">
+                                <div class="popup-buy__img">
+                                    <img src="img/main/qr.png" alt="">
+                                </div>
+                                <div class="popup-buy__text">1MNuxv25c8kaWFypLGrzyqy
+                                    FicFwn6fPHU</div>
+                            </div>
+                            <div class="">
+                                <div class="popup-buy__warning">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 13C11.45 13 11 12.55 11 12V8C11 7.45 11.45 7 12 7C12.55 7 13 7.45 13 8V12C13 12.55 12.55 13 12 13ZM13 17H11V15H13V17Z"
+                                            fill="#FFD600" />
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 13C11.45 13 11 12.55 11 12V8C11 7.45 11.45 7 12 7C12.55 7 13 7.45 13 8V12C13 12.55 12.55 13 12 13ZM13 17H11V15H13V17Z"
+                                            fill="#FFD600" />
+                                    </svg>
+                                    На этот адрес можно отправить только SOL
+                                </div>
+                                <div class="popup-buy__content">
+                                    <div class="popup-buy__body">
+                                        <div class="popup-buy__name">Адресс пополнения SOL
+                                        </div>
+                                        <div class="popup-buy__value">
+                                            1MNuxv25c8kaWFypLGrzyqyFicFwn6fPHU
+                                        </div>
+                                    </div>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.5">
+                                            <path d="M6.75 8.25H3V4.5" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.4668 19.9238C8.3668 20.4448 9.3638 20.8138 10.4258 20.9998"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M3.48242 15.1738C3.84842 16.1778 4.37842 17.1008 5.05242 17.9038"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M13.5742 20.9998C14.6362 20.8138 15.6322 20.4448 16.5332 19.9238"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M18.9473 17.9038C19.6213 17.1008 20.1513 16.1778 20.5173 15.1738"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M21.0002 12C21.0002 7.029 16.9712 3 12.0002 3C8.37017 3 5.24917 5.154 3.82617 8.25"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="popup-buy__btns">
+                                    <div class="popup-buy__btn copy">
+                                        Копировать
+                                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle opacity="0.5" cx="16.5" cy="16" r="16" fill="#AE9408" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M19.25 22.75H11C10.586 22.75 10.25 22.414 10.25 22V13.75C10.25 13.336 10.586 13 11 13H19.25C19.664 13 20 13.336 20 13.75V22C20 22.414 19.664 22.75 19.25 22.75Z"
+                                                stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M23.75 10.75V10C23.75 9.586 23.414 9.25 23 9.25H22.25"
+                                                stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M23.75 18.25V19C23.75 19.414 23.414 19.75 23 19.75H22.25"
+                                                stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M13.25 10.75V10C13.25 9.586 13.586 9.25 14 9.25H14.75"
+                                                stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M17.75 9.25H19.25" stroke="#323232" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M23.75 15.25V13.75V13.75V13.75V15.25Z" stroke="#323232"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="popup-buy__btn share">
+                                        Поделится
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+                                            <path
+                                                d="M18.9732 11.5268C20.0089 10.4911 21.6874 10.4911 22.7232 11.5268V11.5268C23.7589 12.5626 23.7589 14.2411 22.7232 15.2768L18.3139 19.6861C17.2782 20.7218 15.5997 20.7218 14.5639 19.6861V19.6861C13.5282 18.6503 13.5282 16.9718 14.5639 15.9361L15.2232 15.2768"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M13.0268 21.2232C11.9911 22.2589 10.3126 22.2589 9.27681 21.2232V21.2232C8.24106 20.1874 8.24106 18.5089 9.27681 17.4732L13.6861 13.0639C14.7218 12.0282 16.4003 12.0282 17.4361 13.0639V13.0639C18.4718 14.0997 18.4718 15.7782 17.4361 16.8139L16.7498 17.5002"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-buy__flex2">
+                            <div class="popup-buy__qrcode">
+                                <div class="popup-buy__img">
+                                    <img src="img/main/qr.png" alt="">
+                                </div>
+                                <div class="popup-buy__text">1MNuxv25c8kaWFypLGrzyqy
+                                    FicFwn6fPHU</div>
+                            </div>
+                            <div class="">
+                                <div class="popup-buy__warning">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 13C11.45 13 11 12.55 11 12V8C11 7.45 11.45 7 12 7C12.55 7 13 7.45 13 8V12C13 12.55 12.55 13 12 13ZM13 17H11V15H13V17Z"
+                                            fill="#FFD600" />
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 13C11.45 13 11 12.55 11 12V8C11 7.45 11.45 7 12 7C12.55 7 13 7.45 13 8V12C13 12.55 12.55 13 12 13ZM13 17H11V15H13V17Z"
+                                            fill="#FFD600" />
+                                    </svg>
+                                    На этот адрес можно отправить только TON
+                                </div>
+                                <div class="popup-buy__content">
+                                    <div class="popup-buy__body">
+                                        <div class="popup-buy__name">Адресс пополнения TON
+                                        </div>
+                                        <div class="popup-buy__value">
+                                            1MNuxv25c8kaWFypLGrzyqyFicFwn6fPHU
+                                        </div>
+                                    </div>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.5">
+                                            <path d="M6.75 8.25H3V4.5" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.4668 19.9238C8.3668 20.4448 9.3638 20.8138 10.4258 20.9998"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M3.48242 15.1738C3.84842 16.1778 4.37842 17.1008 5.05242 17.9038"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M13.5742 20.9998C14.6362 20.8138 15.6322 20.4448 16.5332 19.9238"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M18.9473 17.9038C19.6213 17.1008 20.1513 16.1778 20.5173 15.1738"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M21.0002 12C21.0002 7.029 16.9712 3 12.0002 3C8.37017 3 5.24917 5.154 3.82617 8.25"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="popup-buy__btns">
+                                    <div class="popup-buy__btn copy">
+                                        Копировать
+                                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle opacity="0.5" cx="16.5" cy="16" r="16" fill="#AE9408" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M19.25 22.75H11C10.586 22.75 10.25 22.414 10.25 22V13.75C10.25 13.336 10.586 13 11 13H19.25C19.664 13 20 13.336 20 13.75V22C20 22.414 19.664 22.75 19.25 22.75Z"
+                                                stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M23.75 10.75V10C23.75 9.586 23.414 9.25 23 9.25H22.25"
+                                                stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M23.75 18.25V19C23.75 19.414 23.414 19.75 23 19.75H22.25"
+                                                stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M13.25 10.75V10C13.25 9.586 13.586 9.25 14 9.25H14.75"
+                                                stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M17.75 9.25H19.25" stroke="#323232" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M23.75 15.25V13.75V13.75V13.75V15.25Z" stroke="#323232"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="popup-buy__btn share">
+                                        Поделится
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+                                            <path
+                                                d="M18.9732 11.5268C20.0089 10.4911 21.6874 10.4911 22.7232 11.5268V11.5268C23.7589 12.5626 23.7589 14.2411 22.7232 15.2768L18.3139 19.6861C17.2782 20.7218 15.5997 20.7218 14.5639 19.6861V19.6861C13.5282 18.6503 13.5282 16.9718 14.5639 15.9361L15.2232 15.2768"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M13.0268 21.2232C11.9911 22.2589 10.3126 22.2589 9.27681 21.2232V21.2232C8.24106 20.1874 8.24106 18.5089 9.27681 17.4732L13.6861 13.0639C14.7218 12.0282 16.4003 12.0282 17.4361 13.0639V13.0639C18.4718 14.0997 18.4718 15.7782 17.4361 16.8139L16.7498 17.5002"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup__content2 popup-sale">
+                        <div class="condition__invest-para">
+                            <span>
+                                <form>
+
+                                    <div class="__select" data-state="">
+                                        <div class="__select__title" data-default="Option 0"><img
+                                                src="./img/multi/btc.png" alt=""> <span>BTC</span>
+                                        </div>
+                                        <div class="__select__content">
+                                            <input id="singleSelect0" class="__select__input" type="radio"
+                                                name="singleSelect" checked />
+                                            <label for="singleSelect0" class="__select__label">
+                                                <div class="consolution__multi-modal">
+                                                    <img src="./img/multi/btc.png" alt=""> <span>BTC</span>
+                                                </div>
+                                            </label>
+                                            <input id="singleSelect1" class="__select__input" type="radio"
+                                                name="singleSelect" checked />
+                                            <label for="singleSelect1" class="__select__label">
+                                                <div class="consolution__multi-modal">
+                                                    <img src="./img/multi/btc.png" alt=""> <span>BTC</span>
+                                                </div>
+                                            </label>
+                                            <input id="singleSelect2" class="__select__input " type="radio"
+                                                name="singleSelect" checked />
+                                            <label for="singleSelect2" class="__select__label select__input">
+                                                <div class="consolution__multi-modal">
+                                                    <img src="./img/multi/eth.png" alt=""> <span>ETH</span>
+                                                </div>
+                                            </label>
+                                            <input id="singleSelect3" class="__select__input " type="radio"
+                                                name="singleSelect" />
+                                            <label for="singleSelect3" class="__select__label select__input">
+                                                <div class="consolution__multi-modal">
+                                                    <img src="./img/multi/bnb.png" alt=""> <span>BNB</span>
+                                                </div>
+                                            </label>
+                                            <input id="singleSelect4" class="__select__input " type="radio"
+                                                name="singleSelect" />
+                                            <label for="singleSelect4" class="__select__label select__input">
+                                                <div class="consolution__multi-modal">
+                                                    <img src="./img/multi/sol.png" alt=""> <span>SOL</span>
+                                                </div>
+                                            </label>
+                                            <input id="singleSelect5" class="__select__input " type="radio"
+                                                name="singleSelect" />
+                                            <label for="singleSelect5" class="__select__label select__input">
+                                                <div class="consolution__multi-modal">
+                                                    <img src="./img/multi/ton.png" alt=""> <span>TON</span>
+                                                </div>
+                                            </label>
+
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </span>
+                        </div>
+                        <div class="popup-sale__block2 active">
+                            <div class="popup-sale__title2">
+                                Отправить <span>BTC</span>
+                            </div>
+                            <div class="popup-sale__name">
+                                Адрес получение
+                            </div>
+                            <div class="popup-sale__input">
+                                <input type="text" placeholder="Введите адрес для получения...">
+                                <div class="popup-sale__paste">
+                                    Вставить
+                                </div>
+                                <div class="popup-sale__qr">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.26172 8.26172H13.3337V13.3337H8.26172V8.26172Z" stroke="white"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.16016 18.8262H13.3335V23.9995H8.16016V18.8262Z" stroke="white"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.6667 21.3327V18.666" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M23.7331 23.7331H21.0664" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M23.8398 13.1738H18.6665V8.00049H23.8398V13.1738Z" stroke="white"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M28.6673 10.638V6.00065C28.6673 4.52732 27.4739 3.33398 26.0006 3.33398H21.3633"
+                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M21.7324 18.6667H23.7324" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M10.638 3.33398H6.00065C4.52732 3.33398 3.33398 4.52732 3.33398 6.00065V10.638"
+                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M3.33398 21.3633V26.0006C3.33398 27.4739 4.52732 28.6673 6.00065 28.6673H10.638"
+                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M21.3633 28.6673H26.0006C27.4739 28.6673 28.6673 27.4739 28.6673 26.0006V21.3633"
+                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="popup-sale__name">
+                                Сумма получение
+                            </div>
+                            <div class="popup-sale__input">
+                                <input type="text" placeholder="Введите сумму для получения...">
+                                <div class="popup-sale__max">
+                                    Max
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <button class="popup-sale__btn">Отправить</button>
+                    </div>
+
+                    <div class="popup__content2 popup-history">
+                        <div class="popup-history__items">
+                            <div class="popup-history__top">
+                                <span>Дата</span>
+                                <span>Статус</span>
+                                <span>Сумма</span>
+                            </div>
+                            <div class="popup-history__item">
+                                <div class="popup-history__date">
+                                    23.05.2022, 11:00
+                                </div>
+                                <div class="popup-history__status">
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="8" height="8" rx="4" fill="#FFD809" />
+                                    </svg>
+                                    Начислен
+                                </div>
+                                <div class="popup-history__sum">75.00 USDT</div>
+                            </div>
+                            <div class="popup-history__item">
+                                <div class="popup-history__date">
+                                    23.05.2022, 11:00
+                                </div>
+                                <div class="popup-history__status">
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="8" height="8" rx="4" fill="#FFD809" />
+                                    </svg>
+                                    Начислен
+                                </div>
+                                <div class="popup-history__sum">75.00 USDT</div>
+                            </div>
+                            <div class="popup-history__item">
+                                <div class="popup-history__date">
+                                    23.05.2022, 11:00
+                                </div>
+                                <div class="popup-history__status">
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="8" height="8" rx="4" fill="#FFD809" />
+                                    </svg>
+                                    Начислен
+                                </div>
+                                <div class="popup-history__sum">75.00 USDT</div>
+                            </div>
+                            <div class="popup-history__item">
+                                <div class="popup-history__date">
+                                    23.05.2022, 11:00
+                                </div>
+                                <div class="popup-history__status">
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="8" height="8" rx="4" fill="#FFD809" />
+                                    </svg>
+                                    Начислен
+                                </div>
+                                <div class="popup-history__sum">75.00 USDT</div>
+                            </div>
+                            <div class="popup-history__item">
+                                <div class="popup-history__date">
+                                    23.05.2022, 11:00
+                                </div>
+                                <div class="popup-history__status">
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="8" height="8" rx="4" fill="#FFD809" />
+                                    </svg>
+                                    Начислен
+                                </div>
+                                <div class="popup-history__sum">75.00 USDT</div>
+                            </div>
+                            <div class="popup-history__item">
+                                <div class="popup-history__date">
+                                    23.05.2022, 11:00
+                                </div>
+                                <div class="popup-history__status">
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="8" height="8" rx="4" fill="#FFD809" />
+                                    </svg>
+                                    Начислен
+                                </div>
+                                <div class="popup-history__sum">75.00 USDT</div>
+                            </div>
+                            <div class="popup-history__item">
+                                <div class="popup-history__date">
+                                    23.05.2022, 11:00
+                                </div>
+                                <div class="popup-history__status">
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="8" height="8" rx="4" fill="#FFD809" />
+                                    </svg>
+                                    Начислен
+                                </div>
+                                <div class="popup-history__sum">75.00 USDT</div>
+                            </div>
+                            <div class="popup-history__item">
+                                <div class="popup-history__date">
+                                    23.05.2022, 11:00
+                                </div>
+                                <div class="popup-history__status">
+                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="8" height="8" rx="4" fill="#FFD809" />
+                                    </svg>
+                                    Начислен
+                                </div>
+                                <div class="popup-history__sum">75.00 USDT</div>
+                            </div>
+                        </div>
+                        <div class="popup-history__pagination">
+                            <div class="popup-history__prev">
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.5">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12.4789 18.0726C12.981 17.5705 12.981 16.7565 12.4789 16.2544L5.67374 9.44922L12.4789 2.64407C12.981 2.14197 12.981 1.3279 12.4789 0.825796C11.9768 0.323692 11.1627 0.323692 10.6606 0.825796L2.94633 8.54008C2.44423 9.04218 2.44423 9.85625 2.94633 10.3584L10.6606 18.0726C11.1627 18.5747 11.9768 18.5747 12.4789 18.0726Z"
+                                            fill="white" />
+                                    </g>
+                                </svg>
+
+                            </div>
+                            <div class="popup-history__nums">
+                                <div class="popup-history__num active">
+                                    1
+                                </div>
+                                <div class="popup-history__num">
+                                    2
+                                </div>
+                                <div class="popup-history__num">
+                                    3
+                                </div>
+                            </div>
+                            <div class="popup-history__next">
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4.98627 0.825796C4.46291 1.3279 4.46291 2.14197 4.98627 2.64407L12.0795 9.44922L4.98627 16.2544C4.46291 16.7565 4.46291 17.5705 4.98627 18.0726C5.50963 18.5747 6.35817 18.5747 6.88153 18.0726L14.9224 10.3584C15.4458 9.85625 15.4458 9.04218 14.9224 8.54008L6.88153 0.825796C6.35817 0.323693 5.50963 0.323693 4.98627 0.825796Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup__content2 popup-history">
+                        <div class="popup-history__items">
+                            <div class="popup-history__top">
+                                <span>Дата</span>
+                                <span>Статус</span>
+                                <span>Сумма</span>
+                            </div>
+                            <img src="/img/main/clear.png" alt="" class="popup-history__img">
+                            <div class="popup-history__text">
+                                Вы пока не совершали не каких
+                                транзакций со своего счета
+                            </div>
+                            <div class="popup-history__btns">
+                                <div class="popup-history__btn">
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5 12V21" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M14.5 14L12.5 12L10.5 14" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M16.5 17H18.5C20.157 17 21.5 15.657 21.5 14V6C21.5 4.343 20.157 3 18.5 3H6.5C4.843 3 3.5 4.343 3.5 6V14C3.5 15.657 4.843 17 6.5 17H8.5"
+                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M3.5 8H21.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    Пополнить счет
+                                </div>
+                                <div class="popup-history__btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 21V12" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M10 19L12 21L14 19" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M3 8H21" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M8 16H6C4.343 16 3 14.657 3 13V6C3 4.343 4.343 3 6 3H18C19.657 3 21 4.343 21 6V13C21 14.657 19.657 16 18 16H16"
+                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    Вывести средства
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Это попапы для успепшной и не успешной отправки -->
+                    <div class="popup__content popup-buy yes ">
+                        <svg class="yes-svg" width="109" height="109" viewBox="0 0 109 109" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="54.4994" cy="54.4994" r="36.3333" fill="#00BB40" fill-opacity="0.3"
+                                stroke="url(#paint0_linear_829_65011)" stroke-width="2" />
+                            <path d="M39 56.625L47.8918 65.8873C47.9508 65.9488 48.0492 65.9488 48.1082 65.8873L72 41"
+                                stroke="#00FF57" stroke-width="5" />
+                            <defs>
+                                <linearGradient id="paint0_linear_829_65011" x1="33" y1="18" x2="54.4994" y2="90.8327"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#00BB40" stop-opacity="0.7" />
+                                    <stop offset="1" stop-color="#00BB40" stop-opacity="0.09" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="popup-buy__subtext">
+                            Вывод средств со счета на сумму
+                            <span>2000 usdt </span>успешно произведено
+                        </div>
+                        <a href="" class="popup-buy__subbtn">
+                            Вернуться к моим счетам
+                        </a>
+                    </div>
+                    <div class="popup__content popup-buy no">
+                        <svg class="no-svg" width="109" height="109" viewBox="0 0 109 109" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="54.5" cy="54.5" r="40.875" fill="#FF0000" fill-opacity="0.3"
+                                stroke="url(#paint0_linear_829_65486)" stroke-width="2" />
+                            <path d="M36.334 72.666L72.6673 36.3327" stroke="#FF0000" stroke-width="3"
+                                stroke-linecap="round" />
+                            <path d="M72.666 72.666L36.3327 36.3327" stroke="#FF0000" stroke-width="3"
+                                stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="paint0_linear_829_65486" x1="27.5" y1="14" x2="57.5" y2="95"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF0000" stop-opacity="0.8" />
+                                    <stop offset="1" stop-color="#FF0000" stop-opacity="0.13" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="popup-buy__subtext">
+                            Что-то пошло не
+                            так, попробуйте еще раз
+                        </div>
+                        <a href="" class="popup-buy__subbtn">
+                            Повторить попытку
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             <style>
 
             </style>
-            <div class="shadow">
-
-            </div>
+            <div class="shadow"></div>
         </main>
         <footer class="footer">
             <div class="_container">
@@ -2998,20 +3684,46 @@
             }))
 
         }
-        let monetsConsolution = document.querySelectorAll(".select__monet-conclusion");
-        let monetsTabs = document.querySelectorAll(".popup-sale__block");
-        for (let i = 0; i < monetsConsolution.length; i++) {
-            monetsConsolution[i].addEventListener("click", (function () {
 
-                for (let j = 0; j < monetsConsolution.length; j++) {
-                    monetsConsolution[j].classList.remove('active');
-                    monetsTabs[j].classList.remove('active');
+        const monetsConsolution2 = document.querySelectorAll('.select__monet-conclusion2')
+        let monetsTabs2 = document.querySelectorAll(".popup-sale__block2");
+        for (let i = 0; i < monetsConsolution2.length; i++) {
+            monetsConsolution2[i].addEventListener("click", () => {
+                for (let j = 0; j < monetsTabs2.length; j++) {
+                    monetsTabs2[j].classList.remove('active')
+                    monetsConsolution2[j].classList.remove('active')
                 }
-                monetsConsolution[i].classList.add('active');
-                monetsTabs[i].classList.add('active');
-            }))
-
+                monetsTabs2[i].classList.add('active')
+                monetsConsolution2[i].classList.add('active')
+            })
         }
+
+
+
+        monetsConsolution2.forEach(item => {
+            item.addEventListener('click', () => {
+                const activeTab = monetsConsolution2.find(tab => tab.classList.contains('active'))
+                activeTab.classList.remove('active')
+
+                item.classList.add('active')
+                popupSaleTitle2.textContent = item.textContent
+            })
+        })
+
+        const selectTabs2 = document.querySelectorAll('.select__monet2-1')
+        const popupBuy2 = document.querySelectorAll('.popup-buy__flex2')
+        for (let i = 0; i < selectTabs2.length; i++) {
+            selectTabs2[i].addEventListener("click", () => {
+                for (let j = 0; j < popupBuy2.length; j++) {
+                    popupBuy2[j].classList.remove('active')
+                    selectTabs2[j].classList.remove('active')
+                }
+                popupBuy2[i].classList.add('active')
+                selectTabs2[i].classList.add('active')
+            })
+        }
+
+
         let multiCoin = document.querySelectorAll(".multi__balance-coin")
         let multiBalance = document.querySelectorAll(".multi__balance-body");
         let multiConsolution = document.querySelectorAll(".multi__income-point-block")
@@ -3030,7 +3742,8 @@
 
         }
     </script>
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/select.js"></script>
+    <!--    <script src="js/swiper-bundle.min.js"></script>-->
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

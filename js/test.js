@@ -1,18 +1,3 @@
-
-
-let lang = document.querySelectorAll('.main-navbar__lang ');
-let langClose = document.querySelectorAll('.lang__close');
-let langPop = document.querySelectorAll('.main-navbar__lang-pop');
-
-for (let i = 0; i < lang.length; i++) {
-    lang[i].addEventListener('click', function () {
-        lang[i].classList.toggle('active');
-        langClose[i].classList.toggle('active');
-        langPop[i].classList.toggle('active');
-    })
-
-}
-
 document.querySelector(".main-block__close").addEventListener("click", (function () {
     document.querySelector(".main-navbar").classList.toggle("active"), document.querySelector(".main-block__close").classList.toggle("active")
 })), document.querySelector(".header__burger").addEventListener("click", (function () {
@@ -22,13 +7,14 @@ document.querySelector(".main-block__close").addEventListener("click", (function
 }));
 
 
+
 const checkboxButtons = document.querySelectorAll('.check-box__btn')
 const popupButtons = Array.from(document.querySelectorAll('.popup__btn'))
 const popupButtons2 = Array.from(document.querySelectorAll('.popup__btn2'))
 const popupContents = Array.from(document.querySelectorAll('.popup__content'))
-const popupContents2 = Array.from(document.querySelectorAll('.popup__content2'))
 const popupTitle = Array.from(document.querySelectorAll('.popup__title'))
 const popupTitle2 = Array.from(document.querySelectorAll('.popup__title2'))
+const popupContents2 = Array.from(document.querySelectorAll('.popup__content2'))
 const popup = document.querySelector('.popup')
 const popup2 = document.querySelector('.popup2')
 const popupCloseButton = document.querySelector('.popup__close')
@@ -83,6 +69,7 @@ function checkPopupContent(i) {
         activeTitle2.classList.remove('active')
         popupTitle2[i].classList.add('active')
 
+
         const activeContent2 = popupContents2.find(item => item.classList.contains('active'))
         activeContent2.classList.remove('active')
         popupContents2[i].classList.add('active')
@@ -110,6 +97,7 @@ popupButtons2.forEach((item, i) => {
     item.addEventListener('click', () => checkPopupContent(i))
 })
 
+
 popupShadow.addEventListener('click', popupClose)
 
 popupCloseButton.addEventListener('click', popupClose)
@@ -127,4 +115,3 @@ checkBodyBtn.addEventListener('click', () => {
     popup.classList.add('active')
     popupShadow.classList.add('active')
 })
-
