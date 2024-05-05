@@ -765,66 +765,71 @@
                                 <button class="btn-close close сonclusion__button" data-bs-dismiss="modal">
                                     <img src="images/ico-menu-close.svg" alt=""></button>
                                 <div class="сonclusion__title text-left">
-                                    Создать депезит
+                                    Создать депозит
                                 </div>
                                 <div class="сonclusion__line"></div>
                                 <div class="condition__invest">
-                                    <div class="condition__invest-subtitle">Выберете валюту</div>
+
+
+                                    <div class="condition__invest-subtitle">Валютная пара</div>
                                     <div class="condition__invest-para">
+
                                         <span>
                                             <form>
 
                                                 <div class="__select" data-state="">
-                                                    <div class="__select__title" data-default="Option 0">BTC
+                                                    <div class="__select__title" data-default="Option 0">валютная пара
                                                     </div>
                                                     <div class="__select__content">
                                                         <input id="singleSelect0" class="__select__input" type="radio"
                                                             name="singleSelect" checked />
-                                                        <label for="singleSelect0" class="__select__label">
-                                                            <div class="consolution__multi-modal">
-                                                                <img src="./img/multi/btc.png" alt=""> <span>BTC</span>
-                                                            </div>
-                                                        </label>
-                                                        <input id="singleSelect1" class="__select__input" type="radio"
+                                                        <label for="singleSelect0" class="__select__label"> <img
+                                                                src="./img/multi/btc.png" alt=""> BTC</label>
+                                                        <input id="singleSelect1" class="__select__input " type="radio"
                                                             name="singleSelect" checked />
-                                                        <label for="singleSelect1" class="__select__label">
-                                                            <div class="consolution__multi-modal">
+                                                        <label for="singleSelect1"
+                                                            class="__select__label select__input">
+                                                            <div class="deposit__multi-wallet">
                                                                 <img src="./img/multi/btc.png" alt=""> <span>BTC</span>
                                                             </div>
+
                                                         </label>
                                                         <input id="singleSelect2" class="__select__input " type="radio"
-                                                            name="singleSelect" checked />
+                                                            name="singleSelect" />
                                                         <label for="singleSelect2"
                                                             class="__select__label select__input">
-                                                            <div class="consolution__multi-modal">
-                                                                <img src="./img/multi/eth.png" alt=""> <span>ETH</span>
+                                                            <div class="deposit__multi-wallet">
+                                                                <img src="./img/multi/eth.png" alt="">
+                                                                <span>ETH</span>
                                                             </div>
                                                         </label>
                                                         <input id="singleSelect3" class="__select__input " type="radio"
                                                             name="singleSelect" />
                                                         <label for="singleSelect3"
                                                             class="__select__label select__input">
-                                                            <div class="consolution__multi-modal">
-                                                                <img src="./img/multi/bnb.png" alt=""> <span>BNB</span>
+                                                            <div class="deposit__multi-wallet"><img
+                                                                    src="./img/multi/bnb.png" alt="">
+                                                                <span>BNB</span>
                                                             </div>
                                                         </label>
                                                         <input id="singleSelect4" class="__select__input " type="radio"
                                                             name="singleSelect" />
                                                         <label for="singleSelect4"
                                                             class="__select__label select__input">
-                                                            <div class="consolution__multi-modal">
-                                                                <img src="./img/multi/sol.png" alt=""> <span>SOL</span>
+                                                            <div class="deposit__multi-wallet"><img
+                                                                    src="./img/multi/sol.png" alt="">
+                                                                <span>SOL</span>
                                                             </div>
                                                         </label>
                                                         <input id="singleSelect5" class="__select__input " type="radio"
                                                             name="singleSelect" />
                                                         <label for="singleSelect5"
                                                             class="__select__label select__input">
-                                                            <div class="consolution__multi-modal">
-                                                                <img src="./img/multi/ton.png" alt=""> <span>TON</span>
+                                                            <div class="deposit__multi-wallet"><img
+                                                                    src="./img/multi/ton.png" alt="">
+                                                                <span>TON</span>
                                                             </div>
                                                         </label>
-
 
                                                     </div>
                                                 </div>
@@ -834,9 +839,9 @@
 
                                 </div>
                                 <div class="сonclusion__line"></div>
-                                <div class="conclusion__size">
+                                <div class="conclusion__size ">
                                     <div class="conclusion__size-title">
-                                        Название валюты
+                                        Размер депозита
                                     </div>
                                     <div class="conclusion__size-points">
                                         <div class="conclusion__size-point">
@@ -851,21 +856,20 @@
                                             </div>
                                         </div>
 
-                                    </div>
-                                    <div class="conclusion__size-title">
-                                        Сумма вывода
-                                    </div>
-                                    <div class="conclusion__size-point">
-                                        <div class="conclusion__size-main">
-                                            <div class="conclusion__size-main-left">
-                                                <input type="number" placeholder="0">
+                                        <div class="conclusion__size-point">
+                                            <div class="conclusion__size-title">
+                                                Название Валюты
                                             </div>
-                                            <div class="conclusion__size-main-right">
-                                                <p>MAX</p>
+                                            <div class="conclusion__size-main">
+                                                <div class="conclusion__size-main-left">
+                                                    <input type="text" placeholder="BTC">
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="conclusion__create conclusion__create-multi">
+
+                                    <div class="conclusion__create">
                                         <button>
                                             <span>Создать депозит</span>
                                             <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
@@ -891,7 +895,6 @@
             </div>
         </div>
     </div>
-
     <div class="modal fade" id="reinvestModal" tabindex="-3" aria-labelledby="exampleModalLabel">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -1011,6 +1014,7 @@
             </div>
         </div>
     </div>
+
 
     <div class="wrapper">
         <div class="light"></div>
@@ -2166,6 +2170,7 @@
                                                 <img src="img/main/left.png" alt="" class="check-password__btn-left">
                                                 <img src="img/main/right.png" alt="" class="check-password__btn-right">
                                             </button>
+
                                         </div>
                                     </div>
                                     <!-- <button class="mt-5 btn btn-secondary btn-styled-wave btn-with-ico">Начать
@@ -2291,6 +2296,20 @@
         </div>
     </footer>
     </div>
+
+    <script>
+        let days = document.querySelectorAll('.condition__period-day')
+        for (let i = 0; i < days.length; i++) {
+            days[i].addEventListener('click', () => {
+                for (let j = 0; j < days.length; j++) {
+                    days[j].classList.remove('active')
+
+                }
+                days[i].classList.add('active')
+            })
+
+        }
+    </script>
     <script>
 
         document.querySelector('.svg-28').addEventListener('mouseover', (event) => {
@@ -2354,19 +2373,7 @@
         }
         );
     </script>
-    <script>
-        let days = document.querySelectorAll('.condition__period-day')
-        for (let i = 0; i < days.length; i++) {
-            days[i].addEventListener('click', () => {
-                for (let j = 0; j < days.length; j++) {
-                    days[j].classList.remove('active')
 
-                }
-                days[i].classList.add('active')
-            })
-
-        }
-    </script>
     <script src="js/select.js"> </script>
 </body>
 
