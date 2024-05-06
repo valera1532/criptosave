@@ -11686,3 +11686,34 @@ p {
         justify-content: center;
     }
 }
+
+.form_radio label:before {
+    content: "";
+    display: inline-block;
+    width: 26.321px;
+    height: 27px;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    background: url(../img/main/radio-1.png) 0 0 no-repeat;
+}
+
+/* Checked */
+.form_radio input[type="radio"]:checked+label:before {
+    background: url(../img/main/radio-2.png) 0 0 no-repeat;
+}
+
+.profile__safety-2FA {
+    transition: 0.4s;
+    transform: scaleY(0);
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.profile__safety-2FA.active {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}

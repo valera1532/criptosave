@@ -575,21 +575,7 @@ input {
     line-height: 125%;
 }
 
-.form_radio label:before {
-    content: "";
-    display: inline-block;
-    width: 26.321px;
-    height: 27px;
-    position: absolute;
-    left: 0;
-    bottom: 0px;
-    background: url(/img/main/radio-1.png) 0 0 no-repeat;
-}
 
-/* Checked */
-.form_radio input[type="radio"]:checked+label:before {
-    background: url(/img/main/radio-2.png) 0 0 no-repeat;
-}
 
 /* Hover */
 .form_radio label:hover:before {
