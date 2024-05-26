@@ -7880,7 +7880,7 @@ p {
     position: relative;
 }
 
-.crypto__opening-banner::before {
+/* .crypto__opening-banner::before {
     background: linear-gradient(90deg, #051c68 6.69%, rgba(2, 15, 75, 0) 93.86%);
     position: absolute;
     width: 50%;
@@ -7888,18 +7888,15 @@ p {
     content: "";
     left: 0;
     top: 0;
+} */
+
+
+
+.crypto__opening-banner {
+    z-index: 22;
 }
 
-.crypto__opening-banner::after {
-    background: linear-gradient(90deg, #051c68 7.07%, rgba(2, 15, 75, 0) 99.21%);
-    position: absolute;
-    transform: rotate(180deg);
-    width: 50%;
-    height: 100%;
-    content: "";
-    right: 0;
-    top: 0;
-}
+.crypto__opening-banner:hover::after {}
 
 .crypto__banner-fone {
     position: absolute;
@@ -8353,7 +8350,51 @@ p {
     max-width: 500px;
 }
 
+.crypto__opening-banners {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.crypto__opening-banner {
+    pointer-events: all;
+}
+
+.crypto__opening-banner-back {
+    transition: .4s;
+    backdrop-filter: blur(140px);
+    background: linear-gradient(180deg, rgba(7, 53, 159, 0.61) 0%, rgba(10, 49, 140, 0.1) 100%);
+    opacity: 0.8;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "fsdaf";
+    right: 0;
+    top: 0;
+}
+
+.crypto__opening-banner-back:hover {
+    border: 1px solid #FFD600;
+    border-radius: 23px;
+    backdrop-filter: blur(0px);
+    background: none;
+    opacity: 1;
+}
+
+.crypto__banner-title {
+    margin-top: 10px;
+    font-size: 65px;
+}
+
 @media (max-width: 1024px) {
+    .crypto__opening-banners {
+        flex-direction: column;
+    }
+
     .crypto__opening-cards {
         display: flex;
         flex-direction: column;
@@ -9013,8 +9054,10 @@ p {
         min-height: 515px;
     }
 
-    .crypto__banner-fone img {
-        left: -863px;
+    .crypto__banner-fone img {}
+
+    .crypto__opening-banner-back {
+        display: none;
     }
 }
 
@@ -9301,6 +9344,8 @@ p {
     line-height: 100%;
     /* 20px */
 }
+
+
 
 @media (max-width: 767px) {
     .structure__table-main {
