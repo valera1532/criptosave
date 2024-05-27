@@ -11682,9 +11682,6 @@ p {
     width: 100%;
 }
 
-.crypto__opening-cards {
-    flex-wrap: wrap;
-}
 
 .additional-bonus__card-title {
 
@@ -11787,8 +11784,21 @@ p {
 }
 
 .two__factor-download:hover {
-
     color: var(--yeelow);
+}
+
+.crypto__card-sum-promo span {
+    font-size: 26px;
+
+}
+
+.crypto__card-sum-promo p {
+    font-size: 26px;
+
+}
+
+.crypto__opening-card {
+    padding: 25px;
 }
 
 @media (max-width: 1024px) {
