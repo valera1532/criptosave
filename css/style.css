@@ -11970,3 +11970,7 @@ p {
         display: none;
     }
 }
+
+.crypto__banner-fone img {
+    object-fit: cover;
+}
