@@ -2090,9 +2090,225 @@
                                                 </form>
 
                                             </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h4 class="mb-sm-0 font-size-30 text-white">Trusted wallets</h4>
+                                                <h4 class="mb-sm-0 font-size-24 text-white"><i
+                                                        class="bx bxs-wallet-alt ms-2"></i></h4>
+                                            </div>
+                                            <form class="mt-3">
+                                                <p class="card-title-desc mb-1 text-white">Add new trusted
+                                                    wallet:</p>
+                                                <div class="input-group">
+                                                    <input type="number" class="" placeholder="Wallet Address"
+                                                        id="dep_price">
+                                                    <div class="input-group-text" id="select_crypto"
+                                                        style="width:30px;"><img src="./img/header/Tether.png"
+                                                            alt="Icon" class="svg-icon">
+                                                    </div>
+                                                    <select class="form-select px-2"
+                                                        style="min-width:120px;border-radius:0px 25px 25px 0px;font-size:12px;">
+                                                        <option value="usdt_trc20">USDT(TRC20)</option>
+                                                        <option value="usdt_bep20">USDT(BEP20)</option>
+                                                        <option value="btc">BTC</option>
+                                                        <option value="eth">ETH(ERC20)</option>
+                                                    </select>
+                                                    <script>
+                                                        document.addEventListener("DOMContentLoaded", function () {
+                                                            const selectElement = document.querySelector(".form-select");
+                                                            const imageContainer = document.getElementById("select_crypto").querySelector("img");
+
+
+                                                            selectElement.addEventListener("change", function () {
+                                                                const selectedOption = selectElement.value;
+                                                                let imagePath = "";
+
+                                                                switch (selectedOption) {
+                                                                    case "usdt_trc20":
+                                                                        imagePath = "./img/crypto/usdt.svg";
+                                                                        break;
+                                                                    case "usdt_bep20":
+                                                                        imagePath = "./img/crypto/usdt.svg";
+                                                                        break;
+                                                                    case "btc":
+                                                                        imagePath = "./img/crypto/bitcoin.svg";
+                                                                        break;
+                                                                    case "eth":
+                                                                        imagePath = "./img/crypto/ethereum.svg";
+                                                                        break;
+                                                                    default:
+                                                                        // Default image path or error handling if needed
+                                                                        break;
+                                                                }
+
+                                                                imageContainer.src = imagePath;
+                                                            });
+
+
+                                                        });
+
+                                                    </script>
+                                                </div>
+                                                <p class="card-title-desc mb-1 text-white mt-2">Code from the
+                                                    2FA application:
+                                                </p>
+                                                <div class="input-group auth-pass-inputgroup">
+                                                    <input type="password" class="" placeholder="Enter your 2FA code">
+                                                    <button class="btn btn-outline-warning " type="button"
+                                                        id="add_wallet">Add
+                                                        Wallet</button>
+                                                </div>
+                                            </form>
+
+                                            <!--Alert-->
+                                            <div class="alert alert-danger alert-dismissible fade show mt-2"
+                                                role="alert" style="display: flex; align-items: center;">
+                                                <img src="./img/crypto/bell.svg" alt="Bell Icon"
+                                                    class="bx-tada svg-icon-bell me-2">
+                                                <div class="flex-grow-1">Activate (2FA) to add Trusted Wallet
+                                                    <br>Withdrawal of
+                                                    funds from the account is available only to trusted wallets
+                                                </div>
+                                                <button type="button" class="btn-close btn-close-notification"
+                                                    data-bs-dismiss="alert" aria-label="Close"
+                                                    style="margin-left: auto;"></button>
+                                            </div>
+                                            <!--Alert-->
+                                            <!--Alert-->
+                                            <div class="alert alert-danger alert-dismissible fade show mt-2"
+                                                role="alert" style="display: flex; align-items: center;">
+                                                <img src="./img/crypto/bell.svg" alt="Bell Icon"
+                                                    class="bx-tada svg-icon-bell me-2">
+                                                <div class="flex-grow-1">There are no trusted wallets, you
+                                                    cannot withdraw funds
+                                                </div>
+                                                <button type="button" class="btn-close btn-close-notification"
+                                                    data-bs-dismiss="alert" aria-label="Close"
+                                                    style="margin-left: auto;"></button>
+                                            </div>
+                                            <!--Alert-->
+
+
+                                            <!--Wallets Table-->
+                                            <div class="table-responsive my-3">
+                                                <table class="table table-trusted-wallets table-sm align-middle">
+                                                    <thead class="sticky-top bien-glass">
+                                                        <tr>
+                                                            <th scope="col" class="text-nowrap text-white">
+                                                                <small>Coin</small>
+                                                            </th>
+                                                            <th scope="col" class="text-nowrap text-white">
+                                                                <small>Chain</small>
+                                                            </th>
+                                                            <th scope="col" class="text-nowrap text-white">
+                                                                <small>Wallet</small>
+                                                            </th>
+                                                            <th scope="col" class="text-nowrap text-white">
+                                                                <small>Date of
+                                                                    creation</small>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                        <!--wallet-->
+                                                        <tr>
+                                                            <td class="text-nowrap">
+                                                                <div class="table-trusted-row">
+                                                                    <img src="./img/crypto/ethereum.svg" alt="ETH Icon"
+                                                                        class="svg-icon"> <span>ETH</span>
+                                                                </div>
+
+                                                            </td>
+                                                            <td class="text-nowrap">
+                                                                ERC-20
+                                                            </td>
+                                                            <td class="text-nowrap">
+                                                                0xaD946f1c13dD0414B97896C2e67C25be993D7ae5
+                                                            </td>
+                                                            <td class="text-nowrap">
+                                                                2024-04-30 12:13:03
+                                                            </td>
+                                                        </tr>
+                                                        <!--wallet-->
+                                                        <tr>
+                                                            <td class="text-nowrap">
+                                                                <div class="table-trusted-row">
+                                                                    <img src="./img/crypto/usdt.svg" alt="ETH Icon" />
+
+                                                                    <span>USDT</span>
+                                                                </div>
+
+
+                                                            </td>
+                                                            <td class="text-nowrap">
+                                                                TRC-20
+                                                            </td>
+                                                            <td class="text-nowrap">
+                                                                TTEwHRLwkiJUwRkXjU8n7gzj3ucey3rVta
+                                                            </td>
+                                                            <td class="text-nowrap">
+                                                                2024-04-30 11:11:11
+                                                            </td>
+                                                        </tr>
+                                                        <!--wallet-->
+                                                        <tr>
+                                                            <td class="text-nowrap">
+                                                                <div class="table-trusted-row">
+                                                                    <img src="./img/crypto/usdt.svg" alt="ETH Icon" />
+
+                                                                    <span>USDT</span>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-nowrap">
+                                                                BEP-20
+                                                            </td>
+                                                            <td class="text-nowrap">
+                                                                0xD7cc676484b882C9Cf11fb43B96B1D92CA7396fe
+                                                            </td>
+                                                            <td class="text-nowrap">
+                                                                2024-04-30 10:10:10
+                                                            </td>
+                                                        </tr>
+                                                        <!--wallet-->
+                                                        <tr>
+                                                            <td class="text-nowrap">
+                                                                <div class="table-trusted-row">
+                                                                    <img src="./img/crypto/bitcoin.svg"
+                                                                        alt="ETH Icon" />
+                                                                    <span>BTC</span>
+                                                                </div>
+
+                                                            </td>
+                                                            <td class="text-nowrap">
+                                                                BTC
+                                                            </td>
+                                                            <td class="text-nowrap">
+                                                                1PdXePVNJorSWr1dWkacFJDQK33oCcXbnV
+                                                            </td>
+                                                            <td class="text-nowrap">
+                                                                2024-04-30 09:09:09
+                                                            </td>
+                                                        </tr>
+                                                        <!--wallet-->
+
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!--Wallets Table / END-->
+
+
+
+
+
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                             <div class="popup ">
@@ -2198,7 +2414,6 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                                 <div class="popup__photo none">
                                     <div class="popup__top">

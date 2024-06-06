@@ -4780,11 +4780,6 @@ textarea {
     /* 33.6px */
 }
 
-.popup__main {}
-
-.btn-close {}
-
-.close {}
 
 .popup__subhead {
     margin-top: 40px;
@@ -11973,4 +11968,99 @@ p {
 
 .crypto__banner-fone img {
     object-fit: cover;
+}
+
+/* settings */
+.card-body {
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(7, 53, 159, 0.61) 0%, rgba(10, 49, 140, 0.1) 100%);
+    backdrop-filter: blur(70px);
+}
+
+.font-size-24 {
+    font-size: 24px;
+}
+
+.font-size-30 {
+    font-size: 30px;
+}
+
+
+#dep_price {
+    width: 100%;
+    display: flex;
+
+}
+
+.input-group-text {
+    color: white;
+
+    border: none;
+    min-width: 40px;
+    padding-right: 10px;
+
+    & img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.input-group {
+    height: 40px;
+    padding: 0 0 0 30px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(7, 53, 159, 0.61) 0%, rgba(10, 49, 140, 0.1) 100%);
+    backdrop-filter: blur(70px);
+    flex-wrap: nowrap;
+}
+
+.input-group-text {}
+
+.form-select {
+
+    border: none;
+
+}
+
+.btn-outline-warning {
+    height: 100% !important;
+    border-radius: 0 20px 20px 0;
+    min-width: 100px;
+}
+
+.alert-danger {
+    --bs-alert-color: var(--bs-danger-text-emphasis);
+    --bs-alert-bg: var(--bs-danger-bg-subtle);
+    --bs-alert-border-color: #622a2a;
+    --bs-alert-link-color: var(--bs-danger-text-emphasis);
+}
+
+.btn-close-notification {
+    font-size: 14px;
+    background: transparent var(--bs-btn-close-bg) center / 1em auto no-repeat;
+}
+
+.table-trusted-wallets {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.table-trusted-wallets tr td img {
+    width: 20px;
+    height: 20px;
+}
+
+.text-nowrap {
+
+    align-items: center;
+    gap: 20px;
+}
+
+.table-trusted-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
