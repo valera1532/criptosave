@@ -12064,3 +12064,7 @@ p {
     align-items: center;
     gap: 5px;
 }
+
+.crypto__purpose-title {
+    text-transform: inherit;
+}
