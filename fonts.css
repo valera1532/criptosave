@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 100;
+    src: url("fonts/gilroy/Gilroy-Thin.ttf");
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 500;
+    src: url("fonts/gilroy/Gilroy-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 600;
+    src: url("fonts/gilroy/Gilroy-Semibold.ttf");
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 700;
+    src: url("fonts/gilroy/Gilroy-Bold.ttf");
+}
+
+
+/* Typography
+10px = 0.625rem
+12px = 0.75rem
+14px = 0.875rem
+15px = 0.9375rem
+16px = 1rem (base)
+18px = 1.125rem
+20px = 1.25rem
+24px = 1.5rem
+30px = 1.875rem
+32px = 2rem
+*/
+
+h1,
+.h1 {
+    /* 120px / 36px */
+    font-size: 2.25rem;
+    font-size: clamp(2.25rem, 1.2rem + 5.25vw, 7.5rem);
+}
+
+h2,
+.h2 {
+    /* 92px / 32px */
+    font-size: 2rem;
+    font-size: clamp(2rem, 1.25rem + 3.75vw, 5.75rem);
+}
+
+h3,
+.h3 {
+    /* 72px / 28px */
+    font-size: 1.75rem;
+    font-size: clamp(1.75rem, 1.2rem + 2.75vw, 4.5rem);
+}
+
+h4,
+.h4 {
+    /* 60px */
+    font-size: 1.75rem;
+    font-size: clamp(1.75rem, 1.35rem + 2vw, 3.75rem);
+    font-weight: 600;
+}
+
+h5,
+.h5 {
+    /* 40px / 24px */
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1.3rem + 1vw, 2.5rem);
+    font-weight: 600;
+}
+
+h6,
+.h6 {
+    /* 24px */
+    font-size: 1.125rem;
+    font-size: clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem);
+    font-weight: 600;
+}

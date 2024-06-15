@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)file:///C:/Users/%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D0%B8%D0%B9/Downloads/Telegram%20Desktop/new.html -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+    .autocomplete {
+      position: relative;
+      display: inline-block;
+    }
+
+    #country-input {
+      width: 300px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    #country-list {
+      position: absolute;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-top: none;
+      display: none;
+      background-color: white;
+    }
+
+    #country-list li {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    #country-list li:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="autocomplete">
+    <input type="text" id="country-input" placeholder="Выберите страну">
+    <ul id="country-list" style="display: none;">
+      <li>Афганистан</li>
+      <li>Аландские острова</li>
+      <li>Албания</li>
+      <li>Алжир</li>
+      <li>Американское Самоа</li>
+      <li>Андорра</li>
+      <li>Ангола</li>
+      <li>Ангилья</li>
+      <li>Антарктида</li>
+      <li>Антигуа и Барбуда</li>
+      <li>Аргентина</li>
+      <li>Армения</li>
+      <li>Аруба</li>
+      <li>Австралия</li>
+      <li>Австрия</li>
+      <li>Азербайджан</li>
+      <li>Багамы</li>
+      <li>Бахрейн</li>
+      <li>Бангладеш</li>
+      <li>Барбадос</li>
+      <li>Беларусь</li>
+      <li>Бельгия</li>
+      <li>Белиз</li>
+      <li>Бенин</li>
+      <li>Бермуды</li>
+      <li>Бутан</li>
+      <li>Боливия</li>
+      <li>Бонайре, Синт-Эстатиус и Саба</li>
+      <li>Босния и Герцеговина</li>
+      <li>Ботсвана</li>
+      <li>Остров Буве</li>
+      <li>Бразилия</li>
+      <li>Британская территория в Индийском океане</li>
+      <li>Бруней</li>
+      <li>Болгария</li>
+      <li>Буркина-Фасо</li>
+      <li>Бурунди</li>
+      <li>Кабо-Верде</li>
+      <li>Камбоджа</li>
+      <li>Камерун</li>
+      <li>Канада</li>
+      <li>Каймановы острова</li>
+      <li>Центральноафриканская Республика</li>
+      <li>Чад</li>
+      <li>Чили</li>
+      <li>Китай</li>
+      <li>Остров Рождества</li>
+      <li>Кокосовые (Килинг) острова</li>
+      <li>Колумбия</li>
+      <li>Коморы</li>
+      <li>Конго</li>
+      <li>Демократическая Республика Конго</li>
+      <li>Острова Кука</li>
+      <li>Коста-Рика</li>
+      <li>Хорватия</li>
+      <li>Куба</li>
+      <li>Кюрасао</li>
+      <li>Кипр</li>
+      <li>Чехия</li>
+      <li>Дания</li>
+      <li>Джибути</li>
+      <li>Доминика</li>
+      <li>Доминиканская Республика</li>
+      <li>Эквадор</li>
+      <li>Египет</li>
+      <li>Сальвадор</li>
+      <li>Экваториальная Гвинея</li>
+      <li>Эритрея</li>
+      <li>Эстония</li>
+      <li>Эфиопия</li>
+      <li>Фолклендские острова (Мальвинские)</li>
+      <li>Фарерские острова</li>
+      <li>Фиджи</li>
+      <li>Финляндия</li>
+      <li>Франция</li>
+      <li>Французская Гвиана</li>
+      <li>Французская Полинезия</li>
+      <li>Французские Южные и Антарктические территории</li>
+      <li>Габон</li>
+      <li>Гамбия</li>
+      <li>Грузия</li>
+      <li>Германия</li>
+      <li>Гана</li>
+      <li>Гибралтар</li>
+      <li>Греция</li>
+      <li>Гренландия</li>
+      <li>Гренада</li>
+      <li>Гваделупа</li>
+      <li>Гуам</li>
+      <li>Гватемала</li>
+      <li>Гернси</li>
+      <li>Гвинея</li>
+      <li>Гвинея-Бисау</li>
+      <li>Гайана</li>
+      <li>Гаити</li>
+      <li>Остров Херд и острова Макдональд</li>
+      <li>Святая Елена, Остров Вознесения и Тристан-да-Кунья</li>
+      <li>Ватикан</li>
+      <li>Гондурас</li>
+      <li>Гонконг</li>
+      <li>Венгрия</li>
+      <li>Исландия</li>
+      <li>Индия</li>
+      <li>Индонезия</li>
+      <li>Иран</li>
+      <li>Ирак</li>
+      <li>Ирландия</li>
+      <li>Остров Мэн</li>
+      <li>Израиль</li>
+      <li>Италия</li>
+      <li>Кот-д'Ивуар</li>
+      <li>Ямайка</li>
+      <li>Япония</li>
+      <li>Джерси</li>
+      <li>Иордания</li>
+      <li>Казахстан</li>
+      <li>Кения</li>
+      <li>Кирибати</li>
+      <li>Северная Корея</li>
+      <li>Южная Корея</li>
+      <li>Косово</li>
+      <li>Кувейт</li>
+      <li>Киргизия</li>
+      <li>Лаос</li>
+      <li>Латвия</li>
+      <li>Ливан</li>
+      <li>Лесото</li>
+      <li>Либерия</li>
+      <li>Ливия</li>
+      <li>Лихтенштейн</li>
+      <li>Литва</li>
+      <li>Люксембург</li>
+      <li>Макао</li>
+      <li>Македония</li>
+      <li>Мадагаскар</li>
+      <li>Малави</li>
+      <li>Малайзия</li>
+      <li>Мальдивы</li>
+      <li>Мали</li>
+      <li>Мальта</li>
+      <li>Маршалловы острова</li>
+      <li>Мартиника</li>
+      <li>Мавритания</li>
+      <li>Маврикий</li>
+      <li>Майотта</li>
+      <li>Мексика</li>
+      <li>Микронезия</li>
+      <li>Молдова</li>
+      <li>Монако</li>
+      <li>Монголия</li>
+      <li>Черногория</li>
+      <li>Монтсеррат</li>
+      <li>Марокко</li>
+      <li>Мозамбик</li>
+      <li>Мьянма</li>
+      <li>Намибия</li>
+      <li>Науру</li>
+      <li>Непал</li>
+      <li>Нидерланды</li>
+      <li>Новая Каледония</li>
+      <li>Новая Зеландия</li>
+      <li>Никарагуа</li>
+      <li>Нигер</li>
+      <li>Нигерия</li>
+      <li>Ниуэ</li>
+      <li>Норфолк</li>
+      <li>Северные Марианские острова</li>
+      <li>Норвегия</li>
+      <li>Оман</li>
+      <li>Пакистан</li>
+      <li>Палау</li>
+      <li>Палестинская территория</li>
+      <li>Панама</li>
+      <li>Папуа — Новая Гвинея</li>
+      <li>Парагвай</li>
+      <li>Перу</li>
+      <li>Филиппины</li>
+      <li>Питкерн</li>
+      <li>Польша</li>
+      <li>Португалия</li>
+      <li>Пуэрто-Рико</li>
+      <li>Катар</li>
+      <li>Реюньон</li>
+      <li>Румыния</li>
+      <li>Россия</li>
+      <li>Руанда</li>
+      <li>Сен-Бартелеми</li>
+      <li>Святой Елены</li>
+      <li>Сент-Китс и Невис</li>
+      <li>Сент-Люсия</li>
+      <li>Сент-Мартин</li>
+      <li>Сен-Пьер и Микелон</li>
+      <li>Сен-Винсент и Гренадины</li>
+      <li>Самоа</li>
+      <li>Сан-Марино</li>
+      <li>Сан-Томе и Принсипи</li>
+      <li>Саудовская Аравия</li>
+      <li>Сенегал</li>
+      <li>Сербия</li>
+      <li>Сейшелы</li>
+      <li>Сьерра-Леоне</li>
+      <li>Сингапур</li>
+      <li>Синт-Мартен</li>
+      <li>Словакия</li>
+      <li>Словения</li>
+      <li>Соломоновы острова</li>
+      <li>Сомали</li>
+      <li>Южная Африка</li>
+      <li>Южная Джорджия и Южные Сандвичевы острова</li>
+      <li>Южный Судан</li>
+      <li>Испания</li>
+      <li>Шри-Ланка</li>
+      <li>Судан</li>
+      <li>Суринам</li>
+      <li>Свалбард и Ян-Майен</li>
+      <li>Свазиленд</li>
+      <li>Швеция</li>
+      <li>Швейцария</li>
+      <li>Сирия</li>
+      <li>Тайвань</li>
+      <li>Таджикистан</li>
+      <li>Танзания</li>
+      <li>Таиланд</li>
+      <li>Восточный Тимор</li>
+      <li>Того</li>
+      <li>Токелау</li>
+      <li>Тонга</li>
+      <li>Тринидад и Тобаго</li>
+      <li>Тунис</li>
+      <li>Турция</li>
+      <li>Туркмения</li>
+      <li>Теркс и Кайкос</li>
+      <li>Тувалу</li>
+      <li>Уганда</li>
+      <li>Украина</li>
+      <li>Объединенные Арабские Эмираты</li>
+      <li>Великобритания</li>
+      <li>Соединенные Штаты Америки</li>
+      <li>США (заморские территории)</li>
+      <li>Уругвай</li>
+      <li>Узбекистан</li>
+      <li>Вануату</li>
+      <li>Венесуэла</li>
+      <li>Вьетнам</li>
+      <li>Британские Виргинские острова</li>
+      <li>Виргинские острова США</li>
+      <li>Уоллис и Футуна</li>
+      <li>Западная Сахара</li>
+      <li>Йемен</li>
+      <li>Замбия</li>
+      <li>Зимбабве</li>
+    </ul>
+  </div>
+  <script>
+    const countries = [
+      { name: "Афганистан", translation: "Afghanistan" },
+      { name: "Аландские острова", translation: "Aland Islands" },
+      { name: "Албания", translation: "Albania" },
+      { name: "Алжир", translation: "Algeria" },
+      { name: "Американское Самоа", translation: "American Samoa" },
+      { name: "Андорра", translation: "Andorra" },
+      { name: "Ангола", translation: "Angola" },
+      { name: "Ангилья", translation: "Anguilla" },
+      { name: "Антарктида", translation: "Antarctica" },
+      { name: "Антигуа и Барбуда", translation: "Antigua and Barbuda" },
+      { name: "Аргентина", translation: "Argentina" },
+      { name: "Армения", translation: "Armenia" },
+      { name: "Аруба", translation: "Aruba" },
+      { name: "Австралия", translation: "Australia" },
+      { name: "Австрия", translation: "Austria" },
+      { name: "Азербайджан", translation: "Azerbaijan" },
+      { name: "Багамы", translation: "Bahamas" },
+      { name: "Бахрейн", translation: "Bahrain" },
+      { name: "Бангладеш", translation: "Bangladesh" },
+      { name: "Барбадос", translation: "Barbados" },
+      { name: "Беларусь", translation: "Belarus" },
+      { name: "Бельгия", translation: "Belgium" },
+      { name: "Белиз", translation: "Belize" },
+      { name: "Бенин", translation: "Benin" },
+      { name: "Бермуды", translation: "Bermuda" },
+      { name: "Бутан", translation: "Bhutan" },
+      { name: "Боливия", translation: "Bolivia" },
+      { name: "Бонайре, Синт-Эстатиус и Саба", translation: "Bonaire, Sint Eustatius and Saba" },
+      { name: "Босния и Герцеговина", translation: "Bosnia and Herzegovina" },
+      { name: "Ботсвана", translation: "Botswana" },
+      { name: "Остров Буве", translation: "Bouvet Island" },
+      { name: "Бразилия", translation: "Brazil" },
+      { name: "Британская территория в Индийском океане", translation: "British Indian Ocean Territory" },
+      { name: "Бруней", translation: "Brunei" },
+      { name: "Болгария", translation: "Bulgaria" },
+      { name: "Буркина-Фасо", translation: "Burkina Faso" },
+      { name: "Бурунди", translation: "Burundi" },
+      { name: "Кабо-Верде", translation: "Cabo Verde" },
+      { name: "Камбоджа", translation: "Cambodia" },
+      { name: "Камерун", translation: "Cameroon" },
+      { name: "Канада", translation: "Canada" },
+      { name: "Каймановы острова", translation: "Cayman Islands" },
+      { name: "Центральноафриканская Республика", translation: "Central African Republic" },
+      { name: "Чад", translation: "Chad" },
+      { name: "Чили", translation: "Chile" },
+      { name: "Китай", translation: "China" },
+      { name: "Остров Рождества", translation: "Christmas Island" },
+      { name: "Кокосовые (Килинг) острова", translation: "Cocos (Keeling) Islands" },
+      { name: "Колумбия", translation: "Colombia" },
+      { name: "Коморы", translation: "Comoros" },
+      { name: "Конго", translation: "Congo" },
+      { name: "Демократическая Республика Конго", translation: "Democratic Republic of the Congo" },
+      { name: "Острова Кука", translation: "Cook Islands" },
+      { name: "Коста-Рика", translation: "Costa Rica" },
+      { name: "Хорватия", translation: "Croatia" },
+      { name: "Куба", translation: "Cuba" },
+      { name: "Кюрасао", translation: "Curacao" },
+      { name: "Кипр", translation: "Cyprus" },
+      { name: "Чехия", translation: "Czech Republic" },
+      { name: "Дания", translation: "Denmark" },
+      { name: "Джибути", translation: "Djibouti" },
+      { name: "Доминика", translation: "Dominica" },
+      { name: "Доминиканская Республика", translation: "Dominican Republic" },
+      { name: "Эквадор", translation: "Ecuador" },
+      { name: "Египет", translation: "Egypt" },
+      { name: "Сальвадор", translation: "El Salvador" },
+      { name: "Экваториальная Гвинея", translation: "Equatorial Guinea" },
+      { name: "Эритрея", translation: "Eritrea" },
+      { name: "Эстония", translation: "Estonia" },
+      { name: "Эфиопия", translation: "Ethiopia" },
+      { name: "Фолклендские острова (Мальвинские)", translation: "Falkland Islands (Malvinas)" },
+      { name: "Фарерские острова", translation: "Faroe Islands" },
+      { name: "Фиджи", translation: "Fiji" },
+      { name: "Финляндия", translation: "Finland" },
+      { name: "Франция", translation: "France" },
+      { name: "Французская Гвиана", translation: "French Guiana" },
+      { name: "Французская Полинезия", translation: "French Polynesia" },
+      { name: "Французские Южные и Антарктические территории", translation: "French Southern Territories" },
+      { name: "Габон", translation: "Gabon" },
+      { name: "Гамбия", translation: "Gambia" },
+      { name: "Грузия", translation: "Georgia" },
+      { name: "Германия", translation: "Germany" },
+      { name: "Гана", translation: "Ghana" },
+      { name: "Гибралтар", translation: "Gibraltar" },
+      { name: "Греция", translation: "Greece" },
+      { name: "Гренландия", translation: "Greenland" },
+      { name: "Гренада", translation: "Grenada" },
+      { name: "Гваделупа", translation: "Guadeloupe" },
+      { name: "Гуам", translation: "Guam" },
+      { name: "Гватемала", translation: "Guatemala" },
+      { name: "Гернси", translation: "Guernsey" },
+      { name: "Гвинея", translation: "Guinea" },
+      { name: "Гвинея-Бисау", translation: "Guinea-Bissau" },
+      { name: "Гайана", translation: "Guyana" },
+      { name: "Гаити", translation: "Haiti" },
+      { name: "Остров Херд и острова Макдональд", translation: "Heard Island and McDonald Islands" },
+      { name: "Святая Елена, Остров Вознесения и Тристан-да-Кунья", translation: "Saint Helena, Ascension and Tristan da Cunha" },
+      { name: "Ватикан", translation: "Vatican City" },
+      { name: "Гондурас", translation: "Honduras" },
+      { name: "Гонконг", translation: "Hong Kong" },
+      { name: "Венгрия", translation: "Hungary" },
+      { name: "Исландия", translation: "Iceland" },
+      { name: "Индия", translation: "India" },
+      { name: "Индонезия", translation: "Indonesia" },
+      { name: "Иран", translation: "Iran" },
+      { name: "Ирак", translation: "Iraq" },
+      { name: "Ирландия", translation: "Ireland" },
+      { name: "Остров Мэн", translation: "Isle of Man" },
+      { name: "Израиль", translation: "Israel" },
+      { name: "Италия", translation: "Italy" },
+      { name: "Кот-д'Ивуар", translation: "Ivory Coast" },
+      { name: "Ямайка", translation: "Jamaica" },
+      { name: "Япония", translation: "Japan" },
+      { name: "Джерси", translation: "Jersey" },
+      { name: "Иордания", translation: "Jordan" },
+      { name: "Казахстан", translation: "Kazakhstan" },
+      { name: "Кения", translation: "Kenya" },
+      { name: "Кирибати", translation: "Kiribati" },
+      { name: "Северная Корея", translation: "North Korea" },
+      { name: "Южная Корея", translation: "South Korea" },
+      { name: "Косово", translation: "Kosovo" },
+      { name: "Кувейт", translation: "Kuwait" },
+      { name: "Киргизия", translation: "Kyrgyzstan" },
+      { name: "Лаос", translation: "Laos" },
+      { name: "Латвия", translation: "Latvia" },
+      { name: "Ливан", translation: "Lebanon" },
+      { name: "Лесото", translation: "Lesotho" },
+      { name: "Либерия", translation: "Liberia" },
+      { name: "Ливия", translation: "Libya" },
+      { name: "Лихтенштейн", translation: "Liechtenstein" },
+      { name: "Литва", translation: "Lithuania" },
+      { name: "Люксембург", translation: "Luxembourg" },
+      { name: "Макао", translation: "Macao" },
+      { name: "Македония", translation: "Macedonia" },
+      { name: "Мадагаскар", translation: "Madagascar" },
+      { name: "Малави", translation: "Malawi" },
+      { name: "Малайзия", translation: "Malaysia" },
+      { name: "Мальдивы", translation: "Maldives" },
+      { name: "Мали", translation: "Mali" },
+      { name: "Мальта", translation: "Malta" },
+      { name: "Маршалловы острова", translation: "Marshall Islands" },
+      { name: "Мартиника", translation: "Martinique" },
+      { name: "Мавритания", translation: "Mauritania" },
+      { name: "Маврикий", translation: "Mauritius" },
+      { name: "Майотта", translation: "Mayotte" },
+      { name: "Мексика", translation: "Mexico" },
+      { name: "Микронезия", translation: "Micronesia" },
+      { name: "Молдова", translation: "Moldova" },
+      { name: "Монако", translation: "Monaco" },
+      { name: "Монголия", translation: "Mongolia" },
+      { name: "Черногория", translation: "Montenegro" },
+      { name: "Монтсеррат", translation: "Montserrat" },
+      { name: "Марокко", translation: "Morocco" },
+      { name: "Мозамбик", translation: "Mozambique" },
+      { name: "Мьянма", translation: "Myanmar" },
+      { name: "Намибия", translation: "Namibia" },
+      { name: "Науру", translation: "Nauru" },
+      { name: "Непал", translation: "Nepal" },
+      { name: "Нидерланды", translation: "Netherlands" },
+      { name: "Новая Каледония", translation: "New Caledonia" },
+      { name: "Новая Зеландия", translation: "New Zealand" },
+      { name: "Никарагуа", translation: "Nicaragua" },
+      { name: "Нигер", translation: "Niger" },
+      { name: "Нигерия", translation: "Nigeria" },
+      { name: "Ниуэ", translation: "Niue" },
+      { name: "Норфолк", translation: "Norfolk Island" },
+      { name: "Северные Марианские острова", translation: "Northern Mariana Islands" },
+      { name: "Норвегия", translation: "Norway" },
+      { name: "Оман", translation: "Oman" },
+      { name: "Пакистан", translation: "Pakistan" },
+      { name: "Палау", translation: "Palau" },
+      { name: "Палестинская территория", translation: "Palestinian Territory" },
+      { name: "Панама", translation: "Panama" },
+      { name: "Папуа — Новая Гвинея", translation: "Papua New Guinea" },
+      { name: "Парагвай", translation: "Paraguay" },
+      { name: "Перу", translation: "Peru" },
+      { name: "Филиппины", translation: "Philippines" },
+      { name: "Питкерн", translation: "Pitcairn" },
+      { name: "Польша", translation: "Poland" },
+      { name: "Португалия", translation: "Portugal" },
+      { name: "Пуэрто-Рико", translation: "Puerto Rico" },
+      { name: "Катар", translation: "Qatar" },
+      { name: "Реюньон", translation: "Réunion" },
+      { name: "Румыния", translation: "Romania" },
+      { name: "Россия", translation: "Russia" },
+      { name: "Руанда", translation: "Rwanda" },
+      { name: "Сен-Бартелеми", translation: "Saint Barthélemy" },
+      { name: "Святой Елены", translation: "Saint Helena" },
+      { name: "Сент-Китс и Невис", translation: "Saint Kitts and Nevis" },
+      { name: "Сент-Люсия", translation: "Saint Lucia" },
+      { name: "Сент-Мартин", translation: "Saint Martin" },
+      { name: "Сен-Пьер и Микелон", translation: "Saint Pierre and Miquelon" },
+      { name: "Сен-Винсент и Гренадины", translation: "Saint Vincent and the Grenadines" },
+      { name: "Самоа", translation: "Samoa" },
+      { name: "Сан-Марино", translation: "San Marino" },
+      { name: "Сан-Томе и Принсипи", translation: "Sao Tome and Principe" },
+      { name: "Саудовская Аравия", translation: "Saudi Arabia" },
+      { name: "Сенегал", translation: "Senegal" },
+      { name: "Сербия", translation: "Serbia" },
+      { name: "Сейшелы", translation: "Seychelles" },
+      { name: "Сьерра-Леоне", translation: "Sierra Leone" },
+      { name: "Сингапур", translation: "Singapore" },
+      { name: "Синт-Мартен", translation: "Sint Maarten" },
+      { name: "Словакия", translation: "Slovakia" },
+      { name: "Словения", translation: "Slovenia" },
+      { name: "Соломоновы острова", translation: "Solomon Islands" },
+      { name: "Сомали", translation: "Somalia" },
+      { name: "Южная Африка", translation: "South Africa" },
+      { name: "Южная Джорджия и Южные Сандвичевы острова", translation: "South Georgia and the South Sandwich Islands" },
+      { name: "Южный Судан", translation: "South Sudan" },
+      { name: "Испания", translation: "Spain" },
+      { name: "Шри-Ланка", translation: "Sri Lanka" },
+      { name: "Судан", translation: "Sudan" },
+      { name: "Суринам", translation: "Suriname" },
+      { name: "Свалбард и Ян-Майен", translation: "Svalbard and Jan Mayen" },
+      { name: "Свазиленд", translation: "Eswatini" },
+      { name: "Швеция", translation: "Sweden" },
+      { name: "Швейцария", translation: "Switzerland" },
+      { name: "Сирия", translation: "Syria" },
+      { name: "Тайвань", translation: "Taiwan" },
+      { name: "Таджикистан", translation: "Tajikistan" },
+      { name: "Танзания", translation: "Tanzania" },
+      { name: "Таиланд", translation: "Thailand" },
+      { name: "Восточный Тимор", translation: "Timor-Leste" },
+      { name: "Того", translation: "Togo" },
+      { name: "Токелау", translation: "Tokelau" },
+      { name: "Тонга", translation: "Tonga" },
+      { name: "Тринидад и Тобаго", translation: "Trinidad and Tobago" },
+      { name: "Тунис", translation: "Tunisia" },
+      { name: "Турция", translation: "Turkey" },
+      { name: "Туркмения", translation: "Turkmenistan" },
+      { name: "Теркс и Кайкос", translation: "Turks and Caicos Islands" },
+      { name: "Тувалу", translation: "Tuvalu" },
+      { name: "Уганда", translation: "Uganda" },
+      { name: "Украина", translation: "Ukraine" },
+      { name: "Объединенные Арабские Эмираты", translation: "United Arab Emirates" },
+      { name: "Великобритания", translation: "United Kingdom" },
+      { name: "Соединенные Штаты Америки", translation: "United States" },
+      { name: "США (заморские территории)", translation: "United States Minor Outlying Islands" },
+      { name: "Уругвай", translation: "Uruguay" },
+      { name: "Узбекистан", translation: "Uzbekistan" },
+      { name: "Вануату", translation: "Vanuatu" },
+      { name: "Венесуэла", translation: "Venezuela" },
+      { name: "Вьетнам", translation: "Vietnam" },
+      { name: "Британские Виргинские острова", translation: "British Virgin Islands" },
+      { name: "Виргинские острова США", translation: "U.S. Virgin Islands" },
+      { name: "Уоллис и Футуна", translation: "Wallis and Futuna" },
+      { name: "Западная Сахара", translation: "Western Sahara" },
+      { name: "Йемен", translation: "Yemen" },
+      { name: "Замбия", translation: "Zambia" },
+      { name: "Зимбабве", translation: "Zimbabwe" },
+    ];
+
+    const countryInput = document.getElementById('country-input');
+    const countryList = document.getElementById('country-list');
+
+    countryInput.addEventListener('input', function () {
+      const inputText = countryInput.value;
+      const isLatinAlphabet = /^[A-Za-z]+$/.test(inputText);
+
+      const filteredCountries = countries.filter(country => {
+        const countryName = isLatinAlphabet ? country.translation.toLowerCase() : country.name.toLowerCase();
+        return countryName.includes(inputText.toLowerCase());
+      });
+
+      if (inputText.length === 0) {
+        countryList.style.display = 'none';
+      } else {
+        countryList.style.display = 'block';
+      }
+
+      countryList.innerHTML = '';
+      filteredCountries.forEach(country => {
+        const listItem = document.createElement('li');
+        listItem.textContent = isLatinAlphabet ? country.translation : country.name;
+        listItem.addEventListener('click', function () {
+          countryInput.value = isLatinAlphabet ? country.translation : country.name;
+          countryList.style.display = 'none';
+        });
+        countryList.appendChild(listItem);
+      });
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!countryInput.contains(event.target) && !countryList.contains(event.target)) {
+        countryList.style.display = 'none';
+      }
+    });
+  </script>
+
+
+</body>
+
+</html>

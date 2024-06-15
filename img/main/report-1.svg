@@ -1,0 +1,35 @@
+<svg width="143" height="143" viewBox="0 0 143 143" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b_114_6053)">
+<rect width="143" height="143" rx="71.5" fill="url(#paint0_linear_114_6053)"/>
+<path d="M61.6192 78.0861V71.5" stroke="#FFD600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M61.6192 78.0861V71.5" stroke="#FFD600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M71.4942 78.0843V61.6191" stroke="#FFD600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M71.4942 78.0843V61.6191" stroke="#FFD600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M81.375 78.0803V68.2012" stroke="#FFD600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M81.375 78.0803V68.2012" stroke="#FFD600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M58.3262 89.6113L64.9122 96.1974L58.3262 102.783" stroke="#FFD600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M58.3262 89.6113L64.9122 96.1974L58.3262 102.783" stroke="#FFD600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M64.9125 96.1953H45.1543" stroke="#FFD600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M64.9125 96.1953H45.1543" stroke="#FFD600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M78.0865 98.7334C90.4014 95.9296 99.5864 85.6295 100.967 73.0752C102.348 60.5209 95.6204 48.4709 84.2091 43.058C72.7979 37.6451 59.2099 40.0586 50.3608 49.0702C41.5116 58.0818 39.3456 71.7113 44.9652 83.0223" stroke="#FFD600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M78.0865 98.7334C90.4014 95.9296 99.5864 85.6295 100.967 73.0752C102.348 60.5209 95.6204 48.4709 84.2091 43.058C72.7979 37.6451 59.2099 40.0586 50.3608 49.0702C41.5116 58.0818 39.3456 71.7113 44.9652 83.0223" stroke="#FFD600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1" y="1" width="141" height="141" rx="70.5" stroke="url(#paint1_linear_114_6053)" stroke-width="2"/>
+</g>
+<defs>
+<filter id="filter0_b_114_6053" x="-34" y="-34" width="211" height="211" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="17"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_114_6053"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_114_6053" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_114_6053" x1="0" y1="0" x2="155.279" y2="14.8821" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2B2B2B" stop-opacity="0.2"/>
+<stop offset="0.515625" stop-color="#3C3C3C" stop-opacity="0.4"/>
+<stop offset="1" stop-opacity="0.2"/>
+</linearGradient>
+<linearGradient id="paint1_linear_114_6053" x1="0" y1="0" x2="155.279" y2="14.8821" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFD600" stop-opacity="0.6"/>
+<stop offset="1" stop-color="#FFD600" stop-opacity="0.2"/>
+</linearGradient>
+</defs>
+</svg>
