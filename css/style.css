@@ -149,6 +149,7 @@ html {
 }
 
 ._ibg {
+
     position: relative;
 }
 
@@ -12067,4 +12068,47 @@ p {
 
 .crypto__purpose-title {
     text-transform: inherit;
+}
+
+.header-balance__value span {
+    color: inherit;
+}
+
+.__select__title {
+    gap: 7px;
+    padding-right: 15px;
+}
+
+.header-balance__name {
+    margin-bottom: 0;
+
+}
+
+.header-balance-para {
+    padding-right: 30px;
+    width: calc(100% + 30px);
+    height: 30px;
+}
+
+.header-balance-para .__select {
+    height: 30px;
+    width: 100%;
+}
+
+.consolution__multi-modal {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    & img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.__select__input {
+    &:checked+label {
+        background-color: inherit;
+        color: inherit;
+    }
 }
