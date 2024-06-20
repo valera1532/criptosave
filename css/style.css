@@ -12621,3 +12621,19 @@ button {
         margin-top: 15px;
     }
 }
+
+.shares__round-title {
+    display: flex;
+    gap: 10px;
+}
+
+.shares__round-title span {
+    background: var(--yeelow);
+    border-radius: 3px;
+    padding: 3px 5px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: #000;
+}
