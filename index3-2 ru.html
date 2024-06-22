@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/article.css">
     <link rel="stylesheet" href="css/article.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <title>TenderHouse</title>
 </head>
 
@@ -753,7 +754,148 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="createDepositMulti" tabindex="-3" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body position-absolute">
+                    <div class="modal__chat-bot d-flex justify-content-center align-items-center  w-100 h-100">
+                        <div class="bg w-100 h-100 position-absolute"></div>
+                        <div class="popap popap768 position-relative mw-100">
 
+                            <div class="сonclusion">
+                                <button class="btn-close close сonclusion__button" data-bs-dismiss="modal">
+                                    <img src="images/ico-menu-close.svg" alt=""></button>
+                                <div class="сonclusion__title text-left">
+                                    Создать депозит
+                                </div>
+                                <div class="сonclusion__line"></div>
+                                <div class="condition__invest">
+
+
+                                    <div class="condition__invest-subtitle">Валютная пара</div>
+                                    <div class="condition__invest-para">
+
+                                        <span>
+                                            <form>
+
+                                                <div class="__select" data-state="">
+                                                    <div class="__select__title" data-default="Option 0">валютная пара
+                                                    </div>
+                                                    <div class="__select__content">
+                                                        <input id="singleSelect0" class="__select__input" type="radio"
+                                                            name="singleSelect" checked />
+                                                        <label for="singleSelect0" class="__select__label"> <img
+                                                                src="./img/multi/btc.png" alt=""> BTC</label>
+                                                        <input id="singleSelect1" class="__select__input " type="radio"
+                                                            name="singleSelect" checked />
+                                                        <label for="singleSelect1"
+                                                            class="__select__label select__input">
+                                                            <div class="deposit__multi-wallet">
+                                                                <img src="./img/multi/btc.png" alt=""> <span>BTC</span>
+                                                            </div>
+
+                                                        </label>
+                                                        <input id="singleSelect2" class="__select__input " type="radio"
+                                                            name="singleSelect" />
+                                                        <label for="singleSelect2"
+                                                            class="__select__label select__input">
+                                                            <div class="deposit__multi-wallet">
+                                                                <img src="./img/multi/eth.png" alt="">
+                                                                <span>ETH</span>
+                                                            </div>
+                                                        </label>
+                                                        <input id="singleSelect3" class="__select__input " type="radio"
+                                                            name="singleSelect" />
+                                                        <label for="singleSelect3"
+                                                            class="__select__label select__input">
+                                                            <div class="deposit__multi-wallet"><img
+                                                                    src="./img/multi/bnb.png" alt="">
+                                                                <span>BNB</span>
+                                                            </div>
+                                                        </label>
+                                                        <input id="singleSelect4" class="__select__input " type="radio"
+                                                            name="singleSelect" />
+                                                        <label for="singleSelect4"
+                                                            class="__select__label select__input">
+                                                            <div class="deposit__multi-wallet"><img
+                                                                    src="./img/multi/sol.png" alt="">
+                                                                <span>SOL</span>
+                                                            </div>
+                                                        </label>
+                                                        <input id="singleSelect5" class="__select__input " type="radio"
+                                                            name="singleSelect" />
+                                                        <label for="singleSelect5"
+                                                            class="__select__label select__input">
+                                                            <div class="deposit__multi-wallet"><img
+                                                                    src="./img/multi/ton.png" alt="">
+                                                                <span>TON</span>
+                                                            </div>
+                                                        </label>
+
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </span>
+                                    </div>
+
+                                </div>
+                                <div class="сonclusion__line"></div>
+                                <div class="conclusion__size ">
+                                    <div class="conclusion__size-title">
+                                        Размер депозита
+                                    </div>
+                                    <div class="conclusion__size-points">
+                                        <div class="conclusion__size-point">
+
+                                            <div class="conclusion__size-main">
+                                                <div class="conclusion__size-main-left">
+                                                    <input type="number" placeholder="0">
+                                                </div>
+                                                <div class="conclusion__size-main-right">
+                                                    <p>MAX</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="conclusion__size-point">
+                                            <div class="conclusion__size-title">
+                                                Название Валюты
+                                            </div>
+                                            <div class="conclusion__size-main">
+                                                <div class="conclusion__size-main-left">
+                                                    <input type="text" placeholder="BTC">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="conclusion__create">
+                                        <button>
+                                            <span>Создать депозит</span>
+                                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle opacity="0.5" cx="25" cy="25" r="25" fill="#AE9408" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M25.5 37V37C18.872 37 13.5 31.628 13.5 25V25C13.5 18.372 18.872 13 25.5 13V13C32.128 13 37.5 18.372 37.5 25V25C37.5 31.628 32.128 37 25.5 37Z"
+                                                    stroke="#222222" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M30.8307 24.9987H20.1641" stroke="#222222" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M26.8359 21L30.8359 25L26.8359 29" stroke="#222222"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="reinvestModal" tabindex="-3" aria-labelledby="exampleModalLabel">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -827,7 +969,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="createDeposit" tabindex="-3" aria-labelledby="exampleModalLabel">
+    <div class="modal fade " id="congratulationModal" tabindex="-3" aria-labelledby="exampleModalLabel">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body position-absolute">
@@ -835,129 +977,81 @@
                         <div class="bg w-100 h-100 position-absolute"></div>
                         <div class="popap popap768 position-relative mw-100">
 
-                            <div class="сonclusion">
+                            <div class="congratulation">
+                                <img class="congratulation__backround" src="./img/main/congratulations.png" alt="">
+                                <div class="congratulation__block">
+                                    <div class="congratulation__title">Поздравляем!</div>
+                                    <div class="congratulation__subtitle">Вы успешно прошли квалификацию в нашем промо
+                                        <span>CryptoSafe Grand Opening!</span>
+                                    </div>
+                                    <div class="congratulation__info">Мы рады видеть вас среди участников. Оставьте,
+                                        пожалуйста, ниже свои контактные данные, чтобы мы могли связаться с вами
+                                        с официального телеграм-канала компании @CryptoSafe_Support.</div>
+                                    <div class="congratulation__form">
+                                        <form action="">
+                                            <div class="congratulation__form-main">
+                                                <div class="congratulation__form-point">
+                                                    <div class="congratulation__form-title">Контактный номер телефона
+                                                    </div>
+                                                    <input placeholder="+" type="text">
+                                                </div>
+
+                                                <div class="congratulation__form-point">
+                                                    <div class="congratulation__form-title">Ваш ник в телеграме</div>
+                                                    <input placeholder="@abcde" type="text">
+                                                </div>
+                                            </div>
+
+                                            <button class="congratulation__form-btn">Отправить</button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="purchase" tabindex="-3" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body position-absolute">
+                    <div class="modal__chat-bot d-flex justify-content-center align-items-center w-100 h-100">
+                        <div class="bg w-100 h-100 position-absolute"></div>
+                        <div class="popap popap768 position-relative mw-100">
+
+                            <div class="purchase">
                                 <button class="btn-close close сonclusion__button" data-bs-dismiss="modal">
                                     <img src="images/ico-menu-close.svg" alt=""></button>
-                                <div class="сonclusion__title text-left">
-                                    Условия инвестирования
-                                </div>
-                                <div class="сonclusion__line"></div>
-                                <div class="condition__invest">
-                                    <div class="condition__invest-periods">
-                                        <div class="condition__invest-subtitle">Период</div>
-                                        <div class="condition__period-days">
-                                            <div class="condition__period-day">180 дней</div>
-                                            <div class="condition__period-day active">360 дней</div>
+                                <div class="purchase__block ">
+                                    <div class="vip-event__title">Купить акции SP</div>
+                                    <div class="bg-line"></div>
+                                    <div class="purchase__input">
+                                        <div class="purchase__input-title">Введите количество акций SP</div>
+                                        <input placeholder="Введите сумму покупки" type="text">
+                                    </div>
+                                    <div class="purchase__cost-info">
+                                        <div class="purchase__balance">
+                                            <span>Ваш баланс:</span>
+                                            <p>10.489 USDT</p>
+                                        </div>
+                                        <div class="purchase__share">
+                                            <span>Цена за акцию:</span>
+                                            <p>2,5$</p>
+                                        </div>
+                                        <div class="purchase__total">
+                                            <span>Общая стоимость акций:</span>
+                                            <p>860$</p>
                                         </div>
                                     </div>
-                                    <div class="condition__invest-distribution">
-                                        <div class="condition__invest-distribution-left">
-                                            <span>Распределение дохода</span>
-                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="7.5" cy="7.5" r="6.5" stroke="#C9C9C9" stroke-width="0.5" />
-                                                <path
-                                                    d="M7.781 3.94C7.65967 4.06133 7.51233 4.122 7.339 4.122C7.16567 4.122 7.01833 4.06133 6.897 3.94C6.77567 3.81867 6.715 3.67133 6.715 3.498C6.715 3.32467 6.77567 3.17733 6.897 3.056C7.01833 2.93467 7.16567 2.874 7.339 2.874C7.51233 2.874 7.65967 2.93467 7.781 3.056C7.90233 3.17733 7.963 3.32467 7.963 3.498C7.963 3.67133 7.90233 3.81867 7.781 3.94ZM6.91 12V5.5H7.768V12H6.91Z"
-                                                    fill="#959595" />
-                                            </svg>
-                                        </div>
-                                        <div class="condition__invest-distribution-right">85/15%</div>
-                                    </div>
-                                    <div class="condition__invest-subtitle">Валютная пара</div>
-                                    <div class="condition__invest-para">
+                                    <div class="vip-event__btns">
+                                        <button data-bs-dismiss="modal" class="vip-event__not">Пополнить баланс</button>
+                                        <button data-bs-dismiss="modal" data-bs-toggle="modal"
+                                            data-bs-target="#purchase2" class="vip-event__yes">Купить акции SP
 
-                                        <span>
-                                            <form>
-
-                                                <div class="__select" data-state="">
-                                                    <div class="__select__title" data-default="Option 0">валютная пара
-                                                    </div>
-                                                    <div class="__select__content">
-                                                        <input id="singleSelect0" class="__select__input" type="radio"
-                                                            name="singleSelect" checked />
-                                                        <label for="singleSelect0" class="__select__label">валютная
-                                                            пара</label>
-                                                        <input id="singleSelect1" class="__select__input " type="radio"
-                                                            name="singleSelect" checked />
-                                                        <label for="singleSelect1"
-                                                            class="__select__label select__input">валютная пара</label>
-                                                        <input id="singleSelect2" class="__select__input " type="radio"
-                                                            name="singleSelect" />
-                                                        <label for="singleSelect2"
-                                                            class="__select__label select__input">валютная пара</label>
-                                                        <input id="singleSelect3" class="__select__input " type="radio"
-                                                            name="singleSelect" />
-                                                        <label for="singleSelect3"
-                                                            class="__select__label select__input">валютная пара</label>
-
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </span>
-                                    </div>
-
-                                </div>
-                                <div class="сonclusion__line"></div>
-                                <div class="conclusion__size">
-                                    <div class="conclusion__size-title">
-                                        Размер инвестиции
-                                    </div>
-                                    <div class="conclusion__size-points">
-                                        <div class="conclusion__size-point">
-                                            <div class="conclusion__size-top">
-                                                <div class="conclusion__size-top-left">Мин.:</div>
-                                                <div class="conclusion__size-top-right">Макс.:</div>
-                                            </div>
-                                            <div class="conclusion__size-main">
-                                                <div class="conclusion__size-main-left">
-                                                    <input type="number" placeholder="0">
-                                                </div>
-                                                <div class="conclusion__size-main-right">
-                                                    <span>AAA</span>
-                                                    <p>MAX</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="conclusion__size-point">
-                                            <div class="conclusion__size-top">
-                                                <div class="conclusion__size-top-left">Мин.:</div>
-                                                <div class="conclusion__size-top-right">Макс.:</div>
-                                            </div>
-                                            <div class="conclusion__size-main">
-                                                <div class="conclusion__size-main-left">
-                                                    <input type="number" placeholder="0">
-                                                </div>
-                                                <div class="conclusion__size-main-right">
-                                                    <span>AAA</span>
-                                                    <p>MAX</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="conclusion__bottom">
-                                        <div class="conclusion__bottom-curs">
-                                            <span>Обновление курса</span>
-                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="7.5" cy="7.5" r="6.5" stroke="#C9C9C9" stroke-width="0.5" />
-                                                <path
-                                                    d="M7.781 3.94C7.65967 4.06133 7.51233 4.122 7.339 4.122C7.16567 4.122 7.01833 4.06133 6.897 3.94C6.77567 3.81867 6.715 3.67133 6.715 3.498C6.715 3.32467 6.77567 3.17733 6.897 3.056C7.01833 2.93467 7.16567 2.874 7.339 2.874C7.51233 2.874 7.65967 2.93467 7.781 3.056C7.90233 3.17733 7.963 3.32467 7.963 3.498C7.963 3.67133 7.90233 3.81867 7.781 3.94ZM6.91 12V5.5H7.768V12H6.91Z"
-                                                    fill="#959595" />
-                                            </svg>
-
-                                        </div>
-                                        <div class="conclusion__bottom-commission">
-                                            Комиссия
-                                            <span></span>
-                                        </div>
-                                        <div class="conclusion__bottom-result">
-                                            Итого к оплате
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                    <div class="conclusion__create">
-                                        <button>
-                                            <span>Создать депозит</span>
                                             <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <circle opacity="0.5" cx="25" cy="25" r="25" fill="#AE9408" />
@@ -973,6 +1067,7 @@
                                         </button>
                                     </div>
                                 </div>
+
                             </div>
 
                         </div>
@@ -981,6 +1076,114 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="purchase2" tabindex="-3" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body position-absolute">
+                    <div class="modal__chat-bot d-flex justify-content-center align-items-center w-100 h-100">
+                        <div class="bg w-100 h-100 position-absolute"></div>
+                        <div class="popap popap768 position-relative mw-100">
+
+                            <div class="purchase">
+                                <button class="btn-close close сonclusion__button" data-bs-dismiss="modal">
+                                    <img src="images/ico-menu-close.svg" alt=""></button>
+                                <div class="purchase__block ">
+                                    <div class="vip-event__title">Подтверждение покупки</div>
+                                    <div class="bg-line"></div>
+                                    <div class="purchase__want">
+                                        Вы уверены, что хотите
+                                        <br> <span> купить акции SP?</span>
+                                    </div>
+                                    <div class="purchase__cheque">
+                                        <ul>
+                                            <li><span>Количество акций:</span>
+                                                <p>250 акций SP</p>
+                                            </li>
+                                            <li><span>Цена за акцию:</span>
+                                                <p>2,5$</p>
+                                            </li>
+                                            <li><span>Общая сумма:</span>
+                                                <p>625$</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="vip-event__btns">
+                                        <button data-bs-dismiss="modal" class="vip-event__not">Отмена </button>
+                                        <button data-bs-dismiss="modal" data-bs-toggle="modal"
+                                            data-bs-target="#purchase3" class="vip-event__yes">Подтвердить покупку
+                                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle opacity="0.5" cx="25" cy="25" r="25" fill="#AE9408" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M25.5 37V37C18.872 37 13.5 31.628 13.5 25V25C13.5 18.372 18.872 13 25.5 13V13C32.128 13 37.5 18.372 37.5 25V25C37.5 31.628 32.128 37 25.5 37Z"
+                                                    stroke="#222222" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M30.8307 24.9987H20.1641" stroke="#222222" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M26.8359 21L30.8359 25L26.8359 29" stroke="#222222"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="purchase3" tabindex="-3" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body position-absolute">
+                    <div class="modal__chat-bot d-flex justify-content-center align-items-center w-100 h-100">
+                        <div class="bg w-100 h-100 position-absolute"></div>
+                        <div class="popap popap768 position-relative mw-100">
+
+                            <div class="purchase">
+                                <button class="btn-close close сonclusion__button" data-bs-dismiss="modal">
+                                    <img src="images/ico-menu-close.svg" alt=""></button>
+                                <div class="purchase__block ">
+                                    <div class="vip-event__title">Покупка прошла успешно
+                                    </div>
+                                    <div class="bg-line"></div>
+                                    <svg width="109" height="109" viewBox="0 0 109 109" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="54.4974" cy="54.4994" r="36.3333" fill="#00BB40" fill-opacity="0.3"
+                                            stroke="url(#paint0_linear_5893_35098)" stroke-width="2" />
+                                        <path
+                                            d="M39 56.625L47.8918 65.8873C47.9508 65.9488 48.0492 65.9488 48.1082 65.8873L72 41"
+                                            stroke="#00FF57" stroke-width="5" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_5893_35098" x1="32.998" y1="18"
+                                                x2="54.4974" y2="90.8327" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#00BB40" stop-opacity="0.7" />
+                                                <stop offset="1" stop-color="#00BB40" stop-opacity="0.09" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <div class="purchase__successful">
+                                        Поздравляем! Ваша покупка
+                                        <span>250 акций SP </span> успешно завершена.
+                                    </div>
+                                    <div class="vip-event__btns">
+                                        <button data-bs-dismiss="modal" class="vip-event__not">Хорошо </button>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="wrapper">
         <div class="light"></div>
@@ -1092,72 +1295,78 @@
                                         Основной Баланс
                                     </div>
                                     <div class="header-balance__value">
-
                                         <div class="condition__invest">
 
                                             <div class="header-balance-para">
                                                 <span>
                                                     <form>
 
-
-
                                                         <div class="__select" data-state="">
                                                             <div class="__select__title" data-default="Option 0">
-                                                                <img src="/img/header/Tether.png" alt="">
-                                                                <span class="header-balance__count">000000000000</span>
-                                                                <span class="header-balance__name">USDT</span>
+                                                                <img src="img/header/Tether.png" alt="">
+                                                                <span class="header-balance__count">33333333</span>
+                                                                <span class="header-balance__name">UsdT</span>
                                                             </div>
                                                             <div class="__select__content">
                                                                 <input id="singleSelect0" class="__select__input"
-                                                                    type="radio" name="singleSelect" checked="">
+                                                                    type="radio" name="singleSelect" checked />
                                                                 <label for="singleSelect0" class="__select__label">
-                                                                    <div class="consolution__multi-modal">
-                                                                        <img src="/img/header/Tether.png" alt="">
-                                                                        <span class="header-balance__count">0.00</span>
-                                                                        <span class="header-balance__name">USDT</span>
-                                                                    </div>
-                                                                </label>
-                                                                <input id="singleSelect1" class="__select__input"
-                                                                    type="radio" name="singleSelect" checked="">
-                                                                <label for="singleSelect1" class="__select__label">
-                                                                    <div class="consolution__multi-modal">
-                                                                        <img src="./img/header/Tether.png" alt="">
-                                                                        <span class="header-balance__count">0.00</span>
-                                                                        <span class="header-balance__name">USDT</span>
-                                                                    </div>
-                                                                </label>
-                                                                <input id="singleSelect2" class="__select__input"
-                                                                    type="radio" name="singleSelect" checked="">
-                                                                <label for="singleSelect2" class="__select__label">
                                                                     <div class="consolution__multi-modal">
                                                                         <img src="./img/multi/btc.png" alt="">
                                                                         <span
-                                                                            class="header-balance__count">0.00000</span>
+                                                                            class="header-balance__count">333333</span>
                                                                         <span class="header-balance__name">BTC</span>
                                                                     </div>
                                                                 </label>
-                                                                <input id="singleSelect3" class="__select__input "
-                                                                    type="radio" name="singleSelect" checked="">
-                                                                <label for="singleSelect3"
+                                                                <input id="singleSelect1" class="__select__input"
+                                                                    type="radio" name="singleSelect" checked />
+                                                                <label for="singleSelect1" class="__select__label">
+                                                                    <div class="consolution__multi-modal">
+                                                                        <img src="./img/multi/btc.png" alt="">
+                                                                        <span class="header-balance__count">33333</span>
+                                                                        <span class="header-balance__name">BTC</span>
+                                                                    </div>
+                                                                </label>
+                                                                <input id="singleSelect2" class="__select__input "
+                                                                    type="radio" name="singleSelect" checked />
+                                                                <label for="singleSelect2"
                                                                     class="__select__label select__input">
                                                                     <div class="consolution__multi-modal">
                                                                         <img src="./img/multi/eth.png" alt=""><span
-                                                                            class="header-balance__count">0.00000</span>
+                                                                            class="header-balance__count">33333</span>
                                                                         <span class="header-balance__name">ETH</span>
                                                                     </div>
                                                                 </label>
+                                                                <input id="singleSelect3" class="__select__input "
+                                                                    type="radio" name="singleSelect" />
+                                                                <label for="singleSelect3"
+                                                                    class="__select__label select__input">
+                                                                    <div class="consolution__multi-modal">
+                                                                        <img src="./img/multi/bnb.png" alt=""><span
+                                                                            class="header-balance__count">33333</span>
+                                                                        <span class="header-balance__name">BNB</span>
+                                                                    </div>
+                                                                </label>
                                                                 <input id="singleSelect4" class="__select__input "
-                                                                    type="radio" name="singleSelect" checked="">
+                                                                    type="radio" name="singleSelect" />
                                                                 <label for="singleSelect4"
                                                                     class="__select__label select__input">
                                                                     <div class="consolution__multi-modal">
-                                                                        <img src="./img/crypto/SP.svg" alt=""><span
-                                                                            class="header-balance__count">0.00000</span>
-                                                                        <span class="header-balance__name">SP</span>
+                                                                        <img src="./img/multi/sol.png" alt=""><span
+                                                                            class="header-balance__count">33333</span>
+                                                                        <span class="header-balance__name">SOL</span>
                                                                     </div>
                                                                 </label>
-
-
+                                                                <input id="singleSelect5" class="__select__input "
+                                                                    type="radio" name="singleSelect" />
+                                                                <label for="singleSelect5"
+                                                                    class="__select__label select__input">
+                                                                    <div class="consolution__multi-modal">
+                                                                        <img src="./img/multi/ton.png" alt=""><span
+                                                                            class="header-balance__count">33333</span>
+                                                                        <span class="header-balance__name">TON</span>
+                                                                    </div>
+                                                                </label>
                                                             </div>
                                                         </div>
                                                     </form>
@@ -1165,12 +1374,15 @@
                                             </div>
 
                                         </div>
-
-
-
-
+                                        <span>
+                                            +12,5%
+                                            <svg width="12" height="5" viewBox="0 0 12 5" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 5L6 0L11.5 5"
+                                                    fill="#00FF57" />
+                                            </svg>
+                                        </span>
                                     </div>
-
                                 </div>
                                 <div class="header-balance">
                                     <div class="header-balance__name">
@@ -1665,8 +1877,11 @@
                                                 data-bs-slide-to="2" aria-label="Slide 3"></button>
                                             <button type="button" data-bs-target="#carouselExampleIndicators"
                                                 data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide-to="4" aria-label="Slide 5"></button>
                                         </div>
                                         <div class="carousel-inner">
+
                                             <div class="carousel-item active">
                                                 <div class="dir dir-1">
                                                     <h3 class="dir-heading">
@@ -1691,13 +1906,31 @@
                                                 </a>
                                             </div>
                                             <div class="carousel-item">
-                                                <a href="./index3-1.html" class="dir dir-3" style="padding: 90px 15px;">
+                                                <a href="./index3-1.html" class="dir dir-4" style="padding: 90px 15px;">
                                                     <h3 class="dir-heading">
                                                         CS Multi
                                                     </h3>
                                                 </a>
                                             </div>
+                                            <div class="carousel-item">
+                                                <a href="./index3-2.html" class="dir dir-sheres"
+                                                    style="padding: 90px 15px;">
+                                                    <img src="./img/command/SP_shares.png" alt="">
+                                                    <h3 class="dir-heading">
+                                                        SP Shares
+                                                    </h3>
+                                                </a>
+                                            </div>
+
+
+                                            <div class="col-md-3 col-sm-12 my-3 direction-mt0">
+                                                <div class="dir dir-5">
+
+
+                                                </div>
+                                            </div>
                                         </div>
+
                                         <button class="carousel-control-prev" type="button"
                                             data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -1710,15 +1943,33 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-sm-12 my-3">
+
+
+
+                                <div class="col-md-3 col-sm-12 my-3 direction-mt0">
+                                    <a href="./index3-2.html" class="dir dir-sheres" style="padding: 90px 15px;">
+                                        <img src="./img/command/SP_shares.png" alt="">
+                                        <h3 class="dir-heading">
+                                            SP Shares
+                                        </h3>
+                                    </a>
+                                </div>
+
+                                <div class="col-md-3 col-sm-12 my-3 direction-mt0">
                                     <div class="dir dir-1">
-                                        <div class="news__card-soon direction">Скоро</div>
+                                        <!-- <div class="news__card-soon direction">Скоро</div> -->
                                         <h3 class="dir-heading">
                                             CS <br> optimum
                                         </h3>
                                     </div>
                                 </div>
-
+                                <div class="col-md-3 col-sm-12 my-3">
+                                    <a href="./index3-1.html" class="dir dir-4" style="padding: 90px 15px;">
+                                        <h3 class="dir-heading">
+                                            CS Multi
+                                        </h3>
+                                    </a>
+                                </div>
                                 <div class="col-md-3 col-sm-12 my-3">
                                     <a href="./index3.html" class="dir dir-3" style="padding: 90px 15px;">
                                         <h3 class="dir-heading">
@@ -1726,863 +1977,362 @@
                                         </h3>
                                     </a>
                                 </div>
-                                <div class="col-md-3 col-sm-12 my-3">
-                                    <div class="dir dir-2">
-                                        <h3 class="dir-heading">
-                                            CryptoSafe <br> Токен
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-12 my-3">
-                                    <a href="./index3-1.html" class="dir dir-3" style="padding: 90px 15px;">
-                                        <h3 class="dir-heading">
-                                            CS Multi
-                                        </h3>
-                                    </a>
-                                </div>
+
                             </div>
-                    </div>
-                    </section>
+                        </section>
 
-                    <style>
-                        .dropdown-toggle::after {
-                            display: none;
-                        }
-
-                        .carousel {
-                            display: none;
-                        }
-
-                        @media screen and (max-width: 576px) {
-                            .col-md-3 .dir {
+                        <style>
+                            .dropdown-toggle::after {
                                 display: none;
                             }
 
                             .carousel {
-                                display: block;
+                                display: none;
                             }
-                        }
-                    </style>
-                    <section class="cs__pro">
-                        <div class="cs__pro-title">CS Pro</div>
-                        <div class="cs__pro-banner">
-                            <div class="cs__pro-banner-img">
-                                <img src="./img/command/cs__pro.png" alt="">
-                            </div>
-                            <div class="cs__pro-banner-title">
 
-                                <span>Новое инвестиционное направление - </span>
-                                <strong>CS Pro</strong>
-                            </div>
-                            <div class="cs__pro-banner-main">
-                                <ul>
-                                    <li>
-                                        <img src="./img/command/succesful.png" alt=""> <span>Криптовалютный
-                                            Трейдинг</span>
+                            @media screen and (max-width: 576px) {
+                                .col-md-3 .dir {
+                                    display: none;
+                                }
 
-                                    </li>
-                                    <li>
-                                        <img src="./img/command/succesful.png" alt=""> <span>Спот Торговля</span>
+                                .carousel {
+                                    display: block;
+                                }
+                            }
+                        </style>
 
-                                    </li>
-
-                                    <li>
-                                        <img src="./img/command/succesful.png" alt=""> <span>Безопасный
-                                            Риск-менеджмент</span>
-
-                                    </li>
-                                    <li>
-                                        <img src="./img/command/succesful.png" alt=""> <span>Вход в сделку до 10% от
-                                            депозита</span>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="cs__pro-facts">
-                            <div class="cs__pro-facts-fone">
-                                <img src="./img/command/cs__pro1.png" alt="">
-                            </div>
-                            <div class="cs__facts-top">
-                                <div class="cs__facts-top-title">
-                                    <strong>CS Pro</strong> <span> - безопасный заработок на спот торговле</span>
+                        <section class="cs__multi">
+                            <h2 class="main-heading mt-4">
+                                SP Shares
+                            </h2>
+                            <div class="cs__pro-banner">
+                                <div class="cs__pro-banner-img">
+                                    <img src="./img/main/cs_multi-banner.png" alt="">
                                 </div>
-                                <div class="cs__facts-top-info">CS Pro - Инвестиционное направление, предоставляющее
-                                    возможность зарабатывать <br> на алгоритмической торговли используя
-                                    исключительно низко-рискованные стратегии.</div>
-                            </div>
-                            <div class="cs__facts-points">
-                                <ul>
-                                    <li>
-                                        <div class="cs__facts-point-title">10.000$ депозит</div>
-                                        <div class="cs__facts-point-subtitle">распределение прибыли 50|50</div>
-                                        <div class="cs__facts-point-info">
-                                            <ul>
-                                                <li>страхование 25% депозита</li>
-                                                <li>возможность аудита торгового счета 1 раз в квартал</li>
-                                                <li>подписание контракта с компанией</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="cs__facts-point-title">25.000$ депозит</div>
-                                        <div class="cs__facts-point-subtitle">распределение прибыли 60|40</div>
-                                        <div class="cs__facts-point-info">
-                                            <ul>
-                                                <li>страхование 50% депозита</li>
-                                                <li>возможность аудита торгового счета 1 раз в квартал</li>
-                                                <li>возможность персонального звонка с генеральным директором 1 раз
-                                                    в квартал</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="cs__facts-point-title">50.000$ депозит</div>
-                                        <div class="cs__facts-point-subtitle">распределение прибыли 70|30</div>
-                                        <div class="cs__facts-point-info">
-                                            <ul>
+                                <div class="cs__pro-banner-title cs_multi-banner">
+                                    <strong>SP Shares </strong>
+                                    <div class="cs_multi-banner-info"> —инновационный инвестиционный продукт от
+                                        CryptoSafe Pay.
 
-                                                <li>страхование 50% депозита
-                                                </li>
-                                                <li>возможность аудита торгового счета 1 раз в неделю</li>
-                                                <li>возможность персонального звонка с генеральным директором 1 раз
-                                                    в месяц</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="cs__facts-point-title">100.000$ депозит</div>
-                                        <div class="cs__facts-point-subtitle">распределение прибыли 85|15</div>
-                                        <div class="cs__facts-point-info cs__facts-point-last">
-                                            <ul class="">
-                                                <li>страхование 75% депозита
-                                                </li>
-                                                <li>персональный торговый счет на ByBit</li>
-                                                <li>не ограниченная возможность аудирования торгового счета</li>
-                                                <li>возможность персонального звонка с генеральным директором 1 раз
-                                                    в неделю</li>
-                                                <div class="cs__facts-point-more">
-                                                    Больше
-                                                </div>
-                                                <li>эксклюзивные предложения в рамках экосистемы CryptoSafe</li>
-                                                <li>персональный консьерж к вашим услугам в любое время по любым
-                                                    вопросам</li>
-
-                                            </ul>
-
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <script>
-                                document.querySelector('.cs__facts-point-more').addEventListener('click', () => {
-                                    document.querySelector('.cs__facts-point-last').classList.add('active')
-                                    document.querySelector('.cs__facts-point-more').classList.add('active')
-                                    document.querySelector('.cs__pro-facts-fone img').classList.add('active')
-                                })
-                            </script>
-                            <div class="cs__facts__button">
-                                <button data-bs-toggle="modal" data-bs-target="#createDeposit"
-                                    class="check-password__btn deposit__button">
-                                    Создать новый депозит
-                                    <svg width="51" height="50" viewBox="0 0 51 50" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle opacity="0.5" cx="25.502" cy="25" r="25" fill="#AE9408" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M26.002 37V37C19.374 37 14.002 31.628 14.002 25V25C14.002 18.372 19.374 13 26.002 13V13C32.63 13 38.002 18.372 38.002 25V25C38.002 31.628 32.63 37 26.002 37Z"
-                                            stroke="#222222" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M31.3327 24.9987H20.666" stroke="#222222" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M27.3379 21L31.3379 25L27.3379 29" stroke="#222222" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <img src="img/main/left.png" alt="" class="check-password__btn-left">
-                                    <img src="img/main/right.png" alt="" class="check-password__btn-right">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="cs__pro-graf">
-                            <div class="reports__inc-graf">
-                                <div class="reports__inc-graf-title">
-                                    График дохода
+                                    </div>
                                 </div>
-                                <div>
-                                    <canvas id="myChart1"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="section-deposite">
-                        <h2 class="main-heading mt-4">
-                            Ваши депозиты
-                        </h2>
-                        <div class="col-md-12 deposite">
-                            <div class="deposite__fone-img">
-                                <img src="./img/command/cs__pro4.png" alt="">
-                            </div>
-                            <div class="row justify-content-center no-wrap">
-                                <div class="col-md-auto text-aling-center">
-                                    <div class="dropdown">
-                                        <a class="main-navbar__lang dropdown-toggle role= " button"
-                                            id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"
-                                            style="height: 45px; padding-right: 57px; margin-left: 0;">
-                                            <span>
-                                                Сберегательный депозит
+                                <div class="cs__pro-banner-main cs__multi-banner-main">
+                                    <ul>
+                                        <li>
+                                            <img src="./img/command/succesful.png" alt=""> <span>Позволяет участвовать в
+                                                росте и потенциале прибыли перспективной финтех-компании.
                                             </span>
-                                            <svg width="11" height="6" viewBox="0 0 11 6" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M10.7699 0.21967C10.463 -0.0732233 9.96554 -0.0732234 9.6587 0.21967L5.5 4.18934L1.3413 0.21967C1.03446 -0.0732238 0.536971 -0.0732238 0.230131 0.219669C-0.0767098 0.512563 -0.0767098 0.987436 0.230131 1.28033L4.94442 5.78033C5.25126 6.07322 5.74874 6.07322 6.05558 5.78033L10.7699 1.28033C11.0767 0.987437 11.0767 0.512563 10.7699 0.21967Z"
-                                                    fill="white" />
-                                            </svg>
-
-                                        </a>
-
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Действие</a></li>
-                                            <li><a class="dropdown-item" href="#">Другое действие</a></li>
-                                            <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <h3 class="deposit-vaule">
-                                        $ 15.789
-                                    </h3>
-
-                                    <h3 class="deposit-vaule-description">
-                                        Старт инвестиционного плана
-                                    </h3>
-
-                                    <span class="deposit-vaule-date mt-4 pb-4">
-                                        21.07.2023
-                                        <span style="margin-left: auto;" class="badge text-bg-warning">
-                                            Активен
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-shield-fill-check" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z" />
-                                            </svg>
-                                        </span>
-                                    </span>
-
-                                    <h3 class="deposit-vaule-description mt-3" style="display: block;">
-                                        Прибыль по депозиту
-                                    </h3>
-
-                                    <div class="deposit-vaule-counter mt-4">
-                                        $ 3.434
-                                    </div>
-
-                                    <span class="deposit-percentage mt-4 mx-3" style="display: inline-block;">
-                                        +12,5%
-                                        <svg width="12" height="5" viewBox="0 0 12 5" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 5L6 0L11.5 5"
-                                                fill="#00FF57" />
-                                        </svg>
-                                    </span>
-
-
-                                </div>
-                                <div class="col-md-auto text-aling-center">
-                                    <h3 class="deposit-vaule-description mt-3" style="display: block;">
-                                        Дневная прибыль
-                                    </h3>
-
-                                    <div class="deposit-vaule-counter mt-4">
-                                        285.00%
-                                    </div>
-
-                                    <span class="deposit-percentage mt-4 mx-3 mb-5" style="display: inline-block;">
-                                        +123%
-                                        <svg width="12" height="5" viewBox="0 0 12 5" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 5L6 0L11.5 5"
-                                                fill="#00FF57" />
-                                        </svg>
-                                    </span>
-
-                                    <h3 class="deposit-vaule-description mt-3" style="display: block;">
-                                        Месячная прибыль
-                                    </h3>
-
-                                    <div class="deposit-vaule-counter mt-4">
-                                        23.75%
-                                    </div>
-
-                                    <span class="deposit-percentage mt-4 mx-3" style="display: inline-block;">
-                                        +123%
-                                        <svg width="12" height="5" viewBox="0 0 12 5" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 5L6 0L11.5 5"
-                                                fill="#00FF57" />
-                                        </svg>
-                                    </span>
-                                    <button data-bs-toggle="modal" data-bs-target="#сonclusionModal"
-                                        class="mt-5 сonclusion__modal сonclusion__desctop deposit-outline-btn mt-5"
-                                        style="background-color: transparent;">
-                                        Вывести Средства
-                                    </button>
-
-
-                                </div>
-                                <div class="col-md-auto text-aling-center relative">
-                                    <h3 class="deposit-vaule-description mt-3" style="display: block;">
-                                        Месечная прибыль:</h3>
-
-                                    <div class="deposit-vaule-counter mt-4">
-                                        285.00%
-                                    </div>
-
-                                    <span class="deposit-percentage mt-4 mx-3 mb-5" style="display: inline-block;">
-                                        +123%
-                                        <svg width="12" height="5" viewBox="0 0 12 5" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 5L6 0L11.5 5"
-                                                fill="#00FF57" />
-                                        </svg>
-                                    </span>
-
-                                    <div class="yearly-deposit mt-3">
-                                        <h4 class="yearly-heading text-center">
-                                            Годовая прибыль
-                                        </h4>
-                                        <span class="yearly-counter text-center">
-                                            38.500 $
-                                        </span>
-                                    </div>
-                                    <div class="reinvest-button reinvest-starting deposit-outline-btn mt-5">
-                                        <button data-bs-toggle="modal" data-bs-target="#reinvestModal"
-                                            class="deposit-outline-btn reinvest-start ">
-                                            <svg width="59" height="59" viewBox="0 0 59 59" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g filter="url(#filter0_f_7108_26117)">
-                                                    <rect x="7" y="7" width="45" height="45" rx="22.5" fill="white" />
-                                                </g>
-                                                <rect x="7" y="7" width="45" height="45" rx="22.5" fill="white" />
-                                                <path class="reinvest-start__status"
-                                                    d="M32.9749 15.7048L41.4275 19.243C41.7993 19.3987 42.0413 19.7624 42.0413 20.1655V33.8701C42.0413 35.8313 41.0829 37.6687 39.4744 38.7909L30.0719 45.3508C29.7281 45.5906 29.2713 45.5906 28.9275 45.3508L19.5249 38.7909C17.9165 37.6687 16.958 35.8313 16.958 33.8701V20.1655C16.958 19.7624 17.2 19.3987 17.5719 19.243L26.0244 15.7048C28.2478 14.774 30.7516 14.774 32.9749 15.7048Z"
-                                                    fill="#00FF57" />
-                                                <path
-                                                    d="M25.0205 30.875L28.499 34.2726C28.5573 34.3296 28.6504 34.3296 28.7087 34.2726L35.7705 27.375"
-                                                    stroke="black" stroke-width="2" />
-                                                <defs>
-                                                    <filter id="filter0_f_7108_26117" x="0" y="0" width="59" height="59"
-                                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                        <feBlend mode="normal" in="SourceGraphic"
-                                                            in2="BackgroundImageFix" result="shape" />
-                                                        <feGaussianBlur stdDeviation="3.5"
-                                                            result="effect1_foregroundBlur_7108_26117" />
-                                                    </filter>
-                                                </defs>
-                                            </svg>
-
-                                            <span>
-                                                Реинвестировать <br>
-                                                прибыль
+                                        </li>
+                                        <li>
+                                            <img src="./img/command/succesful.png" alt=""> <span>Предоставляет
+                                                возможность получать доходность на основе показателей CryptoSafe Pay.
                                             </span>
-
-                                        </button>
-                                        <svg class="svg-28" width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M14.0003 2.33333C7.58366 2.33332 2.33366 7.58332 2.33366 14C2.33366 20.4167 7.58366 25.6667 14.0003 25.6667C20.417 25.6667 25.667 20.4167 25.667 14C25.667 7.58333 20.417 2.33333 14.0003 2.33333Z"
-                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M14 18.6667L14 12.8333" stroke="white" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M14.0068 9.33333L13.9964 9.33333" stroke="white" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-
-                                    <button
-                                        class="deposit-outline-btn reinvest-finish deposit-outline__suc position-relative mt-5">
-                                        <svg class="svg__absolute" width="273" height="59" viewBox="0 0 273 59"
-                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g filter="url(#filter0_f_4604_52975)">
-                                                <rect x="17" y="7" width="238.689" height="45" rx="22.5" fill="white" />
-                                            </g>
-                                            <rect x="17" y="7" width="273" height="45" rx="22.5" fill="white" />
-                                            <defs>
-                                                <filter id="filter0_f_4604_52975" x="0" y="0" width="273" height="59"
-                                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
-                                                        result="shape" />
-                                                    <feGaussianBlur stdDeviation="3.5"
-                                                        result="effect1_foregroundBlur_4604_52975" />
-                                                </filter>
-                                            </defs>
-                                        </svg>
-
-                                        <span>
-                                            Реинвестировать <br>
-                                            прибыль
-                                        </span>
-                                        <svg width="59" height="59" viewBox="0 0 59 59" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g filter="url(#filter0_f_4901_23336)">
-                                                <rect x="7" y="7" width="45" height="45" rx="22.5" fill="#FFD600" />
-                                            </g>
-                                            <rect x="7" y="7" width="45" height="45" rx="22.5" fill="#FFD600" />
-                                            <path
-                                                d="M20 29.5L26.562 35.8979C26.6202 35.9547 26.7131 35.9547 26.7714 35.8979L40 23"
-                                                stroke="white" stroke-width="3" stroke-linecap="round" />
-                                            <defs>
-                                                <filter id="filter0_f_4901_23336" x="0" y="0" width="59" height="59"
-                                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
-                                                        result="shape" />
-                                                    <feGaussianBlur stdDeviation="3.5"
-                                                        result="effect1_foregroundBlur_4901_23336" />
-                                                </filter>
-                                            </defs>
-                                        </svg>
-                                    </button>
-                                    <button data-bs-toggle="modal" data-bs-target="#сonclusionModal"
-                                        class=" сonclusion__mobile mt-5 сonclusion__modal deposit-outline-btn mt-5"
-                                        style="background-color: transparent;">
-                                        Вывести Средства
-                                    </button>
-                                    <div class="deposit-outline-note ">
-                                        Депозит в направление CS Optimum состоит из двух счетов:<span>
-                                            «Депозит» и
-                                            «Прибыль по Депозиту»
-                                        </span>. Заработанная прибыль
-                                        ежедневно в 23:59:59 UTC переводится со счета «Депозит» на счет «Прибыль по
-                                        Депозиту». Включив функцию <span>
-                                            «Реинвестировать
-                                            Прибыль»
-                                        </span> заработанная прибыль будет автоматически возвращаться на счет
-                                        «Депозит» и с 00:00:01 будет задействована в
-                                        торговле. <br>
-                                        Реинвестированная прибыль может быть выведена в любой момент и облагается
-                                        комиссией 30%.
-                                    </div>
-                                </div>
-
-                                <div class="col-md-auto">
-                                    <h3 class="deposit-vaule-description mt-3" style="display: block;">
-                                        Правила инвестирования
-                                    </h3>
-
-                                    <p class="deposit-rules">
-                                    <ul class="deposit-rules-list">
-                                        <li class="deposit-rules-item">
-                                            Депозит в CS Optimum рассчитан на год, прибыль по депозиту начисляется
-                                            ежедневно и доступна к выводу всегда
                                         </li>
-                                        <li class="deposit-rules-item">
-                                            Период стартует с момента вклада в депозит
+                                        <li>
+                                            <img src="./img/command/succesful.png" alt=""> <span>Стоимость бизнеса - $25
+                                                млн.
+                                            </span>
                                         </li>
-                                        <li class="deposit-rules-item">
-                                            При выводе части тела депозита, пользователь откатывается на 1–й
-                                            месячный период
+                                        <li>
+                                            <img src="./img/command/succesful.png" alt=""> <span>Цена за акцию - $2.5
+                                            </span>
                                         </li>
                                     </ul>
-                                    </p>
-
-                                    <h3 class="deposit-vaule-description mt-3" style="display: block;">
-                                        Комиссия
-                                    </h3>
-
-                                    <p class="deposit-rules">
-                                    <ul class="deposit-rules-list">
-                                        <li class="deposit-rules-item">
-                                            При досрочном выводе части или всего депозита в первый месячный период
-                                            -30% от выводимых средств.
-                                        </li>
-                                    </ul>
-                                    </p>
-                                    <div class="deposit__btn center">
-                                        <button data-bs-toggle="modal" data-bs-target="#createDeposit"
-                                            class="check-password__btn deposit__button">
-                                            Создать новый депозит
-                                            <svg width="51" height="50" viewBox="0 0 51 50" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle opacity="0.5" cx="25.502" cy="25" r="25" fill="#AE9408" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M26.002 37V37C19.374 37 14.002 31.628 14.002 25V25C14.002 18.372 19.374 13 26.002 13V13C32.63 13 38.002 18.372 38.002 25V25C38.002 31.628 32.63 37 26.002 37Z"
-                                                    stroke="#222222" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path d="M31.3327 24.9987H20.666" stroke="#222222" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M27.3379 21L31.3379 25L27.3379 29" stroke="#222222"
-                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                            <img src="img/main/left.png" alt="" class="check-password__btn-left">
-                                            <img src="img/main/right.png" alt="" class="check-password__btn-right">
-                                        </button>
-                                    </div>
                                 </div>
-                                <!-- <button class="mt-5 btn btn-secondary btn-styled-wave btn-with-ico">Начать
-                                        инвестировать <img src="images/ico-button-arrow-r-colored.svg" alt=""></button> -->
-
                             </div>
-                        </div>
-                    </section>
-                    <!-- <section class="calculate">
-                            <div class="calculate__title">
-                                Калькулятор доходности
+
+                        </section>
+                        <section class="shares">
+                            <div class="shares__bg">
+                                <img src="./img/command/SP_bg.png" alt="">
                             </div>
-                            <div class="calculate__block">
-                                <div class="calculate__graf">
-                                    <div class="skill">
-                                        <div class="outer">
-                                            <div class="inner">
-                                                <div id="number" class="">
-                                                    <div class="calculete__main">
-
-                                                        <div class="calculate__content">
-                                                            <div class="calculate__sum-title">Укажите сумму
-                                                                вашей инвестиции
-                                                            </div>
-                                                            <div class="calculate__sum">
-                                                                <input type="number" placeholder="10.000$">
-
-                                                            </div>
-                                                            <div class="calculate__btn">
-                                                                <span>Рассчитать доходность</span>
-                                                                <svg width="55" height="55" viewBox="0 0 55 55"
-                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <circle opacity="0.5" cx="27.4577" cy="27.4167"
-                                                                        r="26.5984" fill="#BCBCBC" />
-                                                                    <g clip-path="url(#clip0_851_66315)">
-                                                                        <path
-                                                                            d="M36.7602 33.7267C36.7799 31.0332 35.7152 28.903 33.5914 27.3987C31.9511 26.2404 29.9605 25.6362 28.0352 25.0556C24.0244 23.8397 22.861 23.1993 22.861 21.2813C22.861 19.1449 25.6374 18.3847 28.0143 18.3847C29.7453 18.3847 31.7368 18.9229 32.9736 19.7205L35.4256 15.9231C33.8091 14.8752 31.5969 14.1605 29.4124 13.9386V10.3926H24.8892V14.1873C20.8685 15.0718 18.3357 17.6996 18.3357 21.2813C18.3357 23.7897 19.3781 25.779 21.4279 27.1821C22.987 28.2533 24.8884 28.8285 26.7252 29.3853C30.6592 30.5744 32.2567 31.299 32.2385 33.6987L32.2384 33.7164C32.2384 35.7305 29.5693 36.4464 27.2827 36.4464C25.1226 36.4464 22.7737 35.4998 21.4422 34.0923L18.1562 37.2004C19.8425 38.9839 22.2923 40.2448 24.8891 40.739V44.4386H29.4124V40.8186C33.8801 40.1791 36.7557 37.4893 36.7602 33.7267Z"
-                                                                            fill="black" />
-                                                                    </g>
-                                                                    <defs>
-                                                                        <clipPath id="clip0_851_66315">
-                                                                            <rect width="34.0459" height="34.0459"
-                                                                                fill="white"
-                                                                                transform="translate(10.4297 10.3926)" />
-                                                                        </clipPath>
-                                                                    </defs>
-                                                                </svg>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                            <div class="shares__block">
+                                <div class="shares__head">
+                                    <div class="shares__head-sum">
+                                        <p>Доступно:</p>
+                                        <div class="shares__head-sum-main">100 SP Shares</div>
+                                        <div class="bg-line"></div>
+                                        <div class="shares__head-btn">
+                                            <button data-bs-dismiss="modal" data-bs-toggle="modal"
+                                                data-bs-target="#purchase" class="">
+                                                <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="45" height="45" rx="22.5" fill="white" />
+                                                </svg>
+                                                <span>Buy SP Shares</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="shares__head-balance">
+                                        <div class="shares__balance-main">
+                                            <p>Balance:</p>
+                                            <strong>250 $</strong>
+                                        </div>
+                                        <div class="bg-line"></div>
+                                        <div class="shares__balance-prices">
+                                            <div class="shares__balance-price">
+                                                <p>2,5 $</p> <span>Текущая цена
+                                                </span>
+                                            </div>
+                                            <div class="shares__balance-price">
+                                                <p>2,5 $</p> <span>Цена покупки</span>
                                             </div>
                                         </div>
-                                        <div class="circle__desctop">
-                                            <svg id="circle__svg" class="circle__graf"
-                                                xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 680 680">
-                                                <defs>
-                                                    <linearGradient id="GradientColor">
-                                                        <stop offset="0%" stop-color="#FFD600" />
-                                                        <stop offset="50%" stop-color="#FFE665" />
-                                                        <stop offset="100%" stop-color="#FFE665" />
-
-                                                    </linearGradient>
-                                                </defs>
-                                                <circle class="circlee" cx="340" cy="340" r="328"
-                                                    stroke-linecap="round" />
-                                            </svg>
-                                            <svg id="circle__svg" class="circle__graf"
-                                                xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 680 680">
-                                                <defs>
-                                                    <linearGradient id="GradientColor1">
-                                                        <stop offset="0%" stop-color="#FFffff20" />
-                                                        <stop offset="50%" stop-color="#FFffff20" />
-                                                        <stop offset="100%" stop-color="#FFffff20" />
-
-                                                    </linearGradient>
-                                                </defs>
-                                                <circle class="circlee1" cx="340" cy="340" r="328"
-                                                    stroke-linecap="round" />
-                                            </svg>
-                                        </div>
-                                        
-
-
-
                                     </div>
-                                    <script>
-                                        let svgElement = document.getElementById('circle__svg');
-
-                                        let button = document.querySelector('.calculate__btn');
-
-                                        let inputField = document.querySelector('.calculate__sum input');
-
-                                        svgElement.setAttribute('stroke-dashoffset', 300);
-
-                                        button.addEventListener('click', function () {
-                                            let inputValue = Number(inputField.value);
-
-
-                                            let presentCircle = map(inputValue, 10000, 1000000, 2025, 300);
-
-
-                                            svgElement.setAttribute('stroke-dashoffset', presentCircle);
-                                        });
-
-
-                                        function map(value, in_min, in_max, out_min, out_max) {
-                                            return (value - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-                                        }
-                                    </script>
-
-
-                                </div>
-                                <div class="calculete__cards-block">
-                                    <div class="calculete__cards">
-                                        <div class="calculete__card">
-                                            <div class="calculete__card-title">Доход за 1 месяц</div>
-                                            <div class="calculete__card-present">20%</div>
-                                            <div class="calculete__card-sum">2.000 $</div>
-                                        </div>
-                                        <div class="calculete__card">
-                                            <div class="calculete__card-title">Доход за 1 месяц</div>
-                                            <div class="calculete__card-present">20%</div>
-                                            <div class="calculete__card-sum">2.000 $</div>
-                                        </div>
-                                        <div class="calculete__card">
-                                            <div class="calculete__card-title">Доход за 1 месяц</div>
-                                            <div class="calculete__card-present">20%</div>
-                                            <div class="calculete__card-sum">2.000 $</div>
-                                        </div>
-                                        <div class="calculete__card">
-                                            <div class="calculete__card-title">Доход за 1 месяц</div>
-                                            <div class="calculete__card-present">20%</div>
-                                            <div class="calculete__card-sum">2.000 $</div>
-                                        </div>
-                                        <div class="calculete__card">
-                                            <div class="calculete__card-title">Доход за 1 месяц</div>
-                                            <div class="calculete__card-present">20%</div>
-                                            <div class="calculete__card-sum">2.000 $</div>
-                                        </div>
-                                        <div class="calculete__card">
-                                            <div class="calculete__card-title">Доход за 1 месяц</div>
-                                            <div class="calculete__card-present">20%</div>
-                                            <div class="calculete__card-sum">2.000 $</div>
-                                        </div>
-                                        <div class="calculete__card">
-                                            <div class="calculete__card-title">Доход за 1 месяц</div>
-                                            <div class="calculete__card-present">20%</div>
-                                            <div class="calculete__card-sum">2.000 $</div>
-                                        </div>
-                                        <div class="calculete__card">
-                                            <div class="calculete__card-title">Доход за 1 месяц</div>
-                                            <div class="calculete__card-present">20%</div>
-                                            <div class="calculete__card-sum">2.000 $</div>
-                                        </div>
-                                        <div class="calculete__card">
-                                            <div class="calculete__card-title">Доход за 1 месяц</div>
-                                            <div class="calculete__card-present">20%</div>
-                                            <div class="calculete__card-sum">2.000 $</div>
-                                        </div>
-                                        <div class="calculete__card">
-                                            <div class="calculete__card-title">Доход за 1 месяц</div>
-                                            <div class="calculete__card-present">20%</div>
-                                            <div class="calculete__card-sum">2.000 $</div>
-                                        </div>
-                                        <div class="calculete__card">
-                                            <div class="calculete__card-title">Доход за 1 месяц</div>
-                                            <div class="calculete__card-present">20%</div>
-                                            <div class="calculete__card-sum">2.000 $</div>
-                                        </div>
-                                        <div class="calculete__card">
-                                            <div class="calculete__card-title">Доход за 1 месяц</div>
-                                            <div class="calculete__card-present">20%</div>
-                                            <div class="calculete__card-sum">2.000 $</div>
-                                        </div>
-                                    </div>
-                                    <div class="calculete__card-main">
-                                        <div class="calculete__card-main-title">Ваша инвестиция через год</div>
-                                        <div class="calculete__card-main-sum">38.500$</div>
+                                    <div class="shares__head-rules">
+                                        <h4>Правила инвестирования</h4>
+                                        <ul>
+                                            <li>Lorem ipsum dolor sit amet consectetur. In luctus lacus habitant nullam
+                                                vulputate suspendisse.</li>
+                                            <li>Aliquam elementum et scelerisque consequat consectetur quis turpis eget
+                                                neque. Sit non velit sem leo at. Sit morbi cras
+                                                suspendisse aliquet sit vitae etiam aliquet.</li>
+                                        </ul>
                                     </div>
                                 </div>
+                                <div class="shares__body">
+                                    <div class="shares__rounds">
+                                        <div class="shares__round">
+                                            <div class="shares__round-title">1 РАУНД <span>сейчас</span></div>
+                                            <div class="bg-line"></div>
+                                            <ul>
+                                                <li>
+                                                    <div class="shares__round-note">Оценка обрабатывающего бизнеса:
+
+                                                    </div>
+                                                    <div class="shares__round-condition">$25,000,000</div>
+                                                </li>
+                                                <li>
+                                                    <div class="shares__round-note">Первое предложение о продаже:
+                                                    </div>
+                                                    <div class="shares__round-condition">10% бизнеса, на общую сумму
+                                                        $2,500,000
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="shares__round-note">Всего доступных акций:</div>
+                                                    <div class="shares__round-condition">1,000,000 акций</div>
+                                                </li>
+                                                <li>
+                                                    <div class="shares__round-note">Цена за акцию:
+                                                    </div>
+                                                    <div class="shares__round-condition">$2.5 за каждую</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="shares__round">
+                                            <div class="shares__round-title">2 РАУНД</div>
+                                            <div class="bg-line"></div>
+                                            <ul>
+                                                <li>
+                                                    <div class="shares__round-note">Оценка обрабатывающего бизнеса:
+                                                    </div>
+                                                    <div class="shares__round-condition">$50,000,000</div>
+                                                </li>
+                                                <li>
+                                                    <div class="shares__round-note">Первое предложение о продаже:</div>
+                                                    <div class="shares__round-condition">10% бизнеса, на общую сумму
+                                                        $5,000,000
+
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="shares__round-note">Всего доступных акций:
+                                                    </div>
+                                                    <div class="shares__round-condition">1,000,000 акций</div>
+                                                </li>
+                                                <li>
+                                                    <div class="shares__round-note">Цена за акцию:
+                                                    </div>
+                                                    <div class="shares__round-condition">$5 за каждую
+
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="shares__round">
+                                            <div class="shares__round-title">3 РАУНД</div>
+                                            <div class="bg-line"></div>
+                                            <ul>
+                                                <li>
+                                                    <div class="shares__round-note">Оценка обрабатывающего бизнеса:
+                                                    </div>
+                                                    <div class="shares__round-condition">$100,000,000</div>
+                                                </li>
+                                                <li>
+                                                    <div class="shares__round-note">Первое предложение о продаже:
+                                                    </div>
+                                                    <div class="shares__round-condition">10% бизнеса, на общую сумму
+                                                        $10,000,000
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="shares__round-note">Всего доступных акций:</div>
+                                                    <div class="shares__round-condition">1,000,000 акций</div>
+                                                </li>
+                                                <li>
+                                                    <div class="shares__round-note">Цена за акцию:
+                                                    </div>
+                                                    <div class="shares__round-condition">$10 за каждую</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="shares__round">
+                                            <div class="shares__round-title">4 РАУНД</div>
+                                            <div class="bg-line"></div>
+                                            <ul>
+                                                <li>
+                                                    <div class="shares__round-note">Оценка обрабатывающего бизнеса:
+                                                    </div>
+                                                    <div class="shares__round-condition">$250,000,000</div>
+                                                </li>
+                                                <li>
+                                                    <div class="shares__round-note">Первое предложение о продаже:
+                                                    </div>
+                                                    <div class="shares__round-condition">10% бизнеса, на общую сумму
+                                                        $25,000,000
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="shares__round-note">Всего доступных акций: </div>
+                                                    <div class="shares__round-condition">1,000,000 акций</div>
+                                                </li>
+                                                <li>
+                                                    <div class="shares__round-note">Цена за акцию:
+                                                    </div>
+                                                    <div class="shares__round-condition">$25 за каждую</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="shares__round">
+                                            <div class="shares__round-title">5 РАУНД</div>
+                                            <div class="bg-line"></div>
+                                            <ul>
+                                                <li>
+                                                    <div class="shares__round-note">Оценка обрабатывающего бизнеса:
+                                                    </div>
+                                                    <div class="shares__round-condition">$500,000,000</div>
+                                                </li>
+                                                <li>
+                                                    <div class="shares__round-note">Первое предложение о продаже:
+                                                    </div>
+                                                    <div class="shares__round-condition">9% бизнеса, на общую сумму
+                                                        $45,000,000
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="shares__round-note">Всего доступных акций:</div>
+                                                    <div class="shares__round-condition">900,000 акций</div>
+                                                </li>
+                                                <li>
+                                                    <div class="shares__round-note">Цена за акцию:
+                                                    </div>
+                                                    <div class="shares__round-condition">$50 за каждую</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+
                             </div>
-                        </section> -->
-                    <!-- <h2 class="main-heading my-5">
-                            Последние операции
-                        </h2>
-                        <section class="section-operations">
 
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <h3 class="table-heading">
-                                        Операция
-                                    </h3>
-                                </div>
-                                <div class="col-md-3">
-                                    <h3 class="table-heading">
-                                        Статус
-                                    </h3>
-                                </div>
-                                <div class="col-md-3">
-                                    <h3 class="table-heading">
-                                        Сумма, USDT
-                                    </h3>
-                                </div>
-                                <div class="col-md-3">
-                                    <h3 class="table-heading">
-                                        Дата
-                                    </h3>
-                                </div>
+                        </section>
+                        <div class="last__transition">
+                            Последине транзакции
+                        </div>
+                        <div class="shares__table">
+                            <div class="table-responsive my-5">
+                                <table class="table shares-table table-trusted-wallets table-sm align-middle">
+                                    <thead class="sticky-top  bien-glass">
+                                        <tr>
+                                            <th scope="col" class="text-nowrap text-white">
+                                                <small>Дата</small>
+                                            </th>
+                                            <th scope="col" class="text-nowrap text-white">
+                                                <small>Тип транзакции</small>
+                                            </th>
+                                            <th scope="col" class="text-nowrap text-white">
+                                                <small>Сумма транзакции</small>
+                                            </th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <!--wallet-->
+
+                                        <tr>
+
+                                            <td class="text-nowrap">
+                                                01.05.2024, 15:00
+                                            </td>
+                                            <td class="text-nowrap">
+                                                Покупка акций SP Shares
+                                            </td>
+                                            <td class="text-nowrap">
+                                                1,000.00 USDT
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+
+                                            <td class="text-nowrap">
+                                                01.05.2024, 15:00
+                                            </td>
+                                            <td class="text-nowrap">
+                                                Покупка акций SP Shares
+                                            </td>
+                                            <td class="text-nowrap">
+                                                1,000.00 USDT
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+
+                                            <td class="text-nowrap">
+                                                01.05.2024, 15:00
+                                            </td>
+                                            <td class="text-nowrap">
+                                                Покупка акций SP Shares
+                                            </td>
+                                            <td class="text-nowrap">
+                                                1,000.00 USDT
+                                            </td>
+                                        </tr>
+
+
+
+                                    </tbody>
+                                </table>
                             </div>
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <span class="operation-type">
-                                        Вывод депозита
-                                    </span>
-                                </div>
-                                <div class="col-md-3">
-                                    <span class="status-orange">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"
-                                            viewBox="0 0 10 11" fill="none">
-                                            <circle cx="5" cy="5.5" r="5" fill="#FF832F" />
-                                        </svg>
-                                        Ожидание
-                                    </span>
-                                </div>
-                                <div class="col-md-3">
-                                    <span class="operation-type">
-                                        25.000 USDT
-                                    </span>
-                                </div>
-                                <div class="col-md-3">
-                                    <span class="operation-type">
-                                        21-07-2023 00:16:13
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <span class="operation-type">
-                                        Вывод депозита
-                                    </span>
-                                </div>
-                                <div class="col-md-3">
-                                    <span class="status-green">
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
-                                            width="16px" height="16px" fill-rule="nonzero">
-                                            <g fill="#1ea622" fill-rule="nonzero" stroke="none" stroke-width="1"
-                                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
-                                                stroke-dasharray="" stroke-dashoffset="0" font-family="none"
-                                                font-weight="none" font-size="none" text-anchor="none"
-                                                style="mix-blend-mode: normal">
-                                                <g transform="scale(3.55556,3.55556)">
-                                                    <path
-                                                        d="M57.658,12.643c1.854,1.201 2.384,3.678 1.183,5.532l-25.915,40c-0.682,1.051 -1.815,1.723 -3.064,1.814c-0.098,0.008 -0.197,0.011 -0.294,0.011c-1.146,0 -2.241,-0.491 -3.003,-1.358l-13.051,-14.835c-1.459,-1.659 -1.298,-4.186 0.36,-5.646c1.662,-1.46 4.188,-1.296 5.646,0.361l9.563,10.87l23.043,-35.567c1.203,-1.854 3.68,-2.383 5.532,-1.182z" />
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        Выполнено
-                                    </span>
-                                </div>
-                                <div class="col-md-3">
-                                    <span class="operation-type">
-                                        25.000 USDT
-                                    </span>
-                                </div>
-                                <div class="col-md-3">
-                                    <span class="operation-type">
-                                        21-07-2023 00:16:13
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <span class="operation-type">
-                                        Вывод депозита
-                                    </span>
-                                </div>
-                                <div class="col-md-3">
-                                    <span class="status-red">
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
-                                            width="16px" height="16px" fill-rule="nonzero">
-                                            <g fill="#ea5656" fill-rule="nonzero" stroke="none" stroke-width="1"
-                                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
-                                                stroke-dasharray="" stroke-dashoffset="0" font-family="none"
-                                                font-weight="none" font-size="none" text-anchor="none"
-                                                style="mix-blend-mode: normal">
-                                                <g transform="scale(8.53333,8.53333)">
-                                                    <path
-                                                        d="M7,4c-0.25587,0 -0.51203,0.09747 -0.70703,0.29297l-2,2c-0.391,0.391 -0.391,1.02406 0,1.41406l7.29297,7.29297l-7.29297,7.29297c-0.391,0.391 -0.391,1.02406 0,1.41406l2,2c0.391,0.391 1.02406,0.391 1.41406,0l7.29297,-7.29297l7.29297,7.29297c0.39,0.391 1.02406,0.391 1.41406,0l2,-2c0.391,-0.391 0.391,-1.02406 0,-1.41406l-7.29297,-7.29297l7.29297,-7.29297c0.391,-0.39 0.391,-1.02406 0,-1.41406l-2,-2c-0.391,-0.391 -1.02406,-0.391 -1.41406,0l-7.29297,7.29297l-7.29297,-7.29297c-0.1955,-0.1955 -0.45116,-0.29297 -0.70703,-0.29297z" />
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        Отменено
-                                    </span>
-                                </div>
-                                <div class="col-md-3">
-                                    <span class="operation-type">
-                                        25.000 USDT
-                                    </span>
-                                </div>
-                                <div class="col-md-3">
-                                    <span class="operation-type">
-                                        21-07-2023 00:16:13
-                                    </span>
-                                </div>
-                            </div>
-                            <button class="partners-center__pagination">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <g opacity="0.5">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M16.6385 23.4979C17.308 22.8284 17.308 21.743 16.6385 21.0735L7.56499 12L16.6385 2.92647C17.308 2.257 17.308 1.17157 16.6385 0.502104C15.9691 -0.167366 14.8836 -0.167366 14.2142 0.502104L3.92844 10.7878C3.25897 11.4573 3.25897 12.5427 3.92844 13.2122L14.2142 23.4979C14.8836 24.1674 15.9691 24.1674 16.6385 23.4979Z"
-                                            fill="white" />
-                                    </g>
-                                </svg>
-                                <div class="pagination__btn active">
+                        </div>
 
-                                    1
-                                </div>
-                                <div class="pagination__btn">
-
-                                    2
-                                </div>
-                                <div class="pagination__btn">
-
-                                    3
-                                </div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M6.51256 0.502103C5.82915 1.17157 5.82915 2.257 6.51256 2.92647L15.7751 12L6.51256 21.0735C5.82915 21.743 5.82915 22.8284 6.51256 23.4979C7.19598 24.1674 8.30402 24.1674 8.98744 23.4979L19.4874 13.2122C20.1709 12.5427 20.1709 11.4573 19.4874 10.7878L8.98744 0.502103C8.30402 -0.167368 7.19598 -0.167368 6.51256 0.502103Z"
-                                        fill="white" />
-                                </svg>
-                            </button>
-
-                        </section> -->
-
+                    </div>
+                    <div class="main-block__close">
+                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_b_641_170857)">
+                                <circle cx="18.5" cy="18.5" r="18.5" fill="white" fill-opacity="0.2" />
+                            </g>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M21.2803 23.2699C21.5732 22.963 21.5732 22.4655 21.2803 22.1587L17.3107 18L21.2803 13.8413C21.5732 13.5345 21.5732 13.037 21.2803 12.7301C20.9874 12.4233 20.5126 12.4233 20.2197 12.7301L15.7197 17.4444C15.4268 17.7513 15.4268 18.2487 15.7197 18.5556L20.2197 23.2699C20.5126 23.5767 20.9874 23.5767 21.2803 23.2699Z"
+                                fill="white" />
+                            <defs>
+                                <filter id="filter0_b_641_170857" x="-24" y="-24" width="85" height="85"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="12" />
+                                    <feComposite in2="SourceAlpha" operator="in"
+                                        result="effect1_backgroundBlur_641_170857" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_641_170857"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
 
                 </div>
-                <div class="main-block__close">
-                    <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_b_641_170857)">
-                            <circle cx="18.5" cy="18.5" r="18.5" fill="white" fill-opacity="0.2" />
-                        </g>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M21.2803 23.2699C21.5732 22.963 21.5732 22.4655 21.2803 22.1587L17.3107 18L21.2803 13.8413C21.5732 13.5345 21.5732 13.037 21.2803 12.7301C20.9874 12.4233 20.5126 12.4233 20.2197 12.7301L15.7197 17.4444C15.4268 17.7513 15.4268 18.2487 15.7197 18.5556L20.2197 23.2699C20.5126 23.5767 20.9874 23.5767 21.2803 23.2699Z"
-                            fill="white" />
-                        <defs>
-                            <filter id="filter0_b_641_170857" x="-24" y="-24" width="85" height="85"
-                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="12" />
-                                <feComposite in2="SourceAlpha" operator="in"
-                                    result="effect1_backgroundBlur_641_170857" />
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_641_170857"
-                                    result="shape" />
-                            </filter>
-                        </defs>
-                    </svg>
-                </div>
-
             </div>
-    </div>
     </div>
     <div class="shadow">
 
@@ -2591,9 +2341,25 @@
     <footer class="footer">
         <div class="_container">
 
+
+
         </div>
     </footer>
     </div>
+
+    <script>
+        let days = document.querySelectorAll('.condition__period-day')
+        for (let i = 0; i < days.length; i++) {
+            days[i].addEventListener('click', () => {
+                for (let j = 0; j < days.length; j++) {
+                    days[j].classList.remove('active')
+
+                }
+                days[i].classList.add('active')
+            })
+
+        }
+    </script>
     <script>
 
         document.querySelector('.svg-28').addEventListener('mouseover', (event) => {
@@ -2657,19 +2423,7 @@
         }
         );
     </script>
-    <script>
-        let days = document.querySelectorAll('.condition__period-day')
-        for (let i = 0; i < days.length; i++) {
-            days[i].addEventListener('click', () => {
-                for (let j = 0; j < days.length; j++) {
-                    days[j].classList.remove('active')
 
-                }
-                days[i].classList.add('active')
-            })
-
-        }
-    </script>
     <script src="js/select.js"> </script>
 </body>
 
