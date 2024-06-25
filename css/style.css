@@ -12816,3 +12816,7 @@ button {
         min-width: 90vw;
     }
 }
+
+.purchase__input input {
+    color: white;
+}
