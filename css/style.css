@@ -12182,6 +12182,8 @@ button {
     align-items: center;
 
     & button {
+        padding-left: 10px;
+        padding-right: 10px;
         font-size: 16px;
         width: 100%;
         display: flex;
@@ -12659,7 +12661,8 @@ button {
     border-radius: 20px;
     color: white;
     backdrop-filter: blur(140px);
-    background: linear-gradient(180deg, rgba(7, 53, 159, 0.61) 0%, rgba(10, 49, 140, 0.1) 100%);
+    -webkit-backdrop-filter: blur(140px);
+    background: linear-gradient(180deg, rgba(12, 20, 205, 0.61) 0%, rgba(35, 101, 255, 0.1) 100%);
 }
 
 .purchase__input {
@@ -12668,6 +12671,7 @@ button {
 }
 
 .purchase__input input {
+    margin-top: 5px;
     padding: 10px 40px;
     background: rgba(255, 255, 255, 0.2);
 
@@ -12676,7 +12680,7 @@ button {
 }
 
 .purchase__block {
-    min-width: 530px;
+    min-width: 550px;
     padding: 25px 40px 43px;
     display: flex;
     flex-direction: column;
