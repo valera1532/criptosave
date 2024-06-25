@@ -1031,7 +1031,8 @@
                                     <div class="bg-line"></div>
                                     <div class="purchase__input">
                                         <div class="purchase__input-title">Put amount of SP Shares</div>
-                                        <input type="number" placeholder="Put amount of purchase" type="text">
+                                        <input type="number" id="stockAmount" placeholder="Put amount of purchase"
+                                            type="text">
                                     </div>
                                     <div class="purchase__cost-info">
                                         <div class="purchase__balance">
@@ -1044,9 +1045,21 @@
                                         </div>
                                         <div class="purchase__total">
                                             <span>Total price of Shares:</span>
-                                            <p>860$</p>
+                                            <p id="totalCost">0$</p>
                                         </div>
                                     </div>
+                                    <script>
+                                        document.getElementById('stockAmount').addEventListener('input', function () {
+                                            const stockAmount = parseInt(this.value);
+
+                                            if (!isNaN(stockAmount)) {
+                                                const totalCost = stockAmount * 2.5;
+                                                document.getElementById('totalCost').textContent = `$${totalCost.toFixed(2)}`;
+                                            } else {
+                                                document.getElementById('totalCost').textContent = '$0';
+                                            }
+                                        });
+                                    </script>
                                     <div class="vip-event__btns">
                                         <button data-bs-dismiss="modal" class="vip-event__not">Top up Balance</button>
                                         <button data-bs-dismiss="modal" data-bs-toggle="modal"
