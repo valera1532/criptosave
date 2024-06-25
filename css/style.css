@@ -6098,10 +6098,7 @@ textarea {
     }
 }
 
-html,
-html *:hover {
-    cursor: url(./cursor.png) 12 12, default !important;
-}
+
 
 .check-box__btn-buy {
     width: 300px;
@@ -12426,7 +12423,25 @@ button {
 
 .bg-line {}
 
+.shares__head-btn {
+    transition: .4s;
+    cursor: pointer !important;
+}
+
+.shares__head-btn:hover button {
+    border: 1px solid var(--yeelow);
+}
+
+.shares__head-btn:hover span {
+    color: var(--yeelow);
+}
+
+.shares__head-btn:hover svg {
+    fill: var(--yeelow);
+}
+
 .shares__head-btn button {
+    transition: .4s;
     margin-top: 50px;
     width: 100%;
     padding: 8px;
@@ -12439,10 +12454,12 @@ button {
 }
 
 .shares__head-btn span {
+    transition: .4s;
     width: 100%;
 }
 
 .shares__head-btn svg {
+    transition: .4s;
     min-width: 45px;
     min-height: 45px;
 }
