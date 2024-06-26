@@ -12838,3 +12838,9 @@ button {
     background: #00000000;
     border: 1px solid var(--yeelow);
 }
+
+.vip-event__yes:hover svg circle {
+    background: var(--yeelow);
+    fill: var(--yeelow);
+    opacity: 0.9;
+}
