@@ -12824,3 +12824,17 @@ button {
 .purchase__input input {
     color: white;
 }
+
+.vip-event__btns button {
+    transition: .4s;
+}
+
+.vip-event__btns button:hover {
+    color: var(--yeelow);
+    border-color: var(--yeelow);
+}
+
+.vip-event__yes:hover {
+    background: #00000000;
+    border: 1px solid var(--yeelow);
+}
