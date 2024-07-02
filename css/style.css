@@ -12818,6 +12818,12 @@ button {
 @media (max-width: 767px) {
     .purchase__block {
         min-width: 90vw;
+        max-width: 90vw;
+    }
+
+    .purchase__want {
+        font-size: 26px;
+        font-weight: 700;
     }
 }
 
