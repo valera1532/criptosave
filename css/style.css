@@ -10867,7 +10867,6 @@ p {
 
 .congratulation__backround {
     object-fit: cover;
-    mix-blend-mode: plus-lighter;
     top: 0;
     left: 0;
     border-radius: 20px;
@@ -12849,4 +12848,8 @@ button {
     background: var(--yeelow);
     fill: var(--yeelow);
     opacity: 0.9;
+}
+
+.congratulation__punta {
+    padding: 40px 30px;
 }
