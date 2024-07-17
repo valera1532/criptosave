@@ -1989,25 +1989,29 @@
                                                                 <form method="post" enctype="multipart/form-data">
                                                                     <label class="input-file profile__file">
                                                                         <div class="profile__documents-title">Фото
-                                                                            первой
-                                                                            страницы
-                                                                            паспорта или лицевая сторона водительского
-                                                                            удостоверения
-                                                                            /
-                                                                            ID карты</div>
+                                                                            первой страницы паспорта или лицевая сторона
+                                                                            водительского удостоверения / ID карты</div>
+                                                                        <img class="post__uploaded"
+                                                                            src="./img/main/download.svg" alt="">
                                                                         <div class="profile__documents-main">
-                                                                            <input type="file" name="file">
-                                                                            <img src="./img/main/download.svg" alt="">
+                                                                            <input type="file" name="file"
+                                                                                id="imageUpload1"
+                                                                                onchange="previewImage(event, 1)">
+                                                                            <img class="" src="./img/main/download.svg"
+                                                                                alt="">
+                                                                            <img class="preview__img" src="" alt=""
+                                                                                id="preview1">
 
                                                                             <span class="input-file-text">Загрузить
                                                                                 файл</span>
                                                                         </div>
                                                                         <div class="profile__documents-note">Допустимые
-                                                                            расширения:
-                                                                            jpeg, jpg, png. Максимальный размер 5 MB.
-                                                                        </div>
+                                                                            расширения: jpeg, jpg, png. Максимальный
+                                                                            размер 5 MB.</div>
                                                                     </label>
                                                                 </form>
+
+
                                                             </div>
                                                         </div>
                                                         <div class="profile__documents-card">
@@ -2020,9 +2024,16 @@
                                                                             страницы паспорта или обратная сторона ID
                                                                             карты
                                                                         </div>
+                                                                        <img class="post__uploaded"
+                                                                            src="./img/main/download.svg" alt="">
                                                                         <div class="profile__documents-main">
-                                                                            <input type="file" name="file">
-                                                                            <img src="./img/main/download.svg" alt="">
+                                                                            <input type="file" name="file"
+                                                                                id="imageUpload2"
+                                                                                onchange="previewImage(event, 2)">
+                                                                            <img class="preview__img"
+                                                                                src="./img/main/download.svg" alt="">
+                                                                            <img class="preview__img" src="" alt=""
+                                                                                id="preview2">
 
                                                                             <span class="input-file-text">Загрузить
                                                                                 файл</span>
@@ -2044,10 +2055,16 @@
                                                                         <div class="profile__documents-title">Справка о
                                                                             регистрации текущего места
                                                                             жительства или отметка в паспорте</div>
+                                                                        <img class="post__uploaded"
+                                                                            src="./img/main/download.svg" alt="">
                                                                         <div class="profile__documents-main">
-                                                                            <input type="file" name="file">
-                                                                            <img src="./img/main/download.svg" alt="">
-
+                                                                            <input type="file" name="file"
+                                                                                id="imageUpload3"
+                                                                                onchange="previewImage(event, 3)">
+                                                                            <img class="preview__img"
+                                                                                src="./img/main/download.svg" alt="">
+                                                                            <img class="preview__img" src="" alt=""
+                                                                                id="preview3">
                                                                             <span class="input-file-text">Загрузить
                                                                                 файл</span>
                                                                         </div>
@@ -2070,10 +2087,16 @@
                                                                             лицевой стороной водительского удостоверения
                                                                             /
                                                                             ID карты</div>
+                                                                        <img class="post__uploaded"
+                                                                            src="./img/main/download.svg" alt="">
                                                                         <div class="profile__documents-main">
-                                                                            <input type="file" name="file">
-                                                                            <img src="./img/main/download.svg" alt="">
-
+                                                                            <input type="file" name="file"
+                                                                                id="imageUpload4"
+                                                                                onchange="previewImage(event, 4)">
+                                                                            <img class="preview__img"
+                                                                                src="./img/main/download.svg" alt="">
+                                                                            <img class="preview__img" src="" alt=""
+                                                                                id="preview4">
                                                                             <span class="input-file-text">Загрузить
                                                                                 файл</span>
                                                                         </div>
@@ -2088,7 +2111,18 @@
                                                     </div>
                                                     <div class="button"></div>
                                                 </form>
-
+                                                <script>
+                                                    let image = document.querySelectorAll(".profile__file")
+                                                    function previewImage(event, index) {
+                                                        var reader = new FileReader();
+                                                        reader.onload = function () {
+                                                            var output = document.getElementById('preview' + index);
+                                                            output.src = reader.result;
+                                                            image[index - 1].classList.add("active")
+                                                        }
+                                                        reader.readAsDataURL(event.target.files[0]);
+                                                    }
+                                                </script>
                                             </div>
 
                                         </div>
