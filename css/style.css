@@ -13180,6 +13180,10 @@ button {
 }
 
 @media (max-width: 1600px) {
+    .svg-none {
+        display: none;
+    }
+
     .cs-live__block {
         flex-direction: column;
         max-width: 100%;
@@ -13211,11 +13215,6 @@ button {
     .profit-for__deposit {
         min-width: 50%;
     }
-
-    .cs-live__banner-main svg {
-        display: none;
-    }
-
 
 }
 
