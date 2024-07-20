@@ -4338,10 +4338,6 @@ input[type="number"]::-webkit-inner-spin-button {
     color: white;
 }
 
-body {
-    /* плашка-бегунок и фон */
-    scrollbar-color: #999 #333;
-}
 
 body::-webkit-scrollbar {
     width: 10px;
@@ -9130,10 +9126,7 @@ p {
     overflow-x: hidden;
 }
 
-.table__structure {
-    /* плашка-бегунок и фон */
-    scrollbar-color: #999 #333;
-}
+
 
 .table__structure::-webkit-scrollbar {
     width: 10px;
@@ -9733,7 +9726,7 @@ p {
 .popap.popup__info {
     border-radius: 20px 0 0 20px;
 
-    scrollbar-color: #999 #333;
+
 }
 
 .popap.popup__info::-webkit-scrollbar {
@@ -9752,6 +9745,11 @@ p {
     border-radius: 15px;
 
     position: relative;
+}
+
+.deposite__fone-img {
+    width: 100%;
+    height: 100%;
 }
 
 .deposite__fone-img img {
@@ -12885,4 +12883,358 @@ button {
     width: 35px;
     height: 35px;
     object-fit: cover;
+}
+
+.cs_live-banner-info {
+    display: inline;
+    color: white;
+    font-size: 36px;
+}
+
+.costs-btns {
+
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cs-live__banner {
+    max-height: 300px;
+    gap: 30px;
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    max-width: 806px;
+}
+
+.cs-live__banner-main {
+
+    width: 100%;
+    max-width: 360px;
+}
+
+.cs-live__block {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    max-width: 806px;
+}
+
+
+.text-bg-error {
+    background: #FF0F00;
+}
+
+.no-border {
+    border: none;
+}
+
+.cs-live__dep {
+    text-align: left;
+}
+
+.withdraw-btn {
+    padding: 0 20px;
+    width: 100%;
+}
+
+.cs-live__block {
+    color: white;
+}
+
+.cs-live__block h3 {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+
+}
+
+.profit-for__deposit {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profit__deposit-title {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    color: #ffffff70;
+}
+
+.profit__deposit-value {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.profit__deposit-time {
+    display: flex;
+    gap: 20px;
+
+    & span {
+        color: #ffffff70;
+    }
+
+    & strong {
+        font-weight: 700;
+    }
+}
+
+.cs-live__swiper {
+
+    min-width: 0 !important;
+    max-width: 600px !important;
+    height: 100% !important;
+}
+
+.swiper-slide {}
+
+
+.cs-live__swiper-slide {
+    height: fit-content !important;
+    border-radius: 20px;
+    border: 1px solid #ffffff20;
+    backdrop-filter: blur(11.800000190734863px);
+    background: linear-gradient(150deg, rgba(2, 21, 207, 0.45) 0%, rgba(10, 15, 64, 0.45) 100%);
+}
+
+.cs-live__swiper-content {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 20px;
+}
+
+.cs-live__swiper-title {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.cs-live__swiper-cost {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 100%;
+    color: var(--yeelow);
+}
+
+.cs-live__swiper-subtitle {
+    font-size: 18px;
+    line-height: 160%;
+}
+
+.cs-live__swiper-buy button {
+    transition: .4s;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px 40px;
+    background: var(--yeelow);
+    color: #222;
+    font-weight: 600;
+    border: var(--yeelow) 1px solid;
+    font-size: 22px;
+}
+
+.cs-live__swiper-buy button:hover {
+    background: #00000000;
+    color: white;
+}
+
+.cs-live__swiper-slide {
+    z-index: 1;
+    opacity: 0.5 !important;
+}
+
+.cs-live__swiper-slide.swiper-slide-active {
+    opacity: 1 !important;
+    transform: scale(1.1) !important;
+    z-index: 11;
+}
+
+.cs-live__dep {
+    font-size: 36px !important;
+    text-align: center;
+}
+
+.cs-live__swiper-main h3 {}
+
+.cs-live__swiper .swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom, 25px) !important;
+}
+
+.deposit-vaule-investment {
+    margin-top: 15px;
+    color: #ffffff80;
+}
+
+.cs-live__history {
+    color: white;
+    margin-top: 40px;
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+.cs-live__history-block {}
+
+.cs-live__history-points {
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+.cs-live__history-point {
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    background: linear-gradient(227deg, #00023c 3.13%, rgba(11, 20, 170, 0.45) 34.68%, rgba(19, 28, 187, 0.14) 70.29%, rgba(2, 6, 67, 0) 100%);
+    border: 1px solid #ffffff20;
+}
+
+.cs-live__history-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.history-head__monets img {
+    width: 30px;
+    height: 30px;
+}
+
+.history-head__monets img:nth-child(2) {
+    margin-left: -10px;
+}
+
+.history-head__monets-name {
+    font-size: 24px;
+}
+
+.history-head__status {
+    font-size: 20px;
+    padding: 6px 14px;
+
+}
+
+.history-head__status.succesful {
+    border-radius: 20px;
+    background: rgba(0, 255, 87, 0.3);
+    color: #00ff57;
+
+}
+
+.succesful {}
+
+.cs-live__history-main ul {
+    margin-top: 20px;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.cs-live__history-main ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 20px;
+}
+
+.cs-live__history-main ul li span {
+
+    font-size: 16px;
+    color: #ffffff80;
+}
+
+.cs-live__history-type {
+    font-size: 20px;
+    color: #00ff57;
+}
+
+
+
+.cs-live__history::-webkit-scrollbar {
+    border-radius: 20px;
+    width: 10px;
+}
+
+.cs-live__history::-webkit-scrollbar-track {
+    background: #242424;
+}
+
+.cs-live__history::-webkit-scrollbar-thumb {
+    background: linear-gradient(209deg, #ffd600 0%, rgba(255, 214, 0, 0.6) 100%);
+    border-radius: 20px;
+}
+
+@media (max-width: 1600px) {
+    .cs-live__block {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .cs-live__banner-main {
+        max-width: 100%;
+    }
+
+    .cs-live__swiper {
+        max-width: 800px !important;
+    }
+
+    .cs-live__banner {
+        margin: 0 auto;
+        max-width: 100%;
+        min-width: 100%;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .deposite__fone-img {
+        width: auto;
+        height: auto;
+    }
+
+    .profit-for__deposit {
+        min-width: 50%;
+    }
+
+    .cs-live__banner-main svg {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .cs-live__history {
+        overflow-x: auto;
+        max-width: 400px;
+    }
+
+    .cs-live__banner {
+        flex-direction: column;
+    }
+
+    .cs-live__banner {
+        max-height: 100%;
+    }
+
+    .cs-live__swiper {
+        padding: 20px 40px !important;
+        max-width: 360px !important;
+    }
+
+
 }

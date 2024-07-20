@@ -659,29 +659,9 @@ article a {
     max-height: 33px !important;
 }
 
-body {
-    /* плашка-бегунок и фон */
-    scrollbar-color: #999 #333;
-}
 
-body::-webkit-scrollbar {
-    width: 10px;
-    /* в основном для вертикальных полос прокрутки */
-    height: 10px;
-    /* в основном для горизонтальных полос прокрутки */
-}
 
-body::-webkit-scrollbar-thumb {
-    /* плашка-бегунок */
-    background: #00000000;
-    border: 1px solid #ae9408;
-    border-radius: 10px;
-}
 
-body::-webkit-scrollbar-track {
-    /* фон */
-    background: #00000000;
-}
 
 .why-item {
     transition: 0.3s;
