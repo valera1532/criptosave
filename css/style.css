@@ -13166,10 +13166,12 @@ button {
 .cs-live__history::-webkit-scrollbar {
     border-radius: 20px;
     width: 10px;
+    height: 10px;
 }
 
 .cs-live__history::-webkit-scrollbar-track {
     background: #242424;
+    border-radius: 20px;
 }
 
 .cs-live__history::-webkit-scrollbar-thumb {
@@ -13219,8 +13221,10 @@ button {
 
 @media (max-width: 767px) {
     .cs-live__history {
+        width: 100%;
         overflow-x: auto;
-        max-width: 400px;
+        max-width: calc(100vw - 30px);
+        padding-right: 20px;
     }
 
     .cs-live__banner {
@@ -13233,8 +13237,39 @@ button {
 
     .cs-live__swiper {
         padding: 20px 40px !important;
-        max-width: 360px !important;
+        max-width: 95vw !important;
+        margin-left: 0 !important;
+    }
+
+    .cs-live__history-points {
+        width: 100%;
+    }
+
+    .cs-live__history-point {
+        padding-right: 40px;
+        width: max-content;
     }
 
 
+    .cs__pro-banner {
+        padding: 40px 20px;
+    }
+
+    .cs-live__swiper-cost {
+        font-size: 30px;
+    }
+
+    .cs-live__history::-webkit-scrollbar {
+        border-radius: 20px;
+        width: 0px;
+        height: 10px;
+    }
+
+    .cs_multi-banner strong {
+        font-size: 28px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
 }
