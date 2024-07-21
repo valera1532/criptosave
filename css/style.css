@@ -12919,8 +12919,8 @@ button {
 .cs-live__block {
     margin-top: 20px;
     display: flex;
-    gap: 20px;
-    max-width: 806px;
+    gap: 60px;
+    max-width: 740px;
 }
 
 
@@ -13177,6 +13177,22 @@ button {
 .cs-live__history::-webkit-scrollbar-thumb {
     background: linear-gradient(209deg, #ffd600 0%, rgba(255, 214, 0, 0.6) 100%);
     border-radius: 20px;
+}
+
+.cs-live__swiper-main {
+    position: relative;
+}
+
+.cs-live__swiper-main .swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    top: 60%;
+    right: var(--swiper-navigation-sides-offset, -40px);
+}
+
+.cs-live__swiper-main .swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    top: 60%;
+    left: var(--swiper-navigation-sides-offset, -40px);
 }
 
 @media (max-width: 1600px) {
