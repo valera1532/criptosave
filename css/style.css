@@ -12979,7 +12979,6 @@ button {
 }
 
 .cs-live__swiper {
-
     min-width: 0 !important;
     max-width: 600px !important;
     height: 100% !important;
@@ -13046,6 +13045,7 @@ button {
 }
 
 .cs-live__swiper-slide.swiper-slide-active {
+
     opacity: 1 !important;
     transform: scale(1.1) !important;
     z-index: 11;
@@ -13063,6 +13063,13 @@ button {
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
     bottom: var(--swiper-pagination-bottom, 25px) !important;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    left: 20px !important;
 }
 
 .deposit-vaule-investment {
@@ -13189,6 +13196,31 @@ button {
     left: var(--swiper-navigation-sides-offset, -40px);
 }
 
+.history-head__status.open {
+    border-radius: 20px;
+    background: rgba(255, 214, 0, 0.5);
+    color: var(--yeelow);
+}
+
+.cs-live__history h3 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.cs-live__history-type.open {
+    color: var(--yeelow);
+}
+
+.congratulation__form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 @media (max-width: 1600px) {
     .svg-none {
         display: none;
@@ -13229,6 +13261,25 @@ button {
 }
 
 @media (max-width: 767px) {
+    .congratulation {
+        padding-right: 0;
+        max-width: 90vw;
+
+    }
+
+    .congratulation__block {
+        padding-right: 30px;
+        overflow-y: auto;
+        max-height: 500px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        left: 0px !important;
+    }
+
     .cs-live__history {
         width: 100%;
         overflow-x: auto;
@@ -13280,6 +13331,21 @@ button {
 
     .main-content {
         padding: 10px;
+    }
+
+    .cs-live__swiper {
+        padding-bottom: 40px !important;
+    }
+
+    .cs-live__swiper .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: var(--swiper-pagination-bottom, 0px) !important;
+    }
+
+    .mobile-none {
+        display: none !important;
     }
 }
 
