@@ -13383,3 +13383,128 @@ button {
     margin-top: 30px;
     color: white;
 }
+
+.crypto__exclusive-time {
+    margin-top: 24px;
+    font-family: var(--font3);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: var(--white);
+}
+
+.crypto__exclusive-note {
+    font-family: var(--font3);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    color: var(--white);
+}
+
+.crypto__exclusive-quality {}
+
+.crypto__exclusive-cards {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+
+}
+
+.crypto__exclusive-card {
+    min-height: 330px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    backdrop-filter: blur(27.156774520874023px);
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    border: 1px solid #ffffff20;
+}
+
+.exclusive__card-title {}
+
+.exclusive__card-img {
+    min-height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exclusive__card-price {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--yeelow);
+}
+
+.exclusive__card-name {
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+.crypto__purpose-lines {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+}
+
+.crypto__purpose-lines ul {
+    width: 100%;
+}
+
+.crypto__level-exc ul li {
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.crypto__level-exc .crypto__purpose-range {
+    height: 25px;
+}
+
+.crypto__level-exc .crypto__purpose-range-present {
+    min-height: 33px;
+    min-width: 33px;
+    font-size: 10px;
+}
+
+.crypto__level-exc .crypto__purpose-line {
+    height: 40px;
+}
+
+@media (max-width: 767px) {
+    .crypto__purpose-lines {
+        gap: 10px;
+    }
+
+    .crypto__exclusive-cards {
+        flex-direction: column;
+    }
+
+    .crypto__purpose-lines {
+        flex-direction: column;
+    }
+
+    .crypto__exclusive-card {
+        min-height: 260px;
+    }
+
+    .crypto__exclusive-note {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .crypto__exclusive-time {
+        text-align: center;
+        padding: 0 20px;
+    }
+}
