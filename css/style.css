@@ -13486,6 +13486,14 @@ button {
         gap: 10px;
     }
 
+    .crypto__purpose-lines ul {
+        gap: 10px;
+    }
+
+    .crypto__purpose-line-sum {
+        transform: translateY(7px);
+    }
+
     .crypto__exclusive-cards {
         flex-direction: column;
     }
