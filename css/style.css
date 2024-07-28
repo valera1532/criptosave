@@ -12955,7 +12955,7 @@ button {
 
 .profit__deposit-title {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 100%;
     color: #ffffff70;
 }
@@ -13481,6 +13481,79 @@ button {
     height: 40px;
 }
 
+
+.crypto__purpose-button {
+    transition: .4s;
+}
+
+.crypto__purpose-button:hover {
+    backdrop-filter: blur(27.156774520874023px);
+    background: rgba(0, 0, 0, 0.4);
+
+}
+
+.crypto__purpose-button button {
+    transition: .4s;
+}
+
+.crypto__purpose-button:hover button {
+    color: var(--yeelow);
+}
+
+.profit__deposit-withdraw button {
+    padding: 7px 0;
+    border-radius: 20px;
+    font-weight: 700;
+    width: 100%;
+    color: #222;
+    background: var(--yeelow);
+    transition: .4s;
+    border: solid 1px var(--yeelow);
+}
+
+.profit__deposit-withdraw button:hover {
+    background: #00000000;
+    color: white;
+}
+
+.cs-live__banner {
+    position: relative;
+}
+
+.live-banner__status {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border-radius: 20px;
+    background: rgba(157, 156, 156, 0.31);
+    padding: 5px 10px;
+}
+
+.header__trading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(227deg, #00023c 3.13%, rgba(11, 20, 170, 0.45) 34.68%, rgba(19, 28, 187, 0.14) 70.29%, rgba(2, 6, 67, 0) 100%);
+    border: 1px solid #ffffff20;
+    border-radius: 20px;
+
+    & span {
+        color: white;
+        font-size: 26px;
+        line-height: 130%;
+    }
+}
+
+.trading {
+    padding: 30px;
+}
+
 @media (max-width: 767px) {
     .crypto__purpose-lines {
         gap: 10px;
@@ -13514,5 +13587,14 @@ button {
     .crypto__exclusive-time {
         text-align: center;
         padding: 0 20px;
+    }
+
+    .header__trading {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header__trading .header__logo svg {
+        height: 40px;
     }
 }
