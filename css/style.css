@@ -13554,6 +13554,18 @@ button {
     padding: 30px;
 }
 
+.trading .cs-live__history {
+    max-height: 100%;
+}
+
+.cs-live__history-points {
+    padding: 0;
+}
+
+.trading .cs-live__history-main ul {
+    justify-content: space-between;
+}
+
 @media (max-width: 767px) {
     .crypto__purpose-lines {
         gap: 10px;
