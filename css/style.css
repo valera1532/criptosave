@@ -13560,6 +13560,7 @@ button {
 
 .cs-live__history-points {
     padding: 0;
+
 }
 
 .trading .cs-live__history-main ul {
@@ -13609,4 +13610,37 @@ button {
     .header__trading .header__logo svg {
         height: 40px;
     }
+}
+
+/* ------------------------------- Privacy policy  ------------------------------- */
+
+.privacy-policy {
+    color: white;
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.privacy-policy header {
+    font-size: 40px;
+    line-height: 110%;
+    font-weight: 800;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.privacy-policy strong {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.privacy-policy main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.privacy-policy a {
+    color: #0030a4;
 }

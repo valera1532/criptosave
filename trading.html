@@ -18,6 +18,23 @@
     <link rel="stylesheet" href="css/article.scss">
     <title>TenderHouse</title>
 </head>
+<script>
+    let startArray = [1, 2, [3, 4, [5, 6]]]
+    let resArray = []
+    let tempArr = []
+    const xxx = (array) => {
+        console.log(array);
+        for (let i = 0; i < array.length; i++) {
+            if (!Array.isArray(array[i])) {
+                resArray = [...resArray, array[i]];
+            } else {
+                xxx(array[i + 1]);
+            }
+        }
+    }
+    xxx(startArray)
+    console.log(resArray);
+</script>
 
 <body class="theme">
     <div class="wrapper">
