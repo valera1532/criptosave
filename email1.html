@@ -325,6 +325,15 @@
             height: 40px;
         }
     </style>
+    <script>
+        const fibonacci = num => {
+            return num <= 1 ? num : fibonacci(num - 1) + fibonacci(num - 2);
+            console.log(num);
+        };
+        console.log(fibonacci(10));
+
+
+    </script>
 </body>
 
 </html>
