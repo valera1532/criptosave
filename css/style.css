@@ -2403,6 +2403,10 @@ body.lock {
     background: url(../img/materials/materials4.png) center center no-repeat;
 }
 
+.dir-9 {
+    background: url(../img/main/dir-9.png) center center no-repeat;
+}
+
 .dir {
     padding: 67px 15px;
 
@@ -13643,4 +13647,129 @@ button {
 
 .privacy-policy a {
     color: #0030a4;
+}
+
+.withdraw-btn {
+    color: white;
+}
+
+.cs__safe-swiper {
+    max-width: 1400px !important;
+    color: white;
+    padding-left: 0 !important;
+}
+
+.transfer__btn {
+    background: var(--yeelow) !important;
+    color: #222;
+    border: 1px solid var(--yeelow);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.transfer__wallet-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.transfer__wallet-btn form {
+    margin-top: 5px;
+    background: #ffffff80;
+    border-radius: 10px;
+}
+
+.transfer__wallet-btn input {
+    margin-top: 5px;
+    background: #ffffff80;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 25px;
+
+}
+
+.transfer__wallet-btn input::placeholder {
+    color: white;
+}
+
+.transfer__amount {
+    margin-top: 10px;
+}
+
+.transfer__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    border: 1px solid #ffffff30;
+    padding: 5px 10px;
+    backdrop-filter: blur(24px);
+    background: linear-gradient(152deg, rgba(242, 242, 242, 0.4) 0%, rgba(227, 227, 227, 0.4) 49%, rgba(255, 255, 255, 0.4) 100%, rgba(238, 238, 238, 0.4) 100%);
+}
+
+.transfer__header-btn.active {
+    background: var(--yeelow);
+    font-weight: 700;
+    color: black;
+}
+
+.transfer__header-btn {
+    width: 50%;
+    color: #ffffff80;
+
+    border-radius: 5px;
+    padding: 7px 0;
+}
+
+.transfer__available {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    flex-direction: column;
+    font-size: 22px;
+}
+
+.transfer__available strong {
+    font-size: 36px;
+    line-height: 46px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.transfer__available strong p {
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.transfer__amount-inp {
+    border-radius: 10px;
+    background: #ffffff80;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.transfer__amount-inp input {
+    background: #00000000;
+}
+
+.transfer__amount-inp input::placeholder {
+    color: #ffffff80;
+}
+
+@media (max-width: 1600px) {
+    .cs__safe-swiper {
+        max-width: 1000px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .cs__safe-swiper {
+        display: none;
+    }
 }
