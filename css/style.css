@@ -13762,6 +13762,14 @@ button {
     color: #ffffff80;
 }
 
+.transfer__amount {
+    margin-top: 20px;
+}
+
+.transfer__available {
+    margin-top: 20px;
+}
+
 @media (max-width: 1600px) {
     .cs__safe-swiper {
         max-width: 1000px !important;
@@ -13771,5 +13779,32 @@ button {
 @media (max-width: 767px) {
     .cs__safe-swiper {
         display: none;
+    }
+
+    .transfer__wallet-btns {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .transfer__amount {
+        margin-top: 10px;
+    }
+
+    .transfer__wallet-btns svg {
+
+        transform: rotate(90deg);
+    }
+
+    .transfer__wallet-btn {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .сonclusion {
+        -webkit-backdrop-filter: blur(40px);
+    }
+
+    .transfer__header {
+        padding: 3px 5px;
     }
 }
