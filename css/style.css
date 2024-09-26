@@ -13808,3 +13808,101 @@ button {
         padding: 3px 5px;
     }
 }
+
+.multi__balance-body.active {
+    display: block;
+}
+
+.multi__income-points.active {
+    display: flex;
+}
+
+.conect__wallet {
+    padding: 5px 10px;
+    transition: .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    background: var(--yeelow);
+    border-radius: 10px;
+    border: solid var(--yeelow) 1px;
+    color: #222;
+    font-weight: 700;
+    font-size: 14px;
+    gap: 7px;
+}
+
+.conect__wallet:hover {
+    color: white;
+    background: #00000000;
+}
+
+.modal__connect-title {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 32px;
+    line-height: 100%;
+    color: var(--white);
+}
+
+.modal__connect-block {
+    padding: 30px 0;
+}
+
+.modal__connect-block {
+    border-top: 2px solid #fff;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal__connect-block-title {
+    font-weight: 700;
+    color: #ffffff50;
+    font-size: 34px;
+    line-height: 82%;
+}
+
+.modal__connect-wallets {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+
+}
+
+.modal__connect-wallet:first-child {
+    border: 1px solid var(--yeelow);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.modal__connect-wallet {
+    border-radius: 20px;
+    padding: 10px 60px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 20px;
+    background: #ffffff20;
+}
+
+.check-box__sum {
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .modal__connect-title {
+        margin-top: 60px;
+    }
+
+    .modal__connect-block-title {
+        text-align: center;
+    }
+}
