@@ -13895,6 +13895,10 @@ button {
     background: #ffffff20;
 }
 
+.modal__buy {
+    -webkit-backdrop-filter: blur(40px);
+}
+
 .check-box__sum {
     align-items: center;
 }
