@@ -13878,12 +13878,14 @@ button {
 
 }
 
-.modal__connect-wallet:first-child {
+.modal__connect-wallet.active {
     border: 1px solid var(--yeelow);
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .modal__connect-wallet {
+    transition: .4s;
+    cursor: pointer;
     border-radius: 20px;
     padding: 10px 60px;
     display: flex;
@@ -13895,6 +13897,10 @@ button {
 
 .check-box__sum {
     align-items: center;
+}
+
+.multi__balance-coin {
+    cursor: pointer;
 }
 
 @media (max-width: 767px) {

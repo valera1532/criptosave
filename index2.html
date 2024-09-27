@@ -511,7 +511,7 @@
                             <div class="modal__connect-block">
                                 <div class="modal__connect-block-title">Choose a wallet to connect</div>
                                 <div class="modal__connect-wallets">
-                                    <div class="modal__connect-wallet"><img src="./img/wallets/metamask.png"
+                                    <div class="modal__connect-wallet active"><img src="./img/wallets/metamask.png"
                                             alt=""><span>MetaMask Wallet</span></div>
                                     <div class="modal__connect-wallet"><img src="./img/wallets/trusts.png"
                                             alt=""><span>Trust Wallet</span></div>
@@ -529,7 +529,16 @@
                                 </div>
                             </div>
                         </div>
+                        <script>
+                            let wallets = document.querySelectorAll('.modal__connect-wallet');
+                            for (let i = 0; i < wallets.length; i++) {
+                                wallets[i].addEventListener('click', () => {
+                                    wallets.forEach(el => el.classList.remove('active'));
+                                    wallets[i].classList.add('active');
+                                })
 
+                            }
+                        </script>
                     </div>
                 </div>
             </div>
