@@ -13915,4 +13915,12 @@ button {
     .modal__connect-block-title {
         text-align: center;
     }
+
+
+}
+
+@media (max-width: 400px) {
+    .check-box__title-first {
+        margin-top: 40px;
+    }
 }
